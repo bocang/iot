@@ -560,7 +560,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 //                        intent = new Intent(getActivity(), IPCameraActivity.class);
 //                        intent.putExtra("iotId", iot);
 //                        intent.putExtra("appKey", DemoApplication.app_key);
-                        startActivity(intent);
+//                        startActivity(intent);
 
                         return;
                     }

@@ -23,21 +23,21 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int color_60000000 = 0x7f060077;
+        public static final int color_60000000 = 0x7f060078;
     }
     public static final class id {
         private id() {}
 
-        public static final int center = 0x7f090094;
-        public static final int content_container = 0x7f0900af;
-        public static final int left = 0x7f090195;
-        public static final int outmost_container = 0x7f09022d;
-        public static final int right = 0x7f090254;
+        public static final int center = 0x7f090095;
+        public static final int content_container = 0x7f0900b0;
+        public static final int left = 0x7f090198;
+        public static final int outmost_container = 0x7f090230;
+        public static final int right = 0x7f090257;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int layout_basepickerview = 0x7f0c00ee;
+        public static final int layout_basepickerview = 0x7f0c00f0;
     }
     public static final class string {
         private string() {}

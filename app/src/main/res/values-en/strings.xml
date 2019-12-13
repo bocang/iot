@@ -244,5 +244,30 @@ Read, understand and accept all the contents of the updated Privacy Policy. Plea
     <string name="str_the_lock_is_not_opened">Door lock closed</string>
     <string name="str_input_contact_info">Please fill in the contact information</string>
     <string name="str_message">message</string>
+    <string name="str_img">image</string>
+    <string name="str_alarm_setting">Alarm settings</string>
+    <string name="str_store_card">sd card</string>
+    <string name="str_normal">normal</string>
+    <string name="str_unbind_dev">unbind device</string>
+    <string name="str_restart">restart</string>
+    <string name="str_restart_tips">Are you sure you want to restart the device？</string>
+    <string name="str_day_night_mode">Day and night mode</string>
+    <string name="str_flip">Video flip</string>
+    <string name="str_please_choose">please choose</string>
+    <string name="str_auto_mode">auto </string>
+    <string name="str_flip_mode">flip</string>
+    <string name="str_day_mode">day</string>
+    <string name="str_night_mode">night</string>
+    <string name="str_picture_change_detection_sensitivity">Picture change detection sensitivity</string>
+    <string name="str_incident_reporting_frequency">Incident reporting frequency</string>
+    <string name="str_alarm_period">Alarm period</string>
+    <string name="str_the_lowest">Lowest gear</string>
+    <string name="str_low">Low grade</string>
+    <string name="str_mid">Mid-range</string>
+    <string name="str_high">High grade</string>
+    <string name="str_the_highest">the highest</string>
+    <string name="str_low_frequency">low frequency</string>
+    <string name="str_mid_frequency">mid frequency</string>
+    <string name="str_high_frequency">high frequency</string>
 
 </resources>

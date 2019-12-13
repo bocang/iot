@@ -26,13 +26,13 @@ public final class R {
         public static final int bgColor_alertview_alert_start = 0x7f060044;
         public static final int bgColor_divier = 0x7f060045;
         public static final int bgColor_overlay = 0x7f060046;
-        public static final int textColor_actionsheet_msg = 0x7f06010f;
-        public static final int textColor_actionsheet_title = 0x7f060110;
-        public static final int textColor_alert_button_cancel = 0x7f060111;
-        public static final int textColor_alert_button_destructive = 0x7f060112;
-        public static final int textColor_alert_button_others = 0x7f060113;
-        public static final int textColor_alert_msg = 0x7f060114;
-        public static final int textColor_alert_title = 0x7f060115;
+        public static final int textColor_actionsheet_msg = 0x7f060110;
+        public static final int textColor_actionsheet_title = 0x7f060111;
+        public static final int textColor_alert_button_cancel = 0x7f060112;
+        public static final int textColor_alert_button_destructive = 0x7f060113;
+        public static final int textColor_alert_button_others = 0x7f060114;
+        public static final int textColor_alert_msg = 0x7f060115;
+        public static final int textColor_alert_title = 0x7f060116;
     }
     public static final class dimen {
         private dimen() {}
@@ -66,17 +66,17 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int alertButtonListView = 0x7f090027;
-        public static final int content_container = 0x7f0900af;
-        public static final int loAlertButtons = 0x7f0901c7;
-        public static final int loAlertHeader = 0x7f0901c8;
-        public static final int outmost_container = 0x7f09022d;
-        public static final int tvAlert = 0x7f09031c;
-        public static final int tvAlertCancel = 0x7f09031d;
-        public static final int tvAlertMsg = 0x7f09031e;
-        public static final int tvAlertTitle = 0x7f09031f;
-        public static final int viewStubHorizontal = 0x7f0903cf;
-        public static final int viewStubVertical = 0x7f0903d0;
+        public static final int alertButtonListView = 0x7f090028;
+        public static final int content_container = 0x7f0900b0;
+        public static final int loAlertButtons = 0x7f0901ca;
+        public static final int loAlertHeader = 0x7f0901cb;
+        public static final int outmost_container = 0x7f090230;
+        public static final int tvAlert = 0x7f090327;
+        public static final int tvAlertCancel = 0x7f090328;
+        public static final int tvAlertMsg = 0x7f090329;
+        public static final int tvAlertTitle = 0x7f09032a;
+        public static final int viewStubHorizontal = 0x7f0903e2;
+        public static final int viewStubVertical = 0x7f0903e3;
     }
     public static final class integer {
         private integer() {}
@@ -86,13 +86,13 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int include_alertheader = 0x7f0c00c8;
-        public static final int item_alertbutton = 0x7f0c00cd;
-        public static final int layout_alertview = 0x7f0c00e8;
-        public static final int layout_alertview_actionsheet = 0x7f0c00e9;
-        public static final int layout_alertview_alert = 0x7f0c00ea;
-        public static final int layout_alertview_alert_horizontal = 0x7f0c00eb;
-        public static final int layout_alertview_alert_vertical = 0x7f0c00ec;
+        public static final int include_alertheader = 0x7f0c00ca;
+        public static final int item_alertbutton = 0x7f0c00cf;
+        public static final int layout_alertview = 0x7f0c00ea;
+        public static final int layout_alertview_actionsheet = 0x7f0c00eb;
+        public static final int layout_alertview_alert = 0x7f0c00ec;
+        public static final int layout_alertview_alert_horizontal = 0x7f0c00ed;
+        public static final int layout_alertview_alert_vertical = 0x7f0c00ee;
     }
     public static final class string {
         private string() {}

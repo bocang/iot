@@ -142,7 +142,7 @@
         <!-- Ilop首页.begin -->
         <activity
             android:name="com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -375,6 +375,12 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.juhao.home.suggestion.SuggestRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.LivingSettingImageAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.LivingSettingAlarmSetActivity"
             android:screenOrientation="portrait" />
         <!-- API client.end -->
 

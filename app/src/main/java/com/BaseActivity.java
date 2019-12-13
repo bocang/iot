@@ -21,6 +21,7 @@ import com.juhao.home.UIUtils;
 import com.util.AppUtils;
 import com.util.Constance;
 import com.util.MyShare;
+import com.view.MyToast;
 
 import java.lang.reflect.Field;
 
@@ -94,6 +95,9 @@ public abstract class BaseActivity extends FragmentActivity {
 
     }
 
+    public void showToast(int resInt){
+        MyToast.show(this,getString(resInt));
+    }
     /**
      * 设置状态栏颜色
      * @param activity 需要设置的activity

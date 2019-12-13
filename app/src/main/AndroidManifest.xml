@@ -96,7 +96,7 @@
         <!-- Ilop首页.begin -->
         <activity
             android:name="com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleTask"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -299,6 +299,10 @@
         <activity android:name=".MyRegisterActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".suggestion.SuggestRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.LivingSettingImageAcitivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.LivingSettingAlarmSetActivity"
             android:screenOrientation="portrait"/>
         <!-- API client.end -->
 

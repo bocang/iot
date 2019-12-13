@@ -333,5 +333,30 @@
     <string name="ucrop_menu_crop">裁剪</string>
     <string name="ucrop_error_input_data_is_absent">Both input and output Uri must be specified</string>
     <string name="str_message">信息</string>
+    <string name="str_img">图像</string>
+    <string name="str_alarm_setting">报警设置</string>
+    <string name="str_store_card">存储卡</string>
+    <string name="str_normal">正常</string>
+    <string name="str_unbind_dev">解绑设备</string>
+    <string name="str_restart">重启</string>
+    <string name="str_restart_tips">确定要重启设备吗？</string>
+    <string name="str_day_night_mode">日夜模式</string>
+    <string name="str_flip">视频画面翻转</string>
+    <string name="str_please_choose">请选择</string>
+    <string name="str_auto_mode">自动模式</string>
+    <string name="str_flip_mode">翻转</string>
+    <string name="str_day_mode">日间模式</string>
+    <string name="str_night_mode">夜间模式</string>
+    <string name="str_picture_change_detection_sensitivity">画面变化侦测灵敏度</string>
+    <string name="str_incident_reporting_frequency">事件上报频率</string>
+    <string name="str_alarm_period">报警时段</string>
+    <string name="str_the_lowest">最低档</string>
+    <string name="str_low">低档</string>
+    <string name="str_mid">中档</string>
+    <string name="str_high">高档</string>
+    <string name="str_the_highest">最高档</string>
+    <string name="str_low_frequency">低频</string>
+    <string name="str_mid_frequency">中频</string>
+    <string name="str_high_frequency">高频</string>
 
 </resources>

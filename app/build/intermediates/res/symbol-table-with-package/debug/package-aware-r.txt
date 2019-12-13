@@ -1080,6 +1080,7 @@ color bgColor_divier
 color bgColor_overlay
 color black
 color blue
+color blue_theme
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2063,6 +2064,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id address
 id adjust_height
 id adjust_width
 id alertButtonListView
@@ -2374,6 +2376,7 @@ id image_view_state_aspect_ratio
 id image_view_state_rotate
 id image_view_state_scale
 id img
+id img_guanbi
 id info
 id input
 id input_box
@@ -2400,6 +2403,7 @@ id iv_check
 id iv_close
 id iv_color
 id iv_control
+id iv_day_switch
 id iv_edit
 id iv_gif
 id iv_head
@@ -2632,6 +2636,8 @@ id rl_about
 id rl_account
 id rl_add
 id rl_add_device
+id rl_alarm_period
+id rl_alarm_setting
 id rl_all_day
 id rl_bg
 id rl_bottom_bar
@@ -2639,11 +2645,15 @@ id rl_clear_cache
 id rl_contain_video
 id rl_control
 id rl_custom
+id rl_day_night_mode
 id rl_day_time
 id rl_effect_period
+id rl_flip
+id rl_frequency
 id rl_head
 id rl_hj
 id rl_home_disappear
+id rl_image
 id rl_img
 id rl_item_click
 id rl_jc
@@ -2655,6 +2665,8 @@ id rl_offline
 id rl_pic_test_header
 id rl_qc
 id rl_root
+id rl_sd_card
+id rl_sensitivity
 id rl_setting
 id rl_sj
 id rl_status
@@ -2835,6 +2847,7 @@ id tv_add_home
 id tv_add_img
 id tv_add_mission
 id tv_air_outside
+id tv_alarm_period
 id tv_area
 id tv_auto
 id tv_baojing
@@ -2871,6 +2884,7 @@ id tv_current_time
 id tv_custom
 id tv_date
 id tv_day
+id tv_day_night_mode
 id tv_delay
 id tv_delete
 id tv_desc
@@ -2887,6 +2901,7 @@ id tv_duration_cur
 id tv_effect
 id tv_ensure
 id tv_feeback_failure
+id tv_flip_status
 id tv_folder_name
 id tv_folder_size
 id tv_function_suggest
@@ -2944,13 +2959,17 @@ id tv_random_mima
 id tv_record
 id tv_region
 id tv_register
+id tv_report_frequency
+id tv_restart
 id tv_save
 id tv_scene
+id tv_sd_card_status
 id tv_select
 id tv_select_all_day
 id tv_select_day_time
 id tv_select_night
 id tv_select_time_label
+id tv_sensitivity
 id tv_set_nickname
 id tv_setting
 id tv_share
@@ -2972,6 +2991,7 @@ id tv_title
 id tv_title_date
 id tv_trigger
 id tv_turn
+id tv_unbind
 id tv_update
 id tv_upset_device
 id tv_version
@@ -3132,6 +3152,8 @@ layout activity_ipcamera
 layout activity_it_devices_add
 layout activity_living_player
 layout activity_living_setting
+layout activity_living_setting_alarm
+layout activity_living_setting_image
 layout activity_lock_setting
 layout activity_login
 layout activity_login_index
@@ -3332,6 +3354,7 @@ layout pic_picture_item
 layout pickerview_options
 layout pickerview_time
 layout picture_dialog_layout
+layout pop_picker_selector_bottom
 layout popup_home_list_type
 layout popup_stream_quality
 layout ptz_layout
@@ -4387,6 +4410,8 @@ string str_add_share
 string str_add_success
 string str_agree_share
 string str_agreement
+string str_alarm_period
+string str_alarm_setting
 string str_all_day
 string str_alx_tips1
 string str_alx_tips2
@@ -4395,6 +4420,7 @@ string str_alx_tips4
 string str_appear_on_home
 string str_atleastone
 string str_auto
+string str_auto_mode
 string str_auto_on_off
 string str_bind_step
 string str_bind_success
@@ -4425,6 +4451,8 @@ string str_custom
 string str_custom_desc
 string str_day
 string str_day_desc
+string str_day_mode
+string str_day_night_mode
 string str_deivce_select
 string str_delay
 string str_delete_auto
@@ -4459,6 +4487,8 @@ string str_excute_success
 string str_exit_toast
 string str_family_management
 string str_feedback_exeption
+string str_flip
+string str_flip_mode
 string str_fri
 string str_friday
 string str_function_suggest
@@ -4467,8 +4497,12 @@ string str_go_out
 string str_gohome
 string str_have_no_devices
 string str_head
+string str_high
+string str_high_frequency
 string str_home
 string str_icon
+string str_img
+string str_incident_reporting_frequency
 string str_init_exception
 string str_input_contact_info
 string str_input_home_wifi
@@ -4484,9 +4518,13 @@ string str_loading
 string str_login_timeout
 string str_logout
 string str_logout_success
+string str_low
+string str_low_frequency
 string str_make_sure_light_on
 string str_me
 string str_message
+string str_mid
+string str_mid_frequency
 string str_mission
 string str_mobile_email
 string str_mon
@@ -4500,8 +4538,10 @@ string str_nickname_edit
 string str_nickname_input
 string str_night
 string str_night_desc
+string str_night_mode
 string str_no_notice
 string str_no_tick_tips
+string str_normal
 string str_not_empty
 string str_notice
 string str_notice_2
@@ -4517,7 +4557,9 @@ string str_outdoor_temp
 string str_person_center
 string str_phone_email
 string str_pic
+string str_picture_change_detection_sensitivity
 string str_pingfen
+string str_please_choose
 string str_please_choose_action
 string str_please_choose_icon_color
 string str_please_choose_pic
@@ -4529,6 +4571,8 @@ string str_privacy_content
 string str_pwd
 string str_qing
 string str_repeat
+string str_restart
+string str_restart_tips
 string str_room_temp
 string str_sat
 string str_saturday
@@ -4554,6 +4598,7 @@ string str_step_3
 string str_step_3_detail
 string str_step_4
 string str_step_4_detail
+string str_store_card
 string str_style
 string str_submit
 string str_suggest_record
@@ -4565,8 +4610,10 @@ string str_sure_logout
 string str_switch_close
 string str_switch_open
 string str_the_door_is_not_open
+string str_the_highest
 string str_the_lock_is_not_opened
 string str_the_lock_is_opened
+string str_the_lowest
 string str_thirth
 string str_thurs
 string str_thursday
@@ -4583,6 +4630,7 @@ string str_tm_tips5
 string str_trigger_time
 string str_tue
 string str_tuesday
+string str_unbind_dev
 string str_unbind_device
 string str_unbind_device_success
 string str_update_now

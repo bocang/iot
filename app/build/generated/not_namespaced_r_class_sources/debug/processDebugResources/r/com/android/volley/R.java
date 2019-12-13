@@ -21,9 +21,9 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int photo_crop_dim_color = 0x7f0600ea;
-        public static final int photo_crop_highlight_color = 0x7f0600eb;
-        public static final int solid_black = 0x7f060103;
+        public static final int photo_crop_dim_color = 0x7f0600eb;
+        public static final int photo_crop_highlight_color = 0x7f0600ec;
+        public static final int solid_black = 0x7f060104;
     }
     public static final class dimen {
         private dimen() {}

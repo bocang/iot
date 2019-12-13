@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <TextView
+        android:id="@+id/img_guanbi"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/str_save"
+        android:textColor="@color/blue_theme"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/str_please_choose"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+<View
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_height="1dp"/>
+    <com.view.PickerScrollView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_guanbi"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

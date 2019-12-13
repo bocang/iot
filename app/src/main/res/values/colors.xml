@@ -61,5 +61,6 @@
     <color name="black">#000000</color>
     <color name="tv_999999">#999999</color>
     <color name="tv_cccccc">#cccccc</color>
+    <color name="blue_theme">#2f80ed</color>
     <!--长链接调试页面-ChannelActivity color end-->
 </resources>
