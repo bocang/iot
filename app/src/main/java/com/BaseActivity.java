@@ -35,11 +35,13 @@ import java.lang.reflect.Field;
 public abstract class BaseActivity extends FragmentActivity {
     private DemoApplication app;
     public ViewGroup rootView;
+    protected Bundle mBundle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setStatuTextColorOrigin(this);
+        mBundle = new Bundle();
         initData();
         initView();
         initController();
@@ -302,6 +304,17 @@ public abstract class BaseActivity extends FragmentActivity {
     protected void intent2Activity(Class<? extends Activity> tarActivity) {
         Intent intent = new Intent(this, tarActivity);
         startActivity(intent);
+    }
+
+    protected void intent2Activity(Class<? extends Activity> tarActivity, Bundle bundle) {
+        Intent intent = new Intent(this, tarActivity);
+        intent.putExtra("bundle", bundle);
+        startActivity(intent);
+    }
+
+    protected Bundle getBundle() {
+        mBundle = getIntent().getBundleExtra("bundle");
+        return mBundle;
     }
 
 }

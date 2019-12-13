@@ -118,7 +118,7 @@ public class MainActivity extends FragmentActivity {
     private MyFragmentTabLayout fragmentTabHost;
 
     private Class fragmentClass[] = {ItHomeMainFragment.class, ItApplicationFragment.class, ItMineMainFragment.class};
-    private String textViewArray[] = {DemoApplication.getContext().getString(R.string.str_home), DemoApplication.getContext().getString(R.string.str_Intelligent),DemoApplication.getContext(). getString(R.string.str_me)};
+    private String textViewArray[] = {DemoApplication.getContext().getString(R.string.str_home), DemoApplication.getContext().getString(R.string.str_Intelligent), DemoApplication.getContext().getString(R.string.str_me)};
     private Integer drawables[] = {R.drawable.top_bot_bar_wise, R.drawable.product_bot_bar_intelligent, R.drawable.mine_bot_bar_wise};
     private LinearLayout ll_home;
 
@@ -131,7 +131,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setStatuTextColor(this, Color.TRANSPARENT);
-        setFullScreenColor(Color.TRANSPARENT,this);
+        setFullScreenColor(Color.TRANSPARENT, this);
         sendVersion();
 
 //        HmsInstanceId inst  = HmsInstanceId.getInstance(this);
@@ -149,7 +149,7 @@ public class MainActivity extends FragmentActivity {
 //        });
         DemoApplication.activityList.add(this);
         ll_home = findViewById(R.id.ll_home);
-        fragmentTabHost =  findViewById(R.id.tab_layout);
+        fragmentTabHost = findViewById(R.id.tab_layout);
         fragmentTabHost.init(getSupportFragmentManager())
                 .setFragmentTabLayoutAdapter(new DefaultFragmentTabAdapter(Arrays.asList(fragmentClass), Arrays.asList(textViewArray), Arrays.asList(drawables)) {
                     @Override
@@ -161,6 +161,7 @@ public class MainActivity extends FragmentActivity {
                         textView.setText(textViewArray[pos]);
                         return view;
                     }
+
                     @Override
                     public void onClick(int pos) {
 
@@ -186,7 +187,7 @@ public class MainActivity extends FragmentActivity {
         if (Build.VERSION.SDK_INT >= 23) {
             //如果超过6.0才需要动态权限，否则不需要动态权限
             //如果同时申请多个权限，可以for循环遍历
-            int check = ContextCompat.checkSelfPermission(this,permissions[0]);
+            int check = ContextCompat.checkSelfPermission(this, permissions[0]);
             // 权限是否已经 授权 GRANTED---授权  DINIED---拒绝
             if (check == PackageManager.PERMISSION_GRANTED) {
                 //写入你需要权限才能使用的方法
@@ -203,10 +204,10 @@ public class MainActivity extends FragmentActivity {
         MobileConnectConfig config = new MobileConnectConfig();
         // 设置 appKey 和 authCode(必填)
         config.appkey = DemoApplication.app_key;
-        if(DemoApplication.is_national){
+        if (DemoApplication.is_national) {
             config.securityGuardAuthcode = "develop_oversea";
-        }else {
-        config.securityGuardAuthcode = "114d";
+        } else {
+            config.securityGuardAuthcode = "114d";
         }
         // 设置验证服务器（默认不填，SDK会自动使用“API通道SDK“的Host设定）
 //        config.authServer = "";
@@ -257,7 +258,7 @@ public class MainActivity extends FragmentActivity {
 //                LogUtils.logE("deviceid",deviceId+"");
                 if (LoginBusiness.isLogin()) {
                     request(DemoApplication.BIND);
-                }else {
+                } else {
                     request(DemoApplication.UN_BIND);
                 }
             }
@@ -270,7 +271,7 @@ public class MainActivity extends FragmentActivity {
         MobileChannel.getInstance().registerDownstreamListener(true, new IMobileDownstreamListener() {
             @Override
             public void onCommand(String method, String data) {
-                ALog.d(TAG,"接收到Topic = "+method+", data="+data);
+                ALog.d(TAG, "接收到Topic = " + method + ", data=" + data);
             }
 
             @Override
@@ -283,8 +284,8 @@ public class MainActivity extends FragmentActivity {
         MobileChannel.getInstance().registerConnectListener(true, new IMobileConnectListener() {
             @Override
             public void onConnectStateChange(MobileConnectState state) {
-                ALog.d(TAG,"通道状态变化，state="+state);
-                LogUtils.logE("registerConnectListener","onConnectStateChange"+state);
+                ALog.d(TAG, "通道状态变化，state=" + state);
+                LogUtils.logE("registerConnectListener", "onConnectStateChange" + state);
             }
         });
 
@@ -297,29 +298,31 @@ public class MainActivity extends FragmentActivity {
 //                BonePluginRegistry.register("BoneHotspotHelper", BoneHotspotHelper.class);
 //                BonePluginRegistry.register("BoneChannel", BoneChannel.class);
     }
+
     private long exitTime;
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event){
-            if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-                if ((System.currentTimeMillis() - exitTime) > 2000) {
-                    exitTime = System.currentTimeMillis();
-                    MyToast.show(this,getString(R.string.str_exit_toast));
-                } else {
-                    finish();
-                }
-                return true;
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
+            if ((System.currentTimeMillis() - exitTime) > 2000) {
+                exitTime = System.currentTimeMillis();
+                MyToast.show(this, getString(R.string.str_exit_toast));
+            } else {
+                finish();
             }
+            return true;
+        }
         return super.onKeyDown(keyCode, event);
     }
+
     public void getToken() {
         new Thread() {
             @Override
             public void run() {
                 try {
-                    String getToken =  HmsInstanceId.getInstance(MainActivity.this).getToken("100663653", "HCM");
+                    String getToken = HmsInstanceId.getInstance(MainActivity.this).getToken("100663653", "HCM");
                     if (!TextUtils.isEmpty(getToken)) {
-                        PgyCrashManager.reportCaughtException(MainActivity.this,new Exception("token:"+getToken));
+                        PgyCrashManager.reportCaughtException(MainActivity.this, new Exception("token:" + getToken));
 //                        LogUtils.logE("token",getToken);
 //                        sendRegistrationToServer(getToken);
                     }
@@ -329,32 +332,34 @@ public class MainActivity extends FragmentActivity {
             }
         }.start();
     }
+
     private void bindmqtt() {
-        IoTCredentialManage ioTCredentialManage= IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
+        IoTCredentialManage ioTCredentialManage = IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
 
         MobileChannel.getInstance().bindAccount(ioTCredentialManage.getIoTToken(), new IMobileRequestListener() {
             @Override
             public void onSuccess(String jsonData) {
-                Log.e(TAG,"bindAccount,onSuccess"+jsonData+"");
+                Log.e(TAG, "bindAccount,onSuccess" + jsonData + "");
             }
 
             @Override
             public void onFailure(AError error) {
-                Log.e(TAG,"bindAccount,onFailure,error");
+                Log.e(TAG, "bindAccount,onFailure,error");
             }
         });
     }
+
     private void refreshLogin() {
-        WebView webview=new WebView(this);
+        WebView webview = new WebView(this);
         webview.setTag("wv");
         webview.setVisibility(View.GONE);
-        for(int i=0;i<ll_home.getChildCount();i++){
-            if(ll_home.getChildAt(i).getTag()!=null&&ll_home.getChildAt(i).getTag().equals("wv")){
+        for (int i = 0; i < ll_home.getChildCount(); i++) {
+            if (ll_home.getChildAt(i).getTag() != null && ll_home.getChildAt(i).getTag().equals("wv")) {
                 ll_home.removeViewAt(i);
             }
         }
         ll_home.addView(webview);
-        WebSettings settings=webview.getSettings();
+        WebSettings settings = webview.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setPluginState(WebSettings.PluginState.ON);
         settings.setSupportZoom(true);
@@ -367,7 +372,7 @@ public class MainActivity extends FragmentActivity {
         settings.setDomStorageEnabled(true);
         settings.setGeolocationEnabled(true);
         settings.setAppCacheEnabled(true);
-        webview.setWebViewClient(new WebViewClient(){
+        webview.setWebViewClient(new WebViewClient() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
@@ -384,14 +389,14 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
-                if(url.contains("callback&response_type=code&scope=")){
+                if (url.contains("callback&response_type=code&scope=")) {
 
-                }else {
-                    Log.e("pagefinish",url);
-                    final String code=url.substring(url.indexOf("code=")+5);
-                    Log.e("code",code);
-                    Message msg=new Message();
-                    msg.obj=code;
+                } else {
+                    Log.e("pagefinish", url);
+                    final String code = url.substring(url.indexOf("code=") + 5);
+                    Log.e("code", code);
+                    Message msg = new Message();
+                    msg.obj = code;
                     handler.sendMessage(msg);
                 }
 
@@ -403,33 +408,35 @@ public class MainActivity extends FragmentActivity {
             }
         });
 
-        String username= MyShare.get(this).getString(Constance.username);
-        String pwd=MyShare.get(this).getString(Constance.pwd);
-        if(TextUtils.isEmpty(username)||TextUtils.isEmpty(pwd)){
+        String username = MyShare.get(this).getString(Constance.username);
+        String pwd = MyShare.get(this).getString(Constance.pwd);
+        if (TextUtils.isEmpty(username) || TextUtils.isEmpty(pwd)) {
 //            MyToast.show(this,getString(R.string.str_login_timeout));
             startActivity(new Intent(this, LoginActivity.class));
             finish();
             return;
         }
-        webview.loadUrl("http://smart.juhao.com/login?username="+username+"&password="+pwd);
+        webview.loadUrl("http://smart.juhao.com/login?username=" + username + "&password=" + pwd);
     }
-    Handler handler=new Handler(){
+
+    Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            if(DemoApplication.is_created_fragment){
-            Intent intent=new Intent();
-            intent.putExtra(Constance.msg,"111");
-            intent.setAction("recevie.login.status");
-            sendBroadcast(intent);
+            if (DemoApplication.is_created_fragment) {
+                Intent intent = new Intent();
+                intent.putExtra(Constance.msg, "111");
+                intent.setAction("recevie.login.status");
+                sendBroadcast(intent);
             }
 //            String code= (String) msg.obj;
 //            login(code);
         }
     };
+
     private void initLoginStatus() {
-        final IoTCredentialManageImpl ioTCredentialManage =  IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
-        if(TextUtils.isEmpty(ioTCredentialManage.getIoTToken())){
+        final IoTCredentialManageImpl ioTCredentialManage = IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
+        if (TextUtils.isEmpty(ioTCredentialManage.getIoTToken())) {
             ioTCredentialManage.asyncRefreshIoTCredential(new IoTCredentialListener() {
                 @Override
                 public void onRefreshIoTCredentialSuccess(final IoTCredentialData ioTCredentialData) {
@@ -438,7 +445,7 @@ public class MainActivity extends FragmentActivity {
                         public void onSuccess(String s) {
 //                            LogUtils.logE("ioTCredentialData",ioTCredentialData.identity);
 //                            PgyCrashManager.reportCaughtException(MainActivity.this,new Exception("onRefreshIoTCredentialSuccess_bindAccount success"));
-                            Log.e(TAG,"mqtt bindAccount onSuccess");
+                            Log.e(TAG, "mqtt bindAccount onSuccess");
                             SendLoginSuccessMsg();
                         }
 
@@ -446,7 +453,7 @@ public class MainActivity extends FragmentActivity {
                         public void onFailure(AError aError) {
 //                            LogUtils.logE("ioTCredentialData",ioTCredentialData.identity);
 //                            PgyCrashManager.reportCaughtException(MainActivity.this,new Exception("onRefreshIoTCredentialSuccess_bindAccount faliure"));
-                            Log.e(TAG,"mqtt bindAccount onFailure aError = " + aError.getMsg());
+                            Log.e(TAG, "mqtt bindAccount onFailure aError = " + aError.getMsg());
 //                            refreshLogin();
 //                            Intent intent=new Intent(MainActivity.this,IndexActivity.class);
 //                            intent.putExtra(Constance.islogin,true);
@@ -471,7 +478,7 @@ public class MainActivity extends FragmentActivity {
 
                 @Override
                 public void onRefreshIoTCredentialFailed(IoTCredentialManageError ioTCredentialManageError) {
-                    Log.e(TAG,"mqtt bindAccount onFailure ");
+                    Log.e(TAG, "mqtt bindAccount onFailure ");
 //                    PgyCrashManager.reportCaughtException(MainActivity.this,new Exception("onRefreshIoTCredentialFailed"));
 ////                    refreshLogin();
 //                    Intent intent=new Intent(MainActivity.this,IndexActivity.class);
@@ -494,12 +501,12 @@ public class MainActivity extends FragmentActivity {
 //                    LogUtils.logE("ioTCredentialData",ioTCredentialManage.getIoTIdentity());
                     SendLoginSuccessMsg();
 //                    PgyCrashManager.reportCaughtException(MainActivity.this,new Exception("Main_bindAccount_onsuccess"));
-                    Log.e(TAG,"mqtt bindAccount onSuccess ");
+                    Log.e(TAG, "mqtt bindAccount onSuccess ");
                 }
 
                 @Override
                 public void onFailure(AError aError) {
-                    Log.e(TAG,"mqtt bindAccount onFailure aError = " + aError.getMsg());
+                    Log.e(TAG, "mqtt bindAccount onFailure aError = " + aError.getMsg());
 //                    refreshLogin();
 //                    PgyCrashManager.reportCaughtException(MainActivity.this,new Exception("Main_bindAccount_onfailure"));
 //                    Intent intent=new Intent(MainActivity.this,IndexActivity.class);
@@ -545,41 +552,43 @@ public class MainActivity extends FragmentActivity {
     protected void onResume() {
         super.onResume();
 
-        if(LoginBusiness.isLogin()){
+        if (LoginBusiness.isLogin()) {
 //            MyToast.show(this,"Main_isLogin");
             LoginBusiness.refreshSession(true, new IRefreshSessionCallback() {
                 @Override
                 public void onRefreshSuccess() {
 //                    MyToast.show(MainActivity.this,"Main_onRefreshSuccess");
 //                    Log.i(TAG,"刷新Session成功");
-                    String sessionid=LoginBusiness.getSessionId();
-                    UserInfo info=LoginBusiness.getUserInfo();
+                    String sessionid = LoginBusiness.getSessionId();
+                    UserInfo info = LoginBusiness.getUserInfo();
                 }
+
                 @Override
                 public void onRefreshFailed() {
-                    Log.i(TAG,"刷新Session失败");
+                    Log.i(TAG, "刷新Session失败");
 //                    MyToast.show(MainActivity.this,"Main_onRefreshFailed");
                 }
             });
 
-            String sessionid=LoginBusiness.getSessionId();
-            UserInfo info=LoginBusiness.getUserInfo();
-            IoTCredentialManage ioTCredentialManage=IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
+            String sessionid = LoginBusiness.getSessionId();
+            UserInfo info = LoginBusiness.getUserInfo();
+            IoTCredentialManage ioTCredentialManage = IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
 //            LogUtils.logE("ioTCredentialManage",ioTCredentialManage.getIoTIdentity());
             MobileChannel.getInstance().bindAccount(ioTCredentialManage.getIoTToken(), new IMobileRequestListener() {
                 @Override
                 public void onSuccess(String jsonData) {
 
-                    LogUtils.logE("bindAccount","onSuccess");
+                    LogUtils.logE("bindAccount", "onSuccess");
                 }
+
                 @Override
                 public void onFailure(AError error) {
-                    LogUtils.logE("bindAccount","onFailure");
+                    LogUtils.logE("bindAccount", "onFailure");
 
                 }
             });
             SendLoginSuccessMsg();
-        }else {
+        } else {
 //            MyToast.show(this,"Main_isNotLogin");
             initLoginStatus();
         }
@@ -593,23 +602,25 @@ public class MainActivity extends FragmentActivity {
 
     private void SendLoginSuccessMsg() {
 //        UserInfo userInfo=LoginBusiness.getUserInfo();
-        Message msg=new Message();
-        msg.arg1=1;
+        Message msg = new Message();
+        msg.arg1 = 1;
 //        EventBus.getDefault().postSticky(msg);
 //        handler.sendEmptyMessage(0);
-        handler.postDelayed(runnable,0);
+        handler.postDelayed(runnable, 0);
     }
-    Runnable runnable=new Runnable() {
+
+    Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            if(!DemoApplication.is_created_fragment){
-                handler.postDelayed(runnable,500);
-            }else {
+            if (!DemoApplication.is_created_fragment) {
+                handler.postDelayed(runnable, 500);
+            } else {
                 handler.sendEmptyMessage(2000);
             }
         }
     };
-    public void setHandler(Handler handler){
+
+    public void setHandler(Handler handler) {
         this.handler = handler;
     }
 
@@ -618,7 +629,7 @@ public class MainActivity extends FragmentActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             Log.d(TAG, "onActivityResult");
-            if (data!=null&&data.getStringExtra("productKey") != null){
+            if (data != null && data.getStringExtra("productKey") != null) {
                 Bundle bundle = new Bundle();
                 bundle.putString("productKey", data.getStringExtra("productKey"));
                 bundle.putString("deviceName", data.getStringExtra("deviceName"));
@@ -629,37 +640,38 @@ public class MainActivity extends FragmentActivity {
             }
         }
     }
-    public void goBack(View v){
+
+    public void goBack(View v) {
         finish();
     }
 
     /**
      * 获取版本号
      */
-    private void sendVersion(){
+    private void sendVersion() {
 //        mNetWork.sendVersion(this);
         new Thread(new Runnable() {
             @Override
             public void run() {
                 String ans = NetWorkUtils.doGet(NetWorkConst.VERSION_URL_CONTENT);
-                final JSONObject jsonObject=new JSONObject(ans);
+                final JSONObject jsonObject = new JSONObject(ans);
                 final String mAppVersion = jsonObject.getString(Constance.version);
-                if(AppUtils.isEmpty(mAppVersion)) return;
+                if (AppUtils.isEmpty(mAppVersion)) return;
                 String localVersion = CommonUtil.localVersionName(MainActivity.this);
                 if ("-1".equals(mAppVersion)) {
 
                 } else {
                     boolean isNeedUpdate = CommonUtil.isNeedUpdate(localVersion, mAppVersion);
-                    if (isNeedUpdate){
+                    if (isNeedUpdate) {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
 
-                                final Dialog dialog=new Dialog(MainActivity.this,R.style.customDialog);
+                                final Dialog dialog = new Dialog(MainActivity.this, R.style.customDialog);
                                 dialog.setContentView(R.layout.dialog_update);
-                                TextView tv_version=dialog.findViewById(R.id.tv_content);
-                                TextView tv_upgrate=dialog.findViewById(R.id.tv_update);
-                                TextView iv_close=dialog.findViewById(R.id.tv_cancel);
+                                TextView tv_version = dialog.findViewById(R.id.tv_content);
+                                TextView tv_upgrate = dialog.findViewById(R.id.tv_update);
+                                TextView iv_close = dialog.findViewById(R.id.tv_cancel);
                                 dialog.setCanceledOnTouchOutside(false);
                                 dialog.setCancelable(false);
                                 iv_close.setOnClickListener(new View.OnClickListener() {
@@ -668,7 +680,7 @@ public class MainActivity extends FragmentActivity {
                                         dialog.dismiss();
                                     }
                                 });
-                                tv_version.setText("V"+mAppVersion+"\n "+jsonObject.getString(Constance.text));
+                                tv_version.setText("V" + mAppVersion + "\n " + jsonObject.getString(Constance.text));
                                 tv_upgrate.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -709,27 +721,27 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onSuccess(OpenAccountSession openAccountSession) {
 
-                IoTCredentialManageImpl ioTCredentialManage =  IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
-                if(TextUtils.isEmpty(ioTCredentialManage.getIoTToken())){
+                IoTCredentialManageImpl ioTCredentialManage = IoTCredentialManageImpl.getInstance(DemoApplication.getInstance());
+                if (TextUtils.isEmpty(ioTCredentialManage.getIoTToken())) {
                     ioTCredentialManage.asyncRefreshIoTCredential(new IoTCredentialListener() {
                         @Override
                         public void onRefreshIoTCredentialSuccess(IoTCredentialData ioTCredentialData) {
                             MobileChannel.getInstance().bindAccount(ioTCredentialData.iotToken, new IMobileRequestListener() {
                                 @Override
                                 public void onSuccess(String s) {
-                                    Log.e(TAG,"mqtt bindAccount onSuccess");
+                                    Log.e(TAG, "mqtt bindAccount onSuccess");
                                 }
 
                                 @Override
                                 public void onFailure(AError aError) {
-                                    Log.e(TAG,"mqtt bindAccount onFailure aError = " + aError.getMsg());
+                                    Log.e(TAG, "mqtt bindAccount onFailure aError = " + aError.getMsg());
                                 }
                             });
                         }
 
                         @Override
                         public void onRefreshIoTCredentialFailed(IoTCredentialManageError ioTCredentialManageError) {
-                            Log.e(TAG,"mqtt onRefreshIoTCredentialFailed ");
+                            Log.e(TAG, "mqtt onRefreshIoTCredentialFailed ");
 
                         }
                     });
@@ -737,12 +749,12 @@ public class MainActivity extends FragmentActivity {
                     MobileChannel.getInstance().bindAccount(ioTCredentialManage.getIoTToken(), new IMobileRequestListener() {
                         @Override
                         public void onSuccess(String s) {
-                            Log.e(TAG,"mqtt bindAccount onSuccess ");
+                            Log.e(TAG, "mqtt bindAccount onSuccess ");
                         }
 
                         @Override
                         public void onFailure(AError aError) {
-                            Log.e(TAG,"mqtt bindAccount onFailure aError = " + aError.getMsg());
+                            Log.e(TAG, "mqtt bindAccount onFailure aError = " + aError.getMsg());
 
                         }
                     });
@@ -771,6 +783,7 @@ public class MainActivity extends FragmentActivity {
             }
         });
     }
+
     public void logout() {
         OpenAccountService openAccountService = OpenAccountSDK.getService(OpenAccountService.class);
 
@@ -779,7 +792,7 @@ public class MainActivity extends FragmentActivity {
                 @Override
                 public void onSuccess() {
 //                    ToastUtil.show(getApplicationContext(), "登出成功");
-                    Log.e("logout","登出成功");
+                    Log.e("logout", "登出成功");
                     IoTCredentialManageImpl.getInstance(DemoApplication.getInstance()).clearIoTTokenInfo();
                     refreshLogin();
                 }
@@ -787,17 +800,18 @@ public class MainActivity extends FragmentActivity {
                 @Override
                 public void onFailure(int i, String s) {
 //                    ToastUtil.show(getApplicationContext(), "登出失败 : " + s);
-                    Log.e("logout","登出失败");
+                    Log.e("logout", "登出失败");
                     refreshLogin();
                 }
             });
         } catch (Exception e) {
             refreshLogin();
-            Log.e("logout","登出异常");
+            Log.e("logout", "登出异常");
 //            ToastUtil.show(getApplicationContext(), "登出异常 : " + e.toString());
         }
     }
-    Handler mH=new Handler(){
+
+    Handler mH = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
@@ -806,7 +820,7 @@ public class MainActivity extends FragmentActivity {
 
 
     public void setStatuTextColor(Activity activity, int color) {
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = activity.getWindow();
             //取消状态栏透明
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -816,13 +830,14 @@ public class MainActivity extends FragmentActivity {
             window.setStatusBarColor(color);
             //设置系统状态栏处于可见状态
             window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
-            if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 //设置状态栏文字颜色及图标为深色
                 window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
             }
         }
     }
-    public static void setFullScreenColor(int color,Activity activity){
+
+    public static void setFullScreenColor(int color, Activity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 //            // 设置状态栏透明
             activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -835,16 +850,18 @@ public class MainActivity extends FragmentActivity {
             ViewGroup rootView = (ViewGroup) ((ViewGroup) activity.findViewById(android.R.id.content)).getChildAt(0);
 //            rootView.setFitsSystemWindows(true);
 //            rootView.setClipToPadding(true);
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 try {
                     Class decorViewClazz = Class.forName("com.android.internal.policy.DecorView");
                     Field field = decorViewClazz.getDeclaredField("mSemiTransparentStatusBarColor");
                     field.setAccessible(true);
                     field.setInt(activity.getWindow().getDecorView(), Color.TRANSPARENT);  //改为透明
-                } catch (Exception e) {}
+                } catch (Exception e) {
+                }
             }
         }
     }
+
     void request(String path) {
         CloudPushService pushService = PushServiceFactory.getCloudPushService();
         String deviceId = pushService.getDeviceId();
@@ -865,12 +882,12 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onFailure(IoTRequest ioTRequest, Exception e) {
                 e.printStackTrace();
-                LogUtils.logE("binddevice","onfailure");
+                LogUtils.logE("binddevice", "onfailure");
             }
 
             @Override
             public void onResponse(IoTRequest ioTRequest, IoTResponse ioTResponse) {
-                LogUtils.logE("binddevice","onresponse");
+                LogUtils.logE("binddevice", "onresponse");
 
             }
         });

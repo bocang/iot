@@ -199,7 +199,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                 dialog.show();
 
                 break;
-            case R.id.rl_about:
+            case R.id.rl_about:// 关于
                 startActivity(new Intent(SettingActivity.this, AboutActivity.class));
                 break;
             case R.id.rl_clear_cache:
