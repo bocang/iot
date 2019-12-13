@@ -62,5 +62,9 @@
     <color name="tv_999999">#999999</color>
     <color name="tv_cccccc">#cccccc</color>
     <color name="blue_theme">#2f80ed</color>
+    <color name="c9D9D9D">#9d9d9d</color>
+    <color name="cF5AE1D">#F5AE1D</color>
+    <color name="cF3F3F3">#F3F3F3</color>
+    <color name="c131313">#131313</color>
     <!--长链接调试页面-ChannelActivity color end-->
 </resources>
