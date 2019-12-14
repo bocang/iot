@@ -159,5 +159,6 @@
     <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.10.5@aar" level="project" />
     <orderEntry type="module" module-name="linkvisualapi" />
     <orderEntry type="module" module-name="linkvisualapi" />
+    <orderEntry type="module" module-name="linkvisualapi" />
   </component>
 </module>

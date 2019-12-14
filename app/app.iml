@@ -100,8 +100,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex-instrumentation:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/GkleeProject/iot/app/libs/BaiduLBS_Android.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/GkleeProject/iot/app/libs/universalimageloader.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/bc.jh/iot/app/libs/BaiduLBS_Android.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/gamekonglee/Downloads/bc.jh/iot/app/libs/universalimageloader.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.aliyun.api.gateway:sdk-core-android:1.2.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.40@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp-urlconnection:3.12.1@jar" level="project" />
@@ -249,6 +249,10 @@
     <orderEntry type="library" name="Gradle: com.huawei.hms:network-grs:1.0.9.302@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.huawei.hms:network-common:1.0.9.302@aar" level="project" />
     <orderEntry type="library" name="Gradle: :AkHttp:@aar" level="project" />
+    <orderEntry type="module" module-name="linkvisualapi" />
+    <orderEntry type="module" module-name="ipcview" />
+    <orderEntry type="module" module-name="handygridview" />
+    <orderEntry type="module" module-name="swipelistviewlibrary" />
     <orderEntry type="module" module-name="linkvisualapi" />
     <orderEntry type="module" module-name="ipcview" />
     <orderEntry type="module" module-name="handygridview" />

@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-61:12
-MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/GkleeProject/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-61:12
+MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/bc.jh/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a6773f6690f8f8e29face2ef7487421e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/799ff7ec9a0a6314275251633d4574fc/AndroidManifest.xml:17:1-33:12
 MERGED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/AndroidManifest.xml:2:1-17:12
 MERGED from [com.aliyun.alink.linksdk:breeze-ota:1.2.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cc128b9134a95346b5e00fec28af1a7/AndroidManifest.xml:2:1-16:12
-MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/GkleeProject/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/bc.jh/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [com.yanzhenjie.alertdialog:alertdialog:1.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/811e91b28d915a022ef59a44dc662b11/AndroidManifest.xml:2:1-10:12
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:2:1-36:12
 MERGED from [com.aliyun.iot.link:uicomponent:0.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b300b4cfeaed700a583ac5859ecc281c/AndroidManifest.xml:2:1-13:12
@@ -32,7 +32,7 @@ MERGED from [com.aliyun.iot.sdk.external:react-native-svg:9.5.3] /Users/gamekong
 MERGED from [com.facebook.react:react-native:0.59.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/89141413ecb09ecb067692e50538e138/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/921acbd029c9cc60d909b304cea6a1f1/AndroidManifest.xml:2:1-11:12
-MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/04b38ad36f56c8688da6c9ac9d9fcecc/AndroidManifest.xml:2:1-11:12
+MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/55eca91362bd4704b42b785c874cd95e/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d1e06896fba62fd390ea9a552d6bf180/AndroidManifest.xml:17:1-39:12
 MERGED from [com.bigkoo:alertview:1.0.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ee9ae0ed3629a0c15bf972a48caf3b96/AndroidManifest.xml:2:1-11:12
 MERGED from [com.contrarywind:Android-PickerView:3.2.7] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/17ded6f195fa63a43878bdabbcb91f27/AndroidManifest.xml:2:1-11:12
@@ -59,7 +59,7 @@ MERGED from [com.aliyun.iot.aep.sdk:sdk-framework:0.0.4.4] /Users/gamekonglee/.g
 MERGED from [com.google.android:flexbox:0.3.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/891e4b6c9eac7bf1c01f9c3771ca8f80/AndroidManifest.xml:17:1-27:12
 MERGED from [com.aliyun.iot.aep.sdk:abus:0.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/935abb34cdaf11aff792dcbab9af1b35/AndroidManifest.xml:2:1-11:12
 MERGED from [com.huawei.hms:push:3.0.0.303] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/606570390785039114eddfe4ecdb3c5b/AndroidManifest.xml:2:1-60:12
-MERGED from [:handygridview] /Users/gamekonglee/Downloads/GkleeProject/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:handygridview] /Users/gamekonglee/Downloads/bc.jh/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a69754365fd4ecf2bcd3a10761d8c0c1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/01d9da562ee580f65911bfa32c43bbf4/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/31b9597cbd82a5a7c41b79d6b54bc9ef/AndroidManifest.xml:17:1-29:12
@@ -130,35 +130,35 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/gamekonglee/.gradle/ca
 MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8cc6a1b282f4f58b564ec8f49084fd32/AndroidManifest.xml:2:1-18:12
 MERGED from [com.huawei.hms:network-common:1.0.9.302] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/14700f7a660233ae51be63a9cea53810/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6344d9b82b04fc9fd8bfb41977384f1c/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
 	package
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:4:5-29
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:4:5-29
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:1-485:12
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:1-485:12
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:5:5-78
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:5:5-78
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:5:22-75
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:6:5-81
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:6:5-81
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:10:5-81
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:10:5-81
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/425af884e36336185695485bd20f9468/AndroidManifest.xml:14:5-81
@@ -182,11 +182,11 @@ MERGED from [com.huawei.hms:base:3.0.0.303] /Users/gamekonglee/.gradle/caches/tr
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:14:5-81
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:7:5-79
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:11:5-79
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:11:5-79
 MERGED from [com.aliyun.iot.aep.sdk:rncontainer:0.59.8.20190920] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d8c3e99803865c70c0519b29910cba19/AndroidManifest.xml:7:5-79
@@ -226,11 +226,11 @@ MERGED from [com.huawei.hms:base:3.0.0.303] /Users/gamekonglee/.gradle/caches/tr
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:12:5-79
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:8:5-76
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:8:5-76
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:12:5-76
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:12:5-76
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/425af884e36336185695485bd20f9468/AndroidManifest.xml:12:5-76
@@ -262,9 +262,9 @@ MERGED from [com.huawei.hms:base:3.0.0.303] /Users/gamekonglee/.gradle/caches/tr
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:13:5-76
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:8:22-73
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:9:5-75
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:9:5-75
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:13:5-75
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:13:5-75
 MERGED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.9] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/AndroidManifest.xml:16:5-75
@@ -282,9 +282,9 @@ MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exc
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:18:5-75
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:18:5-75
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:9:22-72
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:9:22-72
 uses-permission#android.permission.READ_SETTINGS
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:10:5-72
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:10:5-72
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:14:5-72
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:14:5-72
 MERGED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.9] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/AndroidManifest.xml:17:5-72
@@ -298,9 +298,9 @@ MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exc
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cdd7f171c4986a47757a84804a9ec29/AndroidManifest.xml:14:5-72
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cdd7f171c4986a47757a84804a9ec29/AndroidManifest.xml:14:5-72
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:10:22-69
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:10:22-69
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:11:5-73
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:11:5-73
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:15:5-73
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:15:5-73
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:16:5-73
@@ -314,9 +314,9 @@ MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekongle
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:12:5-73
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:12:5-73
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:11:22-70
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:11:22-70
 uses-permission#android.permission.INTERNET
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:12:5-67
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:12:5-67
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:16:5-67
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:16:5-67
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/425af884e36336185695485bd20f9468/AndroidManifest.xml:10:5-67
@@ -364,11 +364,11 @@ MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/ca
 MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8cc6a1b282f4f58b564ec8f49084fd32/AndroidManifest.xml:14:5-67
 MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8cc6a1b282f4f58b564ec8f49084fd32/AndroidManifest.xml:14:5-67
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:12:22-64
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:12:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:13:5-80
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:13:5-80
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:17:5-80
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:17:5-80
 MERGED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.9] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/AndroidManifest.xml:19:5-80
@@ -384,9 +384,9 @@ MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekongle
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:25:5-80
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:25:5-80
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:13:22-77
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:13:22-77
 uses-permission#android.permission.GET_TASKS
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:14:5-68
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:14:5-68
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:18:5-68
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:18:5-68
 MERGED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.9] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/AndroidManifest.xml:20:5-68
@@ -400,9 +400,9 @@ MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exc
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:20:5-68
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:20:5-68
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:14:22-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:14:22-65
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:15:5-68
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:15:5-68
 MERGED from [com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f3a61b3e2ae0ef9eb90ca254ca0664a2/AndroidManifest.xml:9:5-68
 MERGED from [com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f3a61b3e2ae0ef9eb90ca254ca0664a2/AndroidManifest.xml:9:5-68
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1e4c334a66af85153e63791a4ef0d80e/AndroidManifest.xml:18:5-68
@@ -414,17 +414,17 @@ MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /U
 MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f7e34c6d5a5058c03f3d65381cd9f2de/AndroidManifest.xml:18:5-68
 MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f7e34c6d5a5058c03f3d65381cd9f2de/AndroidManifest.xml:18:5-68
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:15:22-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:15:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:16:5-74
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:16:5-74
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1e4c334a66af85153e63791a4ef0d80e/AndroidManifest.xml:19:5-74
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1e4c334a66af85153e63791a4ef0d80e/AndroidManifest.xml:19:5-74
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:22:5-74
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:22:5-74
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:16:22-71
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:16:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:17:5-81
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:17:5-81
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1e4c334a66af85153e63791a4ef0d80e/AndroidManifest.xml:17:5-81
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1e4c334a66af85153e63791a4ef0d80e/AndroidManifest.xml:17:5-81
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:23:5-81
@@ -432,11 +432,11 @@ MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /U
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.6.8.5] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/fb0c5f009dde013d7fd301202884eb88/AndroidManifest.xml:21:5-81
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.6.8.5] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/fb0c5f009dde013d7fd301202884eb88/AndroidManifest.xml:21:5-81
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:17:22-78
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:17:22-78
 uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:18:5-86
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:18:5-86
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.6.0.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1311f8b7bc74ff6ed8b14fda3bac7a18/AndroidManifest.xml:15:5-86
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.6.0.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1311f8b7bc74ff6ed8b14fda3bac7a18/AndroidManifest.xml:15:5-86
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:24:5-86
@@ -448,9 +448,9 @@ MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekongle
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.5.0.4] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/98caa35698f853c9859074a0141e1716/AndroidManifest.xml:13:5-86
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.5.0.4] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/98caa35698f853c9859074a0141e1716/AndroidManifest.xml:13:5-86
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:18:22-83
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:18:22-83
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:19:5-76
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:19:5-76
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.6.0.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1311f8b7bc74ff6ed8b14fda3bac7a18/AndroidManifest.xml:16:5-76
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.6.0.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1311f8b7bc74ff6ed8b14fda3bac7a18/AndroidManifest.xml:16:5-76
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:25:5-76
@@ -462,9 +462,9 @@ MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekongle
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:15:5-76
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:15:5-76
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:19:22-73
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:19:22-73
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:20:5-79
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:20:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:26:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/8d9366a53b53993abf30d45eb98b7e2e/AndroidManifest.xml:26:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.6.8.5] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/fb0c5f009dde013d7fd301202884eb88/AndroidManifest.xml:19:5-79
@@ -472,9 +472,9 @@ MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.6.8.5] /Users/gamekong
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cdd7f171c4986a47757a84804a9ec29/AndroidManifest.xml:20:5-79
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cdd7f171c4986a47757a84804a9ec29/AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:20:22-76
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:20:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:24:5-95
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:24:5-95
 MERGED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.9] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/AndroidManifest.xml:21:5-79
 MERGED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.9] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/AndroidManifest.xml:21:5-79
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1e4c334a66af85153e63791a4ef0d80e/AndroidManifest.xml:16:5-79
@@ -484,33 +484,33 @@ MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.6.8.5] /Users/gamekong
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.5.0.4] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/98caa35698f853c9859074a0141e1716/AndroidManifest.xml:12:5-79
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.5.0.4] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/98caa35698f853c9859074a0141e1716/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:24:22-76
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:24:22-76
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:31:5-100
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:31:5-100
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/425af884e36336185695485bd20f9468/AndroidManifest.xml:13:5-84
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/425af884e36336185695485bd20f9468/AndroidManifest.xml:13:5-84
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:27:5-84
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.4.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b7009f0e99f407af36221760a66a7de7/AndroidManifest.xml:27:5-84
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:31:22-81
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:31:22-81
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:32:5-77
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:32:5-77
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:32:22-74
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:32:22-74
 application
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:35:5-483:19
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
-MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/GkleeProject/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
-MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/GkleeProject/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:35:5-483:19
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
+MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/bc.jh/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
+MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/bc.jh/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/799ff7ec9a0a6314275251633d4574fc/AndroidManifest.xml:24:5-31:19
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/799ff7ec9a0a6314275251633d4574fc/AndroidManifest.xml:24:5-31:19
 MERGED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/AndroidManifest.xml:11:5-15:19
 MERGED from [com.aliyun.alink.linksdk:breeze-ota:1.2.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cc128b9134a95346b5e00fec28af1a7/AndroidManifest.xml:11:5-14:19
 MERGED from [com.aliyun.alink.linksdk:breeze-ota:1.2.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cc128b9134a95346b5e00fec28af1a7/AndroidManifest.xml:11:5-14:19
-MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/GkleeProject/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/GkleeProject/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/bc.jh/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/bc.jh/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:20:5-34:19
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:20:5-34:19
 MERGED from [com.aliyun.iot.link:uicomponent:0.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/b300b4cfeaed700a583ac5859ecc281c/AndroidManifest.xml:11:5-20
@@ -533,8 +533,8 @@ MERGED from [com.facebook.react:react-native:0.59.10] /Users/gamekonglee/.gradle
 MERGED from [com.facebook.react:react-native:0.59.10] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/89141413ecb09ecb067692e50538e138/AndroidManifest.xml:11:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/921acbd029c9cc60d909b304cea6a1f1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/921acbd029c9cc60d909b304cea6a1f1/AndroidManifest.xml:9:5-20
-MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/04b38ad36f56c8688da6c9ac9d9fcecc/AndroidManifest.xml:9:5-20
-MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/04b38ad36f56c8688da6c9ac9d9fcecc/AndroidManifest.xml:9:5-20
+MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/55eca91362bd4704b42b785c874cd95e/AndroidManifest.xml:9:5-20
+MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/55eca91362bd4704b42b785c874cd95e/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d1e06896fba62fd390ea9a552d6bf180/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d1e06896fba62fd390ea9a552d6bf180/AndroidManifest.xml:22:5-37:19
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/01a4d37b812ed905d754cde473a42637/AndroidManifest.xml:14:5-15:19
@@ -559,8 +559,8 @@ MERGED from [com.pgyersdk:sdk:2.8.1] /Users/gamekonglee/.gradle/caches/transform
 MERGED from [com.pgyersdk:sdk:2.8.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/e1d220e793baf6ad959fbd3043fa7eb1/AndroidManifest.xml:13:5-14:19
 MERGED from [com.huawei.hms:push:3.0.0.303] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/606570390785039114eddfe4ecdb3c5b/AndroidManifest.xml:23:5-58:19
 MERGED from [com.huawei.hms:push:3.0.0.303] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/606570390785039114eddfe4ecdb3c5b/AndroidManifest.xml:23:5-58:19
-MERGED from [:handygridview] /Users/gamekonglee/Downloads/GkleeProject/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:handygridview] /Users/gamekonglee/Downloads/GkleeProject/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:handygridview] /Users/gamekonglee/Downloads/bc.jh/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:handygridview] /Users/gamekonglee/Downloads/bc.jh/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/31b9597cbd82a5a7c41b79d6b54bc9ef/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/31b9597cbd82a5a7c41b79d6b54bc9ef/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a81fd532ae4e00b6e7fc7142ce0c2e99/AndroidManifest.xml:7:5-20
@@ -608,12 +608,12 @@ MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.3] /Users/gamekongle
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:41:9-35
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:41:9-35
 	android:label
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:39:9-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:39:9-49
 		REJECTED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/AndroidManifest.xml:13:9-41
 		REJECTED from [com.aliyun.alink.linksdk:breeze-ota:1.2.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cc128b9134a95346b5e00fec28af1a7/AndroidManifest.xml:12:9-41
-		REJECTED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/GkleeProject/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-41
+		REJECTED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/bc.jh/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-41
 		REJECTED from [com.aliyun.alink.linksdk:public-tmp:1.6.0.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1311f8b7bc74ff6ed8b14fda3bac7a18/AndroidManifest.xml:19:18-50
 		REJECTED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f7e34c6d5a5058c03f3d65381cd9f2de/AndroidManifest.xml:24:9-41
 		REJECTED from [com.aliyun.alink.linksdk:android_alcs_lpbs:1.3.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f67d2b254e4946ec59afe8c8b4ad5f7d/AndroidManifest.xml:16:9-41
@@ -623,16 +623,16 @@ MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.3] /Users/gamekongle
 		REJECTED from [com.aliyun.ams:alicloud-android-third-push:3.0.5] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/3256f130113dd5b224656928f7c36bfc/AndroidManifest.xml:28:9-41
 		REJECTED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:19:9-41
 	android:debuggable
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:40:9-35
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:40:9-35
 	android:icon
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:38:9-40
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:38:9-40
 		REJECTED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cdd7f171c4986a47757a84804a9ec29/AndroidManifest.xml:25:9-43
 	android:allowBackup
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:37:9-36
-		REJECTED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-36
-		REJECTED from [:linkvisualapi] /Users/gamekonglee/Downloads/GkleeProject/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-36
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:37:9-36
+		REJECTED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-36
+		REJECTED from [:linkvisualapi] /Users/gamekonglee/Downloads/bc.jh/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-36
 		REJECTED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/AndroidManifest.xml:12:9-35
-		REJECTED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/GkleeProject/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-35
+		REJECTED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/bc.jh/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-35
 		REJECTED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:21:9-36
 		REJECTED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f7e34c6d5a5058c03f3d65381cd9f2de/AndroidManifest.xml:23:9-36
 		REJECTED from [com.aliyun.alink.linksdk:android_alcs_lpbs:1.3.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/f67d2b254e4946ec59afe8c8b4ad5f7d/AndroidManifest.xml:15:9-36
@@ -641,567 +641,567 @@ MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.3] /Users/gamekongle
 		REJECTED from [com.aliyun.ams:alicloud-android-third-push:3.0.5] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/3256f130113dd5b224656928f7c36bfc/AndroidManifest.xml:27:9-35
 		REJECTED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/9b0e456ad4fb1701078e3ce9baec22c6/AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:42:9-47
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:42:9-47
 	android:networkSecurityConfig
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:43:9-69
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:43:9-69
 	tools:replace
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:44:9-85
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:44:9-85
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:36:9-64
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:36:9-64
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:45:9-48:21
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:45:9-48:21
 	android:value
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:47:13-61
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:47:13-61
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:46:13-52
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:46:13-52
 meta-data#PGYER_APPID
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:50:9-53:21
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:50:9-53:21
 	android:value
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:52:13-61
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:52:13-61
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:51:13-39
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:51:13-39
 service#com.baidu.location.f
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:54:9-114
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:54:9-114
 	android:process
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:54:77-102
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:54:77-102
 	android:enabled
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:54:54-76
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:54:54-76
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:54:18-53
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:54:18-53
 activity#com.juhao.home.MainActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:55:9-57:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:55:9-57:20
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:55:19-47
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:55:19-47
 activity#com.juhao.home.MyLoginActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:58:9-61:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:58:9-61:20
 	android:theme
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:59:13-48
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:59:13-48
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:58:19-50
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:58:19-50
 activity#com.juhao.home.SplashActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:62:9-67:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:62:9-67:20
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:62:19-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:62:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:63:13-66:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:63:13-66:29
 action#android.intent.action.MAIN
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:64:13-65
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:64:13-65
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:64:21-62
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:64:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:65:13-73
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:65:13-73
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:65:23-70
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:65:23-70
 activity#com.juhao.home.LoginIndexActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:68:9-74:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:68:9-74:20
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:68:19-53
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:68:19-53
 activity#com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:97:9-113:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:97:9-113:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:101:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:101:13-49
 	android:launchMode
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:99:13-44
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:99:13-44
 	android:theme
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:100:13-44
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:100:13-44
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:98:13-79
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:98:13-79
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/ilopmain+data:scheme:http+data:scheme:https
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:102:13-112:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:102:13-112:29
 action#com.aliyun.iot.aep.demo.action.navigation
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:105:17-84
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:105:17-84
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:105:25-81
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:105:25-81
 category#android.intent.category.DEFAULT
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:106:17-76
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:106:17-76
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:106:27-73
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:106:27-73
 data
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:107:17-47
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:107:17-47
 	android:path
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:111:21-50
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:111:21-50
 	android:host
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:110:21-55
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:110:21-55
 	android:scheme
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:107:23-44
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:107:23-44
 activity#com.aliyun.iot.ilop.demo.page.ilopmain.AddDeviceActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:118:9-132:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:118:9-132:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:120:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:120:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:119:13-84
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:119:13-84
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/ilopadddevice+data:scheme:http+data:scheme:https
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:121:13-131:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:121:13-131:29
 activity#com.aliyun.iot.ilop.demo.page.ilopmain.BindAndUseActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:136:9-151:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:136:9-151:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:139:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:139:13-49
 	android:launchMode
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:138:13-44
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:138:13-44
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:137:13-85
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:137:13-85
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/ilopbinddevice+data:scheme:http+data:scheme:https
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:140:13-150:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:140:13-150:29
 	android:priority
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:140:28-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:140:28-49
 activity#com.aliyun.iot.ilop.demo.page.about.AboutActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:155:9-170:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:155:9-170:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:158:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:158:13-49
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:157:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:157:13-37
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:156:13-77
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:156:13-77
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/about+data:scheme:http+data:scheme:https
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:159:13-169:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:159:13-169:29
 	android:priority
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:159:28-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:159:28-49
 activity#com.aliyun.iot.ilop.demo.page.about.CopyrightActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:171:9-174:52
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:171:9-174:52
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:174:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:174:13-49
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:173:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:173:13-37
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:172:13-81
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:172:13-81
 activity#com.juhao.home.intelligence.DevicesControlActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:176:9-179:52
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:176:9-179:52
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:179:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:179:13-49
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:178:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:178:13-37
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:177:13-64
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:177:13-64
 activity#com.juhao.home.intelligence.CountDownListActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:180:9-182:52
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:180:9-182:52
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:182:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:182:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:181:13-63
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:181:13-63
 activity#com.juhao.home.intelligence.CountDownAddActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:183:9-185:52
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:183:9-185:52
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:185:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:185:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:184:13-62
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:184:13-62
 activity#com.juhao.home.ui.HomeMateListActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:186:9-188:52
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:186:9-188:52
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:188:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:188:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:187:13-52
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:187:13-52
 activity#com.juhao.home.ui.AboutActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:189:9-191:52
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:189:9-191:52
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:191:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:191:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:190:13-45
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:190:13-45
 activity#com.juhao.home.ui.NoticeActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:192:9-194:15
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:192:9-194:15
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:193:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:193:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:192:19-52
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:192:19-52
 activity#com.juhao.home.ui.TmActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:195:9-196:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:195:9-196:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:196:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:196:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:195:19-48
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:195:19-48
 activity#com.juhao.home.ui.RegisterAreaCodeActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:197:9-200:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:197:9-200:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:198:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:198:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:197:19-62
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:197:19-62
 activity#com.juhao.home.ui.AlexaActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:201:9-202:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:201:9-202:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:202:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:202:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:201:19-51
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:201:19-51
 activity#com.juhao.home.ui.AlexaDetailActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:203:9-204:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:203:9-204:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:204:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:204:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:203:19-57
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:203:19-57
 activity#com.juhao.home.suggestion.SuggestionHomeActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:205:9-206:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:205:9-206:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:206:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:206:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:205:19-68
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:205:19-68
 activity#com.juhao.home.suggestion.SuggestDeviceActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:207:9-208:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:207:9-208:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:208:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:208:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:207:19-67
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:207:19-67
 activity#com.donkingliang.imageselector.ImageSelectorActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:209:9-212:72
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:209:9-212:72
 	android:configChanges
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:211:13-74
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:211:13-74
 	android:theme
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:212:13-69
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:212:13-69
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:210:13-80
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:210:13-80
 activity#com.donkingliang.imageselector.PreviewActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:213:9-216:72
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:213:9-216:72
 	android:configChanges
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:215:13-74
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:215:13-74
 	android:theme
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:216:13-69
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:216:13-69
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:214:13-74
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:214:13-74
 activity#com.donkingliang.imageselector.ClipImageActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:217:9-219:72
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:217:9-219:72
 	android:theme
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:219:13-69
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:219:13-69
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:218:13-76
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:218:13-76
 activity#com.aliyun.iot.ilop.demo.page.apiclient.APIClientDemoActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:242:9-259:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:242:9-259:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:246:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:246:13-49
 	android:label
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:245:13-58
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:245:13-58
 	android:windowSoftInputMode
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:247:13-72
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:247:13-72
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:244:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:244:13-37
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:243:13-89
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:243:13-89
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/apiClient+data:scheme:http+data:scheme:https
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:248:13-258:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:248:13-258:29
 	android:priority
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:248:28-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:248:28-49
 activity#com.aliyun.iot.ilop.demo.page.apiclient.APIClientDemoResultActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:260:9-264:52
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:260:9-264:52
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:264:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:264:13-49
 	android:label
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:263:13-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:263:13-65
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:262:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:262:13-37
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:261:13-95
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:261:13-95
 activity#com.juhao.home.ui.SettingActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:265:9-267:15
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:265:9-267:15
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:266:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:266:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:265:19-53
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:265:19-53
 activity#com.juhao.home.scene.IotSceneActionAddActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:268:9-269:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:268:9-269:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:269:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:269:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:268:19-66
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:268:19-66
 activity#com.juhao.home.scene.IotSceneAddActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:270:9-272:45
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:270:9-272:45
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:271:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:271:13-49
 	android:launchMode
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:272:13-43
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:272:13-43
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:270:19-60
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:270:19-60
 activity#com.juhao.home.scene.IotSceneDeviceAddActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:273:9-274:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:273:9-274:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:274:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:274:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:273:19-66
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:273:19-66
 activity#com.juhao.home.ui.DeviceShareActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:275:9-276:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:275:9-276:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:276:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:276:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:275:19-57
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:275:19-57
 activity#com.juhao.home.ui.DeviceShareAddActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:277:9-278:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:277:9-278:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:278:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:278:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:277:19-60
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:277:19-60
 activity#com.juhao.home.ui.DeviceShareAddUserActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:279:9-280:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:279:9-280:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:280:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:280:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:279:19-64
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:279:19-64
 activity#com.juhao.home.scene.IotSceneFunctionDevSetActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:281:9-282:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:281:9-282:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:282:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:282:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:281:19-71
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:281:19-71
 activity#com.juhao.home.scene.CountDownActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:283:9-284:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:283:9-284:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:284:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:284:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:283:19-58
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:283:19-58
 activity#com.juhao.home.scene.IotAutoConditionActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:285:9-286:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:285:9-286:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:286:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:286:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:285:19-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:285:19-65
 activity#com.juhao.home.scene.IotAutoActionTimingActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:287:9-288:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:287:9-288:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:288:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:288:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:287:19-68
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:287:19-68
 activity#com.juhao.home.scene.IotAutoTriggerActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:289:9-290:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:289:9-290:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:290:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:290:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:289:19-63
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:289:19-63
 activity#com.juhao.home.scene.WeekDaySelectActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:291:9-292:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:291:9-292:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:292:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:292:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:291:19-62
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:291:19-62
 activity#com.juhao.home.scene.DragSortSceneActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:293:9-294:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:293:9-294:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:294:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:294:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:293:19-62
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:293:19-62
 activity#com.juhao.home.DragSortDevActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:295:9-296:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:295:9-296:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:296:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:296:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:295:19-54
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:295:19-54
 activity#com.juhao.home.ui.UserInfoActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:297:9-298:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:297:9-298:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:298:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:298:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:297:19-54
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:297:19-54
 activity#com.juhao.home.MyRegisterActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:299:9-300:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:299:9-300:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:300:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:300:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:299:19-53
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:299:19-53
 activity#com.juhao.home.suggestion.SuggestRecordActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:301:9-302:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:301:9-302:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:302:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:302:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:301:19-67
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:301:19-67
 activity#com.juhao.home.ui.LivingSettingImageAcitivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:303:9-304:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:303:9-304:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:304:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:304:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:303:19-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:303:19-65
 activity#com.juhao.home.ui.LivingSettingAlarmSetActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:305:9-306:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:305:9-306:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:306:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:306:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:305:19-67
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:305:19-67
 receiver#com.juhao.home.receiver.MyMessageReceiver
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:371:9-383:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:371:9-383:20
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:373:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:373:13-37
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:372:13-55
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:372:13-55
 intent-filter#action:name:com.alibaba.push2.action.NOTIFICATION_OPENED
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:374:13-376:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:374:13-376:29
 action#com.alibaba.push2.action.NOTIFICATION_OPENED
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:375:17-87
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:375:17-87
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:375:25-84
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:375:25-84
 intent-filter#action:name:com.alibaba.push2.action.NOTIFICATION_REMOVED
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:377:13-379:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:377:13-379:29
 action#com.alibaba.push2.action.NOTIFICATION_REMOVED
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:378:17-88
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:378:17-88
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:378:25-85
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:378:25-85
 intent-filter#action:name:com.alibaba.sdk.android.push.RECEIVE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:380:13-382:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:380:13-382:29
 action#com.alibaba.sdk.android.push.RECEIVE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:381:17-79
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:381:17-79
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:381:25-76
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:381:25-76
 activity#com.facebook.FacebookActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:385:9-388:48
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:385:9-388:48
 	android:label
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:388:13-45
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:388:13-45
 	android:configChanges
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:387:13-96
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:387:13-96
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:386:13-57
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:386:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:389:9-400:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:389:9-400:20
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:391:13-36
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:391:13-36
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:390:13-58
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:390:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:392:13-399:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:392:13-399:29
 action#android.intent.action.VIEW
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:393:17-69
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:393:17-69
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:393:25-66
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:393:25-66
 category#android.intent.category.BROWSABLE
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:396:17-78
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:396:17-78
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:396:27-75
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:396:27-75
 activity#com.juhao.home.ui.LivingPlayerActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:401:9-409:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:401:9-409:20
 	android:launchMode
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:402:13-43
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:402:13-43
 	android:configChanges
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:403:13-48
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:403:13-48
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:401:19-58
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:401:19-58
 activity#com.juhao.home.ui.ImageStoreActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:410:9-411:61
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:410:9-411:61
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:411:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:411:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:410:19-56
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:410:19-56
 activity#com.juhao.home.ui.VodplayerActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:412:9-413:61
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:412:9-413:61
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:413:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:413:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:412:19-55
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:412:19-55
 activity#com.juhao.home.ui.DeviceLockControlActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:414:9-421:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:414:9-421:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:415:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:415:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:414:19-63
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:414:19-63
 activity#com.juhao.home.ui.LockSettingActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:422:9-423:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:422:9-423:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:423:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:423:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:422:19-57
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:422:19-57
 activity#com.juhao.home.deviceBiz.WifiSelectActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:424:9-427:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:424:9-427:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:425:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:425:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:424:19-63
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:424:19-63
 activity#com.juhao.home.deviceBiz.AddDeviceTipsActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:428:9-431:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:428:9-431:20
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:429:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:429:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:428:19-66
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:428:19-66
 activity#com.juhao.home.deviceBiz.AddDeviceBizActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:432:9-433:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:432:9-433:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:433:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:433:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:432:19-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:432:19-65
 activity#com.juhao.home.ui.WebViewActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:434:9-435:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:434:9-435:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:435:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:435:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:434:19-53
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:434:19-53
 activity#com.juhao.home.scene.IotSceneActionAutoSelectActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:436:9-437:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:436:9-437:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:437:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:437:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:436:19-73
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:436:19-73
 activity#com.juhao.home.ui.LivingSettingActivity
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:438:9-439:51
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:438:9-439:51
 	android:screenOrientation
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:439:13-49
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:439:13-49
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:438:19-59
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:438:19-59
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:440:9-441:54
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:440:9-441:54
 	android:value
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:441:13-52
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:441:13-52
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:440:20-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:440:20-65
 service#com.service.YourHmsMessageService
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:444:9-450:19
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:444:9-450:19
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:446:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:446:13-37
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:445:13-61
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:445:13-61
 intent-filter#action:name:com.huawei.push.action.MESSAGING_EVENT
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:447:13-449:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:447:13-449:29
 action#com.huawei.push.action.MESSAGING_EVENT
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:448:17-81
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:448:17-81
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:448:25-78
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:448:25-78
 service#com.huawei.hms.support.api.push.service.HmsMsgService
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:451:9-460:19
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:451:9-460:19
 	android:process
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:455:13-43
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:455:13-43
 	android:enabled
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:453:13-35
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:453:13-35
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:454:13-36
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:454:13-36
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:452:13-81
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:452:13-81
 intent-filter#action:name:com.huawei.push.msg.NOTIFY_MSG+action:name:com.huawei.push.msg.PASSBY_MSG
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:456:13-459:29
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:456:13-459:29
 action#com.huawei.push.msg.NOTIFY_MSG
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:457:17-73
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:457:17-73
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:457:25-70
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:457:25-70
 action#com.huawei.push.msg.PASSBY_MSG
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:458:17-73
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:458:17-73
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:458:25-70
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:458:25-70
 provider#com.huawei.hms.update.provider.UpdateProvider
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:462:9-467:16
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:462:9-467:16
 	android:grantUriPermissions
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:466:9-43
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:466:9-43
 	android:authorities
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:464:9-65
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:464:9-65
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:465:9-33
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:465:9-33
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:463:13-73
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:463:13-73
 provider#androidx.core.content.FileProvider
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:468:9-481:20
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:468:9-481:20
 	android:grantUriPermissions
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:473:13-47
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:473:13-47
 	android:authorities
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:470:13-62
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:470:13-62
 	android:exported
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:471:13-37
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:471:13-37
 	tools:replace
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:472:13-48
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:472:13-48
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:469:13-62
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:469:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:476:13-480:54
+ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:476:13-480:54
 	android:resource
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:480:17-51
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:480:17-51
 	tools:replace
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:477:17-46
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:477:17-46
 	android:value
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:478:17-33
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:478:17-33
 	android:name
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml:479:17-67
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml:479:17-67
 uses-sdk
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/GkleeProject/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/GkleeProject/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/bc.jh/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:linkvisualapi] /Users/gamekonglee/Downloads/bc.jh/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a6773f6690f8f8e29face2ef7487421e/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a6773f6690f8f8e29face2ef7487421e/AndroidManifest.xml:20:5-43
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/799ff7ec9a0a6314275251633d4574fc/AndroidManifest.xml:20:5-22:41
@@ -1210,8 +1210,8 @@ MERGED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/gamekonglee/.gr
 MERGED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aliyun.alink.linksdk:breeze-ota:1.2.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cc128b9134a95346b5e00fec28af1a7/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aliyun.alink.linksdk:breeze-ota:1.2.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1cc128b9134a95346b5e00fec28af1a7/AndroidManifest.xml:7:5-9:41
-MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/GkleeProject/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/GkleeProject/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/bc.jh/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:swipelistviewlibrary] /Users/gamekonglee/Downloads/bc.jh/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.yanzhenjie.alertdialog:alertdialog:1.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/811e91b28d915a022ef59a44dc662b11/AndroidManifest.xml:6:5-8:41
 MERGED from [com.yanzhenjie.alertdialog:alertdialog:1.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/811e91b28d915a022ef59a44dc662b11/AndroidManifest.xml:6:5-8:41
 MERGED from [com.aliyun.iot.aep.page:rn:0.1.8] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/988c72b266a28e4c55b4b2f58e2f2806/AndroidManifest.xml:6:5-8:41
@@ -1250,8 +1250,8 @@ MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/gamekonglee/.gradle/cach
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/921acbd029c9cc60d909b304cea6a1f1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/921acbd029c9cc60d909b304cea6a1f1/AndroidManifest.xml:5:5-7:41
-MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/04b38ad36f56c8688da6c9ac9d9fcecc/AndroidManifest.xml:7:5-43
-MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/04b38ad36f56c8688da6c9ac9d9fcecc/AndroidManifest.xml:7:5-43
+MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/55eca91362bd4704b42b785c874cd95e/AndroidManifest.xml:7:5-43
+MERGED from [:AkHttp:] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/55eca91362bd4704b42b785c874cd95e/AndroidManifest.xml:7:5-43
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d1e06896fba62fd390ea9a552d6bf180/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d1e06896fba62fd390ea9a552d6bf180/AndroidManifest.xml:20:5-44
 MERGED from [com.bigkoo:alertview:1.0.3] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ee9ae0ed3629a0c15bf972a48caf3b96/AndroidManifest.xml:7:5-9:41
@@ -1298,8 +1298,8 @@ MERGED from [com.aliyun.iot.aep.sdk:abus:0.0.1] /Users/gamekonglee/.gradle/cache
 MERGED from [com.aliyun.iot.aep.sdk:abus:0.0.1] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/935abb34cdaf11aff792dcbab9af1b35/AndroidManifest.xml:7:5-9:41
 MERGED from [com.huawei.hms:push:3.0.0.303] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/606570390785039114eddfe4ecdb3c5b/AndroidManifest.xml:5:5-7:41
 MERGED from [com.huawei.hms:push:3.0.0.303] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/606570390785039114eddfe4ecdb3c5b/AndroidManifest.xml:5:5-7:41
-MERGED from [:handygridview] /Users/gamekonglee/Downloads/GkleeProject/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:handygridview] /Users/gamekonglee/Downloads/GkleeProject/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:handygridview] /Users/gamekonglee/Downloads/bc.jh/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:handygridview] /Users/gamekonglee/Downloads/bc.jh/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a69754365fd4ecf2bcd3a10761d8c0c1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a69754365fd4ecf2bcd3a10761d8c0c1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/01d9da562ee580f65911bfa32c43bbf4/AndroidManifest.xml:5:5-44
@@ -1436,74 +1436,74 @@ MERGED from [com.huawei.hms:network-common:1.0.9.302] /Users/gamekonglee/.gradle
 MERGED from [com.huawei.hms:network-common:1.0.9.302] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/14700f7a660233ae51be63a9cea53810/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6344d9b82b04fc9fd8bfb41977384f1c/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6344d9b82b04fc9fd8bfb41977384f1c/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.9] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/AndroidManifest.xml:11:9-303
 	android:targetSdkVersion
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gamekonglee/Downloads/GkleeProject/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/AndroidManifest.xml
 activity#com.aliyun.iot.demo.ipcview.activity.NewCardVideoActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-34:77
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-34:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-74
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-74
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-85
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-85
 activity#com.aliyun.iot.demo.ipcview.activity.NewEventVideoActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:9-37:77
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:9-37:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-74
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-74
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-86
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-86
 activity#com.aliyun.iot.demo.ipcview.activity.IPCameraActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-42:46
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-42:46
 	android:launchMode
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-43
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-43
 	android:exported
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-36
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-36
 	android:configChanges
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-74
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-74
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-81
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-81
 activity#com.aliyun.iot.demo.ipcview.activity.CardVideoActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:77
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-74
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-74
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-82
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-82
 activity#com.aliyun.iot.demo.ipcview.activity.EventVideoActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:9-48:77
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:9-48:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:13-74
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:13-74
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-83
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-83
 activity#com.aliyun.iot.demo.ipcview.activity.SettingsActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:9-51:52
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:9-51:52
 	android:theme
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:13-49
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:13-49
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:50:13-81
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:50:13-81
 activity#com.aliyun.iot.demo.ipcview.activity.EasyPlanSettingsActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:9-98
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:9-98
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:19-95
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:19-95
 activity#com.aliyun.iot.demo.ipcview.activity.PictureTestActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:9-55:46
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:9-55:46
 	android:theme
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:55:13-43
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:55:13-43
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:54:13-84
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:54:13-84
 activity#com.aliyun.iot.demo.ipcview.activity.MultiPlayerActivity
-ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:56:9-58:77
+ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:56:9-58:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:58:13-74
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:58:13-74
 	android:name
-		ADDED from [:ipcview] /Users/gamekonglee/Downloads/GkleeProject/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:57:13-84
+		ADDED from [:ipcview] /Users/gamekonglee/Downloads/bc.jh/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:57:13-84
 activity#com.yanzhenjie.permission.PermissionActivity
 ADDED from [com.yanzhenjie:permission:1.1.0] /Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/799ff7ec9a0a6314275251633d4574fc/AndroidManifest.xml:25:9-30:75
 	android:launchMode

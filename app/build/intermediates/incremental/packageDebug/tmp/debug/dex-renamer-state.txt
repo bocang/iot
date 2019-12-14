@@ -1,7 +1,7 @@
-#Thu Dec 12 18:04:58 CST 2019
-base.2=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/2
-base.1=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/1
-base.0=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/0
+#Sat Dec 14 10:15:42 CST 2019
+base.2=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/2
+base.1=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/1
+base.0=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/0
 path.9=classes.dex
 path.8=classes.dex
 path.7=classes.dex
@@ -25,13 +25,13 @@ renamed.0=classes.dex
 renamed.11=classes12.dex
 renamed.10=classes11.dex
 path.11=classes2.dex
-base.11=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/1
+base.11=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/1
 path.10=classes2.dex
-base.10=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/0
-base.9=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/9
-base.8=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/8
-base.7=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/7
-base.6=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/6
-base.5=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/5
-base.4=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/4
-base.3=/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/transforms/dexMerger/debug/3
+base.10=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/0
+base.9=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/9
+base.8=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/8
+base.7=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/7
+base.6=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/6
+base.5=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/5
+base.4=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/4
+base.3=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/3

@@ -37,6 +37,7 @@ import com.aliyun.alink.linksdk.tmp.api.TmpInitConfig;
 import com.aliyun.alink.linksdk.tmp.extbone.BoneSubDeviceService;
 import com.aliyun.alink.linksdk.tmp.extbone.BoneThing;
 import com.aliyun.alink.linksdk.tmp.extbone.BoneThingDiscovery;
+import com.aliyun.alink.linksdk.tmp.service.TmpUTPointEx;
 import com.aliyun.alink.linksdk.tools.ThreadTools;
 import com.aliyun.alink.page.rn.InitializationHelper;
 import com.aliyun.alink.sdk.bone.plugins.BaseBoneServiceFactory;
@@ -528,6 +529,7 @@ public class DemoApplication extends BaseApplication {
         });
 
         TmpSdk.init(getBaseContext(), new TmpInitConfig(TmpInitConfig.ONLINE));
+
         TmpSdk.getDeviceManager().discoverDevices(null,5000,null);
     }
 

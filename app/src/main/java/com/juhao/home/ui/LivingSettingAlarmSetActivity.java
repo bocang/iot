@@ -1,5 +1,6 @@
 package com.juhao.home.ui;
 
+import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.BaseActivity;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyun.alink.linksdk.tmp.device.panel.listener.IPanelCallback;
+import com.aliyun.iot.demo.ipcview.activity.EasyPlanSettingsActivity;
 import com.aliyun.iot.demo.ipcview.constants.Constants;
 import com.aliyun.iot.demo.ipcview.manager.SettingsCtrl;
 import com.aliyun.iot.demo.ipcview.manager.SharePreferenceManager;
@@ -39,6 +41,7 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
     private String[] arrayValue;
     private String categoryName;
     private String value;
+    private int currentSensitivity;
 
     @Override
     protected void InitDataView() {
@@ -117,24 +120,26 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
                                         runOnUiThread(new Runnable() {
                                             @Override
                                             public void run() {
+                                                currentSensitivity = finalIntValue1;
+                                                String[] array=getResources().getStringArray(R.array.MotionDetectSensitivity);
                                                 switch (finalIntValue1){
                                                     case 0:
-                                                        tv_sensitivity.setText(getString(R.string.str_close));
+                                                        tv_sensitivity.setText(array[0]);
                                                         break;
                                                     case 1:
-                                                        tv_sensitivity.setText(getString(R.string.str_the_lowest));
+                                                        tv_sensitivity.setText(array[1]);
                                                         break;
                                                     case 2:
-                                                        tv_sensitivity.setText(getString(R.string.str_low));
+                                                        tv_sensitivity.setText(array[2]);
                                                         break;
                                                     case 3:
-                                                        tv_sensitivity.setText(getString(R.string.str_mid));
+                                                        tv_sensitivity.setText(array[3]);
                                                         break;
                                                     case 4:
-                                                        tv_sensitivity.setText(getString(R.string.str_high));
+                                                        tv_sensitivity.setText(array[4]);
                                                         break;
                                                     case 5:
-                                                        tv_sensitivity.setText(getString(R.string.str_the_highest));
+                                                        tv_sensitivity.setText(array[5]);
                                                         break;
                                                 }
                                             }
@@ -220,7 +225,9 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
                     setAddressSelectorPopup(v);
                     break;
                 case R.id.rl_alarm_period:
-
+                    Intent intent = new Intent(this, EasyPlanSettingsActivity.class);
+                    intent.putExtra("iotId", iotId);
+                    startActivity(intent);
                     break;
             }
     }
@@ -255,15 +262,16 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
 
                 // 设置数据，默认选择第一条
                 addressSelector.setData(datasBeanList);
-                addressSelector.setSelected(0);
-                categoryName=datasBeanList.get(0).getCategoryName();
-                value=datasBeanList.get(0).getState();
+                addressSelector.setSelected(currentSensitivity);
+                categoryName=datasBeanList.get(currentSensitivity).getCategoryName();
+                value=datasBeanList.get(currentSensitivity).getState();
                 //滚动监听
                 addressSelector.setOnSelectListener(new PickerScrollView.onSelectListener() {
                     @Override
                     public void onSelect(GetConfigReq.DatasBean pickers) {
                         categoryName = pickers.getCategoryName();
                         value = pickers.getState();
+                        currentSensitivity=datasBeanList.indexOf(pickers);
                     }
                 });
 
@@ -279,6 +287,11 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
                         if(current==0){
                             tv_sensitivity.setText(categoryName);
                             key=Constants.MOTION_DETECT_SENSITIVITY_MODEL_NAME;
+                            if(!value.equals("0")){
+                                param.put(Constants.ALARM_SWITCH_MODEL_NAME,1);
+                            }else {
+                                param.put(Constants.ALARM_SWITCH_MODEL_NAME,0);
+                            }
                         }else {
                             tv_report_frequency.setText(categoryName);
                             key = Constants.ALARM_FREQUENCY_LEVEL_MODEL_NAME;

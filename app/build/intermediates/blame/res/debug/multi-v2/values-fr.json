@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gamekonglee/Downloads/GkleeProject/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
+            "outputFile": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/36e605575643f239b8b0af42888ea295/res/values-fr/values.xml",

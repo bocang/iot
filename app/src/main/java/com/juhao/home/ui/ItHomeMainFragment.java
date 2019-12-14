@@ -44,6 +44,8 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.BaseFragment;
+import com.aliyun.alink.linksdk.tmp.TmpSdk;
+import com.aliyun.alink.linksdk.tmp.api.TmpInitConfig;
 import com.aliyun.iot.aep.component.router.Router;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClient;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClientFactory;
@@ -906,7 +908,6 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 //                .setAuthType("iotAuth")
 //                .setParams(maps);
         IoTRequest request = builder.build();
-
         IoTAPIClient ioTAPIClient = new IoTAPIClientFactory().getClient();
         ioTAPIClient.send(request, new IoTCallback() {
             @Override

@@ -57,7 +57,7 @@ public class NoticeActivity extends BaseActivity implements View.OnClickListener
 
     @Override
     protected void InitDataView() {
-        getMessageRecord();
+        getMessageRecord2();
     }
 
     private void getMessageRecord() {
@@ -173,7 +173,7 @@ public class NoticeActivity extends BaseActivity implements View.OnClickListener
         lv_devices.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
-                if(position==1) {
+                if(position==0) {
                     if (shareDeviceBeanList.get(i).getStatus() == -1) {
                         if(shareDeviceBeanList.get(i).getIsReceiver()!=0) {
                             UIUtils.showSingleWordDialog(NoticeActivity.this, getString(R.string.str_agree_share), new View.OnClickListener() {
@@ -268,7 +268,7 @@ public class NoticeActivity extends BaseActivity implements View.OnClickListener
             case R.id.tv_device:
                 position=0;
                 messageType="share";
-                getMessageRecord();
+                getMessageRecord2();
                 break;
             case R.id.tv_share:
                 position=1;
@@ -363,7 +363,7 @@ public class NoticeActivity extends BaseActivity implements View.OnClickListener
     public void onRefresh() {
         page=1;
         shareDeviceBeanList=new ArrayList<>();
-        if(position==1){
+        if(position==0){
             getMessageRecord2();
         }else {
             getMessageRecord();

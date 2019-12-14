@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.aliyun.alink.linksdk.tmp.device.panel.listener.IPanelCallback;
 import com.aliyun.iot.aep.sdk.apiclient.callback.IoTCallback;
 import com.aliyun.iot.aep.sdk.apiclient.callback.IoTResponse;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequest;
@@ -25,6 +26,7 @@ import com.aliyun.iot.demo.ipcview.beans.TimeSectionForPlan;
 import com.aliyun.iot.demo.ipcview.dialog.TimeSettingDialog;
 import com.aliyun.iotx.linkvisual.IPCManager;
 import com.aliyun.iotx.linkvisual.linkvisualapi.bean.TimeSection;
+import com.http.utils.LogUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -184,6 +186,34 @@ public class EasyPlanSettingsActivity extends Activity {
      * 查询绑定到设备的事件录像计划
      */
     private void getEventPlan() {
+        IPCManager.getInstance().getDevice(iotId).getProperties(new IPanelCallback() {
+            @Override
+            public void onComplete(boolean b, Object o) {
+                if (b) {
+                    if (o != null && !"".equals(String.valueOf(o))) {
+                        JSONObject jsonObject = JSONObject.parseObject(String.valueOf(o));
+                        if (jsonObject.containsKey("code")) {
+                            int code = jsonObject.getInteger("code");
+                            if (code != 200) {
+                                return;
+                            }
+                        }
+                        if (jsonObject.containsKey("data")) {
+                            try {
+                                JSONObject data = jsonObject.getJSONObject("data");
+                                JSONObject tmp;
+                                boolean booleanValue;
+                                int intValue;
+                                float floatValue;
+                                LogUtils.print("eventPlan",data.toJSONString());
+                            }catch (Exception e){
+
+                            }
+                        }
+                    }
+                }
+            }
+        });
         IPCManager.getInstance().getDevice(iotId)
                 .getEventRecordPlan2Dev(0, new IoTCallback() {
                     @Override
@@ -299,7 +329,6 @@ public class EasyPlanSettingsActivity extends Activity {
                             Log.e(TAG, "updateTimeTemplate   onFailure    e:" + e.toString());
                             showToast(getResources().getString(R.string.ipc_plan_set_err_info) + e.toString());
                         }
-
                         @Override
                         public void onResponse(IoTRequest ioTRequest, IoTResponse ioTResponse) {
                             Log.d(TAG,

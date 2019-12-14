@@ -22,7 +22,7 @@ import java.util.Map;
  */
 public class LinkVisualAPI {
 
-    private String version = "";
+    private String version = "1.0.2";
 
     private LinkVisualAPI() {
     }
