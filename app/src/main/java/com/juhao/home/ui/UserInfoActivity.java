@@ -24,6 +24,7 @@ import com.aliyun.iot.ilop.demo.DemoApplication;
 import com.juhao.home.IssApplication;
 import com.juhao.home.R;
 import com.juhao.home.scene.IotSceneAddActivity;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.util.Constance;
 import com.util.FileUtil;
 import com.util.ImageUtil;
@@ -38,6 +39,9 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * 个人中心-->个人资料
+ */
 public class UserInfoActivity extends BaseActivity implements View.OnClickListener {
 
     private View rl_head;
@@ -49,14 +53,15 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
     private TextView tv_account;
     private TextView tv_timezone;
     private String imageURL;
+    private UserInfo userInfo;
 
     @Override
     protected void InitDataView() {
-        UserInfo userInfo= LoginBusiness.getUserInfo();
-        if(userInfo!=null){
-            String nick=userInfo.userNick;
-            if(!TextUtils.isEmpty(nick)){
-
+        userInfo = LoginBusiness.getUserInfo();
+        if (userInfo != null) {
+            if (!TextUtils.isEmpty(userInfo.userId)) {
+                ImageLoader.getInstance().displayImage(userInfo.userAvatarUrl, iv_head);
+                tv_nickname.setText(userInfo.userNick);
             }
         }
     }
@@ -68,7 +73,7 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     protected void initView() {
-    setContentView(R.layout.activity_user_info);
+        setContentView(R.layout.activity_user_info);
         rl_head = findViewById(R.id.rl_head);
         rl_nickname = findViewById(R.id.rl_nickname);
         rl_account = findViewById(R.id.rl_account);
@@ -92,73 +97,78 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-    switch (view.getId()){
-        case R.id.rl_head:
-            setHead();
-            break;
-        case R.id.rl_nickname:
-            final Dialog dialog=new Dialog(this,R.style.customDialog);
-            dialog.setContentView(R.layout.dialog_name_input);
-            final EditText et_name=dialog.findViewById(R.id.et_name);
-            TextView tv_cancel=dialog.findViewById(R.id.tv_cancel);
-            TextView tv_ensure=dialog.findViewById(R.id.tv_ensure);
-            TextView tv_title=dialog.findViewById(R.id.tv_title);
-            tv_title.setText(getString(R.string.str_nickname_edit));
-            tv_cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    dialog.dismiss();
-                }
-            });
-            tv_ensure.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    String name=et_name.getText().toString();
-                    if(TextUtils.isEmpty(name)){
-                        MyToast.show(UserInfoActivity.this,getString(R.string.str_not_empty));
-                        return;
+        switch (view.getId()) {
+            case R.id.rl_head:// 头像
+                setHead();
+                break;
+            case R.id.rl_nickname:// 昵称
+                final Dialog dialog = new Dialog(this, R.style.customDialog);
+                dialog.setContentView(R.layout.dialog_name_input);
+                final EditText et_name = dialog.findViewById(R.id.et_name);
+                TextView tv_cancel = dialog.findViewById(R.id.tv_cancel);
+                TextView tv_ensure = dialog.findViewById(R.id.tv_ensure);
+                TextView tv_title = dialog.findViewById(R.id.tv_title);
+                tv_title.setText(getString(R.string.str_nickname_edit));
+                tv_cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
                     }
-                    tv_nickname.setText(name);
-                    dialog.dismiss();
-                    Map<String, Object> map = new LinkedHashMap<>();
-                    map.put("displayName", name);
-                    OpenAccountUIService oas = OpenAccountSDK.getService(OpenAccountUIService.class);
-                    oas.updateProfile(getApplicationContext(), map, new LoginCallback() {
-                        @Override
-                        public void onSuccess(OpenAccountSession openAccountSession) {
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    MyToast.show(UserInfoActivity.this,getString(R.string.str_update_success));
-                                }
-                            });
+                });
+                tv_ensure.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String name = et_name.getText().toString();
+                        if (TextUtils.isEmpty(name)) {
+                            MyToast.show(UserInfoActivity.this, getString(R.string.str_not_empty));
+                            return;
                         }
+                        tv_nickname.setText(name);
+                        dialog.dismiss();
+                        Map<String, Object> map = new LinkedHashMap<>();
+                        map.put("displayName", name);
+                        OpenAccountUIService oas = OpenAccountSDK.getService(OpenAccountUIService.class);
+                        oas.updateProfile(getApplicationContext(), map, new LoginCallback() {
+                            @Override
+                            public void onSuccess(OpenAccountSession openAccountSession) {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        MyToast.show(UserInfoActivity.this, getString(R.string.str_update_success));
+                                    }
+                                });
+                            }
 
-                        @Override
-                        public void onFailure(int i, String s) {
-                        }
-                    });
+                            @Override
+                            public void onFailure(int i, String s) {
+                            }
+                        });
+                    }
+                });
+                String nickname = tv_nickname.getText().toString();
+                if (!TextUtils.isEmpty(nickname)) {
+                    et_name.setText(tv_nickname.getText().toString());
                 }
-            });
-            String nickname=tv_nickname.getText().toString();
-            if(!TextUtils.isEmpty(nickname)){
-            et_name.setText(tv_nickname.getText().toString());
-            }
-            dialog.show();
+                dialog.show();
 
-            break;
-        case R.id.rl_account:
-            break;
-        case R.id.rl_timezone:
-            break;
+                break;
+            case R.id.rl_account:// 账号安全
+                mBundle.putString("user_phone", userInfo.userPhone);
+                mBundle.putString("user_location_code", userInfo.mobileLocationCode);
+                intent2Activity(AccountActivity.class, mBundle);
+                break;
+            case R.id.rl_timezone:// 时区
 
-    }
+                break;
+
+        }
     }
 
     /**
      * 头像
      */
     private CameraUtil camera;
+
     public void setHead() {
 
         FileUtil.openImage(this);
@@ -172,10 +182,10 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
 
                 @Override
                 public void onCameraPickSuccess(String path) {
-                    Uri uri ;
-                    if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N){
-                        uri= FileProvider.getUriForFile(UserInfoActivity.this, "com.juhao.home.fileprovider", new File(path));
-                    }else {
+                    Uri uri;
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                        uri = FileProvider.getUriForFile(UserInfoActivity.this, "com.juhao.home.fileprovider", new File(path));
+                    } else {
                         uri = Uri.parse("file://" + path);
                     }
                     camera.cropImageUri(uri, 1, 1, 256);
@@ -185,9 +195,9 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
                 public void onCameraCutSuccess(final String uri) {
                     File file = new File(uri);
                     Uri uriTemp;
-                    if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N){
-                        uriTemp= FileProvider.getUriForFile(UserInfoActivity.this, "com.juhao.home.fileprovider", new File(uri));
-                    }else {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                        uriTemp = FileProvider.getUriForFile(UserInfoActivity.this, "com.juhao.home.fileprovider", new File(uri));
+                    } else {
                         uriTemp = Uri.parse("file://" + uri);
                     }
                     iv_head.setImageURI(uriTemp);
@@ -203,13 +213,13 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Map<String,String> map=new HashMap<>();
+                Map<String, String> map = new HashMap<>();
                 final String resultJson = NetWorkUtils.uploadFile(ImageUtil.drawable2Bitmap(iv_head.getDrawable()), NetWorkConst.UPLOADAVATAR, map, uri);
                 //                            //分享的操作
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        LogUtils.logE("result",resultJson+"");
+                        LogUtils.logE("result", resultJson + "");
                         Map<String, Object> map = new LinkedHashMap<>();
                         map.put("avatarUrl", resultJson);
                         OpenAccountUIService oas = OpenAccountSDK.getService(OpenAccountUIService.class);
@@ -219,7 +229,7 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        MyToast.show(UserInfoActivity.this,getString(R.string.str_upload_success));
+                                        MyToast.show(UserInfoActivity.this, getString(R.string.str_upload_success));
                                     }
                                 });
                             }
@@ -235,6 +245,7 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
             }
         }).start();
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -260,13 +271,13 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
                     upLoad(imageURL.toString());
                     break;
                 case Constance.FLAG_UPLOAD_IMAGE_CUT:
-                    final Uri uri=data.getData();
+                    final Uri uri = data.getData();
                     iv_head.setImageURI(uri);
                     upLoad(uri.toString());
                     break;
             }
-        }else if(requestCode== Constance.FLAG_UPLOAD_IMAGE_CUT){
-            final Uri uri=data.getData();
+        } else if (requestCode == Constance.FLAG_UPLOAD_IMAGE_CUT) {
+            final Uri uri = data.getData();
             iv_head.setImageURI(uri);
             upLoad(uri.toString());
         }

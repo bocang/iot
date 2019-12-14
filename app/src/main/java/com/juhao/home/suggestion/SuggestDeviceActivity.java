@@ -84,8 +84,10 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
     private QuickAdapter<AccountDevDTO> adapter;
     private List<AccountDevDTO> accountDevDTOS;
     private AccountDevDTO currentDev;
-    private int type=1;
+    private int type = 1;
     private String path;
+
+    private TextView tv_suggest_type;
 
     @Override
     protected void InitDataView() {
@@ -107,6 +109,21 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
         et_mobile = findViewById(R.id.et_mobile);
         btn_submit = findViewById(R.id.btn_submit);
         ll_img = findViewById(R.id.ll_img);
+        tv_suggest_type = findViewById(R.id.tv_suggest_type);
+        switch (type) {
+            case 1:// 设备反馈
+                tv_suggest_type.setText("设备反馈");
+                break;
+            case 2:// 反馈故障
+                tv_suggest_type.setText("反馈故障");
+                break;
+            case 3:// 功能建议
+                tv_suggest_type.setText("功能建议");
+                break;
+            case 4:// 其他问题
+                tv_suggest_type.setText("其他问题");
+                break;
+        }
         tv_add_img.setOnClickListener(this);
         tv_device_select.setOnClickListener(this);
         btn_submit.setOnClickListener(this);
@@ -146,15 +163,16 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
 
     private void checkBtnEnable() {
         btn_submit.setEnabled(false);
-        if(currentDev==null||currentDev.getProductKey()==null||currentDev.getIotId()==null){
+        tv_input_count.setText(et_suggestion.getText().toString().length()+"/200");
+        if (currentDev == null || currentDev.getProductKey() == null || currentDev.getIotId() == null) {
             return;
         }
-        String content=et_suggestion.getText().toString();
-        if(TextUtils.isEmpty(content)){
+        String content = et_suggestion.getText().toString();
+        if (TextUtils.isEmpty(content)) {
             return;
         }
-        String  contact=et_mobile.getText().toString();
-        if(TextUtils.isEmpty(contact)){
+        String contact = et_mobile.getText().toString();
+        if (TextUtils.isEmpty(contact)) {
             return;
         }
         btn_submit.setEnabled(true);
@@ -162,32 +180,32 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
 
     @Override
     protected void initData() {
-        type=getIntent().getIntExtra(Constance.type,1);
+        type = getBundle().getInt(Constance.type, 1);
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.tv_add_img:
                 addImg();
                 break;
             case R.id.tv_device_select:
-                final Dialog dialog=UIUtils.showBottomInDialog(this,R.layout.dialog_device_select,UIUtils.dip2PX(375));
-                GridView gv_device=dialog.findViewById(R.id.gv_device);
-                adapter = new QuickAdapter<AccountDevDTO>(this,R.layout.item_dev_suggest) {
+                final Dialog dialog = UIUtils.showBottomInDialog(this, R.layout.dialog_device_select, UIUtils.dip2PX(375));
+                GridView gv_device = dialog.findViewById(R.id.gv_device);
+                adapter = new QuickAdapter<AccountDevDTO>(this, R.layout.item_dev_suggest) {
                     @Override
                     protected void convert(BaseAdapterHelper helper, AccountDevDTO item) {
-                        String productName=item.getNickName();
-                        if(productName==null)productName=item.getProductName();
-                        if(productName==null)productName=item.getName();
-                        helper.setText(R.id.tv_name,productName);
-                        ImageView iv_img=helper.getView(R.id.iv_img);
-                        ImageLoader.getInstance().displayImage(item.getCategoryImage(),iv_img);
+                        String productName = item.getNickName();
+                        if (productName == null) productName = item.getProductName();
+                        if (productName == null) productName = item.getName();
+                        helper.setText(R.id.tv_name, productName);
+                        ImageView iv_img = helper.getView(R.id.iv_img);
+                        ImageLoader.getInstance().displayImage(item.getCategoryImage(), iv_img);
                     }
                 };
                 gv_device.setAdapter(adapter);
                 Map<String, Object> maps = new HashMap<>();
-                maps.put("pageSize","20");
+                maps.put("pageSize", "20");
                 maps.put("pageNo", 1);
 
                 ApiClientForIot.getIotClient("/uc/listBindingByAccount", "1.0.2", maps, new IoTCallback() {
@@ -200,17 +218,18 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
                     public void onResponse(IoTRequest ioTRequest, IoTResponse ioTResponse) {
                         Object data = ioTResponse.getData();
                         if (null != data) {
-                            if(data instanceof JSONObject){
-                                JSONObject result= (JSONObject) data;
-                                JSONArray listData= null;
+                            if (data instanceof JSONObject) {
+                                JSONObject result = (JSONObject) data;
+                                JSONArray listData = null;
                                 try {
                                     listData = result.getJSONArray(Constance.data);
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
 //                        mDeviceList = parseDeviceListFromSever((JSONArray) data);
-                                accountDevDTOS = new Gson().fromJson(((JSONArray)listData).toString(),new TypeToken<List<AccountDevDTO>>(){}.getType());
-                                if(accountDevDTOS ==null|| accountDevDTOS.size()==0){
+                                accountDevDTOS = new Gson().fromJson(((JSONArray) listData).toString(), new TypeToken<List<AccountDevDTO>>() {
+                                }.getType());
+                                if (accountDevDTOS == null || accountDevDTOS.size() == 0) {
 
 //                                    mHandler.sendEmptyMessage(1);
                                     return;
@@ -229,9 +248,9 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         currentDev = accountDevDTOS.get(i);
-                        String productName=currentDev.getNickName();
-                        if(productName==null)productName=currentDev.getProductName();
-                        if(productName==null)productName=currentDev.getName();
+                        String productName = currentDev.getNickName();
+                        if (productName == null) productName = currentDev.getProductName();
+                        if (productName == null) productName = currentDev.getName();
                         currentDev.setName(productName);
                         tv_device_select.setText(productName);
                         checkBtnEnable();
@@ -240,38 +259,38 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
                 });
                 break;
             case R.id.btn_submit:
-                if(currentDev==null||currentDev.getProductKey()==null||currentDev.getIotId()==null){
-                    MyToast.show(this,getString(R.string.str_atleastone));
+                if (currentDev == null || currentDev.getProductKey() == null || currentDev.getIotId() == null) {
+                    MyToast.show(this, getString(R.string.str_atleastone));
                     return;
                 }
-                String content=et_suggestion.getText().toString();
-                if(TextUtils.isEmpty(content)){
-                    MyToast.show(this,getString(R.string.str_input_suggest_info));
+                String content = et_suggestion.getText().toString();
+                if (TextUtils.isEmpty(content)) {
+                    MyToast.show(this, getString(R.string.str_input_suggest_info));
                     return;
                 }
-                String  contact=et_mobile.getText().toString();
-                if(TextUtils.isEmpty(contact)){
-                    MyToast.show(this,getString(R.string.str_input_contact_info));
+                String contact = et_mobile.getText().toString();
+                if (TextUtils.isEmpty(contact)) {
+                    MyToast.show(this, getString(R.string.str_input_contact_info));
                     return;
                 }
-                String mobileSystem= SystemUtil.getSystemVersion();
-                String appVersion=UIUtils.getVerName(this);
-                String productKey=currentDev.getProductKey();
-                String iotId=currentDev.getIotId();
-                String mobileModel= SystemUtil.getSystemModel();
-                String topic=getString(R.string.str_device_suggest);
-                String devicename=currentDev.getDeviceName();
-                Map<String,Object> map=new HashMap<>();
-                map.put("content",content);
-                map.put("contact",contact);
-                map.put("mobileSystem",mobileSystem);
-                map.put("appVersion",appVersion);
-                map.put("productKey",productKey);
-                map.put("iotId",iotId);
-                map.put("mobileModel",mobileModel);
-                map.put("topic",topic);
-                map.put("type",type);
-                map.put("devicename",devicename);
+                String mobileSystem = SystemUtil.getSystemVersion();
+                String appVersion = UIUtils.getVerName(this);
+                String productKey = currentDev.getProductKey();
+                String iotId = currentDev.getIotId();
+                String mobileModel = SystemUtil.getSystemModel();
+                String topic = getString(R.string.str_device_suggest);
+                String devicename = currentDev.getDeviceName();
+                Map<String, Object> map = new HashMap<>();
+                map.put("content", content);
+                map.put("contact", contact);
+                map.put("mobileSystem", mobileSystem);
+                map.put("appVersion", appVersion);
+                map.put("productKey", productKey);
+                map.put("iotId", iotId);
+                map.put("mobileModel", mobileModel);
+                map.put("topic", topic);
+                map.put("type", type);
+                map.put("devicename", devicename);
                 ApiClientForIot.getIotClient("/feedback/add", "1.0.1", map, new IoTCallback() {
                     @Override
                     public void onFailure(IoTRequest ioTRequest, Exception e) {
@@ -280,8 +299,8 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
 
                     @Override
                     public void onResponse(IoTRequest ioTRequest, IoTResponse ioTResponse) {
-                        if(ioTResponse.getCode()==200){
-                            MyToast.show(SuggestDeviceActivity.this,getString(R.string.str_excute_success));
+                        if (ioTResponse.getCode() == 200) {
+                            MyToast.show(SuggestDeviceActivity.this, getString(R.string.str_excute_success));
                             finish();
                         }
                     }
@@ -361,54 +380,55 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
     }
 
 
-
     @Override
     protected void onDestroy() {
         //删除文件夹及文件
         FileUtil.deleteDir();
         super.onDestroy();
     }
+
     // 用于保存图片资源文件
     public List<PostImageVideoBean> lists = new ArrayList<PostImageVideoBean>();
-    private ArrayList<String> images=new ArrayList<>();
-    public List<File> files=new ArrayList<>();
+    private ArrayList<String> images = new ArrayList<>();
+    public List<File> files = new ArrayList<>();
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == Constance.REQUEST_CODE && data != null) {
-            ArrayList<String> temps=data.getStringArrayListExtra(
+            ArrayList<String> temps = data.getStringArrayListExtra(
                     ImageSelectorUtils.SELECT_RESULT);
-            if(lists!=null&&temps.size()+lists.size()>3){
-                MyToast.show(this,"上传图片最多3张");
+            if (lists != null && temps.size() + lists.size() > 3) {
+                MyToast.show(this, "上传图片最多3张");
                 return;
             }
             images.addAll(temps);
             //获取选择器返回的数据
             for (int i = 0; i < temps.size(); i++) {
-                PostImageVideoBean postImageVideoBean=new PostImageVideoBean();
-                postImageVideoBean.isVideo=false;
-                postImageVideoBean.bitmap= ImageUtil.adjustImage(this,temps.get(i));
+                PostImageVideoBean postImageVideoBean = new PostImageVideoBean();
+                postImageVideoBean.isVideo = false;
+                postImageVideoBean.bitmap = ImageUtil.adjustImage(this, temps.get(i));
                 lists.add(postImageVideoBean);
             }
             // 更新GrideView
 //            gvAdapter.setList();
             setImageGallery(lists);
-        }else if(requestCode==PHOTO_WITH_CAMERA){
+        } else if (requestCode == PHOTO_WITH_CAMERA) {
             String status = Environment.getExternalStorageState();
             if (status.equals(Environment.MEDIA_MOUNTED)) { // 是否有SD卡
                 File imageFile = new File(DemoApplication.cameraPath, DemoApplication.imagePath + ".jpg");
                 if (imageFile.exists()) {
 //                    String imageURL = "file://" + imageFile.toString();
-                    String imageURL =  imageFile.toString();
-                    if(images!=null&&images.size()>=3){
-                        MyToast.show(this,"上传图片最多3张");
+                    String imageURL = imageFile.toString();
+                    if (images != null && images.size() >= 3) {
+                        MyToast.show(this, "上传图片最多3张");
                         return;
                     }
                     images.add(imageURL);
-                    PostImageVideoBean postImageVideoBean=new PostImageVideoBean();
-                    postImageVideoBean.isVideo=false;
-                    postImageVideoBean.bitmap= BitmapFactory.decodeFile(imageURL);
+                    PostImageVideoBean postImageVideoBean = new PostImageVideoBean();
+                    postImageVideoBean.isVideo = false;
+                    postImageVideoBean.bitmap = BitmapFactory.decodeFile(imageURL);
                     lists.add(postImageVideoBean);
                     setImageGallery(lists);
                     DemoApplication.imagePath = null;
@@ -417,9 +437,9 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
                 }
             } else {
             }
-        }else if(requestCode==300&&resultCode==300){
-            if(images!=null&&images.size()>=3){
-                MyToast.show(this,"上传图片最多3张");
+        } else if (requestCode == 300 && resultCode == 300) {
+            if (images != null && images.size() >= 3) {
+                MyToast.show(this, "上传图片最多3张");
                 return;
             }
             path = data.getStringExtra(Constance.path);
@@ -431,10 +451,10 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
 //            View imageView=view.findViewById(R.id.iv_img);
 //            imageView.setBackground(new BitmapDrawable(bitmap));
 //            Bitmap temp=ImageUtil.loadBitmapFromView(view);
-            PostImageVideoBean postImageVideoBean=new PostImageVideoBean();
-            postImageVideoBean.isVideo=true;
-            postImageVideoBean.bitmap=media.getFrameAtTime();
-            postImageVideoBean.path= path;
+            PostImageVideoBean postImageVideoBean = new PostImageVideoBean();
+            postImageVideoBean.isVideo = true;
+            postImageVideoBean.bitmap = media.getFrameAtTime();
+            postImageVideoBean.path = path;
             lists.add(postImageVideoBean);
             DemoApplication.imagePath = null;
             DemoApplication.cameraPath = null;
@@ -444,11 +464,11 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
 
     private void setImageGallery(List<PostImageVideoBean> lists) {
         ll_img.removeAllViews();
-        for(int i=0;i<lists.size();i++){
-            ImageView imageView=new ImageView(this);
+        for (int i = 0; i < lists.size(); i++) {
+            ImageView imageView = new ImageView(this);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(UIUtils.dip2PX(85),UIUtils.dip2PX(85));
-            layoutParams.setMargins(0,0,UIUtils.dip2PX(15),0);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(UIUtils.dip2PX(85), UIUtils.dip2PX(85));
+            layoutParams.setMargins(0, 0, UIUtils.dip2PX(15), 0);
             imageView.setLayoutParams(layoutParams);
             imageView.setImageBitmap(lists.get(i).bitmap);
             ll_img.addView(imageView);

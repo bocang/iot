@@ -1,5 +1,7 @@
 package com;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -19,12 +21,15 @@ import com.juhao.home.UIUtils;
  * @desc ${TODD}
  */
 public abstract class BaseFragment extends Fragment {
-//    public SpotsDialog mDialog;
+    //    public SpotsDialog mDialog;
     private boolean isDestroy;
+
+    protected Bundle mBundle;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        mBundle = new Bundle();
         initDiaLog();
         initData();
         initView();
@@ -283,6 +288,7 @@ public abstract class BaseFragment extends Fragment {
 //        }
 //        return  false;
 //    }
+
     /**
      * 判断是否有toKen
      */
@@ -294,4 +300,16 @@ public abstract class BaseFragment extends Fragment {
 //        }
         return false;
     }
+
+    protected void intent2Activity(Class<? extends Activity> tarActivity) {
+        Intent intent = new Intent(getActivity(), tarActivity);
+        getActivity().startActivity(intent);
+    }
+
+    protected void intent2Activity(Class<? extends Activity> tarActivity, Bundle bundle) {
+        Intent intent = new Intent(getActivity(), tarActivity);
+        intent.putExtra("bundle", bundle);
+        getActivity().startActivity(intent);
+    }
+
 }

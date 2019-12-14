@@ -480,6 +480,16 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+
+        <!-- ______________________个人中心 开始_________________________ -->
+
+        <activity
+            android:name=".ui.AccountActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- ______________________个人中心 结束_________________________ -->
+
     </application>
 
 </manifest>
