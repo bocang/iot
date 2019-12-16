@@ -5,6 +5,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.BaseActivity;
+import com.jan.activity.ChangePasswordActivity;
 import com.juhao.home.R;
 
 /**
@@ -49,7 +50,7 @@ public class AccountActivity extends BaseActivity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.rl_change_password:// 修改密码
-
+                intent2Activity(ChangePasswordActivity.class);
                 break;
         }
     }

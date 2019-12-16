@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.juhao.home">
+
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -35,60 +36,64 @@
     <application
         android:name="com.aliyun.iot.ilop.demo.DemoApplication"
         android:allowBackup="false"
+        android:debuggable="false"
         android:icon="@mipmap/img_logo"
         android:label="@string/application_name"
-        android:debuggable="false"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/MyTransAppTheme"
-        android:networkSecurityConfig="@xml/network_security_config"
         tools:replace="android:allowBackup,android:label,android:theme,android:icon">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="xtjODGyCpzom31GNMzy278Elz8fFluUL" >
-        </meta-data>
+            android:value="xtjODGyCpzom31GNMzy278Elz8fFluUL"></meta-data>
 
         <meta-data
             android:name="PGYER_APPID"
-            android:value="c5cd0d9f0e37934bd3445aa877f0a730" >
-        </meta-data>
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+            android:value="c5cd0d9f0e37934bd3445aa877f0a730"></meta-data>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".MyLoginActivity"
+        <activity
+            android:name=".MyLoginActivity"
             android:theme="@style/myLoginStyle">
 
         </activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".LoginIndexActivity">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
 
         </activity>
 
         <!--<activity-->
-            <!--android:name="com.aliyun.iot.ilop.demo.page.main.MainActivity"-->
-            <!--android:launchMode="singleTask"-->
-            <!--android:screenOrientation="portrait">-->
-            <!--<intent-filter>-->
+        <!--android:name="com.aliyun.iot.ilop.demo.page.main.MainActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait">-->
+        <!--<intent-filter>-->
 
-                <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
+        <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
 
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-                <!--<data android:scheme="http" />-->
-                <!--<data android:scheme="https" />-->
-                <!--<data-->
-                    <!--android:host="aliyun.iot.aep.demo"-->
-                    <!--android:path="/page/main" />-->
-            <!--</intent-filter>-->
+        <!--<data android:scheme="http" />-->
+        <!--<data android:scheme="https" />-->
+        <!--<data-->
+        <!--android:host="aliyun.iot.aep.demo"-->
+        <!--android:path="/page/main" />-->
+        <!--</intent-filter>-->
         <!--</activity>-->
         <!-- 首页.end -->
 
@@ -97,13 +102,14 @@
         <activity
             android:name="com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity"
             android:launchMode="singleTask"
-            android:theme="@style/AppTheme"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <!--<action android:name="android.intent.action.MAIN" />-->
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
                 <action android:name="com.aliyun.iot.aep.demo.action.navigation" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="http" />
                 <data android:scheme="https" />
                 <data
@@ -189,23 +195,29 @@
         <activity
             android:name=".ui.AboutActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.NoticeActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".ui.TmActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.RegisterAreaCodeActivity"
+        <activity
+            android:name=".ui.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterAreaCodeActivity"
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".ui.AlexaActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.AlexaDetailActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".suggestion.SuggestionHomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".suggestion.SuggestDeviceActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.AlexaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AlexaDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".suggestion.SuggestionHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".suggestion.SuggestDeviceActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.donkingliang.imageselector.ImageSelectorActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -221,20 +233,20 @@
 
         <!-- 登录.begin -->
         <!--<activity-->
-            <!--android:name="com.aliyun.iot.ilop.demo.page.account.AccountActivity"-->
-            <!--android:exported="false"-->
-            <!--android:screenOrientation="portrait">-->
-            <!--<intent-filter android:priority="-1">-->
-                <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
+        <!--android:name="com.aliyun.iot.ilop.demo.page.account.AccountActivity"-->
+        <!--android:exported="false"-->
+        <!--android:screenOrientation="portrait">-->
+        <!--<intent-filter android:priority="-1">-->
+        <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
 
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-                <!--<data android:scheme="http" />-->
-                <!--<data android:scheme="https" />-->
-                <!--<data-->
-                    <!--android:host="aliyun.iot.aep.demo"-->
-                    <!--android:path="/page/login" />-->
-            <!--</intent-filter>-->
+        <!--<data android:scheme="http" />-->
+        <!--<data android:scheme="https" />-->
+        <!--<data-->
+        <!--android:host="aliyun.iot.aep.demo"-->
+        <!--android:path="/page/login" />-->
+        <!--</intent-filter>-->
         <!--</activity>-->
         <!--&lt;!&ndash; 登录.end &ndash;&gt;-->
 
@@ -262,87 +274,106 @@
             android:exported="false"
             android:label="@string/api_client_demo_result_title"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.SettingActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".scene.IotSceneActionAddActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.IotSceneAddActivity"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTop"/>
-        <activity android:name=".scene.IotSceneDeviceAddActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.DeviceShareActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.DeviceShareAddActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.DeviceShareAddUserActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.IotSceneFunctionDevSetActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.CountDownActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.IotAutoConditionActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.IotAutoActionTimingActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.IotAutoTriggerActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.WeekDaySelectActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.DragSortSceneActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".DragSortDevActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.UserInfoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".MyRegisterActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".suggestion.SuggestRecordActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.LivingSettingImageAcitivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.LivingSettingAlarmSetActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotSceneActionAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotSceneAddActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotSceneDeviceAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DeviceShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DeviceShareAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DeviceShareAddUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotSceneFunctionDevSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.CountDownActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotAutoConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotAutoActionTimingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotAutoTriggerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.WeekDaySelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.DragSortSceneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DragSortDevActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".suggestion.SuggestRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LivingSettingImageAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LivingSettingAlarmSetActivity"
+            android:screenOrientation="portrait" />
         <!-- API client.end -->
 
 
         <!-- connect channel.begin -->
         <!--<activity-->
-            <!--android:name="com.aliyun.iot.ilop.demo.page.channel.ChannelActivity"-->
-            <!--android:exported="false"-->
-            <!--android:screenOrientation="portrait">-->
-            <!--<intent-filter android:priority="-1">-->
-                <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
+        <!--android:name="com.aliyun.iot.ilop.demo.page.channel.ChannelActivity"-->
+        <!--android:exported="false"-->
+        <!--android:screenOrientation="portrait">-->
+        <!--<intent-filter android:priority="-1">-->
+        <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
 
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-                <!--<data android:scheme="http" />-->
-                <!--<data android:scheme="https" />-->
-                <!--<data-->
-                    <!--android:host="aliyun.iot.aep.demo"-->
-                    <!--android:path="/page/channel" />-->
-            <!--</intent-filter>-->
+        <!--<data android:scheme="http" />-->
+        <!--<data android:scheme="https" />-->
+        <!--<data-->
+        <!--android:host="aliyun.iot.aep.demo"-->
+        <!--android:path="/page/channel" />-->
+        <!--</intent-filter>-->
         <!--</activity>-->
         <!-- connect channel.end -->
 
         <!--<activity-->
-            <!--android:name="com.aliyun.iot.ilop.demo.page.alog.ALogActivity"-->
-            <!--android:exported="false"-->
-            <!--android:launchMode="singleTask"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@android:style/Theme.DeviceDefault">-->
-            <!--<intent-filter android:priority="-1">-->
-                <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
+        <!--android:name="com.aliyun.iot.ilop.demo.page.alog.ALogActivity"-->
+        <!--android:exported="false"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@android:style/Theme.DeviceDefault">-->
+        <!--<intent-filter android:priority="-1">-->
+        <!--<action android:name="com.aliyun.iot.aep.demo.action.navigation" />-->
 
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-                <!--<data android:scheme="http" />-->
-                <!--<data android:scheme="https" />-->
-                <!--<data-->
-                    <!--android:host="aliyun.iot.aep.demo"-->
-                    <!--android:path="/page/alog" />-->
-            <!--</intent-filter>-->
+        <!--<data android:scheme="http" />-->
+        <!--<data android:scheme="https" />-->
+        <!--<data-->
+        <!--android:host="aliyun.iot.aep.demo"-->
+        <!--android:path="/page/alog" />-->
+        <!--</intent-filter>-->
         <!--</activity>-->
 
         <!-- 自定义OA登录页面 -->
@@ -354,17 +385,17 @@
         <!--<activity android:name="com.aliyun.iot.ilop.demo.page.login3rd.Login3rdActivity" />-->
 
         <!--<receiver-->
-            <!--android:name="com.aliyun.iot.aep.sdk.receiver.PushReceiver"-->
-            <!--android:exported="false"> &lt;!&ndash; 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 &ndash;&gt;-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />-->
-            <!--</intent-filter>-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />-->
-            <!--</intent-filter>-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.alibaba.sdk.android.push.RECEIVE" />-->
-            <!--</intent-filter>-->
+        <!--android:name="com.aliyun.iot.aep.sdk.receiver.PushReceiver"-->
+        <!--android:exported="false"> &lt;!&ndash; 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 &ndash;&gt;-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.alibaba.sdk.android.push.RECEIVE" />-->
+        <!--</intent-filter>-->
         <!--</receiver>
         -->
 
@@ -398,47 +429,60 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.LivingPlayerActivity"
-            android:launchMode="singleTop"
-            android:configChanges="orientation" >
+        <activity
+            android:name=".ui.LivingPlayerActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleTop">
             <!--<intent-filter>-->
 
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".ui.ImageStoreActivity"
+        <activity
+            android:name=".ui.ImageStoreActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".ui.VodplayerActivity"
+        <activity
+            android:name=".ui.VodplayerActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".ui.DeviceLockControlActivity"
+        <activity
+            android:name=".ui.DeviceLockControlActivity"
             android:screenOrientation="portrait">
             <!--<intent-filter>-->
 
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".ui.LockSettingActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".deviceBiz.WifiSelectActivity"
+        <activity
+            android:name=".ui.LockSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".deviceBiz.WifiSelectActivity"
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".deviceBiz.AddDeviceTipsActivity"
+        <activity
+            android:name=".deviceBiz.AddDeviceTipsActivity"
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".deviceBiz.AddDeviceBizActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.WebViewActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".scene.IotSceneActionAutoSelectActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.LivingSettingActivity"
-            android:screenOrientation="portrait"/>
-        <meta-data android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id"/>
+        <activity
+            android:name=".deviceBiz.AddDeviceBizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scene.IotSceneActionAutoSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LivingSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <!--接入HMS SDK PUSH模块需要注册该Service，此Service类（例如：YourHmsMessageService）需要开发者自己定义，继承于com.huawei.hms.push.HmsMessageService类并实现其中的方法-->
         <service
@@ -461,23 +505,22 @@
 
         <provider
             android:name="com.huawei.hms.update.provider.UpdateProvider"
-        android:authorities="com.juhao.home.hms.update.provider"
-        android:exported="false"
-        android:grantUriPermissions="true" >
-    </provider>
+            android:authorities="com.juhao.home.hms.update.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"></provider>
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.juhao.home.fileprovider"
             android:exported="false"
-            tools:replace="android:authorities"
-            android:grantUriPermissions="true">
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
 
             <!-- 元数据 -->
             <meta-data
-                tools:replace="android:value"
-                android:value=""
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
+                android:resource="@xml/file_paths"
+                android:value=""
+                tools:replace="android:value" />
         </provider>
 
 
@@ -485,6 +528,14 @@
 
         <activity
             android:name=".ui.AccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jan.activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jan.activity.AccountCodeActivity"
             android:screenOrientation="portrait" />
 
 

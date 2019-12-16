@@ -5,7 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="line">#f8f8f8</color>
     <color name="txt_black">#333333</color>
-    <color name="theme" >#fa4b00</color>
+    <color name="theme">#fa4b00</color>
     <color name="color_EFEFEF">#efefef</color>
     <!--uCrop Activity-->
     <color name="ucrop_color_toolbar">#EE5500</color>
@@ -39,7 +39,7 @@
 
     <!--长链接调试页面-ChannelActivity color start-->
     <color name="channeldebug_pri_color">#00C1DE</color>
-    <color name="channeldebug_topbar_lefttextcolor">#47C1DF </color>
+    <color name="channeldebug_topbar_lefttextcolor">#47C1DF</color>
     <color name="channeldebug_pri_dark_color">#18B4CD</color>
     <color name="channeldebug_pri_unenable_color">#CCCCCC</color>
     <color name="channeldebug_pri_unenable_bgcolor">#88FFFFFF</color>
@@ -66,5 +66,6 @@
     <color name="cF5AE1D">#F5AE1D</color>
     <color name="cF3F3F3">#F3F3F3</color>
     <color name="c131313">#131313</color>
+    <color name="cFA5500">#fa5500</color>
     <!--长链接调试页面-ChannelActivity color end-->
 </resources>

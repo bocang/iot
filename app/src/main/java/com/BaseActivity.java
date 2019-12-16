@@ -313,8 +313,7 @@ public abstract class BaseActivity extends FragmentActivity {
     }
 
     protected Bundle getBundle() {
-        mBundle = getIntent().getBundleExtra("bundle");
-        return mBundle;
+        return getIntent().getBundleExtra("bundle");
     }
 
 }
