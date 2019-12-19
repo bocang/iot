@@ -205,12 +205,12 @@
     <string name="str_alx_tips4" >"Alexa,set my light to warm white"</string>
     <string name="str_use_amazon">Amazon Alexa 사용</string>
     <string name="str_step_1">1. 바인딩 장치</string>
-    <string name="str_step_2">2.'Cloud Intelligence'기술을 개발합니다.</string>
+    <string name="str_step_2">2.Cloud Intelligence 기술을 개발합니다.</string>
     <string name="str_step_3">3.연결계정</string>
     <string name="str_step_4">4.음성 제어 장치</string>
     <string name="str_step_1_detail">거호 스마트 홈 APP 지원 머신 목록에 추가된 장치 이름을 바꿀 수 있습니다.\"My Light\"</string>
-    <string name="str_step_2_detail">Amazon Echo 스피커를 가지고, Alexa APP의 Skills에서'Cloud Intelligence'를 검색하고,'Enable'을 클릭해야 합니다.</string>
-    <string name="str_step_3_detail">'거호 스마트 패밀리'앱 계정과 패스워드를 입력하고,'거호 스마트 패밀리'와'알렉사'를 연결한다.</string>
+    <string name="str_step_2_detail">Amazon Echo 스피커를 가지고, Alexa APP의 Skills에서 Cloud Intelligence 를 검색하고, Enable 을 클릭해야 합니다.</string>
+    <string name="str_step_3_detail">거호 스마트 패밀리 앱 계정과 패스워드를 입력하고,거호 스마트 패밀리와 알렉사를 연결한다.</string>
     <string name="str_step_4_detail">거호 스마트 홈 APP 가 연결된 장치에 대해 소리를 조절할 수 있습니다.
 “Alexa, turn on/off my light.”
 “Alexa, brighten/dim my light.”

@@ -189,7 +189,7 @@
     <string name="str_tm_tips3">\"天猫精灵，打开窗帘\"</string>
     <string name="str_tm_tips4">\"天猫精灵，把风扇调到3档\"</string>
     <string name="str_tm_tips5">\"天猫精灵，把取暖温度调到30度\"</string>
-    <string name="str_agree_share">Agree to share this user's device?</string>
+    <string name="str_agree_share">Agree to share this user is device?</string>
     <string name="str_bind_success">Binding successful!</string>
     <string name="str_cancel_share">Do you want to unshare this device?</string>
     <string name="str_cancel_success">Cancel successful!</string>
@@ -216,7 +216,7 @@
 “Alexa, brighten/dim my light.”
 “Alexa, set my light to yellow.”
 “Alexa, set my light to warm white</string>
-    <string name="str_disconnect_devices">Do you want to unbind the user's device?</string>
+    <string name="str_disconnect_devices">Do you want to unbind the user is device?</string>
     <string name="str_unbind_device_success">Unbundling success</string>
     <string name="str_nickname_input">Please enter a nickname</string>
     <string name="icon_grid_type">GongGe display</string>
@@ -227,7 +227,7 @@
     <string name="str_icon">icon</string>
     <string name="str_pic">picture</string>
     <string name="str_please_input_name">Please enter name</string>
-    <string name="str_not_empty">Can't be empty</string>
+    <string name="str_not_empty">Can not be empty</string>
     <string name="str_juhao_smart">钜豪智能</string>
     <string name="str_please_choose_action">Select the action to perform</string>
     <string name="str_please_choose_icon_color">Please select icon and icon color</string>
@@ -285,7 +285,7 @@
     <string name="str_make_sure_light_on">Make sure the indicator is flashing</string>
     <string name="str_upset_device">See the reset device detailed tutorial</string>
     <string name="str_connecting">Are connected</string>
-    <string name="str_click_to_set_nickname">I'm gonna go ahead and set my nickname</string>
+    <string name="str_click_to_set_nickname">I am gonna go ahead and set my nickname</string>
     <string name="str_person_center">Me</string>
     <string name="str_account_security">Account security</string>
     <string name="str_timezone">The time zone</string>
