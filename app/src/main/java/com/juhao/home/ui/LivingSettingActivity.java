@@ -78,6 +78,9 @@ public class LivingSettingActivity extends BaseActivity implements View.OnClickL
                 startActivity(intent);
                 break;
             case R.id.rl_sd_card:
+                intent=new Intent(this,SdCardActivity.class);
+                intent.putExtra(Constance.iotId,iotId);
+                startActivity(intent);
                 break;
             case R.id.tv_unbind:
 //                showCheckDialog();

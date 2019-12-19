@@ -383,9 +383,28 @@
         <activity
             android:name="com.juhao.home.ui.LivingSettingAlarmSetActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.living.LivingAlarmPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.living.LivingAlarmPlanDayTimeSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.living.LivingAlarmPlanWeekTimeSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.SdCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.CurtainsControlActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <!-- API client.end -->
-
-
         <!-- connect channel.begin -->
         <!-- <activity -->
         <!-- android:name="com.aliyun.iot.ilop.demo.page.channel.ChannelActivity" -->
@@ -578,6 +597,15 @@
                 android:resource="@xml/file_paths"
                 android:value="" />
         </provider>
+
+        <!-- ______________________个人中心 开始_________________________ -->
+
+        <activity
+            android:name="com.juhao.home.ui.AccountActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ______________________个人中心 结束_________________________ -->
+
 
         <!-- <provider -->
         <!-- android:name="androidx.core.content.FileProvider" -->

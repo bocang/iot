@@ -269,5 +269,20 @@ Read, understand and accept all the contents of the updated Privacy Policy. Plea
     <string name="str_low_frequency">low frequency</string>
     <string name="str_mid_frequency">mid frequency</string>
     <string name="str_high_frequency">high frequency</string>
+    <string name="str_day_loop">loop everyday</string>
+    <string name="str_week_loop">loop of week</string>
+    <string name="str_begin_time">begin time</string>
+    <string name="str_end_time">end time</string>
+    <string name="str_curtain">curtain</string>
+    <string name="str_curtain_position">Curtain location 0%</string>
+    <string name="str_open_curtain">open</string>
+    <string name="str_pause">pause</string>
+    <string name="str_close_curtain">close</string>
+    <string name="str_sd_card">sd card</string>
+    <string name="str_store_card_state">store card state</string>
+    <string name="str_total_store">Total storage capacity</string>
+    <string name="str_remain_store">Remaining storage capacity</string>
+    <string name="str_fomat_sd_card">Format memory card</string>
+    <string name="str_format_sd_card">Will format delete all files</string>
 
 </resources>

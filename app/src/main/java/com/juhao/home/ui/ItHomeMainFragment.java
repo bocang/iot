@@ -558,12 +558,11 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                         intent.putExtra(Constance.iotId,iot);
                         intent.putExtra(Constance.title,accountDevDTOS.get(position).getProductName());
                         startActivity(intent);
-//                        SharePreferenceManager.getInstance().init(getActivity());
-//                        intent = new Intent(getActivity(), IPCameraActivity.class);
-//                        intent.putExtra("iotId", iot);
-//                        intent.putExtra("appKey", DemoApplication.app_key);
-//                        startActivity(intent);
-
+                        return;
+                    }else if(accountDevDTOS.get(position).getProductName().contains("窗帘")){
+                        intent=new Intent(getActivity(),CurtainsControlActivity.class);
+                        intent.putExtra(Constance.iotId,accountDevDTOS.get(position).getIotId());
+                        startActivity(intent);
                         return;
                     }
                 }

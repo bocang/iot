@@ -11,6 +11,21 @@
         <item>@string/permission_read_external_hint</item>
         <item>@string/permission_white_external_hint</item>
     </string-array>
+    <string-array name="DayOfWeek" >
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="sd_state" >
+        <item>未插卡</item>
+        <item>正常</item>
+        <item>未格式化</item>
+        <item>正在格式化</item>
+    </string-array>
 
 
     <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。</string>

@@ -11,6 +11,21 @@
         <item>@string/permission_read_external_hint</item>
         <item>@string/permission_white_external_hint</item>
     </string-array>
+    <string-array name="DayOfWeek" >
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thur</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="sd_state" >
+        <item>card not inserted</item>
+        <item>normal</item>
+        <item>unformatted</item>
+        <item>formatting</item>
+    </string-array>
 
 
     <string name="permission_get_accounts_hint">This function cannot be enabled without this permission. Please enable the permission.</string>

@@ -304,9 +304,22 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.LivingSettingAlarmSetActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".living.LivingAlarmPlanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".living.LivingAlarmPlanDayTimeSetActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".living.LivingAlarmPlanWeekTimeSetActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.SdCardActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.CurtainsControlActivity"
+            android:screenOrientation="portrait">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
         <!-- API client.end -->
-
-
         <!-- connect channel.begin -->
         <!--<activity-->
             <!--android:name="com.aliyun.iot.ilop.demo.page.channel.ChannelActivity"-->

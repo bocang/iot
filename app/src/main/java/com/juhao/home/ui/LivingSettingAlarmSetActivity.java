@@ -19,6 +19,7 @@ import com.aliyun.iot.demo.ipcview.manager.SharePreferenceManager;
 import com.aliyun.iotx.linkvisual.IPCManager;
 import com.bean.GetConfigReq;
 import com.juhao.home.R;
+import com.juhao.home.living.LivingAlarmPlanActivity;
 import com.util.Constance;
 import com.view.CommonPopWindow;
 import com.view.PickerScrollView;
@@ -101,9 +102,9 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
                                             @Override
                                             public void run() {
                                                 if(finalIntValue==0){
-                                                    iv_day_switch.setBackgroundResource(R.mipmap.kg_on);
+                                                    iv_day_switch.setBackgroundResource(R.mipmap.set_btn_on);
                                                 }else {
-                                                    iv_day_switch.setBackgroundResource(R.mipmap.kg_off);
+                                                    iv_day_switch.setBackgroundResource(R.mipmap.set_btn_off);
                                                 }
                                             }
                                         });
@@ -197,7 +198,7 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
                     if (isOpen){
                        iv_day_switch.setBackgroundResource(R.mipmap.set_btn_on);
                     }else {
-                        iv_day_switch.setBackgroundResource(R.mipmap.kg_off);
+                        iv_day_switch.setBackgroundResource(R.mipmap.set_btn_off);
                     }
                     Map<String, Object> param = new HashMap<>();
                     String key=Constants.DAY_NIGHT_MODE_MODEL_NAME;
@@ -225,7 +226,7 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
                     setAddressSelectorPopup(v);
                     break;
                 case R.id.rl_alarm_period:
-                    Intent intent = new Intent(this, EasyPlanSettingsActivity.class);
+                    Intent intent = new Intent(this, LivingAlarmPlanActivity.class);
                     intent.putExtra("iotId", iotId);
                     startActivity(intent);
                     break;
@@ -288,9 +289,9 @@ public class LivingSettingAlarmSetActivity extends BaseActivity implements View.
                             tv_sensitivity.setText(categoryName);
                             key=Constants.MOTION_DETECT_SENSITIVITY_MODEL_NAME;
                             if(!value.equals("0")){
-                                param.put(Constants.ALARM_SWITCH_MODEL_NAME,1);
+//                                param.put(Constants.ALARM_SWITCH_MODEL_NAME,1);
                             }else {
-                                param.put(Constants.ALARM_SWITCH_MODEL_NAME,0);
+//                                param.put(Constants.ALARM_SWITCH_MODEL_NAME,0);
                             }
                         }else {
                             tv_report_frequency.setText(categoryName);

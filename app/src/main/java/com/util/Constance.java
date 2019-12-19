@@ -592,6 +592,12 @@ public class Constance {
     public static String Random="Random";
     public static String OpenLock="OpenLock";
     public static String BatteryPercentage="BatteryPercentage";
+    public static String BeginTime="BeginTime";
+    public static String EndTime="EndTime";
+    public static String DayOfWeek="DayOfWeek";
+    public static String items="items";
+    public static String CurtainPosition="CurtainPosition";
+    public static String CurtainOperation="CurtainOperation";
 /*
             {
     {

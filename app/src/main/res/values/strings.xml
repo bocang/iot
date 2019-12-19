@@ -153,7 +153,7 @@
     <string name="str_my_devices" >我的设备</string>
     <string name="str_share_devices">共享设备</string>
     <string name="str_add_share">添加共享</string>
-    <string name="str_save">完成</string>
+    <string name="str_save">保存</string>
     <string name="str_country">国家 / 地区</string>
     <string name="str_86">中国+86</string>
     <string name="str_account">账号</string>
@@ -358,5 +358,21 @@
     <string name="str_low_frequency">低频</string>
     <string name="str_mid_frequency">中频</string>
     <string name="str_high_frequency">高频</string>
+    <string name="icon_alarm_period" >&#xe703;</string>
+    <string name="str_day_loop">每日循环</string>
+    <string name="str_week_loop">每周循环</string>
+    <string name="str_begin_time">开启时间</string>
+    <string name="str_end_time">关闭时间</string>
+    <string name="str_curtain">窗帘</string>
+    <string name="str_curtain_position">窗帘位置 </string>
+    <string name="str_open_curtain">打开</string>
+    <string name="str_pause">暂停</string>
+    <string name="str_close_curtain">闭合</string>
+    <string name="str_sd_card">存储卡</string>
+    <string name="str_store_card_state">存储状态</string>
+    <string name="str_total_store">总存储容量</string>
+    <string name="str_remain_store">剩余存储容量</string>
+    <string name="str_fomat_sd_card">格式化存储卡</string>
+    <string name="str_format_sd_card">将格式化删除所有文件</string>
 
 </resources>
