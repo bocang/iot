@@ -17,9 +17,9 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int jsbridge_core_error_message_internal_error = 0x7f1002cf;
-        public static final int jsbridge_core_error_message_method_not_implemented = 0x7f1002d0;
-        public static final int jsbridge_core_error_message_no_handler = 0x7f1002d1;
-        public static final int jsbridge_core_error_message_runtime_error = 0x7f1002d2;
+        public static final int jsbridge_core_error_message_internal_error = 0x7f1002d0;
+        public static final int jsbridge_core_error_message_method_not_implemented = 0x7f1002d1;
+        public static final int jsbridge_core_error_message_no_handler = 0x7f1002d2;
+        public static final int jsbridge_core_error_message_runtime_error = 0x7f1002d3;
     }
 }

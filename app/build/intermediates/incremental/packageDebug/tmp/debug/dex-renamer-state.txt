@@ -1,4 +1,4 @@
-#Sat Dec 14 10:15:42 CST 2019
+#Thu Dec 19 16:21:22 CST 2019
 base.2=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/2
 base.1=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/1
 base.0=/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/transforms/dexMerger/debug/0

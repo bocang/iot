@@ -72,6 +72,7 @@ array AlarmFrequencyLevel
 array AlarmFrequencyLevelValue
 array DayNightMode
 array DayNightModeValue
+array DayOfWeek
 array ImageFlipState
 array ImageFlipStateValue
 array MotionDetectSensitivity
@@ -87,6 +88,7 @@ array SubStreamVideoQualityValue
 array VoiceDetectionSensitivity
 array VoiceDetectionSensitivityValue
 array permissions
+array sd_state
 attr DialogSpotColor
 attr DialogSpotCount
 attr DialogTitleAppearance
@@ -1089,6 +1091,10 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color c131313
+color c9D9D9D
+color cF3F3F3
+color cF5AE1D
 color calendar_active_month_bg
 color calendar_bg
 color calendar_divider
@@ -1804,6 +1810,7 @@ drawable bg_corner_white_8_top
 drawable bg_corner_white_dddddd_8
 drawable bg_default
 drawable bg_login_btn
+drawable bg_oval_80596475
 drawable bg_theme_empty
 drawable bottom_textcolor
 drawable btn_back_selector
@@ -2316,6 +2323,9 @@ id fl_folder
 id flex_end
 id flex_start
 id focusCrop
+id font_close
+id font_open
+id font_pause
 id forever
 id found_device_ll
 id four_videos_btn
@@ -2413,14 +2423,17 @@ id iv_img
 id iv_img2
 id iv_img_auto
 id iv_img_circle
+id iv_isopen
 id iv_jietu
 id iv_kaiguan
+id iv_left
 id iv_lock
 id iv_luxiang
 id iv_masking
 id iv_pause_resume
 id iv_pic
 id iv_picture
+id iv_right
 id iv_scale
 id iv_select
 id iv_selected
@@ -2429,6 +2442,7 @@ id iv_shengyin
 id iv_status
 id iv_suofang
 id iv_turn
+id iv_week_switch
 id iv_yuyin
 id labeled
 id largeLabel
@@ -2456,6 +2470,7 @@ id ll_bottom
 id ll_calendar
 id ll_cmd
 id ll_condition
+id ll_content
 id ll_home
 id ll_img
 id ll_kaiguan
@@ -2639,8 +2654,10 @@ id rl_add_device
 id rl_alarm_period
 id rl_alarm_setting
 id rl_all_day
+id rl_begin_time
 id rl_bg
 id rl_bottom_bar
+id rl_change_password
 id rl_clear_cache
 id rl_contain_video
 id rl_control
@@ -2648,6 +2665,7 @@ id rl_custom
 id rl_day_night_mode
 id rl_day_time
 id rl_effect_period
+id rl_end_time
 id rl_flip
 id rl_frequency
 id rl_head
@@ -2658,6 +2676,8 @@ id rl_img
 id rl_item_click
 id rl_jc
 id rl_lj
+id rl_loop_day
+id rl_loop_week
 id rl_name
 id rl_nickname
 id rl_night_time
@@ -2725,6 +2745,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id second
+id seekb_curtain
 id seekb_night
 id select_dialog_listview
 id selected
@@ -2834,6 +2855,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id triangle_view
 id tvAlert
 id tvAlertCancel
 id tvAlertMsg
@@ -2841,6 +2863,7 @@ id tvAlertTitle
 id tvTitle
 id tv_3th
 id tv_about
+id tv_about_privacy
 id tv_account
 id tv_add_condition
 id tv_add_home
@@ -2852,6 +2875,7 @@ id tv_area
 id tv_auto
 id tv_baojing
 id tv_battery
+id tv_begin_time
 id tv_bind
 id tv_bottom_1
 id tv_bottom_2
@@ -2865,6 +2889,8 @@ id tv_china
 id tv_choose
 id tv_choose_region
 id tv_click_to_setnick
+id tv_clock_1
+id tv_clock_2
 id tv_close
 id tv_code
 id tv_color
@@ -2881,10 +2907,13 @@ id tv_current_switch_2
 id tv_current_switch_3
 id tv_current_switch_4
 id tv_current_time
+id tv_curtain_position
 id tv_custom
 id tv_date
 id tv_day
 id tv_day_night_mode
+id tv_day_of_week
+id tv_day_time
 id tv_delay
 id tv_delete
 id tv_desc
@@ -2899,11 +2928,15 @@ id tv_doit
 id tv_duration_all
 id tv_duration_cur
 id tv_effect
+id tv_end_time
 id tv_ensure
+id tv_everyday
+id tv_everyweek
 id tv_feeback_failure
 id tv_flip_status
 id tv_folder_name
 id tv_folder_size
+id tv_format_sd_card
 id tv_function_suggest
 id tv_grid
 id tv_head
@@ -2930,6 +2963,7 @@ id tv_logout
 id tv_mate_setting
 id tv_max
 id tv_min
+id tv_mobile_location
 id tv_msg_1
 id tv_msg_2
 id tv_msg_3
@@ -2947,6 +2981,7 @@ id tv_num
 id tv_open
 id tv_other_problem
 id tv_oversea
+id tv_pause
 id tv_pic
 id tv_pingfen
 id tv_pm_outside
@@ -2959,6 +2994,7 @@ id tv_random_mima
 id tv_record
 id tv_region
 id tv_register
+id tv_remain
 id tv_report_frequency
 id tv_restart
 id tv_save
@@ -2974,11 +3010,13 @@ id tv_set_nickname
 id tv_setting
 id tv_share
 id tv_share_add
+id tv_state
 id tv_status
 id tv_stream_quailty
 id tv_stream_quailty_0
 id tv_stream_quailty_1
 id tv_stream_quailty_2
+id tv_suggest_type
 id tv_suggestion
 id tv_temp_outside
 id tv_time
@@ -2989,11 +3027,13 @@ id tv_tips
 id tv_tips1
 id tv_title
 id tv_title_date
+id tv_total_store
 id tv_trigger
 id tv_turn
 id tv_unbind
 id tv_update
 id tv_upset_device
+id tv_user_phone
 id tv_version
 id tv_version_tips
 id tv_weeks
@@ -3115,6 +3155,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout about_activity
 layout activity_about
+layout activity_account
 layout activity_alexa
 layout activity_alexa_detail
 layout activity_alog
@@ -3125,6 +3166,7 @@ layout activity_clip_image
 layout activity_count_down
 layout activity_count_down_delay
 layout activity_count_down_list
+layout activity_curtain_control
 layout activity_device_biz_add
 layout activity_device_lock_controll
 layout activity_device_share
@@ -3150,9 +3192,12 @@ layout activity_iot_scene_dev_property_set
 layout activity_iot_scene_function
 layout activity_ipcamera
 layout activity_it_devices_add
+layout activity_living_alarm_plan
 layout activity_living_player
 layout activity_living_setting
 layout activity_living_setting_alarm
+layout activity_living_setting_alarm_day_timeset
+layout activity_living_setting_alarm_week_timeset
 layout activity_living_setting_image
 layout activity_lock_setting
 layout activity_login
@@ -3167,6 +3212,7 @@ layout activity_preview
 layout activity_record
 layout activity_repeat_setting
 layout activity_report_bug_successful
+layout activity_sd_card
 layout activity_setting
 layout activity_sort_dev
 layout activity_sort_scene
@@ -3297,6 +3343,7 @@ layout item_area_choose
 layout item_auto_select
 layout item_count_down
 layout item_day
+layout item_day_of_week
 layout item_dev_function
 layout item_dev_function_scene
 layout item_dev_scene_selected
@@ -3355,6 +3402,8 @@ layout pickerview_options
 layout pickerview_time
 layout picture_dialog_layout
 layout pop_picker_selector_bottom
+layout popup_base
+layout popup_bubble
 layout popup_home_list_type
 layout popup_stream_quality
 layout ptz_layout
@@ -3511,6 +3560,7 @@ mipmap icon_yjfk
 mipmap img_amazon
 mipmap img_bg_scene
 mipmap img_bg_scene_2
+mipmap img_clg
 mipmap img_dqg
 mipmap img_gx
 mipmap img_jc
@@ -3528,6 +3578,8 @@ mipmap img_tx
 mipmap img_wifi_tips
 mipmap img_wsb
 mipmap img_xx
+mipmap img_ycl
+mipmap img_zcl
 mipmap kg_default
 mipmap kg_off
 mipmap kg_on
@@ -4154,6 +4206,7 @@ string hms_update_message_new
 string hms_update_nettype
 string hms_update_title
 string hour
+string icon_alarm_period
 string icon_arrow_right
 string icon_battery_high
 string icon_battery_low
@@ -4422,6 +4475,7 @@ string str_atleastone
 string str_auto
 string str_auto_mode
 string str_auto_on_off
+string str_begin_time
 string str_bind_step
 string str_bind_success
 string str_blue_light
@@ -4439,6 +4493,7 @@ string str_clear_cache
 string str_click_setting
 string str_click_to_set_nickname
 string str_close
+string str_close_curtain
 string str_color
 string str_condition
 string str_connect_type
@@ -4447,10 +4502,13 @@ string str_countdown
 string str_country
 string str_create_success
 string str_current_version_last
+string str_curtain
+string str_curtain_position
 string str_custom
 string str_custom_desc
 string str_day
 string str_day_desc
+string str_day_loop
 string str_day_mode
 string str_day_night_mode
 string str_deivce_select
@@ -4477,6 +4535,7 @@ string str_edit_countdown
 string str_edit_name
 string str_edit_success
 string str_effect_period
+string str_end_time
 string str_ensure
 string str_enter_account
 string str_everyday
@@ -4489,6 +4548,8 @@ string str_family_management
 string str_feedback_exeption
 string str_flip
 string str_flip_mode
+string str_fomat_sd_card
+string str_format_sd_card
 string str_fri
 string str_friday
 string str_function_suggest
@@ -4552,8 +4613,10 @@ string str_onetime
 string str_online
 string str_only_support_24g
 string str_open
+string str_open_curtain
 string str_other_problem
 string str_outdoor_temp
+string str_pause
 string str_person_center
 string str_phone_email
 string str_pic
@@ -4570,6 +4633,7 @@ string str_privacy
 string str_privacy_content
 string str_pwd
 string str_qing
+string str_remain_store
 string str_repeat
 string str_restart
 string str_restart_tips
@@ -4578,6 +4642,7 @@ string str_sat
 string str_saturday
 string str_save
 string str_scene
+string str_sd_card
 string str_select_auto
 string str_select_one_devices_to_share
 string str_setting
@@ -4599,6 +4664,7 @@ string str_step_3_detail
 string str_step_4
 string str_step_4_detail
 string str_store_card
+string str_store_card_state
 string str_style
 string str_submit
 string str_suggest_record
@@ -4627,6 +4693,7 @@ string str_tm_tips2
 string str_tm_tips3
 string str_tm_tips4
 string str_tm_tips5
+string str_total_store
 string str_trigger_time
 string str_tue
 string str_tuesday
@@ -4645,6 +4712,7 @@ string str_wait
 string str_wed
 string str_wednesday
 string str_week
+string str_week_loop
 string str_when_satisfy_condition
 string str_you
 string str_you_can_say_that

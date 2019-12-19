@@ -28,20 +28,20 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/res/drawable-xhdpi-v4/icon_image_un_select.png"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_calendar_bg_selector.xml.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a3f8bd34a9009128bfbf7925b6625c88/res/drawable/calendar_bg_selector.xml"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_product_bot_bar_intelligent.xml.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/drawable/product_bot_bar_intelligent.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_calendar_bg_selector.xml.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a3f8bd34a9009128bfbf7925b6625c88/res/drawable/calendar_bg_selector.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_ucrop_ic_cross.png.flat",
@@ -108,16 +108,16 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_state_unavailable.xml.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a3f8bd34a9009128bfbf7925b6625c88/res/drawable/state_unavailable.xml"
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/animator/mtrl_fab_transformation_sheet_expand_spec.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_state_unavailable.xml.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a3f8bd34a9009128bfbf7925b6625c88/res/drawable/state_unavailable.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon_tk.png.flat",
@@ -148,12 +148,12 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_exo_icon_pause.png.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/741f05c29b492003b5462cf91700c005/res/drawable-xxhdpi-v4/exo_icon_pause.png"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_img_tx.png.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-xxhdpi/img_tx.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_exo_icon_pause.png.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/741f05c29b492003b5462cf91700c005/res/drawable-xxhdpi-v4/exo_icon_pause.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_pop_picker_selector_bottom.xml.flat",
@@ -172,20 +172,20 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_notification_action.xml.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/res/layout/notification_action.xml"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_pickerview_options.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/17ded6f195fa63a43878bdabbcb91f27/res/layout/pickerview_options.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_state_range_middle.png.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a3f8bd34a9009128bfbf7925b6625c88/res/drawable-ldpi-v4/state_range_middle.png"
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_notification_action.xml.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_state_range_middle.png.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a3f8bd34a9009128bfbf7925b6625c88/res/drawable-ldpi-v4/state_range_middle.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -236,12 +236,12 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/layout/design_navigation_item_separator.xml"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_btn_ripple_color.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/color/mtrl_btn_text_btn_ripple_color.xml"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_po_seekbar.xml.flat",
@@ -276,12 +276,12 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/a3f8bd34a9009128bfbf7925b6625c88/res/drawable-ldpi-v4/state_range_last.png"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_img_bg_scene.png.flat",
-        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-xxhdpi/img_bg_scene.png"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-mdpi_img_sj.png.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-mdpi/img_sj.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_img_bg_scene.png.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-xxhdpi/img_bg_scene.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_tab_item.xml.flat",
@@ -296,12 +296,12 @@
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/device_panel_layout.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_bg_corner_black_5.xml.flat",
-        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/drawable/bg_corner_black_5.xml"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_bg_corner_black_5.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/drawable/bg_corner_black_5.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon_scene_auto_off.png.flat",
@@ -1196,6 +1196,10 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/641151ba6150c72448f58b40054aa6c9/res/layout/notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_item_day_of_week.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/item_day_of_week.xml"
+    },
+    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-mdpi_window_log_svg.png.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/generated/res/pngs/debug/drawable-mdpi/window_log_svg.png"
     },
@@ -1696,6 +1700,10 @@
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-xxhdpi/icon_close.png"
     },
     {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_activity_living_setting_alarm_week_timeset.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/activity_living_setting_alarm_week_timeset.xml"
+    },
+    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-hdpi_home_fh.png.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-hdpi/home_fh.png"
     },
@@ -1810,6 +1818,10 @@
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_bg_oval_80596475.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/drawable/bg_oval_80596475.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/anim_pickerview_dialog_scale_in.xml.flat",
@@ -1936,12 +1948,12 @@
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/drawable/corners_bg_gray.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
-        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/animator/design_fab_hide_motion_spec.xml"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/animator/design_fab_hide_motion_spec.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/anim_head_out.xml.flat",
@@ -2134,6 +2146,10 @@
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_bg_home_device2.png.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-xxhdpi/bg_home_device2.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-mdpi_img_zcl.png.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-mdpi/img_zcl.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_window_log_svg.xml.flat",
@@ -2674,6 +2690,10 @@
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_popup_bubble.xml.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/bc7d842717a1bc623943f81b873e06e5/res/layout/popup_bubble.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_mtrl_tabs_default_indicator.xml.flat",
@@ -3234,6 +3254,10 @@
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_ali_sdk_openaccount_checkcode_input_box.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/res/layout/ali_sdk_openaccount_checkcode_input_box.xml"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_activity_curtain_control.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/activity_curtain_control.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_light_normal.xml.flat",
@@ -4124,12 +4148,20 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_activity_account.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/activity_account.xml"
+    },
+    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_exo_edit_mode_logo.png.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/741f05c29b492003b5462cf91700c005/res/drawable-ldpi-v4/exo_edit_mode_logo.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_abc_expanded_menu_layout.xml.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_activity_living_alarm_plan.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/activity_living_alarm_plan.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar.xml.flat",
@@ -4796,12 +4828,12 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon_tj.png.flat",
-        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-xxhdpi/icon_tj.png"
-    },
-    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/31b9597cbd82a5a7c41b79d6b54bc9ef/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon_tj.png.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-xxhdpi/icon_tj.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_ali_sdk_openaccount_fragment_register_confirm.xml.flat",
@@ -4996,6 +5028,10 @@
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-hdpi/home_zm.png"
     },
     {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-mdpi_img_ycl.png.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-mdpi/img_ycl.png"
+    },
+    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable_icon_right_normal.png.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/drawable/icon_right_normal.png"
     },
@@ -5034,6 +5070,10 @@
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_icon_image_select.png.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/1c3ae5c67254c36ea3f69ebc52be9bc5/res/drawable-xhdpi-v4/icon_image_select.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-mdpi_img_clg.png.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/mipmap-mdpi/img_clg.png"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_kg_default.png.flat",
@@ -5164,6 +5204,10 @@
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/c439ad7bec34734e18ad657c4668b3ab/res/drawable/upsdk_cancel_bg.xml"
     },
     {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_popup_base.xml.flat",
+        "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/bc7d842717a1bc623943f81b873e06e5/res/layout/popup_base.xml"
+    },
+    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_window_home_svg.xml.flat",
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/window_home_svg.xml"
     },
@@ -5216,6 +5260,10 @@
         "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_activity_sd_card.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/activity_sd_card.xml"
+    },
+    {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
     },
@@ -5242,6 +5290,10 @@
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_activity_living_setting_alarm_day_timeset.xml.flat",
+        "source": "/Users/gamekonglee/Downloads/bc.jh/iot/app/src/main/res/layout/activity_living_setting_alarm_day_timeset.xml"
     },
     {
         "merged": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/res/merged/debug/layout_dialog_region_choose.xml.flat",

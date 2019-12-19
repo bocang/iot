@@ -26,13 +26,13 @@ public final class R {
         public static final int bgColor_alertview_alert_start = 0x7f060044;
         public static final int bgColor_divier = 0x7f060045;
         public static final int bgColor_overlay = 0x7f060046;
-        public static final int textColor_actionsheet_msg = 0x7f060110;
-        public static final int textColor_actionsheet_title = 0x7f060111;
-        public static final int textColor_alert_button_cancel = 0x7f060112;
-        public static final int textColor_alert_button_destructive = 0x7f060113;
-        public static final int textColor_alert_button_others = 0x7f060114;
-        public static final int textColor_alert_msg = 0x7f060115;
-        public static final int textColor_alert_title = 0x7f060116;
+        public static final int textColor_actionsheet_msg = 0x7f060114;
+        public static final int textColor_actionsheet_title = 0x7f060115;
+        public static final int textColor_alert_button_cancel = 0x7f060116;
+        public static final int textColor_alert_button_destructive = 0x7f060117;
+        public static final int textColor_alert_button_others = 0x7f060118;
+        public static final int textColor_alert_msg = 0x7f060119;
+        public static final int textColor_alert_title = 0x7f06011a;
     }
     public static final class dimen {
         private dimen() {}
@@ -68,15 +68,15 @@ public final class R {
 
         public static final int alertButtonListView = 0x7f090028;
         public static final int content_container = 0x7f0900b0;
-        public static final int loAlertButtons = 0x7f0901ca;
-        public static final int loAlertHeader = 0x7f0901cb;
-        public static final int outmost_container = 0x7f090230;
-        public static final int tvAlert = 0x7f090327;
-        public static final int tvAlertCancel = 0x7f090328;
-        public static final int tvAlertMsg = 0x7f090329;
-        public static final int tvAlertTitle = 0x7f09032a;
-        public static final int viewStubHorizontal = 0x7f0903e2;
-        public static final int viewStubVertical = 0x7f0903e3;
+        public static final int loAlertButtons = 0x7f0901d2;
+        public static final int loAlertHeader = 0x7f0901d3;
+        public static final int outmost_container = 0x7f090238;
+        public static final int tvAlert = 0x7f090336;
+        public static final int tvAlertCancel = 0x7f090337;
+        public static final int tvAlertMsg = 0x7f090338;
+        public static final int tvAlertTitle = 0x7f090339;
+        public static final int viewStubHorizontal = 0x7f090403;
+        public static final int viewStubVertical = 0x7f090404;
     }
     public static final class integer {
         private integer() {}
@@ -86,13 +86,13 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int include_alertheader = 0x7f0c00ca;
-        public static final int item_alertbutton = 0x7f0c00cf;
-        public static final int layout_alertview = 0x7f0c00ea;
-        public static final int layout_alertview_actionsheet = 0x7f0c00eb;
-        public static final int layout_alertview_alert = 0x7f0c00ec;
-        public static final int layout_alertview_alert_horizontal = 0x7f0c00ed;
-        public static final int layout_alertview_alert_vertical = 0x7f0c00ee;
+        public static final int include_alertheader = 0x7f0c00d0;
+        public static final int item_alertbutton = 0x7f0c00d5;
+        public static final int layout_alertview = 0x7f0c00f1;
+        public static final int layout_alertview_actionsheet = 0x7f0c00f2;
+        public static final int layout_alertview_alert = 0x7f0c00f3;
+        public static final int layout_alertview_alert_horizontal = 0x7f0c00f4;
+        public static final int layout_alertview_alert_vertical = 0x7f0c00f5;
     }
     public static final class string {
         private string() {}
