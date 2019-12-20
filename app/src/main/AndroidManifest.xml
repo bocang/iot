@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_SETTINGS" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
@@ -35,12 +34,12 @@
     <application
         android:name="com.aliyun.iot.ilop.demo.DemoApplication"
         android:allowBackup="false"
+        android:debuggable="false"
         android:icon="@mipmap/img_logo"
         android:label="@string/application_name"
-        android:debuggable="false"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/MyTransAppTheme"
-        android:networkSecurityConfig="@xml/network_security_config"
         tools:replace="android:allowBackup,android:label,android:theme,android:icon">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -262,7 +261,8 @@
             android:exported="false"
             android:label="@string/api_client_demo_result_title"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.SettingActivity"
+        <activity
+            android:name=".ui.SettingActivity"
             android:screenOrientation="portrait"
             />
         <activity android:name=".scene.IotSceneActionAddActivity"
@@ -313,13 +313,10 @@
         <activity android:name=".ui.SdCardActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".ui.CurtainsControlActivity"
-            android:screenOrientation="portrait">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <!-- API client.end -->
+
+
         <!-- connect channel.begin -->
         <!--<activity-->
             <!--android:name="com.aliyun.iot.ilop.demo.page.channel.ChannelActivity"-->
@@ -499,7 +496,13 @@
         <activity
             android:name=".ui.AccountActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jan.activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
 
+        <activity
+            android:name="com.jan.activity.AccountCodeActivity"
+            android:screenOrientation="portrait" />
 
         <!-- ______________________个人中心 结束_________________________ -->
 

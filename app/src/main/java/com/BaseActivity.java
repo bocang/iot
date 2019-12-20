@@ -1,6 +1,7 @@
 package com;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -36,6 +37,11 @@ public abstract class BaseActivity extends FragmentActivity {
     private DemoApplication app;
     public ViewGroup rootView;
     protected Bundle mBundle;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(newBase);
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -313,8 +319,7 @@ public abstract class BaseActivity extends FragmentActivity {
     }
 
     protected Bundle getBundle() {
-        mBundle = getIntent().getBundleExtra("bundle");
-        return mBundle;
+        return getIntent().getBundleExtra("bundle");
     }
 
 }

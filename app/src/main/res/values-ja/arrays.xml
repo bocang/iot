@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+
+    <string name="permission_get_accounts_hint">この権限はありません。この機能を開くことはできません。権限を開いてください。</string>
+    <string name="permission_read_phone_hint">この電話権限がなくて、この機能をオンできないので、権限をオンしてください。</string>
+    <string name="permission_call_phone_hint">この電話権限がなくて、この機能をオンできないので、権限をオンしてください。</string>
+    <string name="permission_camera_hint">このカメラ権限がないので、この機能をオンできません。権限をオンしてください。</string>
+    <string name="permission_access_fine_location_hint">この定位権限がなくて、この機能を開くことができないので、権限を開いてください。</string>
+    <string name="permission_access_coarse_location_hint">この権限はありません。この機能を開くことはできません。権限を開いてください。</string>
+    <string name="permission_read_external_hint">このSDカードを読む権限はありません。この機能を開くことはできません。権限を開いてください。</string>
+    <string name="permission_white_external_hint">SDカードを書く権限がありません。この機能を開くことができません。権限を開いてください。</string>
+    <string name="permission_recode_audio_hint">この録音権限はありません。この機能を開くことはできません。権限を開いてください。</string>
+</resources>

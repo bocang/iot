@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+
+    <string name="permission_get_accounts_hint">이 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_read_phone_hint">이 전화 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_call_phone_hint">이 전화 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_camera_hint">이 카메라 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_access_fine_location_hint">이 위치 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_access_coarse_location_hint">이 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_read_external_hint">SD 카드에 대한 읽기 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_white_external_hint">SD 카드에 쓸 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+    <string name="permission_recode_audio_hint">이 녹음 권한이 없습니다.이 기능을 시작할 수 없습니다. 권한을 여십시오.</string>
+</resources>

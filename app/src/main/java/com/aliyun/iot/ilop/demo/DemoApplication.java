@@ -5,6 +5,7 @@ import android.app.Application;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -78,6 +79,9 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
+import com.jan.callback.LanguageLocalListener;
+import com.jan.util.LocalManageUtil;
+import com.jan.util.MultiLanguage;
 import com.juhao.home.R;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
@@ -144,10 +148,36 @@ public class DemoApplication extends BaseApplication {
         return  activityList;
     }
 
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        //第一次进入app时保存系统选择语言(为了选择随系统语言时使用，如果不保存，切换语言后就拿不到了）
+        LocalManageUtil.saveSystemCurrentLanguage(base);
+        super.attachBaseContext(MultiLanguage.setLocal(base));
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        //用户在系统设置页面切换语言时保存系统选择语言(为了选择随系统语言时使用，如果不保存，切换语言后就拿不到了）
+        LocalManageUtil.saveSystemCurrentLanguage(getApplicationContext(), newConfig);
+        MultiLanguage.onConfigurationChanged(getApplicationContext());
+    }
+
     @Override
     public void onCreate() {
         MultiDex.install(this);
         super.onCreate();
+
+        MultiLanguage.init(new LanguageLocalListener() {
+            @Override
+            public Locale getSetLanguageLocale(Context context) {
+                //返回自己本地保存选择的语言设置
+                return LocalManageUtil.getSetLanguageLocale(context);
+            }
+        });
+        MultiLanguage.setApplicationLanguage(this);
+
         mContext = getApplicationContext();
         is_national = MyShare.get(mContext).getBoolean(Constance.is_national);
 
