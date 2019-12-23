@@ -143,7 +143,7 @@ public class IotSceneAddActivity extends BaseActivity implements View.OnClickLis
                             caConditionJsonStr = sceneDetail.getString(Constance.caConditionsJson);
                         }
                         final org.json.JSONArray actionsArray=new org.json.JSONArray(actionsStr);
-                        PgyCrashManager.reportCaughtException(IotSceneAddActivity.this,new Exception(actionsStr));
+//                        PgyCrashManager.reportCaughtException(IotSceneAddActivity.this,new Exception(actionsStr));
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {

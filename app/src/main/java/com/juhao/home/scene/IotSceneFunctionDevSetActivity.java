@@ -155,7 +155,11 @@ public class IotSceneFunctionDevSetActivity extends BaseActivity implements View
                                                                     helper.setText(R.id.tv_property,getString(R.string.str_open));
                                                                     dialog.dismiss();
                                                                     isOpen = true;
-                                                                    item.property_value="1";
+                                                                    if(item.getIdentifier().equals("CurtainOperation")){
+                                                                        item.property_value="0";
+                                                                    }else {
+                                                                        item.property_value="1";
+                                                                    }
                                                                     item.property=getString(R.string.str_open);
                                                                 }
                                                             });
@@ -165,7 +169,11 @@ public class IotSceneFunctionDevSetActivity extends BaseActivity implements View
 //                                tv_property.setText(getString(R.string.str_close));
                                                                     helper.setText(R.id.tv_property,getString(R.string.str_close));
                                                                     item.property=getString(R.string.str_close);
-                                                                    item.property_value="0";
+                                                                    if(item.getIdentifier().equals("CurtainOperation")){
+                                                                        item.property_value="1";
+                                                                    }else {
+                                                                        item.property_value="0";
+                                                                    }
                                                                     dialog.dismiss();
                                                                     isOpen=false;
                                                                 }
@@ -191,7 +199,6 @@ public class IotSceneFunctionDevSetActivity extends BaseActivity implements View
                                                                 seekb_night.setProgress(stepInt);
                                                                 int oneStep=stepInt+Integer.parseInt(min);
                                                                 tv_progress.setText(""+(oneStep));
-
                                                                 item.property=""+oneStep;
                                                                 item.property_value=""+oneStep;
 //                                                                seekb_night.setMin(Integer.parseInt(min));

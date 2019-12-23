@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.BaseActivity;
+import com.aliyun.alink.linksdk.channel.mobile.api.IMobileDownstreamListener;
+import com.aliyun.alink.linksdk.channel.mobile.api.MobileChannel;
 import com.aliyun.alink.linksdk.tmp.device.panel.PanelDevice;
 import com.aliyun.alink.linksdk.tmp.device.panel.listener.IPanelCallback;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClient;
@@ -75,6 +77,83 @@ public class DeviceLockControlActivity extends BaseActivity implements View.OnCl
         tv_kaisuo.setOnClickListener(this);
         tv_linshimima.setOnClickListener(this);
         getLockState(Constance.Doorbell);
+        MobileChannel.getInstance().registerDownstreamListener(true, new IMobileDownstreamListener() {
+            @Override
+            public void onCommand(String s, String s1) {
+                LogUtils.logE("command",s+","+s1);
+                try {
+                    JSONObject jsonObject=new JSONObject(s1);
+                    if(jsonObject!=null){
+                        String ciotId=jsonObject.optString(Constance.iotId);
+                        if(ciotId!=null&&ciotId.equals(iotId)){
+                            JSONObject items=jsonObject.optJSONObject(Constance.items);
+                            if(items!=null){
+                                JSONObject Doorbell=items.getJSONObject(Constance.Doorbell);
+                                JSONObject OpenLock=items.getJSONObject(Constance.OpenLock);
+                                JSONObject BatteryPercentage=items.getJSONObject(Constance.BatteryPercentage);
+
+                                if(Doorbell!=null){
+                                    final int value=Doorbell.getInt(Constance.value);
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if(value==1){
+                                                tv_msg_1.setText(getResources().getString(R.string.str_doorbell_open));
+                                                isDoorOpen = true;
+                                            }else {
+                                                tv_msg_1.setText(getResources().getString(R.string.str_doorbell_close));
+                                                isDoorOpen=false;
+                                            }
+                                        }
+                                    });
+                                }
+                                if(OpenLock!=null){
+                                    final int value=OpenLock.getInt(Constance.value);
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if(value==1){
+                                                tv_msg_2.setText(getResources().getString(R.string.str_the_lock_is_opened));
+                                            }else {
+                                                tv_msg_2.setText(getResources().getString(R.string.str_the_lock_is_not_opened));
+                                            }
+                                        }
+                                    });
+                                }
+                                if(BatteryPercentage!=null){
+                                    final int value=BatteryPercentage.getInt(Constance.value);
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if(value<30){
+                                                iv_battery.setText(getString(R.string.icon_battery_low));
+                                                tv_battery.setText("低");
+                                                iv_battery.setTextColor(Color.RED);
+                                            }else if(value>=30&&value<60){
+                                                iv_battery.setText(getString(R.string.icon_battery_mid));
+                                                tv_battery.setText("中");
+                                            }else {
+                                                tv_battery.setText("高");
+                                                iv_battery.setText(getString(R.string.icon_battery_high));
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+                        }
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public boolean shouldHandle(String s) {
+                LogUtils.logE("shouldHandle",s+"");
+                return true;
+            }
+        });
+
 //        ApiClientForIot.getIotClient();
     }
 

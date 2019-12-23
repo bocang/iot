@@ -156,7 +156,7 @@ public class ItApplicationFragment extends BaseFragment implements EndOfListView
             @Override
             protected void convert(BaseAdapterHelper helper, final Scenes item) {
                 View rl_root=helper.getView(R.id.rl_root);
-                rl_root.setLayoutParams(new ViewGroup.LayoutParams(width,width*102/167));
+                rl_root.setLayoutParams(new LinearLayout.LayoutParams(width,width*102/167));
                 helper.setText(R.id.tv_name,item.getName());
                 TextView iv_icon=helper.getView(R.id.iv_icon);
                 ImageView iv_bg=helper.getView(R.id.iv_bg);
