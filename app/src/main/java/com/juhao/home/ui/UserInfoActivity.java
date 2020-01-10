@@ -153,9 +153,7 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
 
                 break;
             case R.id.rl_account:// 账号安全
-                mBundle.putString("user_phone", userInfo.userPhone);
-                mBundle.putString("user_location_code", userInfo.mobileLocationCode);
-                intent2Activity(AccountActivity.class, mBundle);
+                intent2Activity(AccountActivity.class);
                 break;
             case R.id.rl_timezone:// 时区
 

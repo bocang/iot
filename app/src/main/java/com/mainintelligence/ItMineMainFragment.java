@@ -188,7 +188,7 @@ public class ItMineMainFragment extends BaseFragment implements View.OnClickList
                 phone = userInfo.userEmail;
             }
             if (phone.length() > 10) {
-                phone = phone.substring(0, 3) + "******" + phone.substring(phone.length() - 3);
+                phone = phone.substring(0, 3) + "****" + phone.substring(phone.length() - 4);
             }
             if (!TextUtils.isEmpty(phone)) {
                 tv_name.setText(phone);

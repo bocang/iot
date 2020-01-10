@@ -11,6 +11,8 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim actionsheet_dialog_in
+anim actionsheet_dialog_out
 anim alpha_loop
 anim catalyst_fade_in
 anim catalyst_fade_out
@@ -47,7 +49,6 @@ anim push_top_out
 anim push_top_out2
 anim push_up_in
 anim push_up_out
-anim refreshlayout_load_more_cicle
 anim reverse_anim
 anim rotating
 anim slide_in_bottom
@@ -106,6 +107,7 @@ attr actionBarTheme
 attr actionBarWidgetTheme
 attr actionButtonStyle
 attr actionDropDownStyle
+attr actionImageTintList
 attr actionLayout
 attr actionMenuTextAppearance
 attr actionMenuTextColor
@@ -125,6 +127,7 @@ attr actionModeWebSearchDrawable
 attr actionOverflowButtonStyle
 attr actionOverflowMenuStyle
 attr actionProviderClass
+attr actionTextTintList
 attr actionViewClass
 attr activityChooserViewStyle
 attr actualImageResource
@@ -190,6 +193,7 @@ attr arrowHeadLength
 attr arrowShaftLength
 attr aspectRatioX
 attr aspectRatioY
+attr autoAdjustTextSize
 attr autoCompleteTextViewStyle
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
@@ -313,6 +317,18 @@ attr colorPrimaryDark
 attr colorScheme
 attr colorSecondary
 attr colorSwitchThumbNormal
+attr com_facebook_auxiliary_view_position
+attr com_facebook_confirm_logout
+attr com_facebook_foreground_color
+attr com_facebook_horizontal_alignment
+attr com_facebook_is_cropped
+attr com_facebook_login_text
+attr com_facebook_logout_text
+attr com_facebook_object_id
+attr com_facebook_object_type
+attr com_facebook_preset_size
+attr com_facebook_style
+attr com_facebook_tooltip_mode
 attr commitIcon
 attr constraintSet
 attr constraint_referenced_ids
@@ -343,7 +359,9 @@ attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
 attr customNavigationLayout
+attr cyclic
 attr debuggable
+attr decimalDigitsNumber
 attr defaultQueryHint
 attr default_artwork
 attr default_image
@@ -353,9 +371,11 @@ attr dialogPreferredPadding
 attr dialogTheme
 attr displayOptions
 attr divider
+attr dividerColor
 attr dividerDrawable
 attr dividerDrawableHorizontal
 attr dividerDrawableVertical
+attr dividerHeight
 attr dividerHorizontal
 attr dividerPadding
 attr dividerVertical
@@ -401,6 +421,7 @@ attr fastforward_increment
 attr finderOffset
 attr firstBaselineToTopHeight
 attr fixAspectRatio
+attr fixSpringBack
 attr flexDirection
 attr flexWrap
 attr floatingActionButtonStyle
@@ -421,6 +442,7 @@ attr foregroundInsidePadding
 attr frameColor
 attr framePadding
 attr frameWidth
+attr friction
 attr gapBetweenBars
 attr goIcon
 attr gravity
@@ -458,6 +480,7 @@ attr in_animation
 attr indeterminateProgressStyle
 attr initialActivityCount
 attr insetForeground
+attr integerFormat
 attr ipc_currentTime
 attr ipc_gradationColor
 attr ipc_gradationTextColor
@@ -470,8 +493,10 @@ attr ipc_minuteLen
 attr ipc_partColor
 attr ipc_secondLen
 attr isConvertDaysToHours
+attr isCyclic
 attr isDrawCircle
 attr isDrawLine
+attr isEnable
 attr isHideTimeBackground
 attr isLightTheme
 attr isShowDay
@@ -490,6 +515,7 @@ attr itemHorizontalTranslationEnabled
 attr itemIconPadding
 attr itemIconSize
 attr itemIconTint
+attr itemNumber
 attr itemPadding
 attr itemSpacing
 attr itemTextAppearance
@@ -669,7 +695,11 @@ attr navTextSize
 attr navigationContentDescription
 attr navigationIcon
 attr navigationMode
+attr navigationText
 attr navigationViewStyle
+attr noEmpty
+attr normalTextColor
+attr normalTextSize
 attr numericModifiers
 attr out_animation
 attr overlapAnchor
@@ -723,6 +753,16 @@ attr pstsTextViewColor
 attr pstsTextViewSize
 attr pstsUnderlineColor
 attr pstsUnderlineHeight
+attr pwv_asterisk
+attr pwv_borderColor
+attr pwv_borderStyle
+attr pwv_haveInputBorderColor
+attr pwv_maxLength
+attr pwv_pwdColor
+attr pwv_pwdStyle
+attr pwv_radius
+attr pwv_spacing
+attr pwv_strokeWidth
 attr queryBackground
 attr queryHint
 attr radioButtonStyle
@@ -758,6 +798,7 @@ attr roundingBorderColor
 attr roundingBorderPadding
 attr roundingBorderWidth
 attr rowSpace
+attr scale
 attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
@@ -773,6 +814,9 @@ attr searchViewStyle
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr selectedItemBackgroundColor
+attr selectedTextColor
+attr selectedTextSize
 attr shouldScaleToFill
 attr showAsAction
 attr showDivider
@@ -790,12 +834,14 @@ attr singleChoiceItemLayout
 attr singleLine
 attr singleSelection
 attr slv_infoarea_loading_background
+attr slv_infoarea_loading_height
 attr slv_infoarea_loading_size
 attr slv_infoarea_tip_background
 attr slv_infoarea_tip_size
 attr slv_loading_icon
 attr slv_loading_icon_size
 attr slv_loadtip_icon
+attr slv_loadtip_icon_roate_duration
 attr slv_loadtip_icon_size
 attr slv_loadview_location
 attr slv_tip2icon_space
@@ -845,6 +891,7 @@ attr suffixMillisecondLeftMargin
 attr suffixMinute
 attr suffixMinuteLeftMargin
 attr suffixMinuteRightMargin
+attr suffixPadding
 attr suffixSecond
 attr suffixSecondLeftMargin
 attr suffixSecondRightMargin
@@ -852,10 +899,14 @@ attr suffixTextColor
 attr suffixTextSize
 attr suggestionRowLayout
 attr surface_type
+attr switchAnimationDuration
+attr switchBackground
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
 attr switchTextAppearance
+attr switchThumb
+attr switchThumbPadding
 attr tabBackground
 attr tabContentStart
 attr tabGravity
@@ -988,12 +1039,14 @@ attr ucrop_oval_dimmed_layer
 attr ucrop_show_frame
 attr ucrop_show_grid
 attr ucrop_show_oval_crop_frame
+attr unitHeight
 attr unplayed_color
 attr useCompatPadding
 attr use_artwork
 attr use_controller
 attr viewAspectRatio
 attr viewInflaterClass
+attr visibleItemNum
 attr voiceIcon
 attr windowActionBar
 attr windowActionBarOverlay
@@ -1089,12 +1142,17 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color c131313
 color c9D9D9D
 color cF3F3F3
 color cF5AE1D
+color cFA5500
 color calendar_active_month_bg
 color calendar_bg
 color calendar_divider
@@ -1154,6 +1212,28 @@ color color_red
 color color_white
 color color_white_gray
 color colorview
+color com_facebook_blue
+color com_facebook_button_background_color
+color com_facebook_button_background_color_disabled
+color com_facebook_button_background_color_focused
+color com_facebook_button_background_color_focused_disabled
+color com_facebook_button_background_color_pressed
+color com_facebook_button_background_color_selected
+color com_facebook_button_border_color_focused
+color com_facebook_button_login_background_color
+color com_facebook_button_login_silver_background_color
+color com_facebook_button_login_silver_background_color_pressed
+color com_facebook_button_send_background_color
+color com_facebook_button_send_background_color_pressed
+color com_facebook_button_text_color
+color com_facebook_device_auth_text
+color com_facebook_likeboxcountview_border_color
+color com_facebook_likeboxcountview_text_color
+color com_facebook_likeview_text_color
+color com_facebook_messenger_blue
+color com_facebook_send_button_text_color
+color com_facebook_share_button_text_color
+color com_smart_login_code
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1294,6 +1374,8 @@ color textColor_alert_msg
 color textColor_alert_title
 color theme
 color theme_lines
+color theme_orange
+color theme_yellow
 color title_text
 color tooltip_background_dark
 color tooltip_background_light
@@ -1317,6 +1399,8 @@ color ucrop_color_widget_active
 color ucrop_color_widget_background
 color ucrop_color_widget_text
 color ucrop_scale_text_view_selector
+color ui_nav_bar_color_accent
+color ui_nav_bar_color_control
 color upsdk_blue_text_007dff
 color upsdk_category_button_select_pressed
 color upsdk_white
@@ -1404,6 +1488,8 @@ dimen activity_vertical_margin
 dimen ali_sdk_openaccount_status_bar_height
 dimen ali_sdk_openaccount_swipe_delete_button_width
 dimen ali_sdk_openaccount_title_bar_height
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen calendar_day_headers_paddingbottom
 dimen calendar_month_title_bottommargin
 dimen calendar_month_topmargin
@@ -1413,6 +1499,29 @@ dimen calendar_text_small
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
+dimen com_facebook_auth_dialog_corner_radius
+dimen com_facebook_auth_dialog_corner_radius_oversized
+dimen com_facebook_button_corner_radius
+dimen com_facebook_button_login_corner_radius
+dimen com_facebook_likeboxcountview_border_radius
+dimen com_facebook_likeboxcountview_border_width
+dimen com_facebook_likeboxcountview_caret_height
+dimen com_facebook_likeboxcountview_caret_width
+dimen com_facebook_likeboxcountview_text_padding
+dimen com_facebook_likeboxcountview_text_size
+dimen com_facebook_likeview_edge_padding
+dimen com_facebook_likeview_internal_padding
+dimen com_facebook_likeview_text_size
+dimen com_facebook_profilepictureview_preset_size_large
+dimen com_facebook_profilepictureview_preset_size_normal
+dimen com_facebook_profilepictureview_preset_size_small
+dimen com_facebook_share_button_compound_drawable_padding
+dimen com_facebook_share_button_padding_bottom
+dimen com_facebook_share_button_padding_left
+dimen com_facebook_share_button_padding_right
+dimen com_facebook_share_button_padding_top
+dimen com_facebook_share_button_text_size
+dimen com_facebook_tooltip_horizontal_padding
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -1496,6 +1605,9 @@ dimen index_left_icon_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen link__loading_view_icon_size
+dimen link__loading_view_size
+dimen link_toast_bottom_margin
 dimen marginBottom_actionsheet_msg
 dimen marginBottom_alert_msg
 dimen margin_actionsheet_left_right
@@ -1641,6 +1753,15 @@ dimen ucrop_size_dot_scale_text_view
 dimen ucrop_size_wrapper_rotate_button
 dimen ucrop_text_size_widget_text
 dimen ucrop_width_horizontal_wheel_progress_line
+dimen ui_nav_bar_control_size
+dimen ui_nav_bar_height
+dimen ui_nav_bar_image_control_margins
+dimen ui_nav_bar_nav_back_size
+dimen ui_nav_bar_title_size
+dimen ui_nav_menu_view_inset_end_icon
+dimen ui_nav_menu_view_inset_end_text
+dimen ui_nav_menu_view_inset_start_icon
+dimen ui_nav_menu_view_inset_start_text
 dimen xx10
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
@@ -1781,6 +1902,7 @@ drawable bg_corner_blue_15
 drawable bg_corner_cc1e1f24_2
 drawable bg_corner_cccccc_25
 drawable bg_corner_cccccc_5
+drawable bg_corner_cccccc_empty_25
 drawable bg_corner_empty_666666_15
 drawable bg_corner_empty_orange_15_left
 drawable bg_corner_empty_orange_15_right
@@ -1793,10 +1915,13 @@ drawable bg_corner_full_orange_2
 drawable bg_corner_full_orange_25
 drawable bg_corner_full_orange_5
 drawable bg_corner_full_red_2
+drawable bg_corner_full_trans_1
 drawable bg_corner_full_trans_11
 drawable bg_corner_full_trans_white
+drawable bg_corner_orange_empty_15
 drawable bg_corner_orange_full_granit
 drawable bg_corner_right_bottom_red
+drawable bg_corner_theme_25
 drawable bg_corner_trans
 drawable bg_corner_trans_empty_25
 drawable bg_corner_trans_left_bottom
@@ -1831,6 +1956,34 @@ drawable camera_pictures
 drawable camera_record
 drawable camera_settings
 drawable close_icon_white
+drawable com_facebook_auth_dialog_background
+drawable com_facebook_auth_dialog_cancel_background
+drawable com_facebook_auth_dialog_header_background
+drawable com_facebook_button_background
+drawable com_facebook_button_icon
+drawable com_facebook_button_icon_blue
+drawable com_facebook_button_icon_white
+drawable com_facebook_button_like_background
+drawable com_facebook_button_like_icon_selected
+drawable com_facebook_button_login_background
+drawable com_facebook_button_login_logo
+drawable com_facebook_button_login_silver_background
+drawable com_facebook_button_send_background
+drawable com_facebook_button_send_icon_blue
+drawable com_facebook_button_send_icon_white
+drawable com_facebook_close
+drawable com_facebook_favicon_blue
+drawable com_facebook_profile_picture_blank_portrait
+drawable com_facebook_profile_picture_blank_square
+drawable com_facebook_send_button_icon
+drawable com_facebook_tooltip_black_background
+drawable com_facebook_tooltip_black_bottomnub
+drawable com_facebook_tooltip_black_topnub
+drawable com_facebook_tooltip_black_xout
+drawable com_facebook_tooltip_blue_background
+drawable com_facebook_tooltip_blue_bottomnub
+drawable com_facebook_tooltip_blue_topnub
+drawable com_facebook_tooltip_blue_xout
 drawable com_taobao_tae_sdk_web_view_title_bar_back
 drawable com_taobao_tae_sdk_web_view_title_bar_close
 drawable common_full_open_on_phone
@@ -1855,6 +2008,7 @@ drawable common_google_signin_btn_text_light_normal_background
 drawable complete
 drawable corners_bg_gray
 drawable corners_bg_white
+drawable cursor_color
 drawable day_text_color
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1865,6 +2019,7 @@ drawable design_snackbar_background
 drawable device_bg
 drawable device_scan
 drawable device_type_bg
+drawable dialog_item_divider
 drawable errors_no_pic
 drawable exo_controls_fastforward
 drawable exo_controls_fullscreen_enter
@@ -1906,15 +2061,23 @@ drawable hollow_unpressed_btnbg
 drawable ic_gif
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_loading_icon
+drawable ic_loading_icon_bg
+drawable ic_loadmore
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_nav_back
 drawable ic_photo_camera
+drawable ic_status_view_empty
+drawable ic_status_view_error
 drawable icon_back
 drawable icon_image_select
 drawable icon_image_un_select
 drawable icon_right_normal
 drawable ilop_ota_device_icon_default
+drawable ilop_status_view_retry_btn_outline
+drawable input_bg
 drawable ipc_hint_replay_bg
 drawable ipc_history_listview_selector_bg
 drawable ipc_red_dot
@@ -1928,8 +2091,20 @@ drawable ipc_video_btn_pause_resume
 drawable ipc_video_txt_calendar_day_color
 drawable link_simplelaodview_loading_default_icon
 drawable link_simplelaodview_loadtip_default_icon
+drawable link_simpleloadview_loading_bg
 drawable link_simpleloadview_loading_default_bg
+drawable link_simpleloadview_loading_rn
 drawable link_switch_checked
+drawable ll_vertical_divider
+drawable messenger_bubble_large_blue
+drawable messenger_bubble_large_white
+drawable messenger_bubble_small_blue
+drawable messenger_bubble_small_white
+drawable messenger_button_blue_bg_round
+drawable messenger_button_blue_bg_selector
+drawable messenger_button_send_round_shadow
+drawable messenger_button_white_bg_round
+drawable messenger_button_white_bg_selector
 drawable mine_bot_bar_wise
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1956,7 +2131,11 @@ drawable openaccount_ic_search_disabled
 drawable openaccount_ic_search_normal
 drawable openaccount_ic_search_pressed
 drawable openaccount_ic_tip
+drawable page_start_country_selected
 drawable po_seekbar
+drawable po_seekbar_light
+drawable po_seekbar_light_disabled
+drawable po_seekbar_light_temp
 drawable product_bot_bar_intelligent
 drawable ptz_btn_bg
 drawable redbox_top_border_background
@@ -2005,6 +2184,10 @@ drawable state_range_middle
 drawable state_range_middle_unavailable
 drawable state_selected
 drawable state_unavailable
+drawable switch_thumb
+drawable switch_track_bg
+drawable switch_track_off
+drawable switch_track_on
 drawable tab_textcolor_selector
 drawable text_indicator
 drawable toast_bg
@@ -2031,9 +2214,10 @@ drawable window_about_svg
 drawable window_home_svg
 drawable window_log_svg
 drawable window_scan_svg
-drawable yw_1222_114d
-drawable yw_1222_develop_china
-drawable yw_1222_develop_oversea
+drawable yw_1222_china_develop
+drawable yw_1222_china_production
+drawable yw_1222_oversea_develop
+drawable yw_1222_oversea_production
 id ALT
 id CTRL
 id FUNCTION
@@ -2077,6 +2261,8 @@ id adjust_width
 id alertButtonListView
 id alertTitle
 id ali_oa_send_email_success_tip
+id ali_sdk_openaccount_back
+id ali_sdk_openaccount_title
 id ali_sdk_openaccount_title_bar
 id ali_user_checkcode_next
 id ali_user_confirm_textview
@@ -2120,6 +2306,7 @@ id aloadview2_textview_tip
 id alogWebView
 id alog_lable
 id alog_sysinfo
+id alpha
 id always
 id api_client_demo_api_version_edittext
 id api_client_demo_host_edittext
@@ -2135,17 +2322,28 @@ id api_client_demo_scheme_https_radiobutton
 id api_client_demo_scheme_radiogroup
 id api_client_demo_test_button
 id appsize_textview
+id asterisk
 id async
 id auto
+id automatic
 id back
 id barrier
 id baseline
 id beginning
+id bg
+id big_pic
 id bind_and_use_btn
 id bind_info_panel
 id blocking
 id bottom
 id bottom_bar
+id box
+id box_count
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id bt_cancel
 id bt_clear
 id bt_del
@@ -2160,16 +2358,19 @@ id btn_confirm
 id btn_folder
 id btn_ok
 id btn_preview
+id btn_select_country
 id btn_submit
 id bugDescription
 id bugId
 id bugIdUrl
 id bugTitle
+id button
 id buttonPanel
 id calendar_grid
 id calendar_view
 id cancel_action
 id cancel_bg
+id cancel_button
 id cancel_imageview
 id capture_btn
 id card_duration_tv
@@ -2196,17 +2397,31 @@ id chooseFiles
 id choose_cb
 id chosenFileListTv
 id chronometer
+id circle
 id clear
 id clip_horizontal
 id clip_vertical
 id close_btn
+id code
+id code_view
 id collapseActionView
 id column
 id column_reverse
+id com_facebook_body_frame
+id com_facebook_button_xout
+id com_facebook_device_auth_instructions
+id com_facebook_fragment_container
+id com_facebook_login_activity_progress_bar
+id com_facebook_smart_instructions_0
+id com_facebook_smart_instructions_or
+id com_facebook_tooltip_bubble_view_bottom_pointer
+id com_facebook_tooltip_bubble_view_text_body
+id com_facebook_tooltip_bubble_view_top_pointer
 id com_taobao_tae_sdk_web_view_title_bar
 id com_taobao_tae_sdk_web_view_title_bar_back_button
 id com_taobao_tae_sdk_web_view_title_bar_close_button
 id com_taobao_tae_sdk_web_view_title_bar_title
+id confirmation_code
 id container
 id content
 id contentPanel
@@ -2214,15 +2429,19 @@ id content_container
 id content_layout
 id content_textview
 id coordinator
+id countryLetterListView
 id country_catalog
 id country_catalog_text
 id country_choose_btn
 id country_code
+id country_code_hint
 id country_code_subfix
 id country_dialog
+id country_layout
 id country_list
 id country_name
 id country_sidebar
+id country_title
 id crop_aspect_ratio_16_9
 id crop_aspect_ratio_1_1
 id crop_aspect_ratio_3_2
@@ -2248,9 +2467,11 @@ id device_panel_name
 id device_panel_status
 id device_panel_type
 id device_verifying
+id dialog_item
 id dimensions
 id direct
 id disableHome
+id display_always
 id divider
 id down_btn
 id down_left_btn
@@ -2260,6 +2481,7 @@ id dumpRawLogBtn
 id edit_query
 id edt_chosed_country_num
 id edt_chosed_country_num_sub
+id edt_password
 id end
 id end_padder
 id end_picker
@@ -2273,6 +2495,7 @@ id et_nickname
 id et_phone
 id et_pwd
 id et_pwd_input
+id et_room_name
 id et_suggestion
 id et_time
 id et_wifi
@@ -2348,10 +2571,12 @@ id group_divider
 id groups
 id gv
 id gv_device
+id gv_get_warm
 id gv_image
 id gv_pic
 id gv_sort
 id gv_style
+id gv_tuijian
 id height
 id high_definition_btn
 id hls_player_view
@@ -2378,6 +2603,7 @@ id ilop_main_back_btn
 id ilop_main_menu
 id ilop_main_menu_add_device_btn
 id ilop_main_menu_scan_btn
+id ilop_pagestart_default_country_name
 id image
 id image_dialog_root
 id image_rl
@@ -2388,6 +2614,7 @@ id image_view_state_scale
 id img
 id img_guanbi
 id info
+id inline
 id input
 id input_box
 id input_history
@@ -2405,16 +2632,19 @@ id iv_add
 id iv_add_action
 id iv_add_condition
 id iv_arrow
+id iv_back
 id iv_battery
 id iv_bg
 id iv_bg_color
 id iv_camera
 id iv_check
+id iv_clear_password
 id iv_close
 id iv_color
 id iv_control
 id iv_day_switch
 id iv_edit
+id iv_eye_password
 id iv_gif
 id iv_head
 id iv_icon
@@ -2439,12 +2669,14 @@ id iv_select
 id iv_selected
 id iv_setting
 id iv_shengyin
+id iv_sort
 id iv_status
 id iv_suofang
 id iv_turn
 id iv_week_switch
 id iv_yuyin
 id labeled
+id large
 id largeLabel
 id layout_aspect_ratio
 id layout_rotate_wheel
@@ -2456,8 +2688,27 @@ id left_icon
 id left_top
 id light
 id light_icon
+id line
 id line1
 id line3
+id line_title
+id linear_buttons
+id linear_icons
+id link_loadmore_icon
+id link_loadmore_loading_view
+id link_status_content_view
+id link_status_empty_icon
+id link_status_empty_text
+id link_status_empty_view
+id link_status_error_icon
+id link_status_error_retry
+id link_status_error_text
+id link_status_error_view
+id link_status_loading_bg
+id link_status_loading_icon
+id link_status_loading_text
+id link_status_loading_view
+id link_status_view
 id listMode
 id list_item
 id list_item_event_desc_tv
@@ -2471,6 +2722,8 @@ id ll_calendar
 id ll_cmd
 id ll_condition
 id ll_content
+id ll_header_back
+id ll_header_fail_back
 id ll_home
 id ll_img
 id ll_kaiguan
@@ -2488,6 +2741,7 @@ id ll_none_device
 id ll_pic
 id ll_repeat
 id ll_replay
+id ll_root
 id ll_scene_home
 id ll_seek
 id ll_seek_tv
@@ -2526,6 +2780,7 @@ id lv_it
 id lv_missions
 id lv_record
 id lv_region_num
+id lv_room
 id lv_scenes
 id lv_week
 id lv_wifi
@@ -2542,6 +2797,7 @@ id menu_logout_textview
 id menu_name_textview
 id menu_settings
 id message
+id messenger_send_button
 id middle
 id min
 id mini
@@ -2560,11 +2816,13 @@ id my_userinfo
 id my_userlogo_imageview
 id my_username_textview
 id my_vdevice_panel
+id name
 id name_layout
 id name_textview
 id navigation_header_container
 id negative_btn
 id never
+id never_display
 id next
 id none
 id nor_definition_btn
@@ -2573,6 +2831,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id nowrap
+id oat_title
 id oauth
 id oauth_1
 id oauth_1_layout
@@ -2594,6 +2853,7 @@ id on
 id onTouch
 id one
 id open_eye
+id open_graph
 id open_history
 id options1
 id options2
@@ -2604,6 +2864,7 @@ id other_plateform_login
 id outline
 id outmost_container
 id packed
+id page
 id parallax
 id parent
 id parentPanel
@@ -2616,6 +2877,7 @@ id photo_view
 id pic_iv
 id picture_btn
 id pin
+id plaintext
 id plan_bind_btn
 id plan_unbind_btn
 id player_container
@@ -2625,6 +2887,7 @@ id player_stream_loading_time_tv
 id player_textureview
 id positive_btn
 id process_img
+id progress_bar
 id progress_circular
 id progress_horizontal
 id pullToRefresh
@@ -2636,7 +2899,6 @@ id record_btn
 id record_rl
 id recycle_view
 id refresh
-id refreshlayout_load_more_icon
 id register
 id reportBugBtn
 id reportBugContinueBtn
@@ -2658,6 +2920,7 @@ id rl_begin_time
 id rl_bg
 id rl_bottom_bar
 id rl_change_password
+id rl_china
 id rl_clear_cache
 id rl_contain_video
 id rl_control
@@ -2673,6 +2936,7 @@ id rl_hj
 id rl_home_disappear
 id rl_image
 id rl_img
+id rl_item
 id rl_item_click
 id rl_jc
 id rl_lj
@@ -2684,6 +2948,7 @@ id rl_night_time
 id rl_offline
 id rl_pic_test_header
 id rl_qc
+id rl_room_manage
 id rl_root
 id rl_sd_card
 id rl_sensitivity
@@ -2694,6 +2959,7 @@ id rl_style
 id rl_time_control
 id rl_timezone
 id rl_timing
+id rl_title
 id rl_top
 id rl_top_bar
 id rl_trigger
@@ -2722,8 +2988,10 @@ id save_btn
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
+id sb_bright
 id sb_player
 id sb_small
+id sb_temp
 id scale_scroll_wheel
 id screen
 id scroll
@@ -2732,6 +3000,7 @@ id scrollIndicatorUp
 id scrollView
 id scroll_layout
 id scrollable
+id scrollview
 id sdk_list
 id search_badge
 id search_bar
@@ -2763,7 +3032,10 @@ id simpleloadview_root_linearlayout
 id simpleloadview_topbar_dele_view
 id simpleloadview_upper_blanspace_view
 id size_layout
+id small
 id smallLabel
+id small_btn
+id smallicon
 id sms_code_input_box
 id snackbar_action
 id snackbar_text
@@ -2798,6 +3070,7 @@ id surface_view
 id tabMode
 id tab_layout
 id tab_text
+id tab_viewpager
 id tabs
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -2869,6 +3142,7 @@ id tv_add_condition
 id tv_add_home
 id tv_add_img
 id tv_add_mission
+id tv_add_room
 id tv_air_outside
 id tv_alarm_period
 id tv_area
@@ -2879,6 +3153,7 @@ id tv_begin_time
 id tv_bind
 id tv_bottom_1
 id tv_bottom_2
+id tv_bright_progress
 id tv_cache
 id tv_cancel
 id tv_cancle
@@ -2893,11 +3168,13 @@ id tv_clock_1
 id tv_clock_2
 id tv_close
 id tv_code
+id tv_code_error
 id tv_color
 id tv_complete
 id tv_component
 id tv_confirm
 id tv_content
+id tv_count_down
 id tv_countdown
 id tv_countdown_add
 id tv_current_repeat
@@ -2927,6 +3204,7 @@ id tv_device_share
 id tv_doit
 id tv_duration_all
 id tv_duration_cur
+id tv_edit
 id tv_effect
 id tv_end_time
 id tv_ensure
@@ -2958,6 +3236,8 @@ id tv_klx
 id tv_last_version
 id tv_linshimima
 id tv_list
+id tv_location_again
+id tv_location_fail
 id tv_login
 id tv_logout
 id tv_mate_setting
@@ -2997,6 +3277,8 @@ id tv_register
 id tv_remain
 id tv_report_frequency
 id tv_restart
+id tv_room
+id tv_room_count
 id tv_save
 id tv_scene
 id tv_sd_card_status
@@ -3016,8 +3298,11 @@ id tv_stream_quailty
 id tv_stream_quailty_0
 id tv_stream_quailty_1
 id tv_stream_quailty_2
+id tv_submit
 id tv_suggest_type
 id tv_suggestion
+id tv_switch
+id tv_temp
 id tv_temp_outside
 id tv_time
 id tv_time_range
@@ -3034,12 +3319,20 @@ id tv_unbind
 id tv_update
 id tv_upset_device
 id tv_user_phone
+id tv_user_protc
 id tv_version
 id tv_version_tips
 id tv_weeks
+id tv_white_light
+id tv_yellow_light
 id txtMsg
 id ucrop
+id ui_nav_bar_content_view
+id ui_nav_bar_divider
+id ui_nav_bar_menu_view
+id ui_nav_bar_nav_back
 id uniform
+id unknown
 id unlabeled
 id up
 id up_btn
@@ -3067,6 +3360,7 @@ id view_2
 id view_22
 id view_auto
 id view_disabled
+id view_item_top_line
 id view_kg_1
 id view_kg_2
 id view_kg_3
@@ -3156,12 +3450,14 @@ layout abc_tooltip
 layout about_activity
 layout activity_about
 layout activity_account
+layout activity_account_code
 layout activity_alexa
 layout activity_alexa_detail
 layout activity_alog
 layout activity_alog_web
 layout activity_auto_add
 layout activity_card_video
+layout activity_change_password
 layout activity_clip_image
 layout activity_count_down
 layout activity_count_down_delay
@@ -3176,7 +3472,10 @@ layout activity_device_tips_add
 layout activity_devices
 layout activity_easy_plan_settings
 layout activity_event_video
+layout activity_get_warm_control
+layout activity_home_manage
 layout activity_home_mate
+layout activity_home_setting
 layout activity_image_select
 layout activity_image_store
 layout activity_index
@@ -3212,6 +3511,7 @@ layout activity_preview
 layout activity_record
 layout activity_repeat_setting
 layout activity_report_bug_successful
+layout activity_room_add
 layout activity_sd_card
 layout activity_setting
 layout activity_sort_dev
@@ -3220,10 +3520,12 @@ layout activity_splash
 layout activity_suggest_device
 layout activity_suggest_home
 layout activity_suggest_record
+layout activity_test
 layout activity_tm
 layout activity_user_info
 layout activity_vodplayer
 layout activity_web_view
+layout activity_web_view_data
 layout activity_week_select
 layout activity_wifi_select
 layout adapter_camera
@@ -3231,6 +3533,7 @@ layout adapter_folder
 layout adapter_images_item
 layout add_device_activity
 layout alert_dialog
+layout alert_dialog_input
 layout ali_sdk_openaccount_activity_parent_default_content
 layout ali_sdk_openaccount_activity_parent_material
 layout ali_sdk_openaccount_basewebview
@@ -3278,8 +3581,15 @@ layout api_client_demo_activity
 layout api_client_demo_result_activity
 layout bind_and_use_activity
 layout bottom_dialog
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout camera_layout_video_repaly
 layout camera_layout_video_small_seek
+layout com_facebook_activity_layout
+layout com_facebook_device_auth_dialog_fragment
+layout com_facebook_login_fragment
+layout com_facebook_smart_device_dialog_fragment
+layout com_facebook_tooltip_bubble
 layout custom_date_picker
 layout debug_fragment_layout
 layout debug_layout_view
@@ -3299,9 +3609,12 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dev_loading_view
 layout device_panel_layout
+layout dialog_delete_room
 layout dialog_device_select
 layout dialog_home
 layout dialog_image_detail
+layout dialog_item
+layout dialog_lamb_all
 layout dialog_layout
 layout dialog_layout_input_nickname
 layout dialog_layout_system
@@ -3333,6 +3646,12 @@ layout frag_it_main_home
 layout frag_it_main_mine
 layout hms_download_progress
 layout hometab_fragment_layout
+layout hwpush_buttons_layout
+layout hwpush_icons_layout
+layout hwpush_layout2
+layout hwpush_layout4
+layout hwpush_layout7
+layout hwpush_layout8
 layout include_alertheader
 layout include_pickerview_topbar
 layout ipc_history_video_footer
@@ -3352,18 +3671,22 @@ layout item_device_cate_1
 layout item_device_cate_2
 layout item_device_share
 layout item_feedback_record
+layout item_get_warm_bean
 layout item_home_dev
 layout item_home_mate
 layout item_image
 layout item_lv_devices
 layout item_react_wheelview
+layout item_room_list
 layout item_scene
 layout item_scene_auto
 layout item_scene_style
 layout item_share_devices
 layout item_share_devices_user
 layout item_sort_dev
+layout item_sort_room
 layout item_sort_scene
+layout item_tuijian
 layout item_week
 layout item_wifi
 layout layout_alertview
@@ -3373,9 +3696,22 @@ layout layout_alertview_alert_horizontal
 layout layout_alertview_alert_vertical
 layout layout_area_choose
 layout layout_basepickerview
+layout link_actionbar_layout
+layout link_loading_status_fragment
+layout link_refresh_layout_loadmore_view
+layout link_status_view
+layout link_status_view_empty
+layout link_status_view_error
+layout link_tab_page
 layout link_toast
 layout link_view_simpleloadview
 layout menu_dialog
+layout messenger_button_send_blue_large
+layout messenger_button_send_blue_round
+layout messenger_button_send_blue_small
+layout messenger_button_send_white_large
+layout messenger_button_send_white_round
+layout messenger_button_send_white_small
 layout month
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -3407,10 +3743,18 @@ layout popup_bubble
 layout popup_home_list_type
 layout popup_stream_quality
 layout ptz_layout
+layout recyclerview
 layout redbox_item_frame
 layout redbox_item_title
 layout redbox_view
-layout refreshlayout_recycle_item_load_more
+layout sdk_framework_ali_sdk_openaccount_mobile_country_item2
+layout sdk_framework_ali_sdk_openaccount_mobile_country_selector2
+layout sdk_framework_ali_sdk_openaccount_title_layout_2
+layout sdk_framework_country_list
+layout sdk_framework_header_view
+layout sdk_framework_header_view_location_fail
+layout sdk_framework_list_item
+layout sdk_framework_overlay
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3453,6 +3797,7 @@ mipmap btn_icon_on_default
 mipmap btn_icon_timing_default
 mipmap btn_off
 mipmap btn_on
+mipmap clear
 mipmap fh
 mipmap hj
 mipmap home_balcony
@@ -3502,6 +3847,7 @@ mipmap icon_about
 mipmap icon_add_scene
 mipmap icon_battery_high
 mipmap icon_bkj
+mipmap icon_bkj_on
 mipmap icon_check_nor
 mipmap icon_check_sel
 mipmap icon_choose
@@ -3533,6 +3879,7 @@ mipmap icon_pop_list_type_1
 mipmap icon_pop_list_type_2
 mipmap icon_qt
 mipmap icon_right
+mipmap icon_room
 mipmap icon_scene_auto_off
 mipmap icon_scene_auto_on
 mipmap icon_service
@@ -3605,7 +3952,6 @@ mipmap tab_me_sel
 mipmap tab_zn_nor
 mipmap tab_zn_sel
 mipmap third_mall
-mipmap thumb
 mipmap tjsb_fh
 mipmap tyzx_cd
 mipmap tyzx_ds_nor
@@ -3685,6 +4031,7 @@ string account_get_userinfo_exception
 string account_hot_country
 string account_input_new_passwrod
 string account_input_password
+string account_loading_loginout
 string account_login
 string account_login_exception
 string account_login_failed
@@ -4077,6 +4424,7 @@ string character_counter_content_description
 string character_counter_pattern
 string choose_files
 string chosen_files
+string click_retry
 string code_get
 string code_get_hint
 string code_hint
@@ -4087,6 +4435,29 @@ string com_alibaba_sdk_android_openaccount_google_fail
 string com_alibaba_sdk_android_openaccount_google_service_not_available
 string com_alibaba_sdk_android_openaccount_more_message
 string com_alibaba_sdk_android_openaccount_twitter_fail
+string com_facebook_device_auth_instructions
+string com_facebook_image_download_unknown_error
+string com_facebook_internet_permission_error_message
+string com_facebook_internet_permission_error_title
+string com_facebook_like_button_liked
+string com_facebook_like_button_not_liked
+string com_facebook_loading
+string com_facebook_loginview_cancel_action
+string com_facebook_loginview_log_in_button
+string com_facebook_loginview_log_in_button_continue
+string com_facebook_loginview_log_in_button_long
+string com_facebook_loginview_log_out_action
+string com_facebook_loginview_log_out_button
+string com_facebook_loginview_logged_in_as
+string com_facebook_loginview_logged_in_using_facebook
+string com_facebook_send_button_text
+string com_facebook_share_button_text
+string com_facebook_smart_device_instructions
+string com_facebook_smart_device_instructions_or
+string com_facebook_smart_login_confirmation_cancel
+string com_facebook_smart_login_confirmation_continue_as
+string com_facebook_smart_login_confirmation_title
+string com_facebook_tooltip_default
 string commit
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -4106,6 +4477,10 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string component_cancel
+string component_set_up
+string component_unopened_location_service
+string component_unopened_location_service_des
 string confirm
 string copyright_info_en
 string copyright_title_text
@@ -4161,6 +4536,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string facebook_app_id
 string fb_login_protocol_scheme
+string fcm_fallback_notification_channel_label
 string find_pwd_affirm
 string find_pwd_btn
 string find_pwd_code
@@ -4177,8 +4553,6 @@ string hint_alink_business_ex_demo_method_name
 string hint_scan
 string hms_abort
 string hms_abort_message
-string hms_base_google
-string hms_base_vmall
 string hms_bindfaildlg_message
 string hms_bindfaildlg_title
 string hms_cancel
@@ -4196,14 +4570,10 @@ string hms_gamebox_name
 string hms_install
 string hms_install_message
 string hms_push_channel
-string hms_push_google
-string hms_push_vmall
 string hms_retry
 string hms_update
-string hms_update_continue
 string hms_update_message
 string hms_update_message_new
-string hms_update_nettype
 string hms_update_title
 string hour
 string icon_alarm_period
@@ -4217,8 +4587,10 @@ string icon_dot_normal
 string icon_dot_select
 string icon_grid_type
 string icon_home_tab_home
+string icon_lamb_switch
 string icon_list_type
 string icon_listview_type
+string icon_room
 string icon_setting
 string icon_sort
 string icon_wifi_change
@@ -4343,9 +4715,24 @@ string jsbridge_core_error_message_no_handler
 string jsbridge_core_error_message_runtime_error
 string link_description
 string link_simpleloadview_default_tip
+string locating
+string location_failed
+string location_failed_again
+string login_country_selected
+string login_create_account
+string login_go_choose
+string login_google_text
+string login_locate
+string login_location_fail
+string login_no_select_country_text
+string login_no_select_country_title
 string login_pwd_affirm_hint
+string login_start
+string login_welcome
+string messenger_send_button_text
 string mic_switch_key
 string mic_switch_title
+string mine_setting_choose_country
 string minute
 string mobile_assert
 string month
@@ -4398,12 +4785,14 @@ string pickerview_year
 string platform
 string preview
 string privacy_switch_title
-string push_cat_body
-string push_cat_head
 string pwd_new_hint
 string reboot_key
 string reboot_title
 string refreshlayout_load_more
+string region_cancel
+string region_china
+string region_header_title
+string region_restart_confirm
 string report_bug
 string report_bug_continue
 string report_finish
@@ -4423,6 +4812,7 @@ string select_date
 string select_time
 string server_client_id
 string server_error
+string share_confirm_dialog_sure
 string speaker_switch_key
 string speaker_switch_title
 string start_record
@@ -4457,6 +4847,7 @@ string str_add_auto
 string str_add_condition
 string str_add_device
 string str_add_mission
+string str_add_room
 string str_add_scene
 string str_add_scene_str
 string str_add_share
@@ -4466,6 +4857,7 @@ string str_agreement
 string str_alarm_period
 string str_alarm_setting
 string str_all_day
+string str_all_lamb
 string str_alx_tips1
 string str_alx_tips2
 string str_alx_tips3
@@ -4475,26 +4867,31 @@ string str_atleastone
 string str_auto
 string str_auto_mode
 string str_auto_on_off
+string str_baifeng
 string str_begin_time
 string str_bind_step
 string str_bind_success
 string str_blue_light
+string str_bright
 string str_buildtype
 string str_cancel
 string str_cancel_share
 string str_cancel_success
 string str_change_version
 string str_change_version_2
+string str_china
 string str_choose
 string str_choose_condition
 string str_choose_device
 string str_choose_function
+string str_chuifeng
 string str_clear_cache
 string str_click_setting
 string str_click_to_set_nickname
 string str_close
 string str_close_curtain
 string str_color
+string str_complete
 string str_condition
 string str_connect_type
 string str_connecting
@@ -4513,6 +4910,7 @@ string str_day_mode
 string str_day_night_mode
 string str_deivce_select
 string str_delay
+string str_delete
 string str_delete_auto
 string str_delete_condition
 string str_delete_countdown
@@ -4537,6 +4935,7 @@ string str_edit_success
 string str_effect_period
 string str_end_time
 string str_ensure
+string str_ensure_delete_room
 string str_enter_account
 string str_everyday
 string str_everyweek
@@ -4553,6 +4952,7 @@ string str_format_sd_card
 string str_fri
 string str_friday
 string str_function_suggest
+string str_ganzao
 string str_get_up
 string str_go_out
 string str_gohome
@@ -4561,12 +4961,15 @@ string str_head
 string str_high
 string str_high_frequency
 string str_home
+string str_home_setting
+string str_huanqi
 string str_icon
 string str_img
 string str_incident_reporting_frequency
 string str_init_exception
 string str_input_contact_info
 string str_input_home_wifi
+string str_input_room_name
 string str_input_suggest_info
 string str_juhao_smart
 string str_kaiguan
@@ -4590,6 +4993,7 @@ string str_mission
 string str_mobile_email
 string str_mon
 string str_monday
+string str_muyu
 string str_my_devices
 string str_my_home
 string str_name
@@ -4631,12 +5035,16 @@ string str_please_input_name
 string str_privace
 string str_privacy
 string str_privacy_content
+string str_privacy_web_data
 string str_pwd
 string str_qing
+string str_qunuan
 string str_remain_store
 string str_repeat
 string str_restart
 string str_restart_tips
+string str_room_delete_tips
+string str_room_manage
 string str_room_temp
 string str_sat
 string str_saturday
@@ -4675,6 +5083,7 @@ string str_sunday
 string str_sure_logout
 string str_switch_close
 string str_switch_open
+string str_temp
 string str_the_door_is_not_open
 string str_the_highest
 string str_the_lock_is_not_opened
@@ -4707,6 +5116,8 @@ string str_upload_pic
 string str_upload_success
 string str_upset_device
 string str_use_amazon
+string str_user_protc
+string str_user_web_data
 string str_version_sdk_old
 string str_wait
 string str_wed
@@ -4716,6 +5127,7 @@ string str_week_loop
 string str_when_satisfy_condition
 string str_you
 string str_you_can_say_that
+string str_zhaoming
 string stream_video_quality_key
 string stream_video_quality_sum
 string stream_video_quality_title
@@ -4727,10 +5139,14 @@ string timer_send_re
 string timer_sending
 string title
 string toast_report_bug_item
+string tp_loading
 string ucrop_error_input_data_is_absent
 string ucrop_label_edit_photo
 string ucrop_label_original
 string ucrop_menu_crop
+string ui_navigation_bar_desc_back
+string ui_navigation_bar_divider
+string ui_navigation_menu_item_raw
 string unbind_key
 string unbind_title
 string upload_files
@@ -4752,7 +5168,6 @@ string upsdk_ota_force_cancel_new
 string upsdk_ota_notify_updatebtn
 string upsdk_ota_title
 string upsdk_storage_utils
-string upsdk_store_url
 string upsdk_third_app_dl_cancel_download_prompt_ex
 string upsdk_third_app_dl_install_failed
 string upsdk_third_app_dl_sure_cancel_download
@@ -4768,6 +5183,7 @@ style ASlideDialog
 style About_Info_TextView
 style About_Info_Value_TextView
 style AccountDevice
+style ActionSheetDialogAnimation
 style AlertActivity_AlertStyle
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -5000,7 +5416,22 @@ style ExoMediaButton_Previous
 style ExoMediaButton_Rewind
 style ExoMediaButton_Shuffle
 style FillPassword
+style LinkSwitch
 style Login
+style MessengerButton
+style MessengerButton_Blue
+style MessengerButton_Blue_Large
+style MessengerButton_Blue_Small
+style MessengerButton_White
+style MessengerButton_White_Large
+style MessengerButton_White_Small
+style MessengerButtonText
+style MessengerButtonText_Blue
+style MessengerButtonText_Blue_Large
+style MessengerButtonText_Blue_Small
+style MessengerButtonText_White
+style MessengerButtonText_White_Large
+style MessengerButtonText_White_Small
 style MobileCountrySelector
 style MyAppTheme
 style MyDialog
@@ -5011,6 +5442,7 @@ style OpenAccountDefault
 style OpenAccountGeneralEditText
 style OpenAccountQrLogin
 style OverflowMenuStyle
+style Page_RN_Loading
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -5350,10 +5782,18 @@ style btndeleteStyle
 style buttom_dialog
 style button_style
 style colorPrimaryTextStyle
+style com_facebook_activity_theme
+style com_facebook_auth_dialog
+style com_facebook_auth_dialog_instructions_textview
+style com_facebook_button
+style com_facebook_button_like
+style com_facebook_button_send
+style com_facebook_button_share
+style com_facebook_loginview_default_style
+style com_facebook_loginview_silver_style
 style customDialog
 style custom_dialog2
 style custom_seekbar
-style defaultLinkSwitch
 style dialogWindowAnim
 style dialogWindowAnim02
 style editCodePStyle
@@ -5375,6 +5815,7 @@ style permission_PermissionActivity
 style pickerview_dialogAnim
 style redboxButton
 style time_dialog
+style tooltip_bubble_text
 style tv_it_mine
 style tv_mine
 style txtDefaultStyle
@@ -5383,6 +5824,15 @@ style ucrop_TextViewCropAspectRatio
 style ucrop_TextViewWidgetText
 style ucrop_WrapperIconState
 style ucrop_WrapperRotateButton
+style ui__navigationBar
+style ui__navigationBar_ContentView
+style ui__navigationBar_ImageControl
+style ui__navigationBar_MenuView
+style ui__navigationBar_NavigationBack
+style ui__navigationBar_TextControl
+style ui__navigationBar_Title
+style ui__navigationBar_TitleTextAppearance
+style ui__navigationBar_divider
 style upsdkDlDialog
 style video_repaly
 style view_style
@@ -5447,12 +5897,14 @@ styleable ForegroundLinearLayout android_foreground android_foregroundGravity fo
 styleable GenericDraweeHierarchy actualImageScaleType backgroundImage fadeDuration failureImage failureImageScaleType overlayImage placeholderImage placeholderImageScaleType pressedStateOverlayImage progressBarAutoRotateInterval progressBarImage progressBarImageScaleType retryImage retryImageScaleType roundAsCircle roundBottomEnd roundBottomLeft roundBottomRight roundBottomStart roundTopEnd roundTopLeft roundTopRight roundTopStart roundWithOverlayColor roundedCornerRadius roundingBorderColor roundingBorderPadding roundingBorderWidth viewAspectRatio
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable ILopWheelView autoAdjustTextSize cyclic decimalDigitsNumber dividerColor dividerHeight fixSpringBack friction integerFormat normalTextColor normalTextSize selectedItemBackgroundColor selectedTextColor selectedTextSize visibleItemNum
 styleable KeyValueView kvDrawRight kvDrawRightWidth kvKey kvKeyColor kvKeySign kvKeySize kvValue kvValueColor kvValueHint kvValueHintColor kvValueMargin kvValueMarginBottom kvValueMarginLeft kvValueMarginRight kvValueMarginTop kvValuePadding kvValuePaddingBottom kvValuePaddingLeft kvValuePaddingRight kvValuePaddingTop kvValueRight kvValueSize
 styleable LineBreakLayout leftAndRightSpace rowSpace
 styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
-styleable LinkSimpleLoadView slv_infoarea_loading_background slv_infoarea_loading_size slv_infoarea_tip_background slv_infoarea_tip_size slv_loading_icon slv_loading_icon_size slv_loadtip_icon slv_loadtip_icon_size slv_loadview_location slv_tip2icon_space slv_tip_color slv_tip_text slv_tip_textsize slv_tipview_location
+styleable LinkSimpleLoadView slv_infoarea_loading_background slv_infoarea_loading_height slv_infoarea_loading_size slv_infoarea_tip_background slv_infoarea_tip_size slv_loading_icon slv_loading_icon_size slv_loadtip_icon slv_loadtip_icon_roate_duration slv_loadtip_icon_size slv_loadview_location slv_tip2icon_space slv_tip_color slv_tip_text slv_tip_textsize slv_tipview_location
+styleable LinkSwitchButton switchAnimationDuration switchBackground switchThumb switchThumbPadding
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
@@ -5466,6 +5918,7 @@ styleable NavView navCenter navChecked navDraw navDrawHeight navDrawPadding navD
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
 styleable NetworkImageView default_image error_image
 styleable PagerSlidingTabStrip pstsDividerColor pstsDividerPadding pstsIndicatorColor pstsIndicatorHeight pstsScrollOffset pstsSelectTextViewColor pstsSelectTextViewSize pstsShouldExpand pstsTabBackground pstsTabPaddingLeftRight pstsTextAllCaps pstsTextViewColor pstsTextViewSize pstsUnderlineColor pstsUnderlineHeight
+styleable PasswordInputView pwv_asterisk pwv_borderColor pwv_borderStyle pwv_haveInputBorderColor pwv_maxLength pwv_pwdColor pwv_pwdStyle pwv_radius pwv_spacing pwv_strokeWidth
 styleable PlayerControlView controller_layout_id fastforward_increment repeat_toggle_modes rewind_increment show_shuffle_button show_timeout
 styleable PlayerView auto_show controller_layout_id default_artwork fastforward_increment hide_during_ads hide_on_touch keep_content_on_player_reset player_layout_id repeat_toggle_modes resize_mode rewind_increment show_buffering show_shuffle_button show_timeout shutter_background_color surface_type use_artwork use_controller
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
@@ -5496,10 +5949,15 @@ styleable TextViewThePlus bottom_height bottom_width left_height left_width righ
 styleable ThemeEnforcement android_textAppearance enforceMaterialTheme enforceTextAppearance
 styleable TimeRulerView ipc_currentTime ipc_gradationColor ipc_gradationTextColor ipc_gradationTextSize ipc_gradationWidth ipc_hourLen ipc_indicatorLineColor ipc_indicatorLineWidth ipc_minuteLen ipc_partColor ipc_secondLen
 styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
+styleable UINavigationBar actionImageTintList actionTextTintList divider navigationIcon navigationText title titleTextStyle
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+styleable WheelView isCyclic isEnable itemNumber lineColor lineHeight noEmpty normalTextColor normalTextSize scale selectedTextColor selectedTextSize suffix suffixPadding unitHeight
 styleable calendar_cell tsquare_state_current_month tsquare_state_deactivated tsquare_state_highlighted tsquare_state_range_first tsquare_state_range_last tsquare_state_range_middle tsquare_state_selectable tsquare_state_today tsquare_state_unavailable
+styleable com_facebook_like_view com_facebook_auxiliary_view_position com_facebook_foreground_color com_facebook_horizontal_alignment com_facebook_object_id com_facebook_object_type com_facebook_style
+styleable com_facebook_login_view com_facebook_confirm_logout com_facebook_login_text com_facebook_logout_text com_facebook_tooltip_mode
+styleable com_facebook_profile_picture_view com_facebook_is_cropped com_facebook_preset_size
 styleable customAttrs ali_sdk_openaccount_attrs_fill_password_text ali_sdk_openaccount_attrs_fill_password_text_color ali_sdk_openaccount_attrs_input_box_clear_btn_color ali_sdk_openaccount_attrs_login_oauth_1_bg ali_sdk_openaccount_attrs_login_oauth_2_bg ali_sdk_openaccount_attrs_login_oauth_3_bg ali_sdk_openaccount_attrs_login_oauth_4_bg ali_sdk_openaccount_attrs_login_oauth_5_bg ali_sdk_openaccount_attrs_login_oauth_plateform ali_sdk_openaccount_attrs_login_oauth_text_color ali_sdk_openaccount_attrs_login_oauth_text_text_color ali_sdk_openaccount_attrs_login_other_plateform_login_text_color ali_sdk_openaccount_attrs_login_register_text_color ali_sdk_openaccount_attrs_login_reset_password_text_color ali_sdk_openaccount_attrs_main_bg ali_sdk_openaccount_attrs_next_step_bg ali_sdk_openaccount_attrs_send_sms_code_color ali_sdk_openaccount_attrs_title_bar_back_text_color ali_sdk_openaccount_attrs_title_bar_bg ali_sdk_openaccount_attrs_title_bar_text_color ali_sdk_openaccount_attrs_title_bar_title ali_sdk_openaccount_attrs_title_bar_visibility
 styleable inputBox ali_sdk_openaccount_attrs_hint ali_sdk_openaccount_attrs_inputType ali_sdk_openaccount_attrs_input_maxLength ali_sdk_openaccount_attrs_leftIconText
 styleable inputHistory ali_sdk_openaccount_attrs_hint ali_sdk_openaccount_attrs_historyViewId ali_sdk_openaccount_attrs_inputType ali_sdk_openaccount_attrs_input_maxLength ali_sdk_openaccount_attrs_leftIconText ali_sdk_openaccount_attrs_storeKey

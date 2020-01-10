@@ -67,5 +67,7 @@
     <color name="cF3F3F3">#F3F3F3</color>
     <color name="c131313">#131313</color>
     <color name="cFA5500">#fa5500</color>
+    <color name="theme_orange">#fa4b00</color>
+    <color name="theme_yellow">#f39800</color>
     <!--长链接调试页面-ChannelActivity color end-->
 </resources>

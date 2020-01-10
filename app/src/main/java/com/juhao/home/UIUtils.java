@@ -41,6 +41,9 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentActivity;
 
 import com.aliyun.iot.ilop.demo.DemoApplication;
+import com.juhao.home.ui.WebViewActivity;
+import com.juhao.home.ui.WebViewForDataActivity;
+import com.util.Constance;
 
 import java.io.ByteArrayOutputStream;
 import java.lang.reflect.Field;
@@ -308,6 +311,18 @@ UIUtils {
         Window dialogWindow = dialog.getWindow();
         dialogWindow.setBackgroundDrawableResource(android.R.color.transparent);
         dialog.show();
+    }
+    public static Dialog showSingleWordDialogWithLayout(final Context activity,int resInt) {
+        final Dialog dialog = new Dialog(activity, R.style.customDialog);
+        dialog.setContentView(resInt);
+        /*
+         * 获取圣诞框的窗口对象及参数对象以修改对话框的布局设置, 可以直接调用getWindow(),表示获得这个Activity的Window
+         * 对象,这样这可以以同样的方式改变这个Activity的属性.
+         */
+        Window dialogWindow = dialog.getWindow();
+        dialogWindow.setBackgroundDrawableResource(android.R.color.transparent);
+        dialog.show();
+        return dialog;
     }
     /**
      * 获取版本号名称
@@ -580,6 +595,24 @@ public static int measureListViewHeight(final AbsListView listView) {
             public void onClick(View view) {
                 dialog.dismiss();
                 activity.finish();
+            }
+        });
+        TextView tv_privacy=dialog.findViewById(R.id.tv_privacy);
+        TextView tv_user_protc=dialog.findViewById(R.id.tv_user_protc);
+        tv_privacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(activity,WebViewForDataActivity.class);
+                intent.putExtra(Constance.data,"1");
+                activity.startActivity(intent);
+            }
+        });
+        tv_user_protc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(activity,WebViewForDataActivity.class);
+                intent.putExtra(Constance.data,"2");
+                activity.startActivity(intent);
             }
         });
 

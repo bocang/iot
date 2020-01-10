@@ -12,8 +12,8 @@ public final class R {
     public static final class mipmap {
         private mipmap() {}
 
-        public static final int ic_launcher = 0x7f0e003a;
-        public static final int ic_launcher_round = 0x7f0e003b;
+        public static final int ic_launcher = 0x7f0e003b;
+        public static final int ic_launcher_round = 0x7f0e003c;
     }
     public static final class raw {
         private raw() {}
@@ -23,6 +23,6 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f1001a1;
+        public static final int app_name = 0x7f1001a2;
     }
 }

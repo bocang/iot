@@ -7,6 +7,7 @@ import com.aliyun.iot.aep.sdk.apiclient.callback.IoTResponse;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequest;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequestBuilder;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class ApiClientForIot {
@@ -29,5 +30,20 @@ public class ApiClientForIot {
                 ioTCallback.onResponse(ioTRequest,ioTResponse);
             }
         });
+    }
+
+    public static void setDevProperties(String iotid,String identifiy, Object value, IoTCallback ioTCallback) {
+        Map<String, Object> maps = new HashMap<>();
+        maps.put("iotId", iotid);
+        com.alibaba.fastjson.JSONObject jsonObject=new com.alibaba.fastjson.JSONObject();
+        jsonObject.put(identifiy,value);
+        maps.put("items",jsonObject);
+        getIotClient("/thing/properties/set","1.0.2",maps,ioTCallback);
+    }
+
+    public static void getDevProperties(String iotId, IoTCallback ioTCallback) {
+        Map<String, Object> maps = new HashMap<>();
+        maps.put("iotId", iotId);
+        getIotClient("/thing/properties/get","1.0.2",maps,ioTCallback);
     }
 }

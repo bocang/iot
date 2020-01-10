@@ -5,6 +5,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.BaseActivity;
+import com.aliyun.iot.aep.sdk.login.LoginBusiness;
+import com.aliyun.iot.aep.sdk.login.data.UserInfo;
 import com.jan.activity.ChangePasswordActivity;
 import com.juhao.home.R;
 
@@ -16,23 +18,35 @@ public class AccountActivity extends BaseActivity implements View.OnClickListene
     private TextView tvUserPhone, tvMobileLocation;
     private RelativeLayout rlChangePassword;
 
-    private String userPhone, mobileLocation;
+    private UserInfo userInfo;
+
+    @Override
+    protected void initData() {
+        setContentView(R.layout.activity_account);
+        userInfo = LoginBusiness.getUserInfo();
+    }
 
     @Override
     protected void initView() {
-        userPhone = mBundle.getString("user_phone");
-        mobileLocation = mBundle.getString("user_location_code");
-        setContentView(R.layout.activity_account);
         tvUserPhone = findViewById(R.id.tv_user_phone);
         tvMobileLocation = findViewById(R.id.tv_mobile_location);
         rlChangePassword = findViewById(R.id.rl_change_password);
         rlChangePassword.setOnClickListener(this);
-        tvUserPhone.setText(userPhone);
-        tvMobileLocation.setText(mobileLocation);
-    }
-
-    @Override
-    protected void InitDataView() {
+        tvUserPhone.setText(userInfo.userPhone);
+        switch (userInfo.mobileLocationCode) {
+            case "86":
+                tvMobileLocation.setText("中国大陆");
+                break;
+            case "81":
+                tvMobileLocation.setText("日本");
+                break;
+            case "82":
+                tvMobileLocation.setText("韩国");
+                break;
+            default:
+                tvMobileLocation.setText("");
+                break;
+        }
 
     }
 
@@ -42,9 +56,10 @@ public class AccountActivity extends BaseActivity implements View.OnClickListene
     }
 
     @Override
-    protected void initData() {
+    protected void InitDataView() {
 
     }
+
 
     @Override
     public void onClick(View v) {

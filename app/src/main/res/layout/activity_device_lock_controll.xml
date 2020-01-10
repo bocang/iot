@@ -72,6 +72,7 @@
         <TextView
             android:id="@+id/tv_msg_2"
             android:text="已关闭"
+            android:visibility="gone"
             android:textColor="#ffffff"
             android:textSize="14sp"
             android:padding="3dp"

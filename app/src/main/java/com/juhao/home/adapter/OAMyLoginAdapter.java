@@ -1,6 +1,8 @@
 package com.juhao.home.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -16,7 +18,10 @@ import com.alibaba.sdk.android.openaccount.model.OpenAccountSession;
 import com.alibaba.sdk.android.openaccount.model.User;
 import com.alibaba.sdk.android.openaccount.session.SessionListener;
 import com.alibaba.sdk.android.openaccount.session.SessionManagerService;
+import com.alibaba.sdk.android.openaccount.ui.OpenAccountUIConfigs;
 import com.alibaba.sdk.android.openaccount.ui.OpenAccountUIService;
+import com.alibaba.sdk.android.openaccount.ui.callback.EmailRegisterCallback;
+import com.alibaba.sdk.android.openaccount.ui.impl.OpenAccountUIServiceImpl;
 import com.aliyun.iot.aep.sdk.login.ILoginAdapter;
 import com.aliyun.iot.aep.sdk.login.ILoginCallback;
 import com.aliyun.iot.aep.sdk.login.ILoginStatusChangeListener;
@@ -26,6 +31,11 @@ import com.aliyun.iot.aep.sdk.login.data.SessionInfo;
 import com.aliyun.iot.aep.sdk.login.data.UserInfo;
 import com.aliyun.iot.aep.sdk.threadpool.ThreadPool;
 import com.aliyun.iot.ilop.demo.DemoApplication;
+import com.juhao.home.LoginIndexActivity;
+import com.juhao.home.MyLoginActivity;
+import com.juhao.home.MyRegisterActivity;
+import com.juhao.home.ui.MainActivity;
+import com.util.LogUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +84,7 @@ public class OAMyLoginAdapter implements ILoginAdapter {
         }
     }
 
+
     @Override
     public void init(String env) {
         log("init() OAMyLoginAdapter , env is:" + env);
@@ -91,13 +102,12 @@ public class OAMyLoginAdapter implements ILoginAdapter {
             ConfigManager.getInstance().setEnvironment(Environment.ONLINE);
         }
         if(DemoApplication.is_national){
-            ConfigManager.getInstance().setSecGuardImagePostfix("develop_oversea");
+            ConfigManager.getInstance().setSecGuardImagePostfix(DemoApplication.securityIndex);
         }else {
-        ConfigManager.getInstance().setSecGuardImagePostfix("114d");
+        ConfigManager.getInstance().setSecGuardImagePostfix(DemoApplication.securityIndex);
         }
         ConfigManager.getInstance().setUseSingleImage(true);
         ConfigManager.getInstance().setAPIGateway(true);
-//
 //        if (isDebug) {
 //            OpenAccountSDK.turnOnDebug();
 //        }
@@ -129,6 +139,107 @@ public class OAMyLoginAdapter implements ILoginAdapter {
             OpenAccountSDK.turnOnDebug();
         }
     }
+
+    @Override
+    public void showRegister(Context context, Class<?> aClass, ILoginCallback iLoginCallback) {
+
+    }
+
+    @Override
+    public void showEmailRegister(Context context, Class<?> aClass, ILoginCallback iLoginCallback) {
+        OpenAccountUIService openAccountUIService=new OpenAccountUIServiceImpl();
+        openAccountUIService.showEmailRegister(context, new EmailRegisterCallback() {
+                    @Override
+                    public void onEmailSent(String s) {
+
+                    }
+
+                    @Override
+                    public void onSuccess(OpenAccountSession openAccountSession) {
+//                        context.startActivity(new Intent(context, MainActivity.class));
+                    }
+
+                    @Override
+                    public void onFailure(int i, String s) {
+
+                    }
+                }
+        );
+    }
+
+    @Override
+    public void oauthLogin(Activity activity, ILoginCallback iLoginCallback) {
+
+    }
+
+    @Override
+    public void oauthLogin(Activity activity, int i, ILoginCallback iLoginCallback) {
+
+    }
+
+    @Override
+    public void authCodeLogin(String s, ILoginCallback iLoginCallback) {
+
+    }
+
+//    @Override
+//    public void showRegister(Context context, Class<?> aClass, ILoginCallback iLoginCallback) {
+//        OpenAccountUIService openAccountUIService=new OpenAccountUIServiceImpl();
+////                        OpenAccountUIConfigs.AccountPasswordLoginFlow.supportForeignMobileNumbers=true;
+////                        OpenAccountUIConfigs.MobileResetPasswordLoginFlow.supportForeignMobileNumbers=true;
+//        OpenAccountUIConfigs.MobileRegisterFlow.supportForeignMobileNumbers=true;
+//        openAccountUIService.showRegister(context, MyRegisterActivity.class,
+//                new LoginCallback() {
+//                    @Override
+//                    public void onSuccess(OpenAccountSession openAccountSession) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onFailure(int i, String s) {
+//
+//                    }
+//                });
+//    }
+//
+//    @Override
+//    public void showEmailRegister(Context context, Class<?> aClass, ILoginCallback iLoginCallback) {
+//        OpenAccountUIService openAccountUIService=new OpenAccountUIServiceImpl();
+//        openAccountUIService.showEmailRegister(context, MyRegisterActivity.class,
+//                new EmailRegisterCallback() {
+//                    @Override
+//                    public void onEmailSent(String s) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onSuccess(OpenAccountSession openAccountSession) {
+////                                        startActivity(new Intent(MyLoginActivity.this, MainActivity.class));
+////                                        finish();
+//                    }
+//
+//                    @Override
+//                    public void onFailure(int i, String s) {
+//
+//                    }
+//                }
+//        );
+//    }
+//
+//    @Override
+//    public void oauthLogin(Activity activity, ILoginCallback iLoginCallback) {
+//
+//    }
+//
+//    @Override
+//    public void oauthLogin(Activity activity, int i, ILoginCallback iLoginCallback) {
+//
+//    }
+//
+//    @Override
+//    public void authCodeLogin(String s, ILoginCallback iLoginCallback) {
+//
+//    }
 
     /*
     * 实际上调用refresh ,底层会先判断是否失效然后再决定要不要刷新
@@ -163,12 +274,27 @@ public class OAMyLoginAdapter implements ILoginAdapter {
 
     @Override
     public void login(ILoginCallback callback) {
+
         final OpenAccountUIService openAccountService = OpenAccountSDK.getService(OpenAccountUIService.class);
         try {
             openAccountService.showLogin(context, new OALoginCallback(callback));
         } catch (Exception e) {
             log("login failed:" + e.toString());
         }
+        OpenAccountUIService openAccountUIService=new OpenAccountUIServiceImpl();
+        openAccountUIService.showLogin(context, MyLoginActivity.class, new LoginCallback() {
+            @Override
+            public void onSuccess(OpenAccountSession openAccountSession) {
+//                Toast.makeText(MainActivity.this, "login"+LoginBusiness.isLogin(), Toast.LENGTH_SHORT).show();
+//                LogUtils.logE("login","success"+openAccountSession.getLoginId());
+            }
+
+            @Override
+            public void onFailure(int i, String s) {
+                LogUtils.logE("login","failure"+s);
+            }
+        });
+
     }
 
     @Override

@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -18,22 +17,20 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.Html;
 import android.text.TextUtils;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,8 +41,6 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.BaseFragment;
-import com.aliyun.alink.linksdk.tmp.TmpSdk;
-import com.aliyun.alink.linksdk.tmp.api.TmpInitConfig;
 import com.aliyun.iot.aep.component.router.Router;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClient;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClientFactory;
@@ -56,12 +51,8 @@ import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequestBuilder;
 import com.aliyun.iot.aep.sdk.log.ALog;
 import com.aliyun.iot.aep.sdk.login.ILogoutCallback;
 import com.aliyun.iot.aep.sdk.login.LoginBusiness;
-import com.aliyun.iot.aep.sdk.login.data.UserInfo;
-import com.aliyun.iot.demo.ipcview.activity.IPCameraActivity;
-import com.aliyun.iot.demo.ipcview.manager.SharePreferenceManager;
 import com.aliyun.iot.ilop.demo.DemoApplication;
 import com.aliyun.iot.ilop.demo.page.ilopmain.AddDeviceActivity;
-import com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity;
 import com.baidu.location.BDAbstractLocationListener;
 import com.baidu.location.BDLocation;
 import com.baidu.location.LocationClient;
@@ -72,10 +63,10 @@ import com.bean.ScenesBean;
 import com.bean.WeatherBean;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.huawei.hms.api.Api;
 import com.juhao.home.DragSortDevActivity;
 import com.juhao.home.IssApplication;
 import com.juhao.home.LoginIndexActivity;
-import com.juhao.home.MyLoginActivity;
 import com.juhao.home.R;
 import com.juhao.home.UIUtils;
 import com.juhao.home.adapter.BaseAdapterHelper;
@@ -101,13 +92,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -232,7 +216,10 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
     public void onDestroy() {
         super.onDestroy();
         LogUtils.logE("home","onDestroy");
-        getActivity().getApplicationContext().unregisterReceiver(mybc);
+        try {
+//            getActivity().getApplicationContext().unregisterReceiver(mybc);
+        }catch (Exception e){
+        }
     }
 
     @Override
@@ -256,7 +243,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
         }
         LogUtils.logE("onevent_list","listbyaccount");
         //处理逻辑
-        listByAccount();
+//        listByAccount();
     }
     class Mybc extends BroadcastReceiver{
 
@@ -314,37 +301,6 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
         ll_scene_home = getView().findViewById(R.id.ll_scene_home);
 
         hsv_scene_home.setVisibility(View.VISIBLE);
-//        ll_scene_home.removeAllViews();
-//        for (int i=0;i<4;i++){
-//                View view=View.inflate(getActivity(),R.layout.view_scene_home,null);
-//                ImageView iv_bg=view.findViewById(R.id.iv_bg);
-//                ImageView iv_bg_color=view.findViewById(R.id.iv_bg_color);
-//                TextView tv_icon=view.findViewById(R.id.tv_icon);
-//                TextView tv_name=view.findViewById(R.id.tv_name);
-//                String des="{\"bg_pic\":\"d2ed\",\""+Constance.showinhome+"\":1}";
-//                try {
-//                    JSONObject jsonObject=new JSONObject(des);
-//                    String pic=jsonObject.getString(Constance.bg_pic);
-//                    if(!TextUtils.isEmpty(pic)){
-//                        ImageLoader.getInstance().displayImage(pic,iv_bg);
-//                    }
-//                    String iconColor="#e32a2b";
-//                    ColorDrawable colorDrawable=new ColorDrawable();
-//                    colorDrawable.setColor(Color.parseColor(iconColor));
-//                    iv_bg_color.setImageDrawable(colorDrawable);
-//                    Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "iconfont.ttf");
-//                    tv_icon.setTypeface(font);
-//                    tv_icon.setText(Html.fromHtml(getString(R.string.icon_grid_type)));
-//                    tv_name.setText("钜豪智能");
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                    MyToast.show(getActivity(),""+e.getMessage());
-//                }
-//                LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(UIUtils.dip2PX(160),UIUtils.dip2PX(65));
-//                layoutParams.setMargins(UIUtils.dip2PX(0),0,15,0);
-//                view.setLayoutParams(layoutParams);
-//                ll_scene_home.addView(view);
-//        }
 
         getView().findViewById(R.id.rl_add_device).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -387,7 +343,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                 tv_mate_setting.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                    startActivity(new Intent(getActivity(),HomeMateListActivity.class));
+                    startActivity(new Intent(getActivity(),HomeSettingActivity.class));
                     }
                 });
                 lv_home_mates.setAdapter(adapter);
@@ -498,9 +454,6 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 
             }
         };
-//        ListView listView;
-//        listView.addHeaderView();
-
         lv_devices.setOnCanRefreshListener(new EndOfGridView.OnCanRefreshListener() {
             @Override
             public void canRefresh(boolean refesh) {
@@ -513,10 +466,114 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
         });
         lv_devices.setAdapter(accountDevDTOQuickAdapter);
         lv_devices.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            private boolean isOpen;
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(getActivity(), DevicesControlActivity.class);
                 if(accountDevDTOS==null||accountDevDTOS.size()<=position){
+                    return;
+                }
+                if(position==0){
+                    Dialog dialog=UIUtils.showBottomInDialog(getActivity(),R.layout.dialog_lamb_all,UIUtils.dip2PX(400));
+                    TextView tv_bright_progress=dialog.findViewById(R.id.tv_bright_progress);
+                    TextView tv_temp_progress=dialog.findViewById(R.id.tv_temp);
+                    SeekBar sb_bright=dialog.findViewById(R.id.sb_bright);
+                    SeekBar sb_temp=dialog.findViewById(R.id.sb_temp);
+                    TextView tv_switch=dialog.findViewById(R.id.tv_switch);
+                    TextView tv_white_light=dialog.findViewById(R.id.tv_white_light);
+                    TextView tv_yellow_light=dialog.findViewById(R.id.tv_yellow_light);
+                    isOpen = true;
+                    sb_bright.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                        @Override
+                        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                            tv_bright_progress.setText(getString(R.string.str_bright)+"："+progress+"%");
+                        }
+
+                        @Override
+                        public void onStartTrackingTouch(SeekBar seekBar) {
+
+                        }
+
+                        @Override
+                        public void onStopTrackingTouch(SeekBar seekBar) {
+                            int progress=seekBar.getProgress();
+                            if(progress==0)progress=1;
+                            for(int i=0;i<accountDevDTOS.size();i++){
+                            setProperties(accountDevDTOS.get(i).getIotId(),"Brightness",progress);
+                            }
+
+                        }
+                    });
+                    sb_temp.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                        @Override
+                        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                            tv_temp_progress.setText(getString(R.string.str_temp)+"："+((int)(progress*0.01*5000+2000)+"k"));
+                        }
+
+                        @Override
+                        public void onStartTrackingTouch(SeekBar seekBar) {
+
+                        }
+
+                        @Override
+                        public void onStopTrackingTouch(SeekBar seekBar) {
+                            for(int i=0;i<accountDevDTOS.size();i++){
+                                setProperties(accountDevDTOS.get(i).getIotId(),"ColorTemperature",(int)(seekBar.getProgress()*5000*0.01+2000));
+                            }
+
+                        }
+                    });
+                    tv_switch.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            isOpen =!isOpen;
+                            for(int i=0;i<accountDevDTOS.size();i++){
+                                setProperties(accountDevDTOS.get(i).getIotId(),"LightSwitch",isOpen?1:0);
+                            }
+                            if(isOpen){
+                                sb_bright.setProgressDrawable(getResources().getDrawable(R.drawable.po_seekbar_light));
+                                sb_temp.setProgressDrawable(getResources().getDrawable(R.drawable.po_seekbar_light_temp));
+                                tv_yellow_light.setBackgroundResource(R.drawable.bg_corner_orange_empty_15);
+                                tv_yellow_light.setTextColor(getResources().getColor(R.color.theme_yellow));
+                                tv_white_light.setBackgroundResource(R.drawable.bg_corner_blue_15);
+                                tv_white_light.setTextColor(getResources().getColor(R.color.blue_theme));
+                                tv_switch.setBackgroundResource(R.drawable.bg_corner_theme_25);
+
+                            }else {
+                                sb_bright.setProgressDrawable(getResources().getDrawable(R.drawable.po_seekbar_light_disabled));
+                                sb_temp.setProgressDrawable(getResources().getDrawable(R.drawable.po_seekbar_light_disabled));
+                                tv_yellow_light.setBackgroundResource(R.drawable.bg_corner_cccccc_empty_25);
+                                tv_yellow_light.setTextColor(getResources().getColor(R.color.tv_cccccc));
+                                tv_white_light.setBackgroundResource(R.drawable.bg_corner_cccccc_empty_25);
+                                tv_white_light.setTextColor(getResources().getColor(R.color.tv_cccccc));
+                                tv_switch.setBackgroundResource(R.drawable.bg_corner_cccccc_25);
+                            }
+                        }
+                    });
+                    tv_yellow_light.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            sb_temp.setProgress(20);
+                            tv_temp_progress.setText(getString(R.string.str_temp)+"："+20+"%");
+                            for(int i=0;i<accountDevDTOS.size();i++){
+                                setProperties(accountDevDTOS.get(i).getIotId(),"ColorTemperature",(int)(20*5000*0.01+2000));
+                            }
+
+
+                        }
+                    });
+                    tv_white_light.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            sb_temp.setProgress(80);
+                            tv_temp_progress.setText(getString(R.string.str_temp)+"："+80+"%");
+                            for(int i=0;i<accountDevDTOS.size();i++){
+                                setProperties(accountDevDTOS.get(i).getIotId(),"ColorTemperature",(int)(80*5000*0.01+2000));
+                            }
+                        }
+                    });
                     return;
                 }
                 Map<String,Object> map=new HashMap<>();
@@ -561,6 +618,11 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                         return;
                     }else if(accountDevDTOS.get(position).getProductName().contains("窗帘")){
                         intent=new Intent(getActivity(),CurtainsControlActivity.class);
+                        intent.putExtra(Constance.iotId,accountDevDTOS.get(position).getIotId());
+                        startActivity(intent);
+                        return;
+                    }else if(accountDevDTOS.get(position).getProductName().contains("取暖器")){
+                        intent=new Intent(getActivity(),GetWarmDeviceControlActivity.class);
                         intent.putExtra(Constance.iotId,accountDevDTOS.get(position).getIotId());
                         startActivity(intent);
                         return;
@@ -652,9 +714,9 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 
             }
         });
-        if(!EventBus.getDefault().isRegistered(this)){
-        EventBus.getDefault().register(this);
-        }
+//        if(!EventBus.getDefault().isRegistered(this)){
+//        EventBus.getDefault().register(this);
+//        }
 //        listByAccount();
 //        if (LoginBusiness.isLogin()){
 //            LogUtils.logE("listByAccount","login");
@@ -752,13 +814,14 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                 break;
             case R.id.rl_setting:
                 View popup_layout=View.inflate(getActivity(),R.layout.popup_home_list_type,null);
-                final PopupWindow popupWindow=new PopupWindow(popup_layout, UIUtils.dip2PX(145),UIUtils.dip2PX(95));
+                final PopupWindow popupWindow=new PopupWindow(popup_layout, UIUtils.dip2PX(145),UIUtils.dip2PX(145));
 //                popupWindow.setContentView(popup_layout);
                 popupWindow.setFocusable(true);
                 popupWindow.setOutsideTouchable(true);
                 View contentView=popupWindow.getContentView();
                 final TextView tv_grid=contentView.findViewById(R.id.tv_grid);
                 TextView tv_list=contentView.findViewById(R.id.tv_list);
+                TextView tv_room=contentView.findViewById(R.id.tv_room);
 //                TextView tv_icon_grid=contentView.findViewById(R.id.tv_icon_grid);
 //                Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "iconfont.ttf");
 //                tv_icon_grid.setTypeface(font);
@@ -801,6 +864,12 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 ////                        ll_listview.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,UIUtils.initGridViewHeight(lv_devices,column)+100));
 //                        setListviewHeight();
 //                        pullToRefresh.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,UIUtils.initGridViewHeight(lv_devices,column)+100));
+                    }
+                });
+                tv_room.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(getActivity(),RoomManageActivity.class));
                     }
                 });
 //                popupWindow.getContentView().findViewById(R.id.tv_stream_quailty_0).setOnClickListener(new View.OnClickListener() {
@@ -891,11 +960,14 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
     }
 
     private void listByAccount(){
+
         getSceneList();
+//        getLambList();
         accountDevDTOS = new ArrayList<>();
         Map<String, Object> maps = new HashMap<>();
         maps.put("pageSize","20");
         maps.put("pageNo", page);
+        maps.put("thingType","DEVICE");
         IoTRequestBuilder builder = new IoTRequestBuilder()
                 .setPath("/uc/listBindingByAccount")
                 .setApiVersion("1.0.2")
@@ -1004,6 +1076,12 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                             }
                             }
                         }
+                        AccountDevDTO accountDevDTO=new AccountDevDTO();
+                        accountDevDTO.setName(getString(R.string.str_all_lamb));
+                        accountDevDTO.setStatus("1");
+                        accountDevDTO.setCategoryImage("http://iotx-paas-admin.oss-cn-shanghai.aliyuncs.com/publish/image/1559630650729.png");
+                        accountDevDTOS.add(0,accountDevDTO);
+
 //                        for (int i=0;i<20;i++){
 //                            AccountDevDTO accountDevDTO=new AccountDevDTO();
 //                            accountDevDTO.setName(getString(R.string.str_blue_light));
@@ -1042,6 +1120,24 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                         });
                     }
                 }
+            }
+        });
+    }
+
+    private void getLambList() {
+        Map<String,Object> map=new HashMap<>();
+        map.put("pageNo",1);
+        map.put("pageSize",100);
+
+        ApiClientForIot.getIotClient("/uc/listBindingByAccount", "1.0.2", map, new IoTCallback() {
+            @Override
+            public void onFailure(IoTRequest ioTRequest, Exception e) {
+
+            }
+
+            @Override
+            public void onResponse(IoTRequest ioTRequest, IoTResponse ioTResponse) {
+            LogUtils.logE("lamblist", String.valueOf(ioTResponse.getData()));
             }
         });
     }
@@ -1339,4 +1435,34 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
             }
         });
     }
+    private void setProperties(String iotid,String identify, Object value) {
+        Map<String, Object> maps = new HashMap<>();
+        maps.put("iotId", iotid);
+        com.alibaba.fastjson.JSONObject jsonObject=new com.alibaba.fastjson.JSONObject();
+        jsonObject.put(identify,value);
+        maps.put("items",jsonObject);
+        IoTRequestBuilder ioTRequestBuilder = new IoTRequestBuilder()
+                .setPath("/thing/properties/set")
+                .setApiVersion("1.0.2")
+                .setAuthType("iotAuth")
+                .setParams(maps);
+        IoTRequest request = ioTRequestBuilder.build();
+        IoTAPIClient client = new IoTAPIClientFactory().getClient();
+        client.send(request, new IoTCallback() {
+            @Override
+            public void onFailure(IoTRequest ioTRequest, Exception e) {
+
+            }
+
+            @Override
+            public void onResponse(IoTRequest ioTRequest, IoTResponse ioTResponse) {
+                LogUtils.logE("onResponse", ioTResponse.getCode() + "," + ioTResponse.getMessage() + "," + ioTResponse.getData());
+                if(ioTResponse.getCode()==200){
+
+                }
+            }
+        });
+    }
+
+
 }

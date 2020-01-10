@@ -101,6 +101,11 @@ public class AddDeviceTipsActivity extends BaseActivity {
 
 
         EnumSet<DiscoveryType> enumSet=EnumSet.allOf(DiscoveryType.class);
+        if(DemoApplication.productName.contains("摄像头")){
+            enumSet=EnumSet.of(DiscoveryType.BEACON_DEVICE);
+        }else {
+//            enumSet=EnumSet.of(DiscoveryType.SOFT_AP_DEVICE);
+        }
 //                            PgyCrashManager.reportCaughtException(AddDeviceActivity.this,new Exception("EnumSet.allOf"));
 //        progressDialog = ProgressDialog.show(AddDeviceTipsActivity.this,"","设备搜索中");
         LocalDeviceMgr.getInstance().startDiscovery(AddDeviceTipsActivity.this, enumSet, null, new IDeviceDiscoveryListener() {

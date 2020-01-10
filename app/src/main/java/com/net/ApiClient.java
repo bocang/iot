@@ -548,6 +548,31 @@ public class ApiClient {
         }
         return null;
     }
+
+    public static void getRoomList(String identityId, Callback<String> stringCallback) {
+        if(!hashkNewwork())return;
+        String url=NetWorkConst.URL_ROOM_LIST;
+        OkHttpUtils.post().url(url)
+                .addParams("identityId",identityId)
+                .build().execute(stringCallback);
+    }
+
+    public static void AddRoom(String identityId, String name,Callback<String> stringCallback) {
+        if(!hashkNewwork())return;
+        String url=NetWorkConst.URL_ROOM_ADD;
+        OkHttpUtils.post().url(url)
+                .addParams("identityId",identityId)
+                .addParams("name",name)
+                .build().execute(stringCallback);
+    }
+
+    public static void deleteRoom(int id, Callback<String> stringCallback) {
+        if(!hashkNewwork())return;
+        String url=NetWorkConst.URL_ROOM_DELETE;
+        OkHttpUtils.post().url(url)
+                .addParams("id",id+"")
+                .build().execute(stringCallback);
+    }
 //    public static void SendRequest(String url, final Callback callback){
 //        if(!hashkNewwork()){
 //            return;

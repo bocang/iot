@@ -15,15 +15,17 @@ import com.alibaba.sdk.android.openaccount.ui.OpenAccountUIConfigs;
 import com.alibaba.sdk.android.openaccount.ui.OpenAccountUIService;
 import com.alibaba.sdk.android.openaccount.ui.callback.EmailRegisterCallback;
 import com.alibaba.sdk.android.openaccount.ui.impl.OpenAccountUIServiceImpl;
-import com.alibaba.sdk.android.openaccount.ui.ui.RegisterActivity;
+import com.aliyun.iot.aep.sdk.IoTSmart;
+import com.aliyun.iot.aep.sdk.framework.config.GlobalConfig;
+import com.aliyun.iot.aep.sdk.login.ILoginCallback;
+import com.aliyun.iot.aep.sdk.login.LoginBusiness;
 import com.aliyun.iot.ilop.demo.DemoApplication;
-import com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity;
+import com.juhao.home.adapter.OAMyLoginAdapter;
+import com.juhao.home.ui.MainActivity;
 import com.util.Constance;
 import com.util.LogUtils;
 import com.util.MyShare;
 import com.view.MyToast;
-
-import de.greenrobot.event.EventBus;
 
 public class LoginIndexActivity extends BaseActivity implements View.OnClickListener {
 
@@ -55,6 +57,14 @@ public class LoginIndexActivity extends BaseActivity implements View.OnClickList
         tv_login.setOnClickListener(this);
 //        EventBus.getDefault().register(this);
         DemoApplication.getActivityList().add(this);
+        IoTSmart.Country country=IoTSmart.getCountry();
+        if(country!=null){
+            if(country.code.equals("86")){
+                tv_choose_region.setText("中国站");
+            }else {
+                tv_choose_region.setText("国际站");
+            }
+        }
     }
 
     @Override
@@ -66,37 +76,49 @@ public class LoginIndexActivity extends BaseActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.tv_choose_region:
-                final Dialog dialog=new Dialog(this,R.style.customDialog);
-                dialog.setContentView(R.layout.dialog_region_choose);
-                TextView tv_china=dialog.findViewById(R.id.tv_china);
-                TextView tv_oversea=dialog.findViewById(R.id.tv_oversea);
-                tv_china.setOnClickListener(new View.OnClickListener() {
+                IoTSmart.showCountryList(new IoTSmart.ICountrySelectCallBack() {
                     @Override
-                    public void onClick(View view) {
-                        if(is_national){
-                            restart = true;
+                    public void onCountrySelect(IoTSmart.Country country) {
+                        LogUtils.logE("country",country.toString());
+                        if(country.code.equals("86")){
+                            tv_choose_region.setText("中国站");
                         }else {
-                            restart = false;
+                            tv_choose_region.setText("国际站");
                         }
-                        MyShare.get(LoginIndexActivity.this).putBoolean(Constance.is_national,false);
-                        tv_choose_region.setText("中国站");
-                        dialog.dismiss();
                     }
                 });
-                tv_oversea.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if(is_national){
-                            restart = false;
-                        }else {
-                            restart = true;
-                        }
-                        MyShare.get(LoginIndexActivity.this).putBoolean(Constance.is_national,true);
-                        tv_choose_region.setText("国际站");
-                        dialog.dismiss();
-                    }
-                });
-                dialog.show();
+
+//                final Dialog dialog=new Dialog(this,R.style.customDialog);
+//                dialog.setContentView(R.layout.dialog_region_choose);
+//                TextView tv_china=dialog.findViewById(R.id.tv_china);
+//                TextView tv_oversea=dialog.findViewById(R.id.tv_oversea);
+//                tv_china.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        if(is_national){
+//                            restart = true;
+//                        }else {
+//                            restart = false;
+//                        }
+//                        MyShare.get(LoginIndexActivity.this).putBoolean(Constance.is_national,false);
+//                        tv_choose_region.setText("中国站");
+//                        dialog.dismiss();
+//                    }
+//                });
+//                tv_oversea.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        if(is_national){
+//                            restart = false;
+//                        }else {
+//                            restart = true;
+//                        }
+//                        MyShare.get(LoginIndexActivity.this).putBoolean(Constance.is_national,true);
+//                        tv_choose_region.setText("国际站");
+//                        dialog.dismiss();
+//                    }
+//                });
+//                dialog.show();
                 break;
             case R.id.tv_register:
                 showRegister();
@@ -128,6 +150,30 @@ public class LoginIndexActivity extends BaseActivity implements View.OnClickList
     }
 
     private void showLogin() {
+//        LoginBusiness.login(new ILoginCallback() {
+//            @Override
+//            public void onLoginSuccess() {
+//                startActivity(new Intent(LoginIndexActivity.this, MainActivity.class));
+//                finish();
+//            }
+//
+//            @Override
+//            public void onLoginFailed(int i, String s) {
+//
+//            }
+//        });
+//        LoginBusiness.login(new ILoginCallback() {
+//            @Override
+//            public void onLoginSuccess() {
+//                startActivity(new Intent(LoginIndexActivity.this, MainActivity.class));
+//                finish();
+//            }
+//
+//            @Override
+//            public void onLoginFailed(int i, String s) {
+//
+//            }
+//        });
         OpenAccountUIService openAccountUIService=new OpenAccountUIServiceImpl();
         openAccountUIService.showLogin(LoginIndexActivity.this, MyLoginActivity.class, new LoginCallback() {
             @Override
@@ -156,7 +202,7 @@ public class LoginIndexActivity extends BaseActivity implements View.OnClickList
 
                 OpenAccountUIService openAccountUIService=new OpenAccountUIServiceImpl();
                 OpenAccountUIConfigs.MobileRegisterFlow.supportForeignMobileNumbers=true;
-                openAccountUIService.showRegister(LoginIndexActivity.this, new LoginCallback() {
+                openAccountUIService.showRegister(LoginIndexActivity.this,MyRegisterActivity.class, new LoginCallback() {
                     @Override
                     public void onSuccess(OpenAccountSession openAccountSession) {
                         startActivity(new Intent(LoginIndexActivity.this, MainActivity.class));

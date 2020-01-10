@@ -1,7 +1,6 @@
 package com.juhao.home;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -18,11 +17,6 @@ import com.alibaba.sdk.android.openaccount.ui.OpenAccountUIService;
 import com.alibaba.sdk.android.openaccount.ui.callback.EmailRegisterCallback;
 import com.alibaba.sdk.android.openaccount.ui.impl.OpenAccountUIServiceImpl;
 import com.alibaba.sdk.android.openaccount.ui.ui.LoginActivity;
-import com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity;
-import com.juhao.home.ui.RegisterAreaCodeActivity;
-import com.util.Constance;
-import com.util.LogUtils;
-import com.util.MyShare;
 
 public class MyLoginActivity extends LoginActivity {
 

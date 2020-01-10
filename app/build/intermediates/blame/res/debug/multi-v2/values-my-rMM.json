@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rMM/values-my-rMM.xml",
+            "outputFile": "/Users/bocang/Downloads/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rMM/values-my-rMM.xml",
             "map": [
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/c439ad7bec34734e18ad657c4668b3ab/res/values-my-rMM/values-my-rMM.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/d11c8a1a5d189e3792c4a8b095cd1992/res/values-my-rMM/values-my-rMM.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/606570390785039114eddfe4ecdb3c5b/res/values-my-rMM/values-my-rMM.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/b1b7eed677282fb9b70f203a7c75424b/res/values-my-rMM/values-my-rMM.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

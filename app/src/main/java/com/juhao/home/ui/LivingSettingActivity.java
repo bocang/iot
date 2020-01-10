@@ -16,14 +16,10 @@ import com.aliyun.iot.aep.sdk.apiclient.callback.IoTResponse;
 import com.aliyun.iot.aep.sdk.apiclient.emuns.Scheme;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequest;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequestBuilder;
-import com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity;
 import com.aliyun.iotx.linkvisual.IPCManager;
 import com.juhao.home.R;
 import com.juhao.home.UIUtils;
 import com.util.Constance;
-import com.view.MyToast;
-
-import java.util.List;
 
 public class LivingSettingActivity extends BaseActivity implements View.OnClickListener {
     private static final String TAG = "livingsetting";

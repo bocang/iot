@@ -598,6 +598,7 @@ public class Constance {
     public static String items="items";
     public static String CurtainPosition="CurtainPosition";
     public static String CurtainOperation="CurtainOperation";
+    public static String TargetTemperature="TargetTemperature";
 /*
             {
     {

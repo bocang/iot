@@ -74,14 +74,14 @@ public abstract class BaseActivity extends FragmentActivity {
         }
     }
 
-
-    protected abstract void InitDataView();
-
-    protected abstract void initController();
+    protected abstract void initData();
 
     protected abstract void initView();
 
-    protected abstract void initData();
+    protected abstract void initController();
+
+    protected abstract void InitDataView();
+
 
     public void tip(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();

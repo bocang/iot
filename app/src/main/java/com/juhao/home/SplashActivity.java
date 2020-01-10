@@ -1,52 +1,42 @@
 package com.juhao.home;
 
-import android.Manifest;
-import android.app.Dialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
-import android.view.View;
+import android.os.Process;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
+import com.aliyun.iot.aep.sdk.IoTSmart;
 import com.aliyun.iot.aep.sdk.framework.AActivity;
-import com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity;
-import com.net.ApiClient;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
+import com.aliyun.iot.aep.sdk.framework.AApplication;
+import com.aliyun.iot.aep.sdk.framework.config.GlobalConfig;
+import com.aliyun.iot.aep.sdk.login.ILoginCallback;
+import com.aliyun.iot.aep.sdk.login.LoginBusiness;
+import com.aliyun.iot.aep.sdk.page.CountryListActivity;
+import com.aliyun.iot.aep.sdk.threadpool.ThreadPool;
+import com.aliyun.iot.ilop.demo.DemoApplication;
+import com.aliyun.iot.ilop.demo.page.main.StartActivity;
+import com.aliyun.iot.link.ui.component.LinkToast;
+import com.google.android.material.button.MaterialButton;
+import com.juhao.home.ui.MainActivity;
 import com.util.AppUtils;
-import com.util.CommonUtil;
 import com.util.Constance;
 import com.util.MyShare;
-import com.util.NetWorkConst;
-import com.util.json.JSONArray;
-import com.util.json.JSONObject;
-import com.zhy.http.okhttp.callback.Callback;
 
-import java.util.Timer;
 import java.util.TimerTask;
 
-import okhttp3.Call;
-import okhttp3.Response;
+import static com.aliyun.iot.aep.sdk.IoTSmart.REGION_CHINA_ONLY;
 
 /**
  * @author Jun
@@ -92,7 +82,23 @@ public class SplashActivity extends AActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_splash);
-        startAct();
+//        startAct();
+        if (LoginBusiness.isLogin()) {
+            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
+        } else {
+            if (GlobalConfig.getInstance().getInitConfig().getRegionType() == REGION_CHINA_ONLY) {
+                startLogin();
+            } else {
+                gotoCountryList();
+//                Intent intent=new Intent(SplashActivity.this,LoginIndexActivity.class);
+//                startActivity(intent);
+//                finish();
+            }
+        }
+
      /*   mTimerSc = new TimerSchedule();
         count = 4;
         version_tv = (TextView)findViewById(R.id.version_tv);
@@ -229,6 +235,28 @@ public class SplashActivity extends AActivity {
 
     }
 
+
+    private void startLogin() {
+        Intent intent=new Intent(SplashActivity.this,LoginIndexActivity.class);
+                startActivity(intent);
+                finish();
+        //跳转到登录界面
+//        LoginBusiness.login(new ILoginCallback() {
+//            @Override
+//            public void onLoginSuccess() {
+//                MainActivity.start(SplashActivity.this);
+//                overridePendingTransition(0, 0);
+//            }
+//
+//            @Override
+//            public void onLoginFailed(int i, String s) {
+//                // LinkToast.makeText(getApplicationContext(), s).show();
+//            }
+//        });
+//        finishLater();
+
+    }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -237,6 +265,44 @@ public class SplashActivity extends AActivity {
         }else{
         }
     }
+    private void killProcess() {
+        LinkToast.makeText(SplashActivity.this, R.string.region_restart_confirm).show();
+        ThreadPool.MainThreadHandler.getInstance().post(() -> Process.killProcess(Process.myPid()), 2000);
+    }
+
+    private void finishLater() {
+        ThreadPool.MainThreadHandler.getInstance().post(() -> finish(), 500);
+
+    }
+    private void gotoCountryList() {
+        IoTSmart.ICountrySelectCallBack callBack = (country) -> {
+            IoTSmart.setCountry(country, new IoTSmart.ICountrySetCallBack() {
+                @Override
+                public void onCountrySet(boolean needRestartApp) {
+
+//                    if (needRestartApp) {
+//                        killProcess();
+//                    } else {
+                        ((DemoApplication)DemoApplication.getContext()).init(AApplication.getInstance());
+                        startLogin();
+//                    }
+                }
+            });
+        };
+
+        boolean useDefault = true;
+        // 是否使用默认的国家选择页面
+        if (!useDefault) {
+            Intent intent = new Intent(SplashActivity.this, CountryListActivity.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
+            finishLater();
+        } else {
+            IoTSmart.showCountryList(callBack);
+        }
+
+    }
+
 
     /**
      * 登录成功处理事件

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/bocang/Downloads/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ae96936b2a2cc9c9c775ab337be46491/res/values-land/values-land.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/d5aa890191cf70f955329e4280fb7690/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/values-land/values-land.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/5c73b81934a5e17fd2b0ef6365c5c672/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "/Users/bocang/Downloads/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/e993b9abf9e65bb759da9697363cbb50/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/5c73b81934a5e17fd2b0ef6365c5c672/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -61,7 +61,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.alibaba.mtl.appmonitor.AppMonitor.TAG;
 
 /**
  * Created by gamekonglee on 2018/7/7.
@@ -742,7 +741,6 @@ public class ItApplicationFragment extends BaseFragment implements EndOfListView
 
             @Override
             public void onResponse(IoTRequest ioTRequest, IoTResponse response) {
-                ALog.d(TAG, "onResponse listByAccount");
 //                mHandler.post(new Runnable() {
 //                    @Override
 //                    public void run() {

@@ -7,7 +7,6 @@
         <item name="colorPrimaryDark">@color/white</item>
         <item name="colorAccent">@color/white</item>
         <item name="android:windowAnimationStyle">@style/Animation</item>
-
     </style>
 
     <style name="myLoginStyle" parent="Login">
@@ -995,12 +994,13 @@
         <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
     </style>
 
-    <style name="MyTransAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="MyTransAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/white</item>
         <item name="colorAccent">@color/white</item>
     </style>
+
 
     <style name="AppTheme_jh" parent="android:Theme.Light">
         <item name="android:windowNoTitle">true</item>

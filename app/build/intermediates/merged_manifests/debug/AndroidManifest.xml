@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.juhao.home"
-    android:versionCode="6"
-    android:versionName="1.0.5" >
+    android:versionCode="7"
+    android:versionName="1.0.6" >
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="29" />
+        android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -14,7 +14,6 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_SETTINGS" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
@@ -24,35 +23,23 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE”/> -->
-    <!-- 这个权限用于进行网络定位 -->
-    <!-- 这个权限用于访问GPS定位 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
-    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
-    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
-    <!-- 用于读取手机当前的状态 -->
-    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE”/> -->
     <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 位置信息 -->
+    <!-- 如果是安卓10.0，需要后台获取连接的wifi名称则添加进程获取位置信息权限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- QR Code required @Start -->
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- 注意这里.permission.PASSBY_MSG是自身app的包名 + .permission.PROCESS_PUSH_MSG -->
-    <permission
-        android:name="com.juhao.home.permission.PROCESS_PUSH_MSG"
-        android:protectionLevel="signatureOrSystem" />
-    <permission
-        android:name="com.juhao.home.permission.PUSH_PROVIDER"
-        android:protectionLevel="signatureOrSystem" />
-    <permission
-        android:name="com.juhao.home.permission.PUSH_WRITE_PROVIDER"
-        android:protectionLevel="signatureOrSystem" /> <!-- 注意这里.permission.PASSBY_MSG是自身app的包名 + .permission.PROCESS_PUSH_MSG -->
-    <uses-permission android:name="com.juhao.home.permission.PROCESS_PUSH_MSG" />
-    <uses-permission android:name="com.juhao.home.permission.PUSH_PROVIDER" />
-    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -65,14 +52,29 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.juhao.home.permission.MIPUSH_RECEIVE" />
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="com.juhao.home.permission.C2D_MESSAGE" /> <!-- 如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限 -->
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="com.juhao.home.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" /> <!-- 兼容flyme5.0以下版本，魅族内部集成pushSDK必填，不然无法收到消息 -->
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+        android:name="com.juhao.home.push.permission.MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.juhao.home.push.permission.MESSAGE" /> <!-- 兼容flyme3.0配置权限 -->
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.juhao.home.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.juhao.home.permission.C2D_MESSAGE" /> <!-- android 10.0使用wifi api新添加的权限 -->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
     <application
         android:name="com.aliyun.iot.ilop.demo.DemoApplication"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
+        android:extractNativeLibs="true"
         android:icon="@mipmap/img_logo"
         android:label="@string/application_name"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -87,6 +89,22 @@
             android:name="PGYER_APPID"
             android:value="c5cd0d9f0e37934bd3445aa877f0a730" >
         </meta-data>
+        <!-- bugly配置 ______________开始 -->
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="82b14c7f7e" /> <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.0.5" /> <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="" />
+        <!-- 配置Bugly调试模式(true或者false) -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+        <!-- bugly配置 ______________结束 -->
 
         <service
             android:name="com.baidu.location.f"
@@ -94,18 +112,25 @@
             android:process=":remote" >
         </service>
 
-        <activity android:name="com.juhao.home.MainActivity" >
-        </activity>
         <activity
             android:name="com.juhao.home.MyLoginActivity"
             android:theme="@style/myLoginStyle" >
         </activity>
-        <activity android:name="com.juhao.home.SplashActivity" >
+        <activity
+            android:name="com.juhao.home.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.juhao.home.TestActivity" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name="com.juhao.home.LoginIndexActivity" >
 
@@ -141,7 +166,7 @@
 
         <!-- Ilop首页.begin -->
         <activity
-            android:name="com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity"
+            android:name="com.juhao.home.ui.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
@@ -184,7 +209,7 @@
 
         <!-- Ilop绑定设备.begin -->
         <activity
-            android:name="com.aliyun.iot.ilop.demo.page.ilopmain.BindAndUseActivity"
+            android:name="com.juhao.home.deviceBiz.BindAndUseActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
             <intent-filter android:priority="-1" >
@@ -203,26 +228,29 @@
 
 
         <!-- 关于.begin -->
-        <activity
-            android:name="com.aliyun.iot.ilop.demo.page.about.AboutActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" >
-            <intent-filter android:priority="-1" >
-                <action android:name="com.aliyun.iot.aep.demo.action.navigation" />
+        <!-- <activity -->
+        <!-- android:name="com.aliyun.iot.ilop.demo.page.about.AboutActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter android:priority="-1"> -->
+        <!-- <action android:name="com.aliyun.iot.aep.demo.action.navigation" /> -->
 
-                <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data
-                    android:host="aliyun.iot.aep.demo"
-                    android:path="/page/about" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.aliyun.iot.ilop.demo.page.about.CopyrightActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+        <!-- <data android:scheme="http" /> -->
+        <!-- <data android:scheme="https" /> -->
+        <!-- <data -->
+        <!-- android:host="aliyun.iot.aep.demo" -->
+        <!-- android:path="/page/about" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.aliyun.iot.ilop.demo.page.about.CopyrightActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
         <activity
             android:name="com.juhao.home.intelligence.DevicesControlActivity"
             android:exported="false"
@@ -232,9 +260,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.juhao.home.intelligence.CountDownAddActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.juhao.home.ui.HomeMateListActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.juhao.home.ui.AboutActivity"
@@ -298,29 +323,31 @@
 
 
         <!-- API client.begin -->
-        <activity
-            android:name="com.aliyun.iot.ilop.demo.page.apiclient.APIClientDemoActivity"
-            android:exported="false"
-            android:label="@string/api_client_demo_title"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
-            <intent-filter android:priority="-1" >
-                <action android:name="com.aliyun.iot.aep.demo.action.navigation" />
+        <!-- <activity -->
+        <!-- android:name="com.aliyun.iot.ilop.demo.page.apiclient.APIClientDemoActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/api_client_demo_title" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustUnspecified|stateHidden"> -->
+        <!-- <intent-filter android:priority="-1"> -->
+        <!-- <action android:name="com.aliyun.iot.aep.demo.action.navigation" /> -->
 
-                <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data
-                    android:host="aliyun.iot.aep.demo"
-                    android:path="/page/apiClient" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.aliyun.iot.ilop.demo.page.apiclient.APIClientDemoResultActivity"
-            android:exported="false"
-            android:label="@string/api_client_demo_result_title"
-            android:screenOrientation="portrait" />
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+        <!-- <data android:scheme="http" /> -->
+        <!-- <data android:scheme="https" /> -->
+        <!-- <data -->
+        <!-- android:host="aliyun.iot.aep.demo" -->
+        <!-- android:path="/page/apiClient" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.aliyun.iot.ilop.demo.page.apiclient.APIClientDemoResultActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/api_client_demo_result_title" -->
+        <!-- android:screenOrientation="portrait" /> -->
         <activity
             android:name="com.juhao.home.ui.SettingActivity"
             android:screenOrientation="portrait" />
@@ -372,7 +399,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.juhao.home.MyRegisterActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Login" />
         <activity
             android:name="com.juhao.home.suggestion.SuggestRecordActivity"
             android:screenOrientation="portrait" />
@@ -396,14 +424,15 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.juhao.home.ui.CurtainsControlActivity"
-            android:screenOrientation="portrait" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.WebViewForDataActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.juhao.home.ui.GetWarmDeviceControlActivity" >
         </activity>
         <!-- API client.end -->
+
+
         <!-- connect channel.begin -->
         <!-- <activity -->
         <!-- android:name="com.aliyun.iot.ilop.demo.page.channel.ChannelActivity" -->
@@ -489,7 +518,8 @@
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:theme="@style/com_facebook_activity_theme" />
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true" >
@@ -596,11 +626,32 @@
                 android:resource="@xml/file_paths"
                 android:value="" />
         </provider>
+        <!-- -______________________房间管理  开始________________________ -->
+        <activity
+            android:name="com.juhao.home.ui.HomeSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.HomeMateListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.RoomManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhao.home.ui.RoomAddActivity"
+            android:screenOrientation="portrait" />
+        <!-- ________________________房间管理  结束________________________ -->
+
 
         <!-- ______________________个人中心 开始_________________________ -->
 
         <activity
             android:name="com.juhao.home.ui.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jan.activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jan.activity.AccountCodeActivity"
             android:screenOrientation="portrait" />
 
         <!-- ______________________个人中心 结束_________________________ -->
@@ -641,20 +692,39 @@
             android:theme="@style/myTheme" />
         <activity
             android:name="com.aliyun.iot.demo.ipcview.activity.MultiPlayerActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
-        <activity
-            android:name="com.yanzhenjie.permission.PermissionActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:launchMode="standard"
-            android:theme="@style/permission_PermissionActivity"
-            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" /> <!-- RN -->
+            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- RN -->
         <activity
             android:name="com.aliyun.alink.page.rn.RNActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/TransparentTheme" >
-        </activity> <!-- setting dialog for RN -->
+            android:theme="@style/TransparentTheme" /> <!-- setting dialog for RN -->
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <activity
+            android:name="com.aliyun.iot.aep.sdk.page.CountryListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.aliyun.iot.aep.sdk.page.OAMobileCountrySelectorActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified" />
+        <activity android:name="com.aliyun.iot.breeze.PlaceHolderActivity" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.juhao.home.FacebookInitProvider"
+            android:exported="false" />
+
         <activity android:name="com.aliyun.iot.aep.sdk.log.ui.ALogActivity" />
         <activity android:name="com.aliyun.iot.aep.sdk.log.ui.ALogWebActivity" />
         <activity android:name="com.aliyun.iot.aep.sdk.log.ui.ReportBugSuccessfulActivity" />
@@ -738,6 +808,15 @@
             android:name="com.alibaba.sdk.android.openaccount.ui.TokenWebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/OpenAccountDefault" />
+
+        <service android:name="com.aliyun.iot.debugcanary.LeakService" />
+
+        <activity
+            android:name="com.yanzhenjie.permission.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/permission_PermissionActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"
@@ -751,48 +830,89 @@
             android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-
-        <activity android:name="com.aliyun.iot.breeze.PlaceHolderActivity" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
 
         <receiver
-            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
-            android:permission="com.juhao.home.permission.PROCESS_PUSH_MSG" >
-            <intent-filter>
-
-                <!-- 必须, 用于接收通知栏消息点击事件 -->
-                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
-                <!-- 可选，兼容老的华为手机 -->
-                <action android:name="com.huawei.intent.action.PUSH" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name="com.huawei.hms.support.api.push.PushReceiver"
-            android:permission="com.juhao.home.permission.PROCESS_PUSH_MSG" >
-            <intent-filter>
-
-                <!-- 必须,用于接收token -->
-                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
-                <!-- 必须, 用于接收消息 -->
-                <action android:name="com.huawei.android.push.intent.RECEIVE" />
-            </intent-filter>
-        </receiver>
-
-        <provider
-            android:name="com.huawei.hms.support.api.push.PushProvider"
-            android:authorities="com.juhao.home.huawei.push.provider"
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
             android:exported="true"
-            android:permission="com.juhao.home.permission.PUSH_PROVIDER"
-            android:readPermission="com.juhao.home.permission.PUSH_PROVIDER"
-            android:writePermission="com.juhao.home.permission.PUSH_WRITE_PROVIDER" />
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-        <meta-data
-            android:name="com.huawei.hms.client.service.name:push"
-            android:value="push" />
+                <category android:name="com.juhao.home" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.juhao.home.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -918,16 +1038,55 @@
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
             </intent-filter>
-        </receiver>
-
+        </receiver> <!-- fcm辅助通道 -->
+        <service
+            android:name="com.alibaba.sdk.android.push.AgooFirebaseInstanceIDService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alibaba.sdk.android.push.AgooFirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- xiaom辅助通道 -->
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" /> <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
         <service
             android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
             android:enabled="true"
             android:exported="true" />
         <service
             android:name="com.xiaomi.mipush.sdk.MessageHandleService"
-            android:enabled="true" />
+            android:enabled="true" /> <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
         <receiver
             android:name="com.alibaba.sdk.android.push.MiPushBroadcastReceiver"
             android:exported="true" >
@@ -940,25 +1099,19 @@
             <intent-filter>
                 <action android:name="com.xiaomi.mipush.ERROR" />
             </intent-filter>
-        </receiver>
-        <receiver
-            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </receiver> <!-- 华为通道官方配置 -->
-        <receiver android:name="com.alibaba.sdk.android.push.HuaWeiReceiver" >
-            <intent-filter>
-                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
-                <action android:name="com.huawei.android.push.intent.RECEIVE" />
-                <action android:name="com.huawei.intent.action.PUSH" />
-                <action android:name="com.huawei.intent.action.PUSH_STATE" />
-            </intent-filter>
-        </receiver>
-
+        <!-- 使用 HMSAgent 代码接入HMSSDK 需要注册的activity | Use hmsagent code to access HMSSDK activity that requires registration -->
+        <activity
+            android:name="com.huawei.android.hms.agent.common.HMSAgentActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" >
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity> <!-- 接入HMSSDK 需要注册的activity | Access HMSSDK activity to be registered -->
         <activity
             android:name="com.huawei.hms.activity.BridgeActivity"
             android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
@@ -969,7 +1122,7 @@
             <meta-data
                 android:name="hwc-theme"
                 android:value="androidhwext:style/Theme.Emui.Translucent" />
-        </activity>
+        </activity> <!-- 接入HMSSDK 需要注册的activity | Access HMSSDK activity to be registered -->
         <activity
             android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
             android:configChanges="orientation|screenSize"
@@ -978,7 +1131,7 @@
             <meta-data
                 android:name="hwc-theme"
                 android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
-        </activity>
+        </activity> <!-- 接入HMSSDK 需要注册的activity | Access HMSSDK activity to be registered -->
         <activity
             android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -988,15 +1141,69 @@
                 android:name="hwc-theme"
                 android:value="androidhwext:style/Theme.Emui.Translucent" />
         </activity>
+        <!--
+             接入HMSSDK PUSH模块需要注册，第三方相关 :接收Push消息（注册、Push消息、Push连接状态）广播，
+                此receiver类需要开发者自己创建并继承com.huawei.hms.support.api.push.PushReceiver类，
+                参考示例代码中的类：com.huawei.hmsagent.HuaweiPushRevicer
+            Access to the HMSSDK push module requires registration:
+	            Receive push message (registration, push message, push connection state) broadcast.
+	            This receiver class requires the developer to create and inherit the com.huawei.hms.support.api.push.PushReceiver class.
+	            Reference to class in sample code: Com.huawei.hmsagent.HuaweiPushRevicer
+        -->
+        <receiver android:name="com.alibaba.sdk.android.push.huawei.HuaweiPushReceiver" >
+            <intent-filter>
 
-        <provider
-            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
-            android:authorities="com.juhao.home.AGCInitializeProvider"
-            android:exported="false" />
-
+                <!-- 必须,用于接收token | Must， for receiving token -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息 | Must， used to receive messages -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 | Optional, click the button on the notification bar or the notification bar to trigger the onevent callback -->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看push通道是否连接，不查看则不需要 | Optional, query whether the push channel is connected or not -->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+        </receiver> <!-- 接入HMSSDK 需要注册的应用下载服务 | Access HMSSDK need to register app download service -->
         <service
-            android:name="com.huawei.agconnect.core.ServiceDiscovery"
-            android:exported="false" />
+            android:name="com.huawei.updatesdk.service.deamon.download.DownloadService"
+            android:exported="false" /> <!-- oppo通道配置 -->
+        <service android:name="com.coloros.mcssdk.PushService" >
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service> <!-- meizu通道配置 -->
+        <receiver android:name="com.alibaba.sdk.android.push.MeizuPushReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <!-- 接收register消息 -->
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <!-- 接收unregister消息 -->
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <!-- 兼容低版本Flyme3推送服务配置 -->
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.juhao.home" />
+            </intent-filter>
+        </receiver> <!-- vivo通道配置 -->
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver android:name="com.alibaba.sdk.android.push.impl.PushMessageReceiverImpl" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

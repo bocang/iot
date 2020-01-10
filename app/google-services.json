@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "831674626502",
+    "firebase_url": "https://juhaoiot-75edc.firebaseio.com",
+    "project_id": "juhaoiot-75edc",
+    "storage_bucket": "juhaoiot-75edc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831674626502:android:901eaf35dc4c6f195f42c7",
+        "android_client_info": {
+          "package_name": "com.juhao.home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831674626502-u8q7qkkv7qvj9d4dd57hmdrk3usqls2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juhao.home",
+            "certificate_hash": "f8fcf7c686a4e97ab744dbcaf0db14e0895497d6"
+          }
+        },
+        {
+          "client_id": "831674626502-3k61cipfu9su45rdvkvo97aqbqia45rq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIHdDD7U4l0TqB8B3sIigAzOWJLa8O6hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831674626502-3k61cipfu9su45rdvkvo97aqbqia45rq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

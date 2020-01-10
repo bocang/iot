@@ -16,7 +16,6 @@ import com.aliyun.alink.business.devicecenter.api.discovery.IDeviceDiscoveryList
 import com.aliyun.alink.business.devicecenter.api.discovery.LocalDeviceMgr;
 import com.aliyun.alink.business.devicecenter.base.DCErrorCode;
 import com.aliyun.iot.ilop.demo.DemoApplication;
-import com.aliyun.iot.ilop.demo.page.ilopmain.BindAndUseActivity;
 import com.juhao.home.R;
 import com.util.LogUtils;
 import com.view.CircleProgressView;
@@ -79,9 +78,9 @@ public class AddDeviceBizActivity extends BaseActivity {
                             deviceInfo.productKey = DemoApplication.productKey; // 商家后台注册的 productKey，不可为空
 //                            deviceInfo.deviceName = DemoApplication.productName;
                             String linkType = LinkType.ALI_SOFT_AP.getName();
-                            if(DemoApplication.productName.contains("摄像头")){
+                            if(DemoApplication.productName!=null&&DemoApplication.productName.contains("摄像头")){
 //                            DemoApplication.productName.contains("锁")){
-                                linkType = LinkType.ALI_DEFAULT.getName();
+                                linkType = LinkType.ALI_BROADCAST.getName();
                             }else {
                                 deviceInfo.id=DemoApplication.productApId;
                             }
@@ -148,20 +147,26 @@ public class AddDeviceBizActivity extends BaseActivity {
                                 public void onProvisionedResult(boolean b, DeviceInfo deviceInfo, DCErrorCode errorCode) {
                                     // 配网结果 如果配网成功之后包含token，请使用配网成功带的token做绑定
 //                                    LogUtils.logE("iot","onProvisionedResult:"+errorCode);
-                                    if(errorCode==null){
-                                        pv.setProgress(100);
-                                        tv_tips.setText(getString(R.string.add_device_net_success));
-                                        Intent intent = new Intent(getApplicationContext(), BindAndUseActivity.class);
-                                        final Bundle bundle = new Bundle();
-                                        bundle.putString("productKey", deviceInfo.productKey);
-                                        bundle.putString("deviceName", deviceInfo.deviceName);
-                                        bundle.putString("token",deviceInfo.token);
-                                        intent.putExtras(bundle);
-                                        startActivity(intent);
-                                    }else {
-                                        pv.setProgress(0);
-                                        tv_tips.setText(getString(R.string.add_device_net_failed));
-                                    }
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if(errorCode==null){
+                                                pv.setProgress(100);
+                                                tv_tips.setText(getString(R.string.add_device_net_success));
+                                                Intent intent = new Intent(getApplicationContext(), BindAndUseActivity.class);
+                                                final Bundle bundle = new Bundle();
+                                                bundle.putString("productKey", deviceInfo.productKey);
+                                                bundle.putString("deviceName", deviceInfo.deviceName);
+                                                bundle.putString("token",deviceInfo.token);
+                                                intent.putExtras(bundle);
+                                                startActivity(intent);
+                                            }else {
+                                                pv.setProgress(0);
+                                                tv_tips.setText(getString(R.string.add_device_net_failed));
+                                            }
+                                        }
+                                    });
+
 //                                        final String productKey = data.getStringExtra("productKey");
 //                                        final String deviceName = data.getStringExtra("deviceName");
 //

@@ -12,10 +12,10 @@ public final class R {
     public static final class anim {
         private anim() {}
 
-        public static final int fade_in_center = 0x7f01001a;
-        public static final int fade_out_center = 0x7f01001c;
-        public static final int slide_in_bottom = 0x7f010033;
-        public static final int slide_out_bottom = 0x7f010036;
+        public static final int fade_in_center = 0x7f01001c;
+        public static final int fade_out_center = 0x7f01001e;
+        public static final int slide_in_bottom = 0x7f010034;
+        public static final int slide_out_bottom = 0x7f010037;
     }
     public static final class color {
         private color() {}
@@ -26,31 +26,31 @@ public final class R {
         public static final int bgColor_alertview_alert_start = 0x7f060044;
         public static final int bgColor_divier = 0x7f060045;
         public static final int bgColor_overlay = 0x7f060046;
-        public static final int textColor_actionsheet_msg = 0x7f060114;
-        public static final int textColor_actionsheet_title = 0x7f060115;
-        public static final int textColor_alert_button_cancel = 0x7f060116;
-        public static final int textColor_alert_button_destructive = 0x7f060117;
-        public static final int textColor_alert_button_others = 0x7f060118;
-        public static final int textColor_alert_msg = 0x7f060119;
-        public static final int textColor_alert_title = 0x7f06011a;
+        public static final int textColor_actionsheet_msg = 0x7f06012f;
+        public static final int textColor_actionsheet_title = 0x7f060130;
+        public static final int textColor_alert_button_cancel = 0x7f060131;
+        public static final int textColor_alert_button_destructive = 0x7f060132;
+        public static final int textColor_alert_button_others = 0x7f060133;
+        public static final int textColor_alert_msg = 0x7f060134;
+        public static final int textColor_alert_title = 0x7f060135;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int height_actionsheet_title = 0x7f07009e;
-        public static final int height_alert_button = 0x7f07009f;
-        public static final int height_alert_title = 0x7f0700a0;
-        public static final int marginBottom_actionsheet_msg = 0x7f0700ac;
-        public static final int marginBottom_alert_msg = 0x7f0700ad;
-        public static final int margin_actionsheet_left_right = 0x7f0700ae;
-        public static final int margin_alert_left_right = 0x7f0700af;
-        public static final int radius_alertview = 0x7f070101;
-        public static final int size_divier = 0x7f070108;
-        public static final int textSize_actionsheet_msg = 0x7f07011a;
-        public static final int textSize_actionsheet_title = 0x7f07011b;
-        public static final int textSize_alert_button = 0x7f07011c;
-        public static final int textSize_alert_msg = 0x7f07011d;
-        public static final int textSize_alert_title = 0x7f07011e;
+        public static final int height_actionsheet_title = 0x7f0700b7;
+        public static final int height_alert_button = 0x7f0700b8;
+        public static final int height_alert_title = 0x7f0700b9;
+        public static final int marginBottom_actionsheet_msg = 0x7f0700e2;
+        public static final int marginBottom_alert_msg = 0x7f0700e3;
+        public static final int margin_actionsheet_left_right = 0x7f0700e4;
+        public static final int margin_alert_left_right = 0x7f0700e5;
+        public static final int radius_alertview = 0x7f070137;
+        public static final int size_divier = 0x7f07013e;
+        public static final int textSize_actionsheet_msg = 0x7f070150;
+        public static final int textSize_actionsheet_title = 0x7f070151;
+        public static final int textSize_alert_button = 0x7f070152;
+        public static final int textSize_alert_msg = 0x7f070153;
+        public static final int textSize_alert_title = 0x7f070154;
     }
     public static final class drawable {
         private drawable() {}
@@ -67,16 +67,16 @@ public final class R {
         private id() {}
 
         public static final int alertButtonListView = 0x7f090028;
-        public static final int content_container = 0x7f0900b0;
-        public static final int loAlertButtons = 0x7f0901d2;
-        public static final int loAlertHeader = 0x7f0901d3;
-        public static final int outmost_container = 0x7f090238;
-        public static final int tvAlert = 0x7f090336;
-        public static final int tvAlertCancel = 0x7f090337;
-        public static final int tvAlertMsg = 0x7f090338;
-        public static final int tvAlertTitle = 0x7f090339;
-        public static final int viewStubHorizontal = 0x7f090403;
-        public static final int viewStubVertical = 0x7f090404;
+        public static final int content_container = 0x7f0900cf;
+        public static final int loAlertButtons = 0x7f090218;
+        public static final int loAlertHeader = 0x7f090219;
+        public static final int outmost_container = 0x7f090284;
+        public static final int tvAlert = 0x7f09038f;
+        public static final int tvAlertCancel = 0x7f090390;
+        public static final int tvAlertMsg = 0x7f090391;
+        public static final int tvAlertTitle = 0x7f090392;
+        public static final int viewStubHorizontal = 0x7f090470;
+        public static final int viewStubVertical = 0x7f090471;
     }
     public static final class integer {
         private integer() {}
@@ -86,22 +86,22 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int include_alertheader = 0x7f0c00d0;
-        public static final int item_alertbutton = 0x7f0c00d5;
-        public static final int layout_alertview = 0x7f0c00f1;
-        public static final int layout_alertview_actionsheet = 0x7f0c00f2;
-        public static final int layout_alertview_alert = 0x7f0c00f3;
-        public static final int layout_alertview_alert_horizontal = 0x7f0c00f4;
-        public static final int layout_alertview_alert_vertical = 0x7f0c00f5;
+        public static final int include_alertheader = 0x7f0c00e9;
+        public static final int item_alertbutton = 0x7f0c00ee;
+        public static final int layout_alertview = 0x7f0c010e;
+        public static final int layout_alertview_actionsheet = 0x7f0c010f;
+        public static final int layout_alertview_alert = 0x7f0c0110;
+        public static final int layout_alertview_alert_horizontal = 0x7f0c0111;
+        public static final int layout_alertview_alert_vertical = 0x7f0c0112;
     }
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f1001a1;
+        public static final int app_name = 0x7f1001a2;
     }
     public static final class style {
         private style() {}
 
-        public static final int AlertActivity_AlertStyle = 0x7f110005;
+        public static final int AlertActivity_AlertStyle = 0x7f110006;
     }
 }

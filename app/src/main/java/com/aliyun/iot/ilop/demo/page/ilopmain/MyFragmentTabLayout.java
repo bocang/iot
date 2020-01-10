@@ -2,17 +2,19 @@ package com.aliyun.iot.ilop.demo.page.ilopmain;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import androidx.fragment.app.FragmentManager;
 
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 
+
+import androidx.fragment.app.FragmentManager;
+
 import com.juhao.home.R;
 import com.view.FragmentTabHost;
 
 
-public class MyFragmentTabLayout extends com.view.FragmentTabHost {
+public class MyFragmentTabLayout extends FragmentTabHost {
 
     private FragmentTabHost fragmentTabHost;
     private Drawable dividerDrawable;

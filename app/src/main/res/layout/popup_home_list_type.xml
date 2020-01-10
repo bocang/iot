@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="125dp"
     android:background="@mipmap/bg_pop_home_list"
-    android:layout_height="95dp">
+    android:layout_height="145dp">
     <View
         android:layout_width="match_parent"
         android:layout_height="10dp"/>
@@ -68,6 +68,32 @@
         android:layout_marginLeft="15dp"
         android:layout_height="match_parent"
         />
+    </LinearLayout>
+    <View
+        android:background="#e4e4e4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_room"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        <com.view.FontIconView
+            android:id="@+id/tv_room"
+            android:textSize="14sp"
+            android:text="@string/icon_room"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            />
     </LinearLayout>
     <!--<com.view.TextViewPlus-->
         <!--android:id="@+id/tv_list"-->

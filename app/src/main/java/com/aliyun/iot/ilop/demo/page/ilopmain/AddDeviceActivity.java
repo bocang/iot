@@ -11,34 +11,20 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
-import com.alibaba.sdk.android.openaccount.widget.ProgressDialog;
-import com.aliyun.alink.business.devicecenter.api.add.AddDeviceBiz;
 import com.aliyun.alink.business.devicecenter.api.add.DeviceInfo;
-import com.aliyun.alink.business.devicecenter.api.add.IAddDeviceListener;
-import com.aliyun.alink.business.devicecenter.api.add.LinkType;
-import com.aliyun.alink.business.devicecenter.api.add.ProvisionStatus;
-import com.aliyun.alink.business.devicecenter.api.discovery.DiscoveryType;
-import com.aliyun.alink.business.devicecenter.api.discovery.IDeviceDiscoveryListener;
 import com.aliyun.alink.business.devicecenter.api.discovery.IDiscoveryListener;
 import com.aliyun.alink.business.devicecenter.api.discovery.ILocalDeviceMgr;
 import com.aliyun.alink.business.devicecenter.api.discovery.LocalDeviceMgr;
-import com.aliyun.alink.business.devicecenter.base.DCErrorCode;
-import com.aliyun.alink.business.devicecenter.extbone.BoneAddDeviceBiz;
-import com.aliyun.alink.business.devicecenter.extbone.BoneHotspotHelper;
-import com.aliyun.alink.business.devicecenter.extbone.BoneLocalDeviceMgr;
-import com.aliyun.alink.sdk.jsbridge.BonePluginRegistry;
 import com.aliyun.iot.aep.component.router.Router;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClient;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClientFactory;
@@ -54,7 +40,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -68,11 +53,10 @@ import com.juhao.home.R;
 import com.juhao.home.UIUtils;
 import com.juhao.home.adapter.BaseAdapterHelper;
 import com.juhao.home.adapter.QuickAdapter;
+import com.juhao.home.deviceBiz.BindAndUseActivity;
 import com.juhao.home.deviceBiz.WifiSelectActivity;
 import com.net.ApiClient;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.pgyersdk.crash.PgyCrashManager;
-import com.util.ApiClientForIot;
 import com.util.Constance;
 import com.util.LogUtils;
 import com.util.MyShare;
@@ -218,9 +202,11 @@ public class AddDeviceActivity extends AActivity {
 //                            }else {
                             bundle.putString("productKey", devicesDataBeans.get(x).getProductKey());
                             bundle.putString("deviceName",devicesDataBeans.get(x).getName());
-                            LogUtils.logE("productKey",devicesDataBeans.get(x).getProductKey());
-                            LogUtils.logE("deviceName",devicesDataBeans.get(x).getName());
+//                            LogUtils.logE("productKey",devicesDataBeans.get(x).getProductKey());
+//                            LogUtils.logE("deviceName",devicesDataBeans.get(x).getName());
                             DemoApplication.productKey=devicesDataBeans.get(x).getProductKey();
+                            String name=devicesDataBeans.get(x).getName();
+                            String cateName=devicesDataBeans.get(x).getCategoryName();
                             DemoApplication.productName=devicesDataBeans.get(x).getName();
                             Map<String,Object>map=new HashMap<>();
                             map.put("productkey",devicesDataBeans.get(x).getProductKey());
@@ -236,7 +222,7 @@ public class AddDeviceActivity extends AActivity {
 //                            });
 
 //                            }
-//                            Router.getInstance().toUrlForResult(AddDeviceActivity.this, code, 1, bundle);
+
 //                            IoTAPIClient ioTAPIClient=new IoTAPIClientFactory().getClient();
 //                            Map<String,Object> maps=new HashMap<>();
 ////                            maps.put("productKey",devicesDataBeans.get(x).getProductKey());
@@ -256,10 +242,9 @@ public class AddDeviceActivity extends AActivity {
 //                                    int code=ioTResponse.getCode();
 //                                    String msg=ioTResponse.getMessage();
 //                                    LogUtils.logE("code,msg",code+","+msg);
-//
 //                                }
 //                            });
-
+//                            Router.getInstance().toUrlForResult(AddDeviceActivity.this, code, 1, bundle);
                             startActivity(new Intent(AddDeviceActivity.this, WifiSelectActivity.class));
 
                             // 开始发现设备

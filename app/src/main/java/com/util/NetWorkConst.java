@@ -44,6 +44,9 @@ public class NetWorkConst {
     public static final String IOT_DEVICES_LIST = "http://smart.bocang.cc/api/cate/list?";
     public static final String IOT_DEVICES_DATAS = "http://smart.bocang.cc/api/iot/list";
     public static final String API_SMART = "http://smart.bocang.cc/";
+    public static final String URL_ROOM_LIST = API_SMART +"/api/room/list";
+    public static final String URL_ROOM_ADD = API_SMART + "/api/room/add";
+    public static final String URL_ROOM_DELETE = API_SMART + "/api/room/del";
 
 
     public static String APK_NAME="jhsc_v";

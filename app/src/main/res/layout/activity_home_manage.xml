@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <RelativeLayout
+        android:onClick="goBack"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:background="@mipmap/nav_left"
+            android:layout_width="10dp"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
+    <TextView
+        android:text="@string/str_room_manage"
+        android:layout_centerInParent="true"
+        android:textColor="#252525"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_edit"
+        android:text="@string/str_edit"
+        android:textSize="17sp"
+        android:textColor="#666666"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+    <View
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lv_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:id="@+id/tv_add_room"
+        android:text="@string/str_add_room"
+        android:textColor="@color/theme_orange"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <View
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -65,7 +65,7 @@ public class IssApplication extends Application {
             adapter.setDefaultOAHost("sgp-sdk.openaccount.aliyun.com");
             adapter.init("online","develop_oversea");
         }else {
-            adapter.init("online","114d");
+//            adapter.init("online","114d");
         }
 //如果需要切换到海外环境，请执行下面setDefaultOAHost方法，默认为大陆环境
 //adapter.setDefaultOAHost("sgp-sdk.openaccount.aliyun.com");
@@ -85,7 +85,7 @@ public class IssApplication extends Application {
         MobileConnectConfig config = new MobileConnectConfig();
         // 设置 appKey 和 authCode(必填)
         config.appkey = "{YOUR_APP_KEY}";
-        config.securityGuardAuthcode = DemoApplication.is_national?"develop_oversea":"114d";
+//        config.securityGuardAuthcode = DemoApplication.is_national?"develop_oversea":"114d";
 
 
         // 设置验证服务器（默认不填，SDK会自动使用“API通道SDK“的Host设定）

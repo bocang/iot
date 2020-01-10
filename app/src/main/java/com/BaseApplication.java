@@ -1,5 +1,6 @@
 package com;
 
+import android.app.Application;
 import android.content.Context;
 
 import com.aliyun.iot.aep.sdk.framework.AApplication;

@@ -87,7 +87,10 @@ public class IotSceneFunctionDevSetActivity extends BaseActivity implements View
                 helper.setText(R.id.tv_name,item.getName());
                 boolean notContain=true;
                 for(int i=0;i<temp.size();i++){
-                    if(temp.getJSONObject(i).getJSONObject(Constance.params).getString(Constance.propertyName).contains(item.getIdentifier())){
+                    com.alibaba.fastjson.JSONObject params=temp.getJSONObject(i).getJSONObject(Constance.params);
+                    String propertyName=params.getString(Constance.propertyName);
+                    String iotId=params.getString(Constance.iotId);
+                    if(propertyName.contains(item.getIdentifier())&&iotId.equals(iotId)){
                         notContain=false;
                         break;
                     }
@@ -99,7 +102,6 @@ public class IotSceneFunctionDevSetActivity extends BaseActivity implements View
                     helper.setVisible(R.id.view_disabled,true);
                 }
                 }
-
 //                tv_property = helper.getView(R.id.tv_property);
                 helper.getView().setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -107,7 +109,10 @@ public class IotSceneFunctionDevSetActivity extends BaseActivity implements View
                         if(!is_edit){
                             boolean notContain=true;
                             for(int x=0;x<temp.size();x++){
-                                if(temp.getJSONObject(x).getJSONObject(Constance.params).getString(Constance.propertyName).contains(item.getIdentifier())){
+                                com.alibaba.fastjson.JSONObject params=temp.getJSONObject(x).getJSONObject(Constance.params);
+                                String propertyName=params.getString(Constance.propertyName);
+                                String iotId=params.getString(Constance.iotId);
+                                if(propertyName.contains(item.getIdentifier())&&iotId.equals(iotId)){
                                     notContain=false;
                                     break;
                                 }

@@ -12,13 +12,13 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int ll_content = 0x7f0901b4;
-        public static final int triangle_view = 0x7f090335;
+        public static final int ll_content = 0x7f0901f7;
+        public static final int triangle_view = 0x7f09038e;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int popup_base = 0x7f0c0115;
-        public static final int popup_bubble = 0x7f0c0116;
+        public static final int popup_base = 0x7f0c013f;
+        public static final int popup_bubble = 0x7f0c0140;
     }
 }

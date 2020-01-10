@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/Users/bocang/Downloads/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/ad7542a55e35084c62463e8f96478af6/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/6ca3603cf6276ad5f03ed09f8f6e82e8/res/values-v16/values-v16.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/5c73b81934a5e17fd2b0ef6365c5c672/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/e993b9abf9e65bb759da9697363cbb50/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

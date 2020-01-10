@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gamekonglee/Downloads/bc.jh/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v19/values-v19.xml",
+            "outputFile": "/Users/bocang/Downloads/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v19/values-v19.xml",
             "map": [
                 {
-                    "source": "/Users/gamekonglee/.gradle/caches/transforms-2/files-2.1/d64ff22c94ca7291c3384374ededc1cd/res/values-v19/values-v19.xml",
+                    "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/8ccbc61a4dcde7443b975f11cfeea7fb/res/values-v19/values-v19.xml",
                     "from": {
                         "startLines": "2,3,4,5,15",
                         "startColumns": "4,4,4,4,4",

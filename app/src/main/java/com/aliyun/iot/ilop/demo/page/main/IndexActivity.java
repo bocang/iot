@@ -3,22 +3,15 @@ package com.aliyun.iot.ilop.demo.page.main;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import androidx.annotation.Nullable;
-import android.text.TextUtils;
+
 import android.util.Log;
-import android.view.View;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import com.alibaba.sdk.android.openaccount.OpenAccountSDK;
 import com.alibaba.sdk.android.openaccount.OpenAccountService;
-import com.alibaba.sdk.android.openaccount.OpenAccountSessionService;
 import com.alibaba.sdk.android.openaccount.callback.LoginCallback;
 import com.alibaba.sdk.android.openaccount.callback.LogoutCallback;
 import com.alibaba.sdk.android.openaccount.model.OpenAccountSession;
@@ -26,18 +19,11 @@ import com.alibaba.sdk.android.openaccount.ui.ui.LoginActivity;
 import com.aliyun.alink.linksdk.channel.core.base.AError;
 import com.aliyun.alink.linksdk.channel.mobile.api.IMobileRequestListener;
 import com.aliyun.alink.linksdk.channel.mobile.api.MobileChannel;
-import com.aliyun.iot.aep.component.router.Router;
-import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialListener;
-import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialManage;
-import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialManageError;
 import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialManageImpl;
-import com.aliyun.iot.aep.sdk.credential.data.IoTCredentialData;
-import com.aliyun.iot.aep.sdk.log.ALog;
-import com.aliyun.iot.aep.sdk.login.LoginBusiness;
 import com.aliyun.iot.ilop.demo.DemoApplication;
-import com.aliyun.iot.ilop.demo.page.ilopmain.*;
 
 import com.juhao.home.R;
+import com.juhao.home.ui.MainActivity;
 import com.view.MyToast;
 
 /**
@@ -142,7 +128,7 @@ public class IndexActivity extends Activity {
 //                                        public void run() {
 ////                        Router.getInstance().toUrl(IndexActivity.this, "page/ilopmain");
 //                                            PgyCrashManager.reportCaughtException(IndexActivity.this,new Exception("gotoMainActivity"));
-//                                            startActivity(new Intent(IndexActivity.this, com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity.class));
+//                                            startActivity(new Intent(IndexActivity.this, com.juhao.home.ui.MainActivity.class));
 //                                            finish();
 //                                        }
 //                                    }, 0);
@@ -188,7 +174,7 @@ public class IndexActivity extends Activity {
                     public void run() {
 //                        Router.getInstance().toUrl(IndexActivity.this, "page/ilopmain");
 //                        PgyCrashManager.reportCaughtException(IndexActivity.this,new Exception("gotoMainActivity"));
-                        startActivity(new Intent(IndexActivity.this, com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity.class));
+                        startActivity(new Intent(IndexActivity.this, MainActivity.class));
                         if(progressDialog!=null)progressDialog.dismiss();
                         finish();
                     }

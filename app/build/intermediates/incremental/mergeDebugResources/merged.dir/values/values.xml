@@ -281,6 +281,8 @@
     <attr format="reference" name="materialButtonStyle"/>
     <attr format="reference" name="materialCardViewStyle"/>
     <attr format="reference" name="navigationViewStyle"/>
+    <attr format="color" name="normalTextColor"/>
+    <attr format="dimension" name="normalTextSize"/>
     <attr format="reference" name="out_animation"/>
     <attr format="reference" name="player_layout_id"/>
     <attr name="repeat_toggle_modes">
@@ -298,6 +300,8 @@
     <attr format="integer" name="rewind_increment"/>
     <attr format="color" name="rippleColor"/>
     <attr format="color|reference" name="scrimBackground"/>
+    <attr format="color" name="selectedTextColor"/>
+    <attr name="selectedTextSize"/>
     <attr format="reference" name="showMotionSpec"/>
     <attr format="boolean" name="show_shuffle_button"/>
     <attr format="integer" name="show_timeout"/>
@@ -387,12 +391,17 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
+    <color name="browser_actions_bg_grey">#F5F5F5</color>
+    <color name="browser_actions_divider_color">#1E000000</color>
+    <color name="browser_actions_text_color">#DE000000</color>
+    <color name="browser_actions_title_color">#646464</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="c131313">#131313</color>
     <color name="c9D9D9D">#9d9d9d</color>
     <color name="cF3F3F3">#F3F3F3</color>
     <color name="cF5AE1D">#F5AE1D</color>
+    <color name="cFA5500">#fa5500</color>
     <color name="calendar_active_month_bg">#ffffff</color>
     <color name="calendar_bg">#ffffff</color>
     <color name="calendar_divider">#f5f5f5</color>
@@ -419,7 +428,7 @@
     <color name="channeldebug_textcolor_graytitle">#9B9B9B</color>
     <color name="channeldebug_textcolor_hint">#999999</color>
     <color name="channeldebug_textcolor_normal">#333333</color>
-    <color name="channeldebug_topbar_lefttextcolor">#47C1DF </color>
+    <color name="channeldebug_topbar_lefttextcolor">#47C1DF</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
@@ -452,6 +461,26 @@
     <color name="color_white">#ffffff</color>
     <color name="color_white_gray">#f9f9f9</color>
     <color name="colorview">#dddddd</color>
+    <color name="com_facebook_blue">#3B5998</color>
+    <color name="com_facebook_button_background_color">#415dae</color>
+    <color name="com_facebook_button_background_color_disabled">#bdc1c9</color>
+    <color name="com_facebook_button_background_color_focused">#FFFFFe</color>
+    <color name="com_facebook_button_background_color_focused_disabled">#84878c</color>
+    <color name="com_facebook_button_background_color_pressed">#2f477a</color>
+    <color name="com_facebook_button_background_color_selected">#7c8fc8</color>
+    <color name="com_facebook_button_border_color_focused">#dedee6</color>
+    <color name="com_facebook_button_login_background_color">#4267b2</color>
+    <color name="com_facebook_button_login_silver_background_color">#f4f6f8</color>
+    <color name="com_facebook_button_login_silver_background_color_pressed">#e9eaf0</color>
+    <color name="com_facebook_button_send_background_color">@color/com_facebook_messenger_blue</color>
+    <color name="com_facebook_button_send_background_color_pressed">#006fff</color>
+    <color name="com_facebook_device_auth_text">#90949C</color>
+    <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
+    <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
+    <color name="com_facebook_likeview_text_color">#6a7180</color>
+    <color name="com_facebook_messenger_blue">#0084ff</color>
+    <color name="com_facebook_share_button_text_color">#FFFFFF</color>
+    <color name="com_smart_login_code">#3C6499</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -566,6 +595,8 @@
     <color name="textColor_alert_title">#000000</color>
     <color name="theme">#fa4b00</color>
     <color name="theme_lines">#dddddd</color>
+    <color name="theme_orange">#fa4b00</color>
+    <color name="theme_yellow">#f39800</color>
     <color name="title_text">#252525</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
@@ -588,6 +619,8 @@
     <color name="ucrop_color_widget_active">#EE5500</color>
     <color name="ucrop_color_widget_background">#fff</color>
     <color name="ucrop_color_widget_text">#000</color>
+    <color name="ui_nav_bar_color_accent">#0079FF</color>
+    <color name="ui_nav_bar_color_control">#333333</color>
     <color name="upsdk_blue_text_007dff">#007dff</color>
     <color name="upsdk_category_button_select_pressed">#0076f2</color>
     <color name="upsdk_white">#FFFFFFFF</color>
@@ -675,6 +708,8 @@
     <dimen name="ali_sdk_openaccount_status_bar_height">0dp</dimen>
     <dimen name="ali_sdk_openaccount_swipe_delete_button_width">80dp</dimen>
     <dimen name="ali_sdk_openaccount_title_bar_height">44dp</dimen>
+    <dimen name="browser_actions_context_menu_max_width">500dp</dimen>
+    <dimen name="browser_actions_context_menu_min_padding">20dp</dimen>
     <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
     <dimen name="calendar_month_title_bottommargin">4dp</dimen>
     <dimen name="calendar_month_topmargin">16dp</dimen>
@@ -684,6 +719,29 @@
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
+    <dimen name="com_facebook_auth_dialog_corner_radius">2dp</dimen>
+    <dimen name="com_facebook_auth_dialog_corner_radius_oversized">4dp</dimen>
+    <dimen name="com_facebook_button_corner_radius">2dp</dimen>
+    <dimen name="com_facebook_button_login_corner_radius">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_height">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_width">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_padding">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_likeview_edge_padding">2dp</dimen>
+    <dimen name="com_facebook_likeview_internal_padding">6dp</dimen>
+    <dimen name="com_facebook_likeview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50dp</dimen>
+    <dimen name="com_facebook_share_button_compound_drawable_padding">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_bottom">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_left">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_right">16dp</dimen>
+    <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
+    <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
     <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
     <dimen name="compat_button_inset_vertical_material">6dp</dimen>
     <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
@@ -767,6 +825,9 @@
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="link__loading_view_icon_size">30dp</dimen>
+    <dimen name="link__loading_view_size">112dp</dimen>
+    <dimen name="link_toast_bottom_margin">68dp</dimen>
     <dimen name="marginBottom_actionsheet_msg">14dp</dimen>
     <dimen name="marginBottom_alert_msg">25dp</dimen>
     <dimen name="margin_actionsheet_left_right">10dp</dimen>
@@ -912,6 +973,15 @@
     <dimen name="ucrop_size_wrapper_rotate_button">50dp</dimen>
     <dimen name="ucrop_text_size_widget_text">13sp</dimen>
     <dimen name="ucrop_width_horizontal_wheel_progress_line">2dp</dimen>
+    <dimen name="ui_nav_bar_control_size">40dp</dimen>
+    <dimen name="ui_nav_bar_height">54dp</dimen>
+    <dimen name="ui_nav_bar_image_control_margins">20dp</dimen>
+    <dimen name="ui_nav_bar_nav_back_size">42dp</dimen>
+    <dimen name="ui_nav_bar_title_size">17sp</dimen>
+    <dimen name="ui_nav_menu_view_inset_end_icon">4dp</dimen>
+    <dimen name="ui_nav_menu_view_inset_end_text">16dp</dimen>
+    <dimen name="ui_nav_menu_view_inset_start_icon">4dp</dimen>
+    <dimen name="ui_nav_menu_view_inset_start_text">12dp</dimen>
     <dimen name="xx10">10dp</dimen>
     <drawable name="ali_user_bg_windows_screen">#F9F9F9</drawable>
     <drawable name="exo_controls_fastforward">@drawable/exo_icon_fastforward</drawable>
@@ -961,6 +1031,15 @@
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
+    <item name="link_status_content_view" type="id"/>
+    <item name="link_status_empty_icon" type="id"/>
+    <item name="link_status_empty_text" type="id"/>
+    <item name="link_status_empty_view" type="id"/>
+    <item name="link_status_error_icon" type="id"/>
+    <item name="link_status_error_retry" type="id"/>
+    <item name="link_status_error_text" type="id"/>
+    <item name="link_status_error_view" type="id"/>
+    <item name="link_status_view" type="id"/>
     <item name="mtrl_child_content_container" type="id"/>
     <item name="mtrl_internal_children_alpha_tag" type="id"/>
     <item name="parent_matrix" type="id"/>
@@ -1076,6 +1155,7 @@
     <string name="account_hot_country">热门国家或地区</string>
     <string name="account_input_new_passwrod">输入新密码</string>
     <string name="account_input_password">输入密码</string>
+    <string name="account_loading_loginout">正在退出...</string>
     <string name="account_login">登录</string>
     <string name="account_login_exception">登录异常</string>
     <string name="account_login_failed">登录失败</string>
@@ -1093,7 +1173,7 @@
     <string name="account_register">免费注册</string>
     <string name="account_register_free">注册账号</string>
     <string name="account_reset_pwd">重置密码</string>
-    <string name="account_select_country_code">选择国家/地区代码</string>
+    <string name="account_select_country_code">选择国家/地区</string>
     <string name="account_send_email_code">发送邮箱校验码</string>
     <string name="account_send_verify_code">发送验证码</string>
     <string name="account_sms_verify_code">验证码</string>
@@ -1103,17 +1183,17 @@
     <string name="add_device_net_failed">配网失败，请重新配网。</string>
     <string name="add_device_net_success">配网成功！</string>
     <string name="adjustable_description" translatable="false">Adjustable</string>
-    <string name="agc_109B7B0344C0EDE50A1F3332C0015C78281E801719F522B4F20FDF815A5BCC3F" translatable="false">005AF378AB7A4867175750E7289E7AA1F12E90B4054402B72F03BA9FF5B993538CA0ADA177EF8D649BEE71A560EB29F80973CF1364EC78EA1D849DA3EDE63362C126A3546EA9FC1497CCC1FEB991C376EC7EE5E572CAD92FF93B9F81EDD3B4B226</string>
-    <string name="agc_1F79ACBA9BD8A7666759524C3052C88689CBB5873811854517CBBE65DC268EAA" translatable="false">BE3E7EC53A49666D4348F18FF5A3E9DC</string>
-    <string name="agc_2CF9BE2236D08368B0649449A8546AA52B2038D467F630312C146F9EA821AC2E" translatable="false">0028CF0F164F978EB76DE705C2CC8E172C57E65F4CFEBC451310B1AD8A7A2B022B</string>
-    <string name="agc_3C5E7223FA10AEB1FFA081C86F85F3C23A0526877FBC6A3A77C4D36A7BA9AAB3" translatable="false">00A7719B1AA2ECC4CE9CF2F98EEB43976F4A5FE631F3A7DA39D1EF645B6DC11BE07C2117DEBCF3436AA4ADC79EDFFD6AE7</string>
-    <string name="agc_42CFA4FE0F87541B3B3F9793F5D829BE381703BB99853CCC25D018996F251536" translatable="false">00010D54EC75BA5FA172EEA31D8DE68E27316C001D7CC404ED1FA6C0BC106A9B74</string>
-    <string name="agc_52C6C717F2BEA9936D7DEDC27E412B9E7AC9A6642A6D0AEE353B2B14737100F5" translatable="false">00AC4A991DB88D9EE5D99ABA3AADBBBFB20ACA3E9773C9721A566ABCA61E832F36DF9C50302CC1771CE1A5E4F5AAFB9297</string>
-    <string name="agc_5B5AF298A58B98DB86A04DB0E3B1924F7EAC7A14CA781F042E5F999BD413CC9E" translatable="false">00C61394932B146D26822F5676C4AE594934A1990655751CC1581AB73D546557EB081184C1FAC686ED3C02787A7E7446ED</string>
-    <string name="agc_69589FA8E5257AA8E3C477503B5586F4B4981C77F69B612318E3FC7AF1B00890" translatable="false">00A405A144AC1F9E7161CACAEF984CDE9EB6DEC52C38141A081809FFA333D7FC6D</string>
-    <string name="agc_B9EAB77AB7FDFB9A9577EEAC5B15C13D00CD198883FD8D2BCF6CD048B1DB8EAC" translatable="false">CA8AB2DC31262BDB843785079EDC77EB</string>
-    <string name="agc_D96112F0F656550C8068DE16CF313478D253DDAF4E18EEE01F6D94CA6DD5013F" translatable="false">8214F3CFE69953163A1448DBDCF8C7A9</string>
-    <string name="agc_F56D9E20C47154729D3F411FD73FA2BDDF0330EB0A9873ACC352CC371FC5A767" translatable="false">5C097EE000F4D19C53E15D058AD04E58</string>
+    <string name="agc_109B7B0344C0EDE50A1F3332C0015C78281E801719F522B4F20FDF815A5BCC3F" translatable="false">006FAE49884A9B87A72268DC4C431A9DA8D6A435DD6983BBCBD70251B95670871C67A095CB54F12F1F12334F65AA2171B6C3FE1AF03404875C50161C7752E280D6663C734FF94A791B75CC2F62C0520264F146C40A8E527BEE27831652F6FDF061</string>
+    <string name="agc_1F79ACBA9BD8A7666759524C3052C88689CBB5873811854517CBBE65DC268EAA" translatable="false">03986C95B0BFCEF0365AA1004906519C</string>
+    <string name="agc_2CF9BE2236D08368B0649449A8546AA52B2038D467F630312C146F9EA821AC2E" translatable="false">000916E3F228B8D2A1D92A3423D22AE49E8C3401512116DFB670D8519AB56053B2</string>
+    <string name="agc_3C5E7223FA10AEB1FFA081C86F85F3C23A0526877FBC6A3A77C4D36A7BA9AAB3" translatable="false">00329FF5F49C58ECBC1CEABBDA55E074E5B419658CE59B8811BB378C2E2F5312BD7FBE74DBE8A58A416EB73C35A1C8E928</string>
+    <string name="agc_42CFA4FE0F87541B3B3F9793F5D829BE381703BB99853CCC25D018996F251536" translatable="false">0019B07415714E42B281330E4BA9364728F7EF66A5D65A6AB18788155F33ED713C</string>
+    <string name="agc_52C6C717F2BEA9936D7DEDC27E412B9E7AC9A6642A6D0AEE353B2B14737100F5" translatable="false">008865C2C8FD36E9B6C70DB5E1C436E9839CD0F55B067A80F9B9CF6AE34DECE332585F0A2A5B01B6798E2018BB4A48AFFB</string>
+    <string name="agc_5B5AF298A58B98DB86A04DB0E3B1924F7EAC7A14CA781F042E5F999BD413CC9E" translatable="false">008E32B144EF1F0EA41972F6724D788DDF5DA614A6960642504EA38B13AEDFF585C39406D0F59CB4130C42F5375DB2656D</string>
+    <string name="agc_69589FA8E5257AA8E3C477503B5586F4B4981C77F69B612318E3FC7AF1B00890" translatable="false">005055EB3B228EBC419D43FE747A6261D5DEB47BE93F37132A0199CE25B06859F0</string>
+    <string name="agc_B9EAB77AB7FDFB9A9577EEAC5B15C13D00CD198883FD8D2BCF6CD048B1DB8EAC" translatable="false">53D060E7EFF798535EC404B3A2364CB6</string>
+    <string name="agc_D96112F0F656550C8068DE16CF313478D253DDAF4E18EEE01F6D94CA6DD5013F" translatable="false">A7131425AFE025382C69EAE1A637225C</string>
+    <string name="agc_F56D9E20C47154729D3F411FD73FA2BDDF0330EB0A9873ACC352CC371FC5A767" translatable="false">C09517A99813C59D31732EC3E45EB356</string>
     <string name="alarm_frequency_level_key">alarm_frequency_level</string>
     <string name="alarm_frequency_level_sum">切换报警频率</string>
     <string name="alarm_frequency_level_title">报警频率</string>
@@ -1489,6 +1569,7 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="choose_files">选择文件(截图，录屏等)</string>
     <string name="chosen_files">待上传文件:</string>
+    <string name="click_retry">点击重试</string>
     <string name="code_get">获取验证码</string>
     <string name="code_get_hint">%ss 后重试</string>
     <string name="code_hint">请输入有效验证码</string>
@@ -1499,6 +1580,29 @@
     <string name="com_alibaba_sdk_android_openaccount_google_service_not_available">Google服务不可用</string>
     <string name="com_alibaba_sdk_android_openaccount_more_message">更多</string>
     <string name="com_alibaba_sdk_android_openaccount_twitter_fail">Twitter授权失败</string>
+    <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
+    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_like_button_liked">Liked</string>
+    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="com_facebook_loading">Loading…</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Continue with Facebook</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log in with Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_send_button_text">Send</string>
+    <string name="com_facebook_share_button_text">Share</string>
+    <string name="com_facebook_smart_device_instructions">To connect your account, open the Facebook app on your mobile device and check for notifications.</string>
+    <string name="com_facebook_smart_device_instructions_or">- OR -</string>
+    <string name="com_facebook_smart_login_confirmation_cancel">Not you?</string>
+    <string name="com_facebook_smart_login_confirmation_continue_as">Continue as %1$s</string>
+    <string name="com_facebook_smart_login_confirmation_title">Confirm Login</string>
+    <string name="com_facebook_tooltip_default">You\'re in control - choose what info you want to share with apps.</string>
     <string name="commit">确定</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
@@ -1518,6 +1622,10 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="component_cancel">取消</string>
+    <string name="component_set_up">去设置</string>
+    <string name="component_unopened_location_service">未开启定位服务</string>
+    <string name="component_unopened_location_service_des">请允许使用定位服务，以便快速定位</string>
     <string name="confirm">确定</string>
     <string name="copyright_info_en">
      一、权利归属\n
@@ -1585,6 +1693,7 @@
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="facebook_app_id">27865164</string>
     <string name="fb_login_protocol_scheme">27865164</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="find_pwd_affirm">确认密码:</string>
     <string name="find_pwd_btn">立即找回</string>
     <string name="find_pwd_code">验证码:</string>
@@ -1601,13 +1710,11 @@
     <string name="hint_scan">Please put the code in the frame to scan automatically.</string>
     <string name="hms_abort" priority="translator">Stop</string>
     <string name="hms_abort_message" priority="translator">Stop downloading?</string>
-    <string name="hms_base_google" translatable="false">https://play.google.com/store</string>
-    <string name="hms_base_vmall" translatable="false">https://a.vmall.com/app/</string>
     <string name="hms_bindfaildlg_message" priority="LT">%1$s is unable to use Huawei Mobile Services. Please launch Phone Manager or go to Settings, enable all permissions for %2$s (including auto-launch and secondary launch), and try again.</string>
     <string name="hms_bindfaildlg_title">@string/hms_update_title</string>
     <string name="hms_cancel" priority="translator">Cancel</string>
     <string name="hms_check_failure" priority="translator">Failed to check for updates.</string>
-    <string name="hms_check_no_update" priority="LT">Your version is up to date.</string>
+    <string name="hms_check_no_update" priority="translator">You are already using the latest version.</string>
     <string name="hms_checking" priority="translator">Checking for updates…</string>
     <string name="hms_confirm" priority="translator">OK</string>
     <string name="hms_download_failure" priority="translator">Failed to download Huawei Mobile Services package.</string>
@@ -1620,14 +1727,10 @@
     <string name="hms_install" priority="translator">Install</string>
     <string name="hms_install_message" priority="translator">Huawei Mobile Services must be installed to use this feature. Install?</string>
     <string name="hms_push_channel" priority="LT">Default</string>
-    <string name="hms_push_google" translatable="false">https://play.google.com/store/apps/details?id=</string>
-    <string name="hms_push_vmall" translatable="false">https://a.vmall.com/</string>
     <string name="hms_retry" priority="translator">Retry</string>
     <string name="hms_update" priority="translator">Update</string>
-    <string name="hms_update_continue" priority="LT">Download</string>
     <string name="hms_update_message" priority="translator">Update to the latest version of Huawei Mobile Services to use this feature. Update now?</string>
     <string name="hms_update_message_new" priority="LT">This service requires the latest version of the following app:\n\n%1$s</string>
-    <string name="hms_update_nettype" priority="LT">No Wi-Fi connection. Download using mobile data?</string>
     <string name="hms_update_title" priority="translator">Huawei Mobile Services</string>
     <string name="hour">时</string>
     <string name="icon_alarm_period"></string>
@@ -1641,8 +1744,10 @@
     <string name="icon_dot_select"></string>
     <string name="icon_grid_type">宫格显示</string>
     <string name="icon_home_tab_home"></string>
+    <string name="icon_lamb_switch"></string>
     <string name="icon_list_type">设备排序</string>
     <string name="icon_listview_type">列表显示</string>
+    <string name="icon_room">房间管理</string>
     <string name="icon_setting"></string>
     <string name="icon_sort"></string>
     <string name="icon_wifi_change"></string>
@@ -1767,9 +1872,24 @@
     <string name="jsbridge_core_error_message_runtime_error">Internal Method Error</string>
     <string name="link_description" translatable="false">Link</string>
     <string name="link_simpleloadview_default_tip">加载中</string>
+    <string name="locating">正在定位</string>
+    <string name="location_failed">定位失败,</string>
+    <string name="location_failed_again">点击重试。</string>
+    <string name="login_country_selected">选择国家/地区</string>
+    <string name="login_create_account">注册</string>
+    <string name="login_go_choose">去选择</string>
+    <string name="login_google_text">使用 Google 登录</string>
+    <string name="login_locate">正在定位</string>
+    <string name="login_location_fail">定位失败，点击重试</string>
+    <string name="login_no_select_country_text">请选择国家地区，再进行登录或注册</string>
+    <string name="login_no_select_country_title">未选择国家/地区</string>
     <string name="login_pwd_affirm_hint">请输入确认密码</string>
+    <string name="login_start">登录</string>
+    <string name="login_welcome">欢迎使用云智能</string>
+    <string name="messenger_send_button_text">Send</string>
     <string name="mic_switch_key">mic_switch</string>
     <string name="mic_switch_title">麦克风开关</string>
+    <string name="mine_setting_choose_country">选择国家地区</string>
     <string name="minute">分</string>
     <string name="mobile_assert">请填写正确的手机号</string>
     <string name="month">月</string>
@@ -1822,12 +1942,14 @@
     <string name="platform">平台</string>
     <string name="preview">预览</string>
     <string name="privacy_switch_title">隐私遮蔽开关</string>
-    <string name="push_cat_body" translatable="false">99A9343CEC0A64112FD2496EF752F719</string>
-    <string name="push_cat_head" translatable="false">767499AE5B2DFC9D873AF46032E13B00</string>
     <string name="pwd_new_hint">请输入新密码</string>
     <string name="reboot_key">reboot</string>
     <string name="reboot_title">重启设备</string>
     <string name="refreshlayout_load_more">正在载入</string>
+    <string name="region_cancel">取消</string>
+    <string name="region_china">Singapore</string>
+    <string name="region_header_title">选择国家/地区</string>
+    <string name="region_restart_confirm">切换后，APP将重新启动</string>
     <string name="report_bug">Report Bug</string>
     <string name="report_bug_continue">继续提Bug</string>
     <string name="report_finish">完成</string>
@@ -1847,6 +1969,7 @@
     <string name="select_time">选择时间</string>
     <string name="server_client_id">27865164</string>
     <string name="server_error">网络不好，请重试!</string>
+    <string name="share_confirm_dialog_sure">确定</string>
     <string name="speaker_switch_key">speaker_switch</string>
     <string name="speaker_switch_title">扬声器开关</string>
     <string name="start_record">开始录屏</string>
@@ -1881,6 +2004,7 @@
     <string name="str_add_condition">添加条件</string>
     <string name="str_add_device">添加设备</string>
     <string name="str_add_mission">添加任务</string>
+    <string name="str_add_room">添加房间</string>
     <string name="str_add_scene">一键控制多设备，或通过智能音响语音控制</string>
     <string name="str_add_scene_str">添加场景/自动化</string>
     <string name="str_add_share">添加共享</string>
@@ -1890,6 +2014,7 @@
     <string name="str_alarm_period">报警时段</string>
     <string name="str_alarm_setting">报警设置</string>
     <string name="str_all_day">全天</string>
+    <string name="str_all_lamb">所有灯</string>
     <string name="str_alx_tips1">"Alexa,turn on/off my light"</string>
     <string name="str_alx_tips2">"Alexa,brighten/dim my light"</string>
     <string name="str_alx_tips3">"Alexa,set my light to yellow"</string>
@@ -1899,26 +2024,31 @@
     <string name="str_auto">自动化</string>
     <string name="str_auto_mode">自动模式</string>
     <string name="str_auto_on_off">执行场景</string>
+    <string name="str_baifeng">摆风</string>
     <string name="str_begin_time">开启时间</string>
     <string name="str_bind_step">绑定步骤</string>
     <string name="str_bind_success">绑定成功！</string>
     <string name="str_blue_light">蓝牙灯</string>
+    <string name="str_bright">亮度</string>
     <string name="str_buildtype">CHINA</string>
     <string name="str_cancel">取消</string>
     <string name="str_cancel_share">要取消该设备的分享吗？</string>
     <string name="str_cancel_success">取消成功！</string>
     <string name="str_change_version">切换国际版</string>
     <string name="str_change_version_2">切换到中国版</string>
+    <string name="str_china">中国</string>
     <string name="str_choose">选择</string>
     <string name="str_choose_condition">选择条件</string>
     <string name="str_choose_device">选择设备</string>
     <string name="str_choose_function">选择功能</string>
+    <string name="str_chuifeng">吹风</string>
     <string name="str_clear_cache">清理缓存</string>
     <string name="str_click_setting">点击设置</string>
     <string name="str_click_to_set_nickname">点击设置昵称</string>
     <string name="str_close">关闭</string>
     <string name="str_close_curtain">闭合</string>
     <string name="str_color">颜色</string>
+    <string name="str_complete">完成</string>
     <string name="str_condition">条件</string>
     <string name="str_connect_type">联系方式</string>
     <string name="str_connecting">正在连接</string>
@@ -1937,6 +2067,7 @@
     <string name="str_day_night_mode">日夜模式</string>
     <string name="str_deivce_select">选择设备</string>
     <string name="str_delay">延时</string>
+    <string name="str_delete">删除</string>
     <string name="str_delete_auto">删除自动化</string>
     <string name="str_delete_condition">确定要删除该条件吗？</string>
     <string name="str_delete_countdown">确定要删除此定时吗？</string>
@@ -1961,6 +2092,7 @@
     <string name="str_effect_period">生效时间段</string>
     <string name="str_end_time">关闭时间</string>
     <string name="str_ensure">确定</string>
+    <string name="str_ensure_delete_room">确认删除</string>
     <string name="str_enter_account">请输入用户账号或邮箱</string>
     <string name="str_everyday">每天</string>
     <string name="str_everyweek">每星期</string>
@@ -1977,6 +2109,7 @@
     <string name="str_fri">星期五</string>
     <string name="str_friday">五</string>
     <string name="str_function_suggest">功能建议</string>
+    <string name="str_ganzao">干燥</string>
     <string name="str_get_up">起床</string>
     <string name="str_go_out">离家</string>
     <string name="str_gohome">回家</string>
@@ -1985,12 +2118,15 @@
     <string name="str_high">高档</string>
     <string name="str_high_frequency">高频</string>
     <string name="str_home">首页</string>
+    <string name="str_home_setting">家庭设置</string>
+    <string name="str_huanqi">换气</string>
     <string name="str_icon">图标</string>
     <string name="str_img">图像</string>
     <string name="str_incident_reporting_frequency">事件上报频率</string>
     <string name="str_init_exception">初始化异常</string>
     <string name="str_input_contact_info">请填写联系方式</string>
     <string name="str_input_home_wifi">输入家中的Wi-Fi密码</string>
+    <string name="str_input_room_name">请输入房间名称</string>
     <string name="str_input_suggest_info">填写反馈信息</string>
     <string name="str_juhao_smart">钜豪智能</string>
     <string name="str_kaiguan">开关</string>
@@ -2014,6 +2150,7 @@
     <string name="str_mobile_email">手机号码或邮箱</string>
     <string name="str_mon">星期一</string>
     <string name="str_monday">一</string>
+    <string name="str_muyu">沐浴</string>
     <string name="str_my_devices">我的设备</string>
     <string name="str_my_home">我的家</string>
     <string name="str_name">名称</string>
@@ -2052,15 +2189,19 @@
     <string name="str_please_choose_pic">请选择背景图片</string>
     <string name="str_please_choose_question_type">请选择问题类型</string>
     <string name="str_please_input_name">请输入名称</string>
-    <string name="str_privace">隐私政策</string>
+    <string name="str_privace"><u>隐私政策</u></string>
     <string name="str_privacy">隐私权政策</string>
-    <string name="str_privacy_content">我们深知隐私对您的重要性，为了更全面地呈现我们收集和使用您个人信息的相关情况，我们根据最新法律法规的要求，对隐私政策进行了详细的修订。当您点击【同意】即表示您已充分阅 读、理解并接受更新过的，《隐私政策》的全部内容。请花一些时间熟悉我们的隐私政策，如果您有任何问题，请随时联系我们 。</string>
+    <string name="str_privacy_content">我们深知隐私对您的重要性，为了更全面地呈现我们收集和使用您个人信息的相关情况，我们根据最新法律法规的要求，对隐私政策进行了详细的修订。当您点击【同意】即表示您已充分阅 读、理解并接受更新过的《用户协议》和《隐私政策》的全部内容。请花一些时间熟悉我们的隐私政策，如果您有任何问题，请随时联系我们 。</string>
+    <string name="str_privacy_web_data"/>
     <string name="str_pwd">密码</string>
     <string name="str_qing">晴</string>
+    <string name="str_qunuan">取暖</string>
     <string name="str_remain_store">剩余存储容量</string>
     <string name="str_repeat">重复</string>
     <string name="str_restart">重启</string>
     <string name="str_restart_tips">确定要重启设备吗？</string>
+    <string name="str_room_delete_tips">房间里的设备不会被删除</string>
+    <string name="str_room_manage">房间管理</string>
     <string name="str_room_temp">室内温度</string>
     <string name="str_sat">星期六</string>
     <string name="str_saturday">六</string>
@@ -2103,6 +2244,7 @@
     <string name="str_sure_logout">确定要退出吗？</string>
     <string name="str_switch_close">开关：关闭</string>
     <string name="str_switch_open">开关：开启</string>
+    <string name="str_temp">色温</string>
     <string name="str_the_door_is_not_open">门铃没有开启</string>
     <string name="str_the_highest">最高档</string>
     <string name="str_the_lock_is_not_opened">门锁已关闭</string>
@@ -2135,6 +2277,99 @@
     <string name="str_upload_success">上传成功</string>
     <string name="str_upset_device">查看重置设备详细教程</string>
     <string name="str_use_amazon">使用Amazon Alexa</string>
+    <string name="str_user_protc"><u>用户协议</u></string>
+    <string name="str_user_web_data">钜豪智慧家庭智能平台服务协议
+
+欢迎使用钜豪智慧家庭智能平台！
+
+在接受本协议之前请您务必仔细阅读本协议的全部内容，充分理解条款内容，特别是限制或免责条款，限制或免除责任条款将以加粗或其他醒目形式提示您注意。如果您对本协议的条款有疑问的，请联系钜豪智慧家庭相关业务部门讲行询问。除非您已阅读并接受本协议及相关协议、规则等所有条款，否则，您无权使用本服务。一旦您选择“同意协议并提交”（具体措辞详见注册页面）并完成注册流程，或您以任何方式使用本服务，即视为您已阅读并同意上述协议、规则等的约束。 如您有违反本协议的任何行为时，钜豪智慧家庭有权根据您违反的情况随时单方采取限制、中止或终止向您提供服务等措施，并有权追究您相关责任。
+
+本服务协议（以下称“本协议”）由您与广东钜豪信息技术有限公司（以下称“钜豪智慧家庭”）共同签署。包括但不限于：《钜豪智慧家庭智能平台隐私政策》等内容。如有变更，钜豪智慧家庭将以网站公示的方式讲行公告，不另行通知。变更后的协议和规则一经公布即自动生效成为本协议的一部分，无需另行通知您同意。如您不同意相关变更，请立即停用钜豪智慧家庭的服务；如您继续使用，则视为对修改后的规则不持异议并同意遵守。
+
+一、名词定义
+
+1.1.许可软件：是指由钜豪智慧家庭开发的，供您从平台下载，并在限定的系统移动终端中安装、使用的软件系统。
+
+1.2.服务：甶广东钜豪信息技术有限公司为您提供的服务。您可以通过许可软件在移动终端使用服务。
+
+二、服务
+
+2.1.钜豪智慧家庭为您提供智能生活设备管理服务，您可以通过钜豪智慧家庭控制连接到钜豪智慧家庭云平台的智能终端，并实现智能设备之间的联动。服务内容包含智能设备管理、场景联动、分析报告等，这些功能服务可能根据用户需求的变化或服务提供方的单方判断而优化或修改，也可能会因定期、不定期的维护而暂时停止提供服务。
+
+三、服务范围
+
+3.1.钜豪智慧家庭就本软件给予您一项使用本产品的权利。
+
+3.2.您不得对本产品进行任何形式的许可、出售、租赁、转让、发行或其他商业用途。
+
+3.3.甶于软件适配平台及终端限制，您仅可在获授权的系统平台及终端使用许可软件，如您将许可软件安装在其他终端设备上可能会对您硬件或软件功能造成损害。
+
+3.4.您应理解许可软件仅可用于非商业目的，不可为商业运营目的安装、使用、运行许可软件。如果需要进行须提前获得钜豪智慧家庭的书面授权和许可。
+
+3.5.钜豪智慧家庭会对许可软件及其相关功能不时进行变更、升级或转移，可能会在许可软件系统中加入新的功能或服务。上述新功能、服务如无独立协议的，您仍可取得相应功能与服务的授权，适用本协议。
+
+3.6.您应对输入数据的准确性、可靠性、完整性和合法性以及您获得数据的方式的合法性负责，并应定期备份数据、资料等。您对该等资料的损坏、丢失承担全部风险。
+
+3.7.您应妥善保管您的账号、密码，如您发现您的账户存在安全隐患（包括但不限于用户密码泄露），应及时通知钜豪智慧家庭，钜豪智慧家庭将会协助您采取相关措施。否则，您账号下的一切行为均有您负责，并由您承担一切责任。
+
+四、第三方
+
+4.1.您已知晓钜豪智慧家庭的部分服务可能使用是基于第三方提供的软件或服务而获得，该服务是为了向您提供便利而设置，是取得该第三方的合法授权的。
+
+4.2.本产品包含了第三方的部分信息和服务。钜豪智慧家庭不控制且不对第三方的信息和服务负责。
+
+4.3.您理解钜豪智慧家庭无法保证许可软件将会永久地使用或包含该等服务，也无法保证将来会否继续使用相同第三方提供的其他软件，同时也可能使用其他第三方的类似服务，上述相应软件或服务一旦启用，同样适用本条约定。
+
+五、使用服务规范
+
+5.1.您应该规范使用许可软件，以下方式是违反使用规范的： 1）发布或分享电脑病毒、蠕虫、恶意代码、故意破坏或改变计算机系统或数据的软件； 2）未授权的情況下，收集其他用户的信息或数据，例如电子邮箱地址等； 3）用自动化的方式恶意使用本产品，绐服务器造成过度的负担或以其他方式干扰或损害网站服务器和网络链接； 4）在未授杈的情况下，尝试访问本产品的服务器数据或通信数据； 5）干扰、破坏本产品其他用户的使用。
+
+5.2.您理解并同意： 1) 钜豪智慧家庭会对您是否涉嫌违反上述使用规范做出认定，并根据认定结果中止、终止对您的使用许可或采取其他依约可采取的限制措施。 2) 对于您使用许可软件时发布的涉嫌违法或涉嫌侵犯他人合法权利或违反本协议的信息，钜豪智慧家庭会直接予以删除。 3) 对于您违反上述使用规范的行为对任意第三方造成损害的，您需要以自己的名义独立承担法律责任，并应确保钜豪智慧家庭免于因此产生损失或增加费用，否则钜豪智慧家庭有权向您追偿。 4) 如您违反有关法律或者本协议之规定，使钜豪智慧家庭遭受任何损失，您应当赔偿钜豪智慧家庭因此造成的损失及（或）发生的费用。
+
+六、信息内容规范
+
+6.1.您承诺不会利用本服务进行任何违法或不当的活动，包括但不限于下列行为：
+
+6.1.1.上载、传送或分享含有下列内容之一的信息： 1) 反对宪法所确定的基本原则的； 2) 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的； 3) 损害国家荣誉和利益的； 4) 煽动民族仇恨、民族歧视、破坏民族团结的； 5) 破坏国家宗教政策，宣扬邪教和封建迷信的； 6) 散布谣言，扰乱社会秩序，破坏社会稳定的； 7) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的； 8) 侮辱或者诽谤他人，侵害他人合法权利的； 9) 含有虚假、诈骗、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、或其它道德上令人反感的内容； 10) 含有适用法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容的。
+
+七、隐私政策与数据
+
+7.1.保护您的个人信息对钜豪智慧家庭很重要。钜豪智慧家庭制定了《钜豪智慧家庭智能平台隐私政策》对知识产权归属及保护、您的信息收集、使用、共享、存储、保护等方面关系内容进行了重要披露。建议您完整地阅读《钜豪智慧家庭智能平台隐私政策》。
+
+八、免责条款
+
+8.1.除法律法规有明确规定外，钜豪智慧家庭将尽最大努力确保许可软件及其所涉及的技术及信息安全、有效、准确、可靠，但受限于现有技术，钜豪智慧家庭不能对此进行担保。
+
+8.2.您理解，对于不可抗力及第三方原因导致的您的直接或间接损失，钜豪智慧家庭无法承担责任。
+
+8.3.甶于您因下述任一情况所引起或与此有关的人身伤害或附带的、间接的损害赔偿需由您自行承担： 1) 第三方未经批准的使用许可软件或更改您的数据； 2) 使用许可软件进行的行为产生的费用及损失； 3) 您对许可软件的误解； 4) 非因钜豪智慧家庭的原因而引起的与许可软件有关的其它损失。
+
+8.4.非经钜豪智慧家庭或钜豪智慧家庭授权开发并正式发布的其它任何甶许可软件衍生的软件均属非法，下载、安装、使用此类软件，可能导致不可预知的风险，甶此产生的法律责任与纠纷与钜豪智慧家庭无关，钜豪智慧家庭有权中止、终止使用许可和/或其他一切服务。
+
+8.5.您已知悉使用钜豪智慧家庭平台涉及到互联网服务，可能会受到各个环节不稳定因素的影响，尽管钜豪智慧家庭已采取安全防卫措施，本服务仍可能因互联网和电子通信固有的缺陷以及本协议任何一方无法合理控制的时间（包括不限于火灾、洪水、恐怖袭击、瘟疫、自然灾害、暴乱、终端病毒、黑客攻击、网络故障、终端故障）而发生中止、中断、延误、使用限制或使用不能。您在此特意承担以上风险，同意因上述风险事件的实际发生影响到服务的正常运行时钜豪智慧家庭无须向您承担任何责任。
+
+九、协议终止和违约责任
+
+9.1.您应理解使用钜豪智慧家庭服务需按授权范围使用许可软件、尊重软件及软件包含内容的知识产权、按规范使用软件、按本协议约定履行义务。如您严重违反本协议，钜豪智慧家庭将终止使用许可。
+
+9.2.您对软件的使用有赖于钜豪智慧家庭关联公司为您提供的配套服务，您若违反与钜豪智慧家庭及关联公司的条款、协议、规则、通告等相关规定都可能导致您无法正常使用许可软件，钜豪智慧家庭有权终止使用许可。 或协议约定的方式对您的使用许可及其他钜豪智慧家庭可控制的权益采取限制措施，包括中止或终止对您的使用许可。
+
+9.3.一旦您违反本协议或与钜豪智慧家庭签订的其他协议的约定，钜豪智慧家庭可通知广东钜豪关联公司，要求其对您的权益采取限制措施，包括要求关联公司中止、终止对您提供部分或全部服务，且在其经营或实际控制的网站依法公示您的违约情况。
+
+9.4.许可软件由您自下载平台下载取得，您需要遵守下载平台、系统平台、终端厂商对您使用许可软件方式与限制的约定，如果上述第三方确认您违反该约定需要钜豪智慧家庭处理的，钜豪智慧家庭可能会因第三方要求终止对您的使用许可。
+
+9.5.在本使用许可终止时，您应停止使用许可软件行为并销毁全部副本。
+
+9.6.如您违反本协议规定的条款，给钜豪智慧家庭或其他用户造成损失，您必须承担全部赔偿责任。
+
+十、管辖法律和可分割性
+
+10.1.本协议之效力、解释、变更、执行与争议解决均适用中华人民共和国法律，如无相关法律规定的，则应参照通用国际商业惯例和(或)行业惯例。
+
+10.2.当本协议任何条款被有管辖权的人民法院裁定为无效，不影响其他条款或其任何部分的效力，您与钜豪智慧家庭仍应善意履行。
+
+
+</string>
     <string name="str_version_sdk_old">手机版本太低</string>
     <string name="str_wait">稍后再说</string>
     <string name="str_wed">星期三</string>
@@ -2144,6 +2379,7 @@
     <string name="str_when_satisfy_condition">当满足所有条件时</string>
     <string name="str_you">优</string>
     <string name="str_you_can_say_that">您可以这样说</string>
+    <string name="str_zhaoming">照明</string>
     <string name="stream_video_quality_key">stream_video_quality</string>
     <string name="stream_video_quality_sum">切换主码流视频质量</string>
     <string name="stream_video_quality_title">主码流视频质量</string>
@@ -2155,10 +2391,14 @@
     <string name="timer_sending">发送中...</string>
     <string name="title">请选择时间</string>
     <string name="toast_report_bug_item">Bug Title, Description, 当前系统log为必填项。</string>
+    <string name="tp_loading">加载中</string>
     <string name="ucrop_error_input_data_is_absent">Both input and output Uri must be specified</string>
     <string name="ucrop_label_edit_photo">裁剪</string>
     <string name="ucrop_label_original">原始比例</string>
     <string name="ucrop_menu_crop">裁剪</string>
+    <string name="ui_navigation_bar_desc_back">Back</string>
+    <string name="ui_navigation_bar_divider">Divider</string>
+    <string name="ui_navigation_menu_item_raw">raw_data</string>
     <string name="unbind_key">unbind</string>
     <string name="unbind_title">解绑设备</string>
     <string name="upload_files">上传已选择文件</string>
@@ -2180,11 +2420,10 @@
     <string name="upsdk_ota_notify_updatebtn" priority="LT">Update</string>
     <string name="upsdk_ota_title" priority="LT">New version</string>
     <string name="upsdk_storage_utils" priority="LT">%1$s MB</string>
-    <string name="upsdk_store_url" translatable="false">https://store.hispace.hicloud.com/hwmarket/api/</string>
     <string name="upsdk_third_app_dl_cancel_download_prompt_ex" priority="translator">Cancel the installation?</string>
     <string name="upsdk_third_app_dl_install_failed" priority="translator">Installation failed.</string>
     <string name="upsdk_third_app_dl_sure_cancel_download" priority="translator">Yes</string>
-    <string name="upsdk_update_check_no_new_version" priority="LT">Your version is up to date.</string>
+    <string name="upsdk_update_check_no_new_version" priority="LT">You are already using the latest version.</string>
     <string name="upsdk_updating" priority="LT">Updating</string>
     <string name="video_voice_title">图像和声音</string>
     <string name="voice_detect_sensitivity_key">voice_detect_sensitivity</string>
@@ -2192,43 +2431,47 @@
     <string name="voice_detect_sensitivity_title">声音侦测灵敏度</string>
     <string name="year">年</string>
     <style name="APIClientSwitch" parent="Theme.AppCompat.Light">
-            <item name="colorControlActivated">#1FC1DD</item>
-            <item name="colorSwitchThumbNormal">@android:color/white</item>
-            <item name="android:colorForeground">#CCCCCC</item>
-        </style>
+        <item name="colorControlActivated">#1FC1DD</item>
+        <item name="colorSwitchThumbNormal">@android:color/white</item>
+        <item name="android:colorForeground">#CCCCCC</item>
+    </style>
     <style name="ASlideDialog" parent="@android:style/Theme.Holo.Light.Dialog">
-            <item name="android:windowFrame">@null</item>
-            <item name="android:windowIsFloating">true</item>
-            <item name="android:windowIsTranslucent">false</item>
-            <item name="android:windowNoTitle">true</item>
-            <item name="android:windowBackground">@android:color/transparent</item>
-            <item name="android:backgroundDimEnabled">true</item>
-            <item name="android:backgroundDimAmount">0.5</item>
-            <item name="android:windowFullscreen">true</item>
-        </style>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
     <style name="About_Info_TextView">
-            <item name="android:maxLines">1</item>
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:gravity">center_vertical</item>
-            <item name="android:textSize">16dp</item>
-            <item name="android:textColor">@color/color_333333</item>
-            <item name="android:layout_centerVertical">true</item>
-            <item name="android:layout_marginLeft">21dp</item>
-            <item name="android:layout_marginRight">21dp</item>
-        </style>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">21dp</item>
+        <item name="android:layout_marginRight">21dp</item>
+    </style>
     <style name="About_Info_Value_TextView" parent="About_Info_TextView">
-            <item name="android:layout_marginLeft">100dp</item>
-            <item name="android:layout_height">match_parent</item>
-            <item name="android:textSize">14dp</item>
-            <item name="android:gravity">center|right</item>
-            <item name="android:layout_alignParentRight">true</item>
-            <item name="android:textColor">@color/color_555555</item>
-        </style>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">@color/color_555555</item>
+    </style>
     <style name="AccountDevice" parent="@style/OpenAccountDefault">
         <item name="ali_sdk_openaccount_attrs_title_bar_title">
             @string/ali_sdk_openaccount_text_account_device
         </item>
+    </style>
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
     </style>
     <style name="AlertActivity_AlertStyle" parent="android:Theme.Dialog">
         
@@ -2258,9 +2501,9 @@
         <item name="android:textColorHint">@color/ali_sdk_openaccount_bg_stroke</item>
     </style>
     <style name="AnimPopBottom" parent="android:Animation">
-            <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
-            <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
-        </style>
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
     <style name="Animation">
         <item name="android:activityOpenEnterAnimation">@null</item>
         <item name="android:activityOpenExitAnimation">@null</item>
@@ -2287,22 +2530,21 @@
     <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
   </style>
     <style name="AnimationFade">
-            
-            <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
-            <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+        
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
 
-            
-        </style>
+        
+    </style>
     <style name="AppStartTheme" parent="MyTransAppTheme">
-            <item name="android:windowBackground">@mipmap/open_screen</item>
-        </style>
+        <item name="android:windowBackground">@mipmap/open_screen</item>
+    </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/white</item>
         <item name="colorAccent">@color/white</item>
         <item name="android:windowAnimationStyle">@style/Animation</item>
-
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
@@ -3723,9 +3965,9 @@
     <item name="boxStrokeColor">?attr/colorControlActivated</item>
   </style>
     <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
-            <item name="android:windowEnterAnimation">@anim/tranlate_dialog_in</item>
-            <item name="android:windowExitAnimation">@anim/tranlate_dialog_out</item>
-        </style>
+        <item name="android:windowEnterAnimation">@anim/tranlate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_dialog_out</item>
+    </style>
     <style name="CalendarCell">
     <item name="android:layout_width">0dp</item>
     <item name="android:layout_weight">1</item>
@@ -3769,16 +4011,16 @@
       <item name="android:timePickerMode">clock</item>
     </style>
     <style name="CustomDialog" parent="android:style/Theme.Dialog">
-            
-            <item name="android:windowBackground">@android:color/transparent</item>
-            
-            <item name="android:windowNoTitle">true</item>
-            
-            <item name="android:windowIsFloating">true</item>
-            
-            <item name="android:backgroundDimEnabled">false</item>
-            <item name="android:windowFrame">@null</item>
-        </style>
+        
+        <item name="android:windowBackground">@android:color/transparent</item>
+        
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="android:windowIsFloating">true</item>
+        
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
     <style name="DialogAnimationFade">
     <item name="android:windowEnterAnimation">@anim/catalyst_fade_in</item>
     <item name="android:windowExitAnimation">@anim/catalyst_fade_out</item>
@@ -3833,6 +4075,20 @@
     <style name="FillPassword" parent="@style/OpenAccountDefault">
         <item name="ali_sdk_openaccount_attrs_fill_password_text_color">#999999</item>
     </style>
+    <style name="LinkSwitch">
+        <item name="track">@drawable/switch_track_bg</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="switchTextAppearance">@style/TextAppearance.AppCompat.Widget.Switch</item>
+        
+        <item name="showText">false</item>
+        <item name="switchPadding">10dp</item>
+        <item name="android:textOn">""</item>
+        <item name="android:textOff">""</item>
+        <item name="android:longClickable">false</item>
+
+        
+        
+    </style>
     <style name="Login" parent="@style/OpenAccountDefault">
         <item name="ali_sdk_openaccount_attrs_login_register_text_color">#999999</item>
         <item name="ali_sdk_openaccount_attrs_login_reset_password_text_color">#999999</item>
@@ -3859,6 +4115,64 @@
             @drawable/ali_sdk_openaccount_bg_oval_alipay
         </item>
     </style>
+    <style name="MessengerButton">
+    <item name="android:clickable">true</item>
+  </style>
+    <style name="MessengerButton.Blue">
+    <item name="android:background">@drawable/messenger_button_blue_bg_selector</item>
+  </style>
+    <style name="MessengerButton.Blue.Large">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:layout_marginLeft">16dp</item>
+    <item name="android:layout_marginRight">16dp</item>
+  </style>
+    <style name="MessengerButton.Blue.Small">
+    <item name="android:layout_width">158dp</item>
+    <item name="android:layout_height">36dp</item>
+  </style>
+    <style name="MessengerButton.White">
+    <item name="android:background">@drawable/messenger_button_white_bg_selector</item>
+  </style>
+    <style name="MessengerButton.White.Large">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:layout_marginLeft">16dp</item>
+    <item name="android:layout_marginRight">16dp</item>
+  </style>
+    <style name="MessengerButton.White.Small">
+    <item name="android:layout_width">158dp</item>
+    <item name="android:layout_height">36dp</item>
+  </style>
+    <style name="MessengerButtonText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:drawablePadding">4dp</item>
+    <item name="android:gravity">center</item>
+    
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+    <style name="MessengerButtonText.Blue">
+    <item name="android:textColor">#ffffff</item>
+  </style>
+    <style name="MessengerButtonText.Blue.Large">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_large_white</item>
+  </style>
+    <style name="MessengerButtonText.Blue.Small">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_small_white</item>
+  </style>
+    <style name="MessengerButtonText.White">
+    <item name="android:textColor">#0084ff</item>
+  </style>
+    <style name="MessengerButtonText.White.Large">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_large_blue</item>
+  </style>
+    <style name="MessengerButtonText.White.Small">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_small_blue</item>
+  </style>
     <style name="MobileCountrySelector" parent="@style/OpenAccountDefault">
         <item name="ali_sdk_openaccount_attrs_title_bar_title">
             @string/ali_sdk_openaccount_text_mobile_country_title
@@ -3866,22 +4180,22 @@
     </style>
     <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
-            <item name="colorPrimary">#393A3F</item>
-            <item name="colorPrimaryDark">#303135</item>
-        </style>
+        <item name="colorPrimary">#393A3F</item>
+        <item name="colorPrimaryDark">#303135</item>
+    </style>
     <style name="MyDialog" parent="android:style/Theme.Dialog">
-            
-            <item name="android:windowBackground">@android:color/transparent</item>
-            
-            <item name="android:windowNoTitle">true</item>
-            
-            <item name="android:windowFrame">@null</item>
-            
-            <item name="android:windowIsFloating">true</item>
-            
-            <item name="android:backgroundDimEnabled">true</item>
-        </style>
-    <style name="MyTransAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="android:windowBackground">@android:color/transparent</item>
+        
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="android:windowFrame">@null</item>
+        
+        <item name="android:windowIsFloating">true</item>
+        
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="MyTransAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/white</item>
@@ -3893,11 +4207,11 @@
         </item>
     </style>
     <style name="NoTitleTheme" parent="MyTransAppTheme">
-            <item name="windowActionBar">false</item>
-            <item name="android:windowNoTitle">true</item>
-            
-            <item name="windowNoTitle">true</item>
-        </style>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="OpenAccountDefault" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="colorPrimary">@color/ali_user_color_primary</item>
@@ -3939,8 +4253,19 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
     <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
-            <item name="overlapAnchor">false</item>  
-        </style>
+        <item name="overlapAnchor">false</item>  
+    </style>
+    <style name="Page_RN_Loading" parent="SimpleLoadViewStyle">
+        <item name="slv_loading_icon">@drawable/link_simpleloadview_loading_rn</item>
+
+        <item name="slv_loading_icon_size">30dp</item>
+        <item name="slv_loadtip_icon_roate_duration">1000</item>
+
+        <item name="slv_infoarea_loading_size">96dp</item>
+        <item name="slv_infoarea_loading_height">70dp</item>
+        <item name="slv_infoarea_loading_background">@drawable/link_simpleloadview_loading_bg</item>
+
+    </style>
     <style name="Platform.AppCompat" parent="android:Theme.Holo">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -4186,13 +4511,15 @@
         <item name="slv_tip_text">@string/link_simpleloadview_default_tip</item>
         <item name="slv_tip_color">#AFB8BD</item>
         <item name="slv_tip_textsize">12dp</item>
-        <item name="slv_loadview_location">0.25</item>
+        <item name="slv_loadview_location">1</item>
         <item name="slv_tipview_location">0.25</item>
         <item name="slv_loading_icon_size">30dp</item>
+        <item name="slv_loadtip_icon_roate_duration">500</item>
         <item name="slv_loadtip_icon_size">94dp</item>
 
         <item name="slv_infoarea_tip_size">wrap_content</item>
         <item name="slv_infoarea_loading_size">96dp</item>
+        <item name="slv_infoarea_loading_height">96dp</item>
 
          
         <item name="slv_infoarea_loading_background">@drawable/link_simpleloadview_loading_default_bg</item>
@@ -4212,27 +4539,27 @@
       <item name="android:timePickerMode">spinner</item>
     </style>
     <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
-            <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
-            <item name="DialogTitleText">Loading…</item>
-            <item name="DialogSpotCount">5</item>
-        </style>
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
     <style name="Style_Transparent" parent="android:Theme.NoTitleBar">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>
     <style name="SwitchButtonCommonStyle">
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="kswThumbRadius">10dp</item>
-            <item name="kswBackColor">@color/switchbtn_back_color</item>
-            <item name="kswThumbColor">@color/color_white</item>
-            <item name="kswThumbWidth">20dp</item>
-            <item name="kswThumbHeight">20dp</item>
-            <item name="kswBackRadius">12dp</item>
-            <item name="kswThumbRangeRatio">2.2</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="kswThumbRadius">10dp</item>
+        <item name="kswBackColor">@color/switchbtn_back_color</item>
+        <item name="kswThumbColor">@color/color_white</item>
+        <item name="kswThumbWidth">20dp</item>
+        <item name="kswThumbHeight">20dp</item>
+        <item name="kswBackRadius">12dp</item>
+        <item name="kswThumbRangeRatio">2.2</item>
 
-        </style>
+    </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>
@@ -4604,11 +4931,11 @@
     </item>
   </style>
     <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
-            
-            <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item> 
-        </style>
-    <style name="TranslucentTheme" parent="MyTransAppTheme">
-        </style>
+        
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle
+        </item> 
+    </style>
+    <style name="TranslucentTheme" parent="MyTransAppTheme"/>
     <style name="TransparentTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
         
         <item name="android:windowAnimationStyle">@style/Animation</item>
@@ -4990,120 +5317,177 @@
         <item name="statusBarBackground">#000000</item>
     </style>
     <style name="aloadview2_dark">
-            <item name="aloadview2_loadBackground">@android:color/transparent</item>
-            <item name="aloadview2_loadingIcon">@drawable/aloadview2_loading</item>
-            <item name="aloadview2_loadingIconSize">29dp</item>
-            <item name="aloadview2_loadingTipText">@null</item>
-            <item name="aloadview2_loadingTipTextSize">16dp</item>
-            <item name="aloadview2_loadingTipTextColor">@null</item>
-            <item name="aloadview2_errorBackground">@android:color/transparent</item>
-            <item name="aloadview2_errorIcon">@drawable/aloadview2_loadingerror_dark</item>
-            <item name="aloadview2_errorIconSize">44dp</item>
-            <item name="aloadview2_errorTipText">@string/aloadview2_loadingerror</item>
-            <item name="aloadview2_errorTipTextSize">16dp</item>
-            <item name="aloadview2_errorTipTextColor">#FFFFFFFF</item>
-            <item name="aloadview2_retryBackground">@drawable/aloadview2_retry_background_white</item>
-            <item name="aloadview2_retryText">@string/aloadview2_clickreload</item>
-            <item name="aloadview2_retryTextSize">14dp</item>
-            <item name="aloadview2_retryTextColor">#FFFFFFFF</item>
-        </style>
+        <item name="aloadview2_loadBackground">@android:color/transparent</item>
+        <item name="aloadview2_loadingIcon">@drawable/aloadview2_loading</item>
+        <item name="aloadview2_loadingIconSize">29dp</item>
+        <item name="aloadview2_loadingTipText">@null</item>
+        <item name="aloadview2_loadingTipTextSize">16dp</item>
+        <item name="aloadview2_loadingTipTextColor">@null</item>
+        <item name="aloadview2_errorBackground">@android:color/transparent</item>
+        <item name="aloadview2_errorIcon">@drawable/aloadview2_loadingerror_dark</item>
+        <item name="aloadview2_errorIconSize">44dp</item>
+        <item name="aloadview2_errorTipText">@string/aloadview2_loadingerror</item>
+        <item name="aloadview2_errorTipTextSize">16dp</item>
+        <item name="aloadview2_errorTipTextColor">#FFFFFFFF</item>
+        <item name="aloadview2_retryBackground">@drawable/aloadview2_retry_background_white</item>
+        <item name="aloadview2_retryText">@string/aloadview2_clickreload</item>
+        <item name="aloadview2_retryTextSize">14dp</item>
+        <item name="aloadview2_retryTextColor">#FFFFFFFF</item>
+    </style>
     <style name="aloadview2_light">
-            <item name="aloadview2_loadBackground">@android:color/transparent</item>
-            <item name="aloadview2_loadingIcon">@drawable/aloadview2_loading</item>
-            <item name="aloadview2_loadingIconSize">29dp</item>
-            <item name="aloadview2_loadingTipText">@null</item>
-            <item name="aloadview2_loadingTipTextSize">16dp</item>
-            <item name="aloadview2_loadingTipTextColor">@null</item>
-            <item name="aloadview2_errorBackground">@android:color/transparent</item>
-            <item name="aloadview2_errorIcon">@drawable/aloadview2_loadingerror_light</item>
-            <item name="aloadview2_errorIconSize">44dp</item>
-            <item name="aloadview2_errorTipText">@string/aloadview2_loadingerror</item>
-            <item name="aloadview2_errorTipTextSize">16dp</item>
-            <item name="aloadview2_errorTipTextColor">#FF9AC3BF</item>
-            <item name="aloadview2_retryBackground">@drawable/aloadview2_retry_background_green</item>
-            <item name="aloadview2_retryText">@string/aloadview2_clickreload</item>
-            <item name="aloadview2_retryTextSize">14dp</item>
-            <item name="aloadview2_retryTextColor">#FF00C7B2</item>
-        </style>
+        <item name="aloadview2_loadBackground">@android:color/transparent</item>
+        <item name="aloadview2_loadingIcon">@drawable/aloadview2_loading</item>
+        <item name="aloadview2_loadingIconSize">29dp</item>
+        <item name="aloadview2_loadingTipText">@null</item>
+        <item name="aloadview2_loadingTipTextSize">16dp</item>
+        <item name="aloadview2_loadingTipTextColor">@null</item>
+        <item name="aloadview2_errorBackground">@android:color/transparent</item>
+        <item name="aloadview2_errorIcon">@drawable/aloadview2_loadingerror_light</item>
+        <item name="aloadview2_errorIconSize">44dp</item>
+        <item name="aloadview2_errorTipText">@string/aloadview2_loadingerror</item>
+        <item name="aloadview2_errorTipTextSize">16dp</item>
+        <item name="aloadview2_errorTipTextColor">#FF9AC3BF</item>
+        <item name="aloadview2_retryBackground">@drawable/aloadview2_retry_background_green</item>
+        <item name="aloadview2_retryText">@string/aloadview2_clickreload</item>
+        <item name="aloadview2_retryTextSize">14dp</item>
+        <item name="aloadview2_retryTextColor">#FF00C7B2</item>
+    </style>
     <style name="bottom_ll_style">
-            <item name="android:layout_width">0dp</item>
-            <item name="android:layout_height">match_parent</item>
-            <item name="android:layout_weight">1</item>
-            <item name="android:orientation">vertical</item>
-            <item name="android:gravity">center</item>
-            <item name="android:background">#ffffff</item>
-        </style>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#ffffff</item>
+    </style>
     <style name="bottom_text_style">
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:textColor">@drawable/bottom_textcolor</item>
-            <item name="android:textSize">10sp</item>
-            <item name="android:layout_marginTop">2dp</item>
-            <item name="android:gravity">center</item>
-            <item name="android:clickable">true</item>
-        </style>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/bottom_textcolor</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
     <style name="btnCodeStyle" parent="btnStyle">
-            <item name="android:paddingTop">8dip</item>
-            <item name="android:paddingBottom">8dip</item>
-            <item name="android:paddingLeft">5dip</item>
-            <item name="android:paddingRight">5dip</item>
-        </style>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
     <style name="btnStyle" parent="txtDefaultStyle">
-            <item name="android:background">@drawable/bg_corner_full_orange_10</item>
-            <item name="android:minWidth">0dip</item>
-            <item name="android:minHeight">0dip</item>
-            <item name="android:paddingTop">10dip</item>
-            <item name="android:paddingBottom">10dip</item>
-            <item name="android:paddingLeft">10dip</item>
-            <item name="android:paddingRight">10dip</item>
-            <item name="android:textColor">@color/white</item>
-        </style>
+        <item name="android:background">@drawable/bg_corner_full_orange_10</item>
+        <item name="android:minWidth">0dip</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
     <style name="btndeleteStyle" parent="txtDefaultStyle">
-            <item name="android:background">@color/divider_gray</item>
-            <item name="android:minWidth">0dip</item>
-            <item name="android:minHeight">0dip</item>
-            <item name="android:paddingTop">10dip</item>
-            <item name="android:paddingBottom">10dip</item>
-            <item name="android:paddingLeft">10dip</item>
-            <item name="android:paddingRight">10dip</item>
-            <item name="android:textColor">@color/white</item>
-        </style>
+        <item name="android:background">@color/divider_gray</item>
+        <item name="android:minWidth">0dip</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
     <style name="buttom_dialog" parent="@android:style/Theme.Holo.Dialog">
-            
-            <item name="android:windowFrame">@null</item>
-            
-            <item name="android:windowIsFloating">true</item>
-            
-            <item name="android:windowNoTitle">true</item>
-            
-            <item name="android:windowIsTranslucent">true</item>
-            
-            <item name="android:windowBackground">@android:color/transparent</item>
-            
-        </style>
+        
+        <item name="android:windowFrame">@null</item>
+        
+        <item name="android:windowIsFloating">true</item>
+        
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="android:windowIsTranslucent">true</item>
+        
+        <item name="android:windowBackground">@android:color/transparent</item>
+        
+    </style>
     <style name="button_style">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">40dp</item>
-            <item name="android:textSize">15sp</item>
-            <item name="android:background">@drawable/button_btn</item>
-            <item name="android:gravity">center_vertical</item>
-        </style>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/button_btn</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
     <style name="colorPrimaryTextStyle">
-            <item name="android:textSize">@dimen/font_normal</item>
-            <item name="android:textColor">@color/colorPrimary</item>
-        </style>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="com_facebook_activity_theme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="com_facebook_auth_dialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="com_facebook_auth_dialog_instructions_textview" ns2:targetApi="17">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">roboto</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/com_facebook_device_auth_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="com_facebook_button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/com_facebook_button_background</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/com_facebook_button_text_color</item>
+        <item name="android:textSize">14.0dp</item>
+    </style>
+    <style name="com_facebook_button_like" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_like_background</item>
+    </style>
+    <style name="com_facebook_button_send" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_send_background</item>
+        <item name="android:drawableLeft">@drawable/com_facebook_send_button_icon</item>
+        <item name="android:text">@string/com_facebook_send_button_text</item>
+        <item name="android:textColor">@color/com_facebook_send_button_text_color</item>
+    </style>
+    <style name="com_facebook_button_share" parent="com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+        <item name="android:text">@string/com_facebook_share_button_text</item>
+    </style>
+    <style name="com_facebook_loginview_default_style" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_login_background</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textSize">13.0dp</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="com_facebook_loginview_default_style">
+        <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:textColor">#4b5164</item>
+    </style>
     <style name="customDialog" parent="@android:style/Theme.Light.NoTitleBar">
-            <item name="android:windowFrame">@null</item>
-            <item name="android:windowNoTitle">true</item>
-            <item name="android:windowIsFloating">true</item>
-            <item name="android:windowContentOverlay">@null</item>
-            <item name="android:windowFullscreen">true</item>
-            <item name="android:background">@android:color/transparent</item>
-            <item name="android:windowBackground">@android:color/transparent</item>
-            <item name="android:windowIsTranslucent">true</item>
-            <item name="android:backgroundDimEnabled">true</item>
-            <item name="android:backgroundDimAmount">0.6</item>
-        </style>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
     <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         
@@ -5129,62 +5513,50 @@
         <item name="android:paddingEnd">0dp</item>
         <item name="android:thumb">@drawable/ipc_seekbar_thumb</item>
     </style>
-    <style name="defaultLinkSwitch">
-        <item name="track">@drawable/abc_switch_track_mtrl_alpha</item>
-        <item name="android:thumb">@drawable/abc_switch_thumb_material</item>
-        <item name="switchTextAppearance">@style/TextAppearance.AppCompat.Widget.Switch</item>
-        <item name="android:background">#1FC88B</item>
-        <item name="showText">false</item>
-        <item name="switchPadding">10dp</item>
-        <item name="android:textOn">on</item>
-        <item name="android:textOff">off</item>
-        
-        
-    </style>
     <style mce_bogus="1" name="dialogWindowAnim" parent="android:Animation">
-            <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
-            <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
-        </style>
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
     <style name="dialogWindowAnim02" parent="android:Animation">
-            <item name="android:windowEnterAnimation">@anim/push_up_in</item>
-            <item name="android:windowExitAnimation">@anim/push_up_out</item>
-        </style>
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
     <style name="editCodePStyle">
-            <item name="android:digits">@string/digits_phone</item>
-            <item name="android:maxLength">6</item>
-            <item name="android:textSize">14sp</item>
-            <item name="android:paddingTop">10dip</item>
-            <item name="android:paddingLeft">10dip</item>
-            <item name="android:inputType">numberSigned</item>
-            <item name="android:textColorHint">#aaaaaa</item>
-        </style>
+        <item name="android:digits">@string/digits_phone</item>
+        <item name="android:maxLength">6</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:inputType">numberSigned</item>
+        <item name="android:textColorHint">#aaaaaa</item>
+    </style>
     <style name="editPhoneStyle">
-            <item name="android:textColor">@color/txt_black</item>
-            <item name="android:textSize">14sp</item>
-            <item name="android:paddingTop">10dip</item>
-            <item name="android:paddingLeft">10dip</item>
-            <item name="android:paddingBottom">4dip</item>
-            <item name="android:textColorHint">#aaaaaa</item>
-        </style>
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:textColorHint">#aaaaaa</item>
+    </style>
     <style name="editPwdStyle">
-            <item name="android:digits">@string/digits_password</item>
-            <item name="android:maxLength">64</item>
-            <item name="android:inputType">textPassword</item>
-            <item name="android:textSize">14sp</item>
-            <item name="android:paddingLeft">10dip</item>
-            <item name="android:textColorHint">#aaaaaa</item>
-        </style>
+        <item name="android:digits">@string/digits_password</item>
+        <item name="android:maxLength">64</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textColorHint">#aaaaaa</item>
+    </style>
     <style name="editloginStyle">
-            <item name="android:maxLength">64</item>
-            <item name="android:textSize">15sp</item>
-            <item name="android:paddingLeft">10dip</item>
-            <item name="android:textColorHint">#aaaaaa</item>
-        </style>
+        <item name="android:maxLength">64</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textColorHint">#aaaaaa</item>
+    </style>
     <style name="line_vertical">
-            <item name="android:background">@color/divider_color</item>
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">1dp</item>
-        </style>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
     <style name="link_loading_fulldialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
@@ -5196,56 +5568,56 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
     <style name="mine_image_arrow">
-            <item name="android:textSize">15dip</item>
-            <item name="android:layout_marginRight">18dp</item>
-            <item name="android:layout_width">8dp</item>
-            <item name="android:layout_height">12dp</item>
-            <item name="android:src">@drawable/icon_right_normal</item>
-            <item name="android:layout_centerVertical">true</item>
-        </style>
+        <item name="android:textSize">15dip</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:src">@drawable/icon_right_normal</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
     <style name="mine_item_style">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">40dp</item>
-            <item name="android:background">@android:color/white</item>
-        </style>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
     <style name="mine_item_style02">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">50dp</item>
-            <item name="android:background">@android:color/white</item>
-        </style>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
     <style name="mine_text_edit_style">
-            <item name="android:textSize">15sp</item>
-            <item name="android:layout_marginLeft">12dp</item>
-            <item name="android:textColor">@color/fontColor6</item>
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">match_parent</item>
-            <item name="android:layout_centerVertical">true</item>
-        </style>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:textColor">@color/fontColor6</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
     <style name="mine_text_style">
-            <item name="android:textSize">15dip</item>
-            <item name="android:layout_marginLeft">12dp</item>
-            <item name="android:textColor">@color/fontColor6</item>
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:layout_centerVertical">true</item>
-        </style>
+        <item name="android:textSize">15dip</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:textColor">@color/fontColor6</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
     <style name="mine_text_style02">
-            <item name="android:textSize">16dip</item>
-            <item name="android:layout_marginLeft">12dp</item>
-            <item name="android:textColor">@color/fontColor6</item>
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:layout_centerVertical">true</item>
-        </style>
+        <item name="android:textSize">16dip</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:textColor">@color/fontColor6</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
     <style name="mine_text_style03">
-            <item name="android:textSize">15dip</item>
-            <item name="android:layout_marginRight">12dp</item>
-            <item name="android:textColor">@color/fontColora</item>
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:layout_centerVertical">true</item>
-            <item name="android:layout_alignParentRight">true</item>
-        </style>
+        <item name="android:textSize">15dip</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:textColor">@color/fontColora</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
     <style name="myLoginStyle" parent="Login">
         <item name="ali_sdk_openaccount_attrs_title_bar_text_color">@color/title_text</item>
         <item name="ali_sdk_openaccount_attrs_next_step_bg">@drawable/bg_login_btn</item>
@@ -5274,26 +5646,34 @@
     <item name="android:textSize">14sp</item>
   </style>
     <style name="time_dialog" parent="android:style/Theme.Dialog">
-            <item name="android:windowFrame">@null</item>
-            <item name="android:windowNoTitle">true</item>
-            <item name="android:windowIsFloating">true</item>
-            <item name="android:windowContentOverlay">@null</item>
-            <item name="android:windowBackground">@color/background</item>
-        </style>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="tooltip_bubble_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.25</item>
+        <item name="android:shadowColor">#40000000</item>
+    </style>
     <style name="tv_it_mine">
-            <item name="android:textSize">14sp</item>
-            <item name="android:textColor">#333333</item>
-            <item name="android:gravity">center_vertical</item>
-            <item name="android:drawableRight">@mipmap/icon_into</item>
-            <item name="android:drawablePadding">10dp</item>
-            <item name="android:paddingRight">10dp</item>
-            <item name="android:paddingLeft">10dp</item>
-            <item name="android:layout_marginLeft">10dp</item>
-            <item name="android:layout_marginRight">10dp</item>
-            <item name="android:background">#ffffff</item>
-            <item name="android:layout_height">50dp</item>
-            <item name="android:layout_width">match_parent</item>
-        </style>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@mipmap/icon_into</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
     <style name="tv_mine">
         <item name="android:textColor">#252525</item>
         <item name="android:textSize">14sp</item>
@@ -5307,48 +5687,119 @@
         <item name="android:layout_width">match_parent</item>
     </style>
     <style name="txtDefaultStyle">
-            <item name="android:textColor">@color/txt_black</item>
-            <item name="android:textSize">14sp</item>
-            <item name="android:paddingTop">10dip</item>
-            <item name="android:paddingLeft">10dip</item>
-            <item name="android:paddingBottom">8dip</item>
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingBottom">8dip</item>
 
-        </style>
+    </style>
     <style name="ucrop_ImageViewWidgetIcon">
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:layout_gravity">center</item>
-            <item name="android:scaleType">fitCenter</item>
-            <item name="android:duplicateParentState">true</item>
-        </style>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
     <style name="ucrop_TextViewCropAspectRatio">
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">@dimen/ucrop_height_crop_aspect_ratio_text</item>
-            <item name="android:layout_gravity">center</item>
-            <item name="android:duplicateParentState">true</item>
-            <item name="android:textColor">@color/ucrop_scale_text_view_selector</item>
-        </style>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ucrop_height_crop_aspect_ratio_text</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@color/ucrop_scale_text_view_selector</item>
+    </style>
     <style name="ucrop_TextViewWidgetText">
-            <item name="android:layout_width">wrap_content</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:layout_centerHorizontal">true</item>
-            <item name="android:layout_marginTop">@dimen/ucrop_margit_top_widget_text</item>
-            <item name="android:textColor">@color/ucrop_color_widget_text</item>
-            <item name="android:textSize">@dimen/ucrop_text_size_widget_text</item>
-        </style>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/ucrop_margit_top_widget_text</item>
+        <item name="android:textColor">@color/ucrop_color_widget_text</item>
+        <item name="android:textSize">@dimen/ucrop_text_size_widget_text</item>
+    </style>
     <style name="ucrop_WrapperIconState">
-            <item name="android:layout_width">0dp</item>
-            <item name="android:layout_height">match_parent</item>
-            <item name="android:layout_weight">1</item>
-            <item name="android:background">?attr/selectableItemBackground</item>
-            <item name="android:clickable">true</item>
-        </style>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
     <style name="ucrop_WrapperRotateButton">
-            <item name="android:layout_width">@dimen/ucrop_size_wrapper_rotate_button</item>
-            <item name="android:layout_height">@dimen/ucrop_size_wrapper_rotate_button</item>
-            <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
-            <item name="android:clickable">true</item>
-        </style>
+        <item name="android:layout_width">@dimen/ucrop_size_wrapper_rotate_button</item>
+        <item name="android:layout_height">@dimen/ucrop_size_wrapper_rotate_button</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="ui__navigationBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ui__navigationBar_ContentView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ui__navigationBar_ImageControl">
+        <item name="android:layout_height">@dimen/ui_nav_bar_control_size</item>
+        <item name="android:layout_width">@dimen/ui_nav_bar_control_size</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="ui__navigationBar_MenuView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ui__navigationBar_NavigationBack" parent="ui__navigationBar_TextControl">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:layout_height">@dimen/ui_nav_bar_nav_back_size</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:contentDescription">Back</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="ui__navigationBar_TextControl">
+        <item name="android:layout_height">@dimen/ui_nav_bar_control_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:textColor">@color/ui_nav_bar_color_accent</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ui__navigationBar_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/ui__navigationBar_TitleTextAppearance</item>
+    </style>
+    <style name="ui__navigationBar_TitleTextAppearance">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">@dimen/ui_nav_bar_title_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="ui__navigationBar_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">#F6F6F6</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
     <style name="upsdkDlDialog" parent="@android:style/Theme.Holo.Light">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -5366,10 +5817,10 @@
         <item name="android:paddingBottom">14dp</item>
     </style>
     <style name="view_style">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">1dp</item>
-            <item name="android:background">@color/colorview</item>
-        </style>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorview</item>
+    </style>
     <style name="window_background" parent="android:Theme.Holo.Light.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -5991,19 +6442,19 @@
     </declare-styleable>
     <declare-styleable name="AspectRatioFrameLayout"><attr name="resize_mode"/></declare-styleable>
     <declare-styleable name="BarcodeScannerView">
-            <attr format="boolean" name="shouldScaleToFill"/>
-            <attr format="boolean" name="laserEnabled"/>
-            <attr format="color" name="laserColor"/>
-            <attr format="color" name="borderColor"/>
-            <attr format="color" name="maskColor"/>
-            <attr format="dimension" name="borderWidth"/>
-            <attr format="dimension" name="borderLength"/>
-            <attr format="boolean" name="roundedCorner"/>
-            <attr format="dimension" name="cornerRadius"/>
-            <attr format="boolean" name="squaredFinder"/>
-            <attr format="float" name="borderAlpha"/>
-            <attr format="dimension" name="finderOffset"/>
-        </declare-styleable>
+        <attr format="boolean" name="shouldScaleToFill"/>
+        <attr format="boolean" name="laserEnabled"/>
+        <attr format="color" name="laserColor"/>
+        <attr format="color" name="borderColor"/>
+        <attr format="color" name="maskColor"/>
+        <attr format="dimension" name="borderWidth"/>
+        <attr format="dimension" name="borderLength"/>
+        <attr format="boolean" name="roundedCorner"/>
+        <attr format="dimension" name="cornerRadius"/>
+        <attr format="boolean" name="squaredFinder"/>
+        <attr format="float" name="borderAlpha"/>
+        <attr format="dimension" name="finderOffset"/>
+    </declare-styleable>
     <declare-styleable name="BottomAppBar"><attr name="backgroundTint"/><attr name="fabAlignmentMode">
       
       <enum name="center" value="0"/>
@@ -6083,11 +6534,11 @@
     <declare-styleable name="Chip"><attr format="color" name="chipBackgroundColor"/><attr format="dimension" name="chipMinHeight"/><attr format="dimension" name="chipCornerRadius"/><attr format="color" name="chipStrokeColor"/><attr format="dimension" name="chipStrokeWidth"/><attr name="rippleColor"/><attr name="android:text"/><attr name="android:textAppearance"/><attr name="android:ellipsize"/><attr name="android:maxWidth"/><attr format="boolean" name="chipIconVisible"/><attr format="boolean" name="chipIconEnabled"/><attr format="reference" name="chipIcon"/><attr format="color" name="chipIconTint"/><attr format="dimension" name="chipIconSize"/><attr format="boolean" name="closeIconVisible"/><attr format="boolean" name="closeIconEnabled"/><attr format="reference" name="closeIcon"/><attr format="color" name="closeIconTint"/><attr format="dimension" name="closeIconSize"/><attr name="android:checkable"/><attr format="boolean" name="checkedIconVisible"/><attr format="boolean" name="checkedIconEnabled"/><attr format="reference" name="checkedIcon"/><attr name="showMotionSpec"/><attr name="hideMotionSpec"/><attr format="dimension" name="chipStartPadding"/><attr format="dimension" name="iconStartPadding"/><attr format="dimension" name="iconEndPadding"/><attr format="dimension" name="textStartPadding"/><attr format="dimension" name="textEndPadding"/><attr format="dimension" name="closeIconStartPadding"/><attr format="dimension" name="closeIconEndPadding"/><attr format="dimension" name="chipEndPadding"/></declare-styleable>
     <declare-styleable name="ChipGroup"><attr format="dimension" name="chipSpacing"/><attr format="dimension" name="chipSpacingHorizontal"/><attr format="dimension" name="chipSpacingVertical"/><attr format="boolean" name="singleLine"/><attr format="boolean" name="singleSelection"/><attr format="reference" name="checkedChip"/></declare-styleable>
     <declare-styleable name="CircleImageView">
-            <attr format="dimension" name="civBorderWidth"/>
-            <attr format="color" name="civBorderColor"/>
-            <attr format="boolean" name="civBorderOverlay"/>
-            <attr format="color" name="civFillColor"/>
-        </declare-styleable>
+        <attr format="dimension" name="civBorderWidth"/>
+        <attr format="color" name="civBorderColor"/>
+        <attr format="boolean" name="civBorderOverlay"/>
+        <attr format="color" name="civFillColor"/>
+    </declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/><attr format="dimension" name="scrimVisibleHeightTrigger"/><attr format="integer" name="scrimAnimationDuration"/><attr name="collapsedTitleGravity">
       
       <flag name="top" value="0x30"/>
@@ -6255,65 +6706,65 @@
         </attr>
     </declare-styleable>
     <declare-styleable name="CountdownView">
-            <attr format="boolean" name="isHideTimeBackground"/>
-            <attr format="boolean" name="isShowTimeBgDivisionLine"/>
-            <attr format="color" name="timeBgDivisionLineColor"/>
-            <attr format="dimension" name="timeBgDivisionLineSize"/>
-            <attr format="color" name="timeBgColor"/>
-            <attr format="dimension" name="timeBgSize"/>
-            <attr format="dimension" name="timeBgRadius"/>
+        <attr format="boolean" name="isHideTimeBackground"/>
+        <attr format="boolean" name="isShowTimeBgDivisionLine"/>
+        <attr format="color" name="timeBgDivisionLineColor"/>
+        <attr format="dimension" name="timeBgDivisionLineSize"/>
+        <attr format="color" name="timeBgColor"/>
+        <attr format="dimension" name="timeBgSize"/>
+        <attr format="dimension" name="timeBgRadius"/>
 
-            <attr format="boolean" name="isTimeTextBold"/>
-            <attr format="dimension" name="timeTextSize"/>
-            <attr format="color" name="timeTextColor"/>
-            <attr format="boolean" name="isShowDay"/>
-            <attr format="boolean" name="isShowHour"/>
-            <attr format="boolean" name="isShowMinute"/>
-            <attr format="boolean" name="isShowSecond"/>
-            <attr format="boolean" name="isShowMillisecond"/>
-            <attr format="boolean" name="isConvertDaysToHours"/>
+        <attr format="boolean" name="isTimeTextBold"/>
+        <attr format="dimension" name="timeTextSize"/>
+        <attr format="color" name="timeTextColor"/>
+        <attr format="boolean" name="isShowDay"/>
+        <attr format="boolean" name="isShowHour"/>
+        <attr format="boolean" name="isShowMinute"/>
+        <attr format="boolean" name="isShowSecond"/>
+        <attr format="boolean" name="isShowMillisecond"/>
+        <attr format="boolean" name="isConvertDaysToHours"/>
 
-            <attr format="boolean" name="isSuffixTextBold"/>
-            <attr format="dimension" name="suffixTextSize"/>
-            <attr format="color" name="suffixTextColor"/>
-            <attr format="string" name="suffix"/>
-            <attr format="string" name="suffixDay"/>
-            <attr format="string" name="suffixHour"/>
-            <attr format="string" name="suffixMinute"/>
-            <attr format="string" name="suffixSecond"/>
-            <attr format="string" name="suffixMillisecond"/>
-            <attr name="suffixGravity">
-                <enum name="top" value="0"/>
-                <enum name="center" value="1"/>
-                <enum name="bottom" value="2"/>
-            </attr>
-            <attr format="dimension" name="suffixLRMargin"/>
-            <attr format="dimension" name="suffixDayLeftMargin"/>
-            <attr format="dimension" name="suffixDayRightMargin"/>
-            <attr format="dimension" name="suffixHourLeftMargin"/>
-            <attr format="dimension" name="suffixHourRightMargin"/>
-            <attr format="dimension" name="suffixMinuteLeftMargin"/>
-            <attr format="dimension" name="suffixMinuteRightMargin"/>
-            <attr format="dimension" name="suffixSecondLeftMargin"/>
-            <attr format="dimension" name="suffixSecondRightMargin"/>
-            <attr format="dimension" name="suffixMillisecondLeftMargin"/>
+        <attr format="boolean" name="isSuffixTextBold"/>
+        <attr format="dimension" name="suffixTextSize"/>
+        <attr format="color" name="suffixTextColor"/>
+        <attr format="string" name="suffix"/>
+        <attr format="string" name="suffixDay"/>
+        <attr format="string" name="suffixHour"/>
+        <attr format="string" name="suffixMinute"/>
+        <attr format="string" name="suffixSecond"/>
+        <attr format="string" name="suffixMillisecond"/>
+        <attr name="suffixGravity">
+            <enum name="top" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+        <attr format="dimension" name="suffixLRMargin"/>
+        <attr format="dimension" name="suffixDayLeftMargin"/>
+        <attr format="dimension" name="suffixDayRightMargin"/>
+        <attr format="dimension" name="suffixHourLeftMargin"/>
+        <attr format="dimension" name="suffixHourRightMargin"/>
+        <attr format="dimension" name="suffixMinuteLeftMargin"/>
+        <attr format="dimension" name="suffixMinuteRightMargin"/>
+        <attr format="dimension" name="suffixSecondLeftMargin"/>
+        <attr format="dimension" name="suffixSecondRightMargin"/>
+        <attr format="dimension" name="suffixMillisecondLeftMargin"/>
 
-            <attr format="boolean" name="isShowTimeBgBorder"/>
-            <attr format="color" name="timeBgBorderColor"/>
-            <attr format="dimension" name="timeBgBorderSize"/>
-            <attr format="dimension" name="timeBgBorderRadius"/>
-        </declare-styleable>
+        <attr format="boolean" name="isShowTimeBgBorder"/>
+        <attr format="color" name="timeBgBorderColor"/>
+        <attr format="dimension" name="timeBgBorderSize"/>
+        <attr format="dimension" name="timeBgBorderRadius"/>
+    </declare-styleable>
     <declare-styleable name="CropImageView">
-            <attr name="guidelines">
-                <enum name="on" value="2"/>
-                <enum name="onTouch" value="1"/>
-                <enum name="off" value="0"/>
-            </attr>
-            <attr format="boolean" name="fixAspectRatio"/>
-            <attr format="integer" name="aspectRatioX"/>
-            <attr format="integer" name="aspectRatioY"/>
-            <attr format="reference" name="imageResource"/>
-        </declare-styleable>
+        <attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr>
+        <attr format="boolean" name="fixAspectRatio"/>
+        <attr format="integer" name="aspectRatioX"/>
+        <attr format="integer" name="aspectRatioY"/>
+        <attr format="reference" name="imageResource"/>
+    </declare-styleable>
     <declare-styleable name="DebugLayout">
         <attr format="string" name="title"/>
         <attr format="dimension" name="titleFontSize"/>
@@ -6548,36 +6999,37 @@
         
         <attr name="android:color"/>
     </declare-styleable>
+    <declare-styleable name="ILopWheelView"><attr name="selectedTextSize"/><attr name="normalTextSize"/><attr format="boolean" name="autoAdjustTextSize"/><attr name="normalTextColor"/><attr name="selectedTextColor"/><attr format="string" name="integerFormat"/><attr format="integer" name="decimalDigitsNumber"/><attr format="integer" name="visibleItemNum"/><attr format="boolean" name="cyclic"/><attr format="color" name="dividerColor"/><attr format="dimension" name="dividerHeight"/><attr format="color" name="selectedItemBackgroundColor"/><attr format="float" name="friction"/><attr format="boolean" name="fixSpringBack"/></declare-styleable>
     <declare-styleable name="KeyValueView">
-            <attr format="reference" name="kvDrawRight"/>
-            <attr format="dimension" name="kvDrawRightWidth"/>
-            <attr format="string" name="kvKey"/>
-            <attr format="reference|color" name="kvKeyColor"/>
-            <attr format="dimension" name="kvKeySize"/>
-            <attr format="string" name="kvKeySign"/>
-            <attr format="string" name="kvValue"/>
-            <attr format="reference|color" name="kvValueColor"/>
-            <attr format="dimension" name="kvValueSize"/>
-            <attr format="string" name="kvValueHint"/>
-            <attr format="reference|color" name="kvValueHintColor"/>
-            <attr format="dimension" name="kvValuePadding"/>
-            <attr format="dimension" name="kvValuePaddingLeft"/>
-            <attr format="dimension" name="kvValuePaddingRight"/>
-            <attr format="dimension" name="kvValuePaddingTop"/>
-            <attr format="dimension" name="kvValuePaddingBottom"/>
-            <attr format="dimension" name="kvValueMargin"/>
-            <attr format="dimension" name="kvValueMarginLeft"/>
-            <attr format="dimension" name="kvValueMarginRight"/>
-            <attr format="dimension" name="kvValueMarginTop"/>
-            <attr format="dimension" name="kvValueMarginBottom"/>
-            <attr format="boolean" name="kvValueRight"/>
-        </declare-styleable>
+        <attr format="reference" name="kvDrawRight"/>
+        <attr format="dimension" name="kvDrawRightWidth"/>
+        <attr format="string" name="kvKey"/>
+        <attr format="reference|color" name="kvKeyColor"/>
+        <attr format="dimension" name="kvKeySize"/>
+        <attr format="string" name="kvKeySign"/>
+        <attr format="string" name="kvValue"/>
+        <attr format="reference|color" name="kvValueColor"/>
+        <attr format="dimension" name="kvValueSize"/>
+        <attr format="string" name="kvValueHint"/>
+        <attr format="reference|color" name="kvValueHintColor"/>
+        <attr format="dimension" name="kvValuePadding"/>
+        <attr format="dimension" name="kvValuePaddingLeft"/>
+        <attr format="dimension" name="kvValuePaddingRight"/>
+        <attr format="dimension" name="kvValuePaddingTop"/>
+        <attr format="dimension" name="kvValuePaddingBottom"/>
+        <attr format="dimension" name="kvValueMargin"/>
+        <attr format="dimension" name="kvValueMarginLeft"/>
+        <attr format="dimension" name="kvValueMarginRight"/>
+        <attr format="dimension" name="kvValueMarginTop"/>
+        <attr format="dimension" name="kvValueMarginBottom"/>
+        <attr format="boolean" name="kvValueRight"/>
+    </declare-styleable>
     <declare-styleable name="LineBreakLayout">
-            
-            <attr format="dimension" name="leftAndRightSpace"/>
-            
-            <attr format="dimension" name="rowSpace"/>
-        </declare-styleable>
+        
+        <attr format="dimension" name="leftAndRightSpace"/>
+        
+        <attr format="dimension" name="rowSpace"/>
+    </declare-styleable>
     <declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat">
         
@@ -6612,10 +7064,14 @@
     <declare-styleable name="LinkSimpleLoadView"><attr format="reference" name="slv_loading_icon"/><attr format="dimension|reference" name="slv_loading_icon_size"/><attr format="reference" name="slv_infoarea_loading_background"/><attr format="float" name="slv_loadview_location"/><attr format="dimension|reference|enum" name="slv_infoarea_loading_size">
             <enum name="wrap_content" value="-2"/>
             <enum name="match_parent" value="-1"/>
-        </attr><attr format="reference" name="slv_loadtip_icon"/><attr format="dimension|reference" name="slv_loadtip_icon_size"/><attr format="reference" name="slv_infoarea_tip_background"/><attr format="float" name="slv_tipview_location"/><attr format="dimension|reference|enum" name="slv_infoarea_tip_size">
+        </attr><attr format="dimension|reference|enum" name="slv_infoarea_loading_height">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr><attr format="reference" name="slv_loadtip_icon"/><attr format="dimension|reference" name="slv_loadtip_icon_size"/><attr format="integer" name="slv_loadtip_icon_roate_duration"/><attr format="reference" name="slv_infoarea_tip_background"/><attr format="float" name="slv_tipview_location"/><attr format="dimension|reference|enum" name="slv_infoarea_tip_size">
             <enum name="wrap_content" value="-2"/>
             <enum name="match_parent" value="-1"/>
         </attr><attr format="string|reference" name="slv_tip_text"/><attr format="color|reference" name="slv_tip_color"/><attr format="dimension|reference" name="slv_tip_textsize"/><attr format="dimension|reference" name="slv_tip2icon_space"/></declare-styleable>
+    <declare-styleable name="LinkSwitchButton"><attr format="reference" name="switchBackground"/><attr format="dimension|reference" name="switchThumbPadding"/><attr format="reference|color" name="switchThumb"/><attr format="integer" name="switchAnimationDuration"/></declare-styleable>
     <declare-styleable name="ListPopupWindow">
         
         <attr name="android:dropDownVerticalOffset"/>
@@ -6795,28 +7251,28 @@
         <attr format="reference" name="subMenuArrow"/>
     </declare-styleable>
     <declare-styleable name="MovieRecorderView">
-            <attr format="integer" name="mo_width"/>
-            <attr format="integer" name="mo_height"/>
-            <attr format="boolean" name="is_open_camera"/>
-            <attr format="integer" name="record_max_time"/>
-        </declare-styleable>
+        <attr format="integer" name="mo_width"/>
+        <attr format="integer" name="mo_height"/>
+        <attr format="boolean" name="is_open_camera"/>
+        <attr format="integer" name="record_max_time"/>
+    </declare-styleable>
     <declare-styleable name="NavView">
-            <attr format="boolean" name="navHorizontal"/>
-            <attr format="boolean" name="navChecked"/>
-            <attr format="reference" name="navDrawRight"/>
-            <attr format="dimension" name="navDrawRightWidth"/>
-            <attr format="string" name="navText"/>
-            <attr format="reference|color" name="navTextColor"/>
-            <attr format="dimension" name="navTextSize"/>
-            <attr format="reference|color" name="navDraw"/>
-            <attr format="reference|color" name="navDrawTint"/>
-            <attr format="dimension" name="navDrawWidth"/>
-            <attr format="dimension" name="navDrawHeight"/>
-            <attr format="boolean" name="navTextRight"/>
-            <attr format="dimension" name="navPadding"/>
-            <attr format="boolean" name="navCenter"/>
-            <attr format="dimension" name="navDrawPadding"/>
-        </declare-styleable>
+        <attr format="boolean" name="navHorizontal"/>
+        <attr format="boolean" name="navChecked"/>
+        <attr format="reference" name="navDrawRight"/>
+        <attr format="dimension" name="navDrawRightWidth"/>
+        <attr format="string" name="navText"/>
+        <attr format="reference|color" name="navTextColor"/>
+        <attr format="dimension" name="navTextSize"/>
+        <attr format="reference|color" name="navDraw"/>
+        <attr format="reference|color" name="navDrawTint"/>
+        <attr format="dimension" name="navDrawWidth"/>
+        <attr format="dimension" name="navDrawHeight"/>
+        <attr format="boolean" name="navTextRight"/>
+        <attr format="dimension" name="navPadding"/>
+        <attr format="boolean" name="navCenter"/>
+        <attr format="dimension" name="navDrawPadding"/>
+    </declare-styleable>
     <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/><attr format="dimension" name="itemHorizontalPadding"/><attr format="dimension" name="itemIconPadding"/></declare-styleable>
     <declare-styleable name="NetworkImageView"><attr name="default_image"/><attr name="error_image"/></declare-styleable>
     <declare-styleable name="PagerSlidingTabStrip">
@@ -6836,6 +7292,36 @@
         <attr format="color" name="pstsTextViewColor"/>
         <attr format="color" name="pstsSelectTextViewColor"/>
     </declare-styleable>
+    <declare-styleable name="PasswordInputView">
+        <attr format="integer" name="pwv_maxLength"/>
+        // 最大长度
+
+        <attr format="color" name="pwv_borderColor"/>
+        // 边框颜色
+        <attr format="color" name="pwv_pwdColor"/>
+        // 密码颜色
+        <attr format="color" name="pwv_haveInputBorderColor"/>
+        // 已输入部分边框的颜色
+
+        <attr format="dimension" name="pwv_strokeWidth"/>
+        // 边框宽度
+        <attr format="dimension" name="pwv_radius"/>
+        // 圆角半径
+        <attr format="dimension" name="pwv_spacing"/>
+        // 每个密码框之间的间距
+        <attr format="string" name="pwv_asterisk"/>
+        // 当密码风格为星号风格时，可以用任意字符替换星号，替换的字符为pwv_asterisk的第一个字符
+
+        <attr format="enum" name="pwv_borderStyle">// 边框风格 方框 和 下划线
+            <enum name="box" value="0"/>
+            <enum name="line" value="1"/>
+        </attr>
+        <attr format="enum" name="pwv_pwdStyle">// 密码风格 圆点、星号、明文
+            <enum name="circle" value="0"/>
+            <enum name="asterisk" value="1"/>
+            <enum name="plaintext" value="2"/>
+        </attr>
+    </declare-styleable>
     <declare-styleable name="PlayerControlView"><attr name="show_timeout"/><attr name="rewind_increment"/><attr name="fastforward_increment"/><attr name="repeat_toggle_modes"/><attr name="show_shuffle_button"/><attr name="controller_layout_id"/></declare-styleable>
     <declare-styleable name="PlayerView"><attr format="boolean" name="use_artwork"/><attr format="color" name="shutter_background_color"/><attr format="reference" name="default_artwork"/><attr format="boolean" name="use_controller"/><attr format="boolean" name="hide_on_touch"/><attr format="boolean" name="hide_during_ads"/><attr format="boolean" name="auto_show"/><attr format="boolean" name="show_buffering"/><attr format="boolean" name="keep_content_on_player_reset"/><attr name="resize_mode"/><attr name="surface_type"/><attr name="player_layout_id"/><attr name="show_timeout"/><attr name="rewind_increment"/><attr name="fastforward_increment"/><attr name="repeat_toggle_modes"/><attr name="show_shuffle_button"/><attr name="controller_layout_id"/></declare-styleable>
     <declare-styleable name="PopupWindow">
@@ -6850,13 +7336,13 @@
     </declare-styleable>
     <declare-styleable name="RNContainer"><attr format="boolean" name="debuggable"/></declare-styleable>
     <declare-styleable name="RatioLayout">
-            <attr format="float" name="ratio"/>
-            <attr name="relative">
-                <enum name="width" value="0"/>
-                <enum name="height" value="1"/>
-            </attr>
+        <attr format="float" name="ratio"/>
+        <attr name="relative">
+            <enum name="width" value="0"/>
+            <enum name="height" value="1"/>
+        </attr>
 
-        </declare-styleable>
+    </declare-styleable>
     <declare-styleable name="RecycleListView">
         
         <attr format="dimension" name="paddingBottomNoButtons"/>
@@ -6945,21 +7431,21 @@
 </declare-styleable>
     <declare-styleable name="SimpleDraweeView"><attr format="string" name="actualImageUri"/><attr format="reference" name="actualImageResource"/><attr name="fadeDuration"/><attr name="viewAspectRatio"/><attr name="placeholderImage"/><attr name="placeholderImageScaleType"/><attr name="retryImage"/><attr name="retryImageScaleType"/><attr name="failureImage"/><attr name="failureImageScaleType"/><attr name="progressBarImage"/><attr name="progressBarImageScaleType"/><attr name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType"/><attr name="backgroundImage"/><attr name="overlayImage"/><attr name="pressedStateOverlayImage"/><attr name="roundAsCircle"/><attr name="roundedCornerRadius"/><attr name="roundTopLeft"/><attr name="roundTopRight"/><attr name="roundBottomRight"/><attr name="roundBottomLeft"/><attr name="roundTopStart"/><attr name="roundTopEnd"/><attr name="roundBottomStart"/><attr name="roundBottomEnd"/><attr name="roundWithOverlayColor"/><attr name="roundingBorderWidth"/><attr name="roundingBorderColor"/><attr name="roundingBorderPadding"/></declare-styleable>
     <declare-styleable name="SingleTouchView">
-            <attr format="reference" name="src"/>            
-            <attr format="boolean" name="editable"/>          
-            <attr format="color" name="frameColor"/>         
-            <attr format="dimension" name="frameWidth"/>     
-            <attr format="dimension" name="framePadding"/>   
-            <attr format="float" name="degree"/>             
-            
-            <attr format="reference" name="controlDrawable"/> 
-            <attr name="controlLocation">                     
-                <enum name="left_top" value="0"/>
-                <enum name="right_top" value="1"/>
-                <enum name="right_bottom" value="2"/>
-                <enum name="left_bottom" value="3"/>
-            </attr>
-        </declare-styleable>
+        <attr format="reference" name="src"/>            
+        <attr format="boolean" name="editable"/>          
+        <attr format="color" name="frameColor"/>         
+        <attr format="dimension" name="frameWidth"/>     
+        <attr format="dimension" name="framePadding"/>   
+        <attr format="float" name="degree"/>             
+        
+        <attr format="reference" name="controlDrawable"/> 
+        <attr name="controlLocation">                     
+            <enum name="left_top" value="0"/>
+            <enum name="right_top" value="1"/>
+            <enum name="right_bottom" value="2"/>
+            <enum name="left_bottom" value="3"/>
+        </attr>
+    </declare-styleable>
     <declare-styleable name="Snackbar"><attr format="reference" name="snackbarStyle"/><attr format="reference" name="snackbarButtonStyle"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
     <declare-styleable name="Spinner">
@@ -6995,29 +7481,29 @@
         <attr name="android:drawable"/>
     </declare-styleable>
     <declare-styleable name="SwitchButton" ns2:ignore="ResourceName">
-            <attr format="reference" name="kswThumbDrawable"/>
-            <attr format="color|reference" name="kswThumbColor"/>
-            <attr format="dimension|reference" name="kswThumbMargin"/>
-            <attr format="dimension|reference" name="kswThumbMarginTop"/>
-            <attr format="dimension|reference" name="kswThumbMarginBottom"/>
-            <attr format="dimension|reference" name="kswThumbMarginLeft"/>
-            <attr format="dimension|reference" name="kswThumbMarginRight"/>
-            <attr format="dimension|reference" name="kswThumbWidth"/>
-            <attr format="dimension|reference" name="kswThumbHeight"/>
-            <attr format="dimension|reference" name="kswThumbRadius"/>
-            <attr format="dimension|reference" name="kswBackRadius"/>
-            <attr format="reference" name="kswBackDrawable"/>
-            <attr format="color|reference" name="kswBackColor"/>
-            <attr format="boolean" name="kswFadeBack"/>
-            <attr format="float" name="kswThumbRangeRatio"/>
-            <attr format="integer" name="kswAnimationDuration"/>
-            <attr format="color|reference" name="kswTintColor"/>
-            <attr format="string" name="kswTextOn"/>
-            <attr format="string" name="kswTextOff"/>
-            <attr format="dimension" name="kswTextThumbInset"/>
-            <attr format="dimension" name="kswTextExtra"/>
-            <attr format="dimension" name="kswTextAdjust"/>
-        </declare-styleable>
+        <attr format="reference" name="kswThumbDrawable"/>
+        <attr format="color|reference" name="kswThumbColor"/>
+        <attr format="dimension|reference" name="kswThumbMargin"/>
+        <attr format="dimension|reference" name="kswThumbMarginTop"/>
+        <attr format="dimension|reference" name="kswThumbMarginBottom"/>
+        <attr format="dimension|reference" name="kswThumbMarginLeft"/>
+        <attr format="dimension|reference" name="kswThumbMarginRight"/>
+        <attr format="dimension|reference" name="kswThumbWidth"/>
+        <attr format="dimension|reference" name="kswThumbHeight"/>
+        <attr format="dimension|reference" name="kswThumbRadius"/>
+        <attr format="dimension|reference" name="kswBackRadius"/>
+        <attr format="reference" name="kswBackDrawable"/>
+        <attr format="color|reference" name="kswBackColor"/>
+        <attr format="boolean" name="kswFadeBack"/>
+        <attr format="float" name="kswThumbRangeRatio"/>
+        <attr format="integer" name="kswAnimationDuration"/>
+        <attr format="color|reference" name="kswTintColor"/>
+        <attr format="string" name="kswTextOn"/>
+        <attr format="string" name="kswTextOff"/>
+        <attr format="dimension" name="kswTextThumbInset"/>
+        <attr format="dimension" name="kswTextExtra"/>
+        <attr format="dimension" name="kswTextAdjust"/>
+    </declare-styleable>
     <declare-styleable name="SwitchCompat">
         
         <attr name="android:thumb"/>
@@ -7218,6 +7704,7 @@
         <attr format="color" name="subtitleTextColor"/>
         <attr name="android:minHeight"/>
     </declare-styleable>
+    <declare-styleable name="UINavigationBar"><attr format="string" name="title"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="divider"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationText"/><attr format="reference" name="actionTextTintList"/><attr format="reference" name="actionImageTintList"/></declare-styleable>
     <declare-styleable name="View">
         
         <attr format="dimension" name="paddingStart"/>
@@ -7258,7 +7745,11 @@
         <attr name="android:inflatedId"/>
         <attr name="android:id"/>
     </declare-styleable>
+    <declare-styleable name="WheelView"><attr format="dimension" name="unitHeight"/><attr format="integer" name="itemNumber"/><attr format="boolean" name="scale"/><attr name="normalTextColor"/><attr name="normalTextSize"/><attr name="selectedTextColor"/><attr name="selectedTextSize"/><attr format="boolean" name="isCyclic"/><attr format="color" name="lineColor"/><attr format="dimension" name="lineHeight"/><attr format="boolean" name="noEmpty"/><attr format="boolean" name="isEnable"/><attr format="string" name="suffix"/><attr format="dimension" name="suffixPadding"/></declare-styleable>
     <declare-styleable name="calendar_cell"><attr format="boolean" name="tsquare_state_selectable"/><attr format="boolean" name="tsquare_state_current_month"/><attr format="boolean" name="tsquare_state_today"/><attr format="boolean" name="tsquare_state_range_first"/><attr format="boolean" name="tsquare_state_range_middle"/><attr format="boolean" name="tsquare_state_range_last"/><attr format="boolean" name="tsquare_state_highlighted"/><attr format="boolean" name="tsquare_state_unavailable"/><attr format="boolean" name="tsquare_state_deactivated"/></declare-styleable>
+    <declare-styleable name="com_facebook_like_view"><attr format="color" name="com_facebook_foreground_color"/><attr format="string" name="com_facebook_object_id"/><attr name="com_facebook_object_type"><enum name="unknown" value="0"/><enum name="open_graph" value="1"/><enum name="page" value="2"/></attr><attr name="com_facebook_style"><enum name="standard" value="0"/><enum name="button" value="1"/><enum name="box_count" value="2"/></attr><attr name="com_facebook_auxiliary_view_position"><enum name="bottom" value="0"/><enum name="inline" value="1"/><enum name="top" value="2"/></attr><attr name="com_facebook_horizontal_alignment"><enum name="center" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr></declare-styleable>
+    <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="com_facebook_confirm_logout"/><attr format="string" name="com_facebook_login_text"/><attr format="string" name="com_facebook_logout_text"/><attr name="com_facebook_tooltip_mode"><enum name="automatic" value="0"/><enum name="display_always" value="1"/><enum name="never_display" value="2"/></attr></declare-styleable>
+    <declare-styleable name="com_facebook_profile_picture_view"><attr name="com_facebook_preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="com_facebook_is_cropped"/></declare-styleable>
     <declare-styleable name="customAttrs"><attr format="reference|color" name="ali_sdk_openaccount_attrs_title_bar_bg"/><attr format="reference|color" name="ali_sdk_openaccount_attrs_title_bar_back_text_color"/><attr format="reference|color" name="ali_sdk_openaccount_attrs_title_bar_text_color"/><attr format="string|reference" name="ali_sdk_openaccount_attrs_title_bar_title"/><attr name="ali_sdk_openaccount_attrs_title_bar_visibility">
             <flag name="visible" value="0"/>
             <flag name="invisible" value="4"/>
@@ -7287,32 +7778,32 @@
         </attr><attr format="dimension" name="pickerview_textSize"/><attr format="color" name="pickerview_textColorOut"/><attr format="color" name="pickerview_textColorCenter"/><attr format="color" name="pickerview_dividerColor"/><attr format="float" name="pickerview_lineSpacingMultiplier"/></declare-styleable>
     <declare-styleable name="ucrop_AspectRatioTextView">
 
-            <attr format="string" name="ucrop_artv_ratio_title"/>
+        <attr format="string" name="ucrop_artv_ratio_title"/>
 
-            <attr format="float" name="ucrop_artv_ratio_x"/>
-            <attr format="float" name="ucrop_artv_ratio_y"/>
+        <attr format="float" name="ucrop_artv_ratio_x"/>
+        <attr format="float" name="ucrop_artv_ratio_y"/>
 
-        </declare-styleable>
+    </declare-styleable>
     <declare-styleable name="ucrop_UCropView">
-            
-            <attr format="float" name="ucrop_aspect_ratio_x"/>
-            <attr format="float" name="ucrop_aspect_ratio_y"/>
+        
+        <attr format="float" name="ucrop_aspect_ratio_x"/>
+        <attr format="float" name="ucrop_aspect_ratio_y"/>
 
-            
-            <attr format="boolean" name="ucrop_show_oval_crop_frame"/>
-            <attr format="boolean" name="ucrop_oval_dimmed_layer"/>
-            <attr format="color" name="ucrop_dimmed_color"/>
+        
+        <attr format="boolean" name="ucrop_show_oval_crop_frame"/>
+        <attr format="boolean" name="ucrop_oval_dimmed_layer"/>
+        <attr format="color" name="ucrop_dimmed_color"/>
 
-            <attr format="dimension" name="ucrop_grid_stroke_size"/>
-            <attr format="color" name="ucrop_grid_color"/>
-            <attr format="integer" name="ucrop_grid_row_count"/>
-            <attr format="integer" name="ucrop_grid_column_count"/>
-            <attr format="boolean" name="ucrop_show_grid"/>
+        <attr format="dimension" name="ucrop_grid_stroke_size"/>
+        <attr format="color" name="ucrop_grid_color"/>
+        <attr format="integer" name="ucrop_grid_row_count"/>
+        <attr format="integer" name="ucrop_grid_column_count"/>
+        <attr format="boolean" name="ucrop_show_grid"/>
 
-            <attr format="dimension" name="ucrop_frame_stroke_size"/>
-            <attr format="color" name="ucrop_frame_color"/>
-            <attr format="boolean" name="ucrop_show_frame"/>
+        <attr format="dimension" name="ucrop_frame_stroke_size"/>
+        <attr format="color" name="ucrop_frame_color"/>
+        <attr format="boolean" name="ucrop_show_frame"/>
 
-        </declare-styleable>
+    </declare-styleable>
     <declare-styleable name="wheelview"><attr name="gravity"><enum name="center" value="17"/><enum name="left" value="3"/><enum name="right" value="5"/></attr></declare-styleable>
 </resources>

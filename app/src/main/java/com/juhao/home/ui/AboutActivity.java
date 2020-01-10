@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.BaseActivity;
-import com.aliyun.iot.ilop.demo.page.ilopmain.MainActivity;
+import com.juhao.home.MyLoginActivity;
 import com.juhao.home.R;
 import com.juhao.home.UIUtils;
 import com.util.AppUtils;
@@ -76,6 +76,7 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
                 break;
             case R.id.tv_privacy:
             case R.id.tv_privacy_2:
+            case R.id.tv_about_privacy:// 隐私权政策
                 UIUtils.showSystemStopDialog(this, new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -89,9 +90,6 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
                 } else {
                     MyToast.show(this, getString(R.string.str_current_version_last));
                 }
-                break;
-            case R.id.tv_about_privacy:// 隐私权政策
-                // TODO 隐私权政策
                 break;
         }
     }
