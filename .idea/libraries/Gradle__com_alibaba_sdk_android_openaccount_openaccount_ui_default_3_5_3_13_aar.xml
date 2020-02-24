@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.13@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ccbc61a4dcde7443b975f11cfeea7fb/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ccbc61a4dcde7443b975f11cfeea7fb/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ccbc61a4dcde7443b975f11cfeea7fb/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

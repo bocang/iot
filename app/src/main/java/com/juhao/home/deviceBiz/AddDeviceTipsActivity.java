@@ -101,7 +101,7 @@ public class AddDeviceTipsActivity extends BaseActivity {
 
 
         EnumSet<DiscoveryType> enumSet=EnumSet.allOf(DiscoveryType.class);
-        if(DemoApplication.productName.contains("摄像头")){
+        if(DemoApplication.productName.contains("摄像头")||DemoApplication.productName.contains("智能筒灯")){
             enumSet=EnumSet.of(DiscoveryType.BEACON_DEVICE);
         }else {
 //            enumSet=EnumSet.of(DiscoveryType.SOFT_AP_DEVICE);
@@ -116,7 +116,8 @@ public class AddDeviceTipsActivity extends BaseActivity {
                 if(deviceInfos!=null&&deviceInfos.size()>0){
 //                                        PgyCrashManager.reportCaughtException(AddDeviceActivity.this,new Exception("deviceInfos.size()>0"));
 //                    LogUtils.logE("devices",deviceInfos.toString());
-                    if(DemoApplication.productName.contains("摄像头")
+                    if(DemoApplication.productName.contains("摄像头")||
+                            DemoApplication.productName.contains("智能筒灯")
                             ){
 //                        progressDialog.dismiss();
 //                        startActivity(new Intent(AddDeviceTipsActivity.this, WifiSelectActivity.class));

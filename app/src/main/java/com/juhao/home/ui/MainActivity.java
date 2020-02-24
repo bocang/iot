@@ -1,7 +1,6 @@
 package com.juhao.home.ui;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,37 +18,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.annotation.RequiresApi;
+import android.app.Activity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import com.alibaba.sdk.android.openaccount.OpenAccountSDK;
 import com.alibaba.sdk.android.openaccount.OpenAccountService;
 import com.alibaba.sdk.android.openaccount.callback.LoginCallback;
-import com.alibaba.sdk.android.openaccount.callback.LogoutCallback;
 import com.alibaba.sdk.android.openaccount.model.OpenAccountSession;
 import com.alibaba.sdk.android.openaccount.ui.ui.LoginActivity;
 import com.alibaba.sdk.android.push.CloudPushService;
-import com.alibaba.sdk.android.push.CommonCallback;
 import com.alibaba.sdk.android.push.noonesdk.PushServiceFactory;
 import com.aliyun.alink.linksdk.channel.core.base.AError;
-import com.aliyun.alink.linksdk.channel.mobile.api.IMobileConnectListener;
-import com.aliyun.alink.linksdk.channel.mobile.api.IMobileDownstreamListener;
 import com.aliyun.alink.linksdk.channel.mobile.api.IMobileRequestListener;
 import com.aliyun.alink.linksdk.channel.mobile.api.MobileChannel;
 import com.aliyun.alink.linksdk.channel.mobile.api.MobileConnectConfig;
-import com.aliyun.alink.linksdk.channel.mobile.api.MobileConnectState;
-import com.aliyun.alink.sdk.jsbridge.BonePluginRegistry;
 import com.aliyun.iot.aep.component.router.Router;
-//import com.aliyun.iot.aep.component.scan.ScanManager;
+import com.aliyun.iot.aep.component.scan.ScanManager;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClient;
 import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClientFactory;
 import com.aliyun.iot.aep.sdk.apiclient.callback.IoTCallback;
@@ -57,33 +46,27 @@ import com.aliyun.iot.aep.sdk.apiclient.callback.IoTResponse;
 import com.aliyun.iot.aep.sdk.apiclient.emuns.Scheme;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequest;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequestBuilder;
-import com.aliyun.iot.aep.sdk.connectchannel.BoneChannel;
-import com.aliyun.iot.aep.sdk.connectchannel.log.ALog;
 import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialListener;
 import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialManage;
 import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialManageError;
 import com.aliyun.iot.aep.sdk.credential.IotCredentialManager.IoTCredentialManageImpl;
 import com.aliyun.iot.aep.sdk.credential.data.IoTCredentialData;
 import com.aliyun.iot.aep.sdk.login.IRefreshSessionCallback;
+import com.aliyun.iot.aep.sdk.login.LoginBusiness;
 import com.aliyun.iot.aep.sdk.login.data.UserInfo;
 import com.aliyun.iot.ilop.demo.DemoApplication;
 import com.aliyun.iot.ilop.demo.page.ilopmain.DefaultFragmentTabAdapter;
 import com.aliyun.iot.ilop.demo.page.ilopmain.MyFragmentTabLayout;
-import com.aliyun.iot.ilop.demo.utils.FloatWindowHelper;
-import com.aliyun.iot.aep.sdk.login.LoginBusiness;
 import com.juhao.home.LoginIndexActivity;
 import com.juhao.home.R;
 import com.juhao.home.SplashActivity;
 import com.juhao.home.deviceBiz.BindAndUseActivity;
 import com.mainintelligence.ItApplicationFragment;
 import com.mainintelligence.ItMineMainFragment;
-import com.pgyersdk.crash.PgyCrashManager;
-import com.tencent.bugly.crashreport.CrashReport;
 import com.util.AppUtils;
 import com.util.CommonUtil;
 import com.util.Constance;
 import com.util.LogUtils;
-import com.util.MyShare;
 import com.util.NetWorkConst;
 import com.util.NetWorkUtils;
 import com.util.json.JSONObject;
@@ -91,6 +74,8 @@ import com.view.MyToast;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
+
+//import com.aliyun.iot.aep.component.scan.ScanManager;
 
 
 public class MainActivity extends FragmentActivity {
@@ -110,11 +95,14 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        FloatWindowHelper helper = FloatWindowHelper.getInstance(getApplication());
-        if (helper != null) {
-            helper.setNeedShowFloatWindowFlag(false);
-        }
         super.onCreate(savedInstanceState);
+//        if(this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+//            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//        }
+//        FloatWindowHelper helper = FloatWindowHelper.getInstance(getApplication());
+//        if (helper != null) {
+//            helper.setNeedShowFloatWindowFlag(false);
+//        }
         setContentView(R.layout.activity_main);
         setStatuTextColor(this, Color.TRANSPARENT);
         setFullScreenColor(Color.TRANSPARENT, this);
@@ -134,6 +122,9 @@ public class MainActivity extends FragmentActivity {
 //            }
 //        });
         DemoApplication.activityList.add(this);
+
+        //扫码添加设备 注册
+        ScanManager.getInstance().registerPlugin(AddDeviceScanPlugin.NAME, new AddDeviceScanPlugin(this));
         ll_home = findViewById(R.id.ll_home);
         fragmentTabHost = findViewById(R.id.tab_layout);
         fragmentTabHost.init(getSupportFragmentManager())
@@ -519,6 +510,7 @@ public class MainActivity extends FragmentActivity {
 //            helper.setNeedShowFloatWindowFlag(false);
 //        }
 //        MainActivity.mFragmentPosition=0;
+        ScanManager.getInstance().unRegisterPlugin(AddDeviceScanPlugin.NAME);
         super.onDestroy();
     }
 
@@ -661,7 +653,7 @@ public class MainActivity extends FragmentActivity {
                                     public void onClick(View v) {
                                         Intent intent = new Intent();
                                         intent.setAction("android.intent.action.VIEW");
-                                        Uri content_url = Uri.parse("https://a.app.qq.com/o/simple.jsp?pkgname=com.juhao.home");
+                                        Uri content_url = Uri.parse("https://android.app.qq.com/myapp/detail.htm?apkName=com.juhao.home");
                                         intent.setData(content_url);
                                         startActivity(intent);
                                     }

@@ -207,6 +207,7 @@ public class SuggestDeviceActivity extends BaseActivity implements View.OnClickL
                 Map<String, Object> maps = new HashMap<>();
                 maps.put("pageSize", "20");
                 maps.put("pageNo", 1);
+                maps.put("thingType","DEVICE");
 
                 ApiClientForIot.getIotClient("/uc/listBindingByAccount", "1.0.2", maps, new IoTCallback() {
                     @Override

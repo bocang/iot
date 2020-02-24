@@ -22,9 +22,11 @@ import com.aliyun.iot.aep.sdk.framework.AActivity;
 import com.aliyun.iot.aep.sdk.log.ALog;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.aliyun.iot.ilop.demo.DemoApplication;
+import com.bean.AccountDevDTO;
 import com.juhao.home.ui.MainActivity;
 import com.juhao.home.R;
 import com.pgyersdk.crash.PgyCrashManager;
@@ -40,6 +42,10 @@ public class BindAndUseActivity extends AActivity {
     private String pk;
     private String dn;
     private String token;
+    private List<AccountDevDTO> accountDevDTOS;
+    private String productKey;
+    private String deviceName;
+    private int count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,23 +68,31 @@ public class BindAndUseActivity extends AActivity {
             pk = data.getString("productKey");
             dn = data.getString("deviceName");
             token = data.getString("token");
+            accountDevDTOS = DemoApplication.TokenList;
 //            token = data.getString("token");
         }
 
-        final String productKey = pk;
-        final String deviceName = dn;
+        productKey = pk;
+        deviceName = dn;
 //        final String iotToken = token;
         bindAndUseBtn = (Button) findViewById(R.id.bind_and_use_btn);
+
         bindAndUseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!TextUtils.isEmpty(token)){
-                    enrolleeUserBind(productKey, deviceName, token);
-                    return;
-                }
-                ALog.d("TAG", "LocalDeviceMgr.getInstance().getDeviceToken");
+                count = 0;
+                for(int i=0;i<accountDevDTOS.size();i++) {
+
+                    token=accountDevDTOS.get(i).getToken();
+                    productKey =accountDevDTOS.get(i).getProductKey();
+                    deviceName=accountDevDTOS.get(i).getDeviceName();
+                    if (!TextUtils.isEmpty(token)) {
+                        enrolleeUserBind(productKey, deviceName, token);
+                        return;
+                    }
+                    ALog.d("TAG", "LocalDeviceMgr.getInstance().getDeviceToken");
 //                bindDevice();
-                progressDialog = ProgressDialog.show(BindAndUseActivity.this,"请稍等","绑定设备中");
+                    if(i==0)progressDialog = ProgressDialog.show(BindAndUseActivity.this, "请稍等", "绑定设备中");
 //                getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
 //                        WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
 //                LocalDeviceMgr.getInstance().getDeviceToken(productKey, deviceName, 2, new IOnDeviceTokenGetListener() {
@@ -96,26 +110,27 @@ public class BindAndUseActivity extends AActivity {
 //                        Toast.makeText(getApplicationContext(), "getTokenFailed", Toast.LENGTH_SHORT).show();
 //                    }
 //                });
-                LocalDeviceMgr.getInstance().getDeviceToken(BindAndUseActivity.this, pk, dn, 60 * 1000, 5 * 1000, new IOnDeviceTokenGetListener() {
-                    @Override
-                    public void onSuccess(String token) {
-                        progressDialog.dismiss();
-                        ALog.d("TAG", "getDeviceToken onSuccess token = " + token);
+                    LocalDeviceMgr.getInstance().getDeviceToken(BindAndUseActivity.this, productKey, deviceName, 60 * 1000, 5 * 1000, new IOnDeviceTokenGetListener() {
+                        @Override
+                        public void onSuccess(String token) {
+                            progressDialog.dismiss();
+                            ALog.d("TAG", "getDeviceToken onSuccess token = " + token);
 //                        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
 //                        PgyCrashManager.reportCaughtException(BindAndUseActivity.this,new Exception("Token is empty,getDeviceToken,"+token));
-                        enrolleeUserBind(productKey, deviceName, token);
-                    }
+                            enrolleeUserBind(productKey, deviceName, token);
+                        }
 
-                    @Override
-                    public void onFail(String s) {
-                        progressDialog.dismiss();
+                        @Override
+                        public void onFail(String s) {
+                            progressDialog.dismiss();
+                            count++;
 //                        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
-                        ALog.e("TAG", "getDeviceToken onFail s = " + s);
+                            ALog.e("TAG", "getDeviceToken onFail s = " + s);
 //                        PgyCrashManager.reportCaughtException(BindAndUseActivity.this,new Exception("Token is empty,getDeviceToken,falil:"+s));
-                        Toast.makeText(getApplicationContext(), "getTokenFailed", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
+                            Toast.makeText(getApplicationContext(), "getTokenFailed", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
             }
         });
 
@@ -200,6 +215,7 @@ public class BindAndUseActivity extends AActivity {
         ioTAPIClient.send(request, new IoTCallback() {
             @Override
             public void onFailure(IoTRequest ioTRequest, Exception e) {
+                count++;
                 ALog.d("TAG", "onFailure");
 //                PgyCrashManager.reportCaughtException(BindAndUseActivity.this,new Exception("Token not empty,enrolleeUserBind,"+e.getLocalizedMessage()+","+e.getMessage()));
                 mHandler.post(new Runnable() {
@@ -212,6 +228,7 @@ public class BindAndUseActivity extends AActivity {
 
             @Override
             public void onResponse(IoTRequest ioTRequest, final IoTResponse response) {
+                count++;
                 ALog.d("TAG", "onResponse enrolleeUserBind ok, rout to ilopmain page");
                 final int code = response.getCode();
                 final String msg = response.getMessage();
@@ -230,11 +247,14 @@ public class BindAndUseActivity extends AActivity {
                     return;
                 }
 //                Router.getInstance().toUrl(BindAndUseActivity.this, "page/ilopmain");
-                DemoApplication.productKey=pk;
-                DemoApplication.productName=dn;
-                DemoApplication.token=token;
-                startActivity(new Intent(BindAndUseActivity.this,MainActivity.class));
-                finish();
+                if(count==accountDevDTOS.size()){
+                    DemoApplication.productKey=pk;
+                    DemoApplication.productName=dn;
+                    DemoApplication.token=token;
+                    startActivity(new Intent(BindAndUseActivity.this,MainActivity.class));
+                    finish();
+                }
+
             }
         });
     }

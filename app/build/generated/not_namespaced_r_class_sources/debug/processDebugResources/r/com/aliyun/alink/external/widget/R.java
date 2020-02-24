@@ -30,14 +30,14 @@ public final class R {
 
         public static final int center = 0x7f0900a6;
         public static final int content_container = 0x7f0900cf;
-        public static final int left = 0x7f0901cf;
-        public static final int outmost_container = 0x7f090284;
-        public static final int right = 0x7f0902ad;
+        public static final int left = 0x7f0901d0;
+        public static final int outmost_container = 0x7f090285;
+        public static final int right = 0x7f0902b0;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int layout_basepickerview = 0x7f0c0114;
+        public static final int layout_basepickerview = 0x7f0c0117;
     }
     public static final class string {
         private string() {}

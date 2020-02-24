@@ -12,14 +12,14 @@ public final class R {
     public static final class raw {
         private raw() {}
 
-        public static final int version = 0x7f0f0003;
+        public static final int version = 0x7f0f0004;
     }
     public static final class string {
         private string() {}
 
-        public static final int jsbridge_core_error_message_internal_error = 0x7f1002ea;
-        public static final int jsbridge_core_error_message_method_not_implemented = 0x7f1002eb;
-        public static final int jsbridge_core_error_message_no_handler = 0x7f1002ec;
-        public static final int jsbridge_core_error_message_runtime_error = 0x7f1002ed;
+        public static final int jsbridge_core_error_message_internal_error = 0x7f1002ee;
+        public static final int jsbridge_core_error_message_method_not_implemented = 0x7f1002ef;
+        public static final int jsbridge_core_error_message_no_handler = 0x7f1002f0;
+        public static final int jsbridge_core_error_message_runtime_error = 0x7f1002f1;
     }
 }

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aliyun.iot.link:uicomponent:0.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d91fcd19aefcf30a76bd078745e03819/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d91fcd19aefcf30a76bd078745e03819/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/bocang/Downloads/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
+            "outputFile": "/Users/bocang/Documents/GitHub/iot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/Users/bocang/.gradle/caches/transforms-2/files-2.1/e993b9abf9e65bb759da9697363cbb50/res/values-bg/values-bg.xml",

@@ -6,6 +6,7 @@ import com.aliyun.iot.aep.sdk.apiclient.callback.IoTCallback;
 import com.aliyun.iot.aep.sdk.apiclient.callback.IoTResponse;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequest;
 import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequestBuilder;
+import com.zhy.http.okhttp.callback.Callback;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,5 +46,13 @@ public class ApiClientForIot {
         Map<String, Object> maps = new HashMap<>();
         maps.put("iotId", iotId);
         getIotClient("/thing/properties/get","1.0.2",maps,ioTCallback);
+    }
+
+    public static void getDevList(int page, int pageSize, IoTCallback stringCallback) {
+        Map<String,Object> maps=new HashMap<>();
+        maps.put("pageSize",pageSize+"");
+        maps.put("pageNo", page);
+        maps.put("thingType","DEVICE");
+        getIotClient("/uc/listBindingByAccount","1.0.2",maps,stringCallback);
     }
 }

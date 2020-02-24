@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.juhao.home"
-    android:versionCode="7"
-    android:versionName="1.0.6" >
+    android:versionCode="8"
+    android:versionName="1.0.7" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -67,7 +67,8 @@
         android:name="com.juhao.home.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.juhao.home.permission.C2D_MESSAGE" /> <!-- android 10.0使用wifi api新添加的权限 -->
+    <uses-permission android:name="com.juhao.home.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- android 10.0使用wifi api新添加的权限 -->
     <!-- SD卡读取权限，用户写入离线定位数据 -->
     <application
         android:name="com.aliyun.iot.ilop.demo.DemoApplication"
@@ -79,7 +80,6 @@
         android:label="@string/application_name"
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/MyTransAppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -430,6 +430,7 @@
             android:screenOrientation="portrait" />
         <activity android:name="com.juhao.home.ui.GetWarmDeviceControlActivity" >
         </activity>
+        <activity android:name="com.juhao.home.room.RoomDeviceSettingActivity" />
         <!-- API client.end -->
 
 
@@ -634,10 +635,10 @@
             android:name="com.juhao.home.ui.HomeMateListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.juhao.home.ui.RoomManageActivity"
+            android:name="com.juhao.home.room.RoomManageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.juhao.home.ui.RoomAddActivity"
+            android:name="com.juhao.home.room.RoomAddActivity"
             android:screenOrientation="portrait" />
         <!-- ________________________房间管理  结束________________________ -->
 
@@ -699,6 +700,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/TransparentTheme" /> <!-- setting dialog for RN -->
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <activity
+            android:name="com.aliyun.iot.ilop.page.scan.ScanActivity"
+            android:exported="false" >
+        </activity>
         <activity
             android:name="com.aliyun.iot.aep.sdk.page.CountryListActivity"
             android:exported="false"

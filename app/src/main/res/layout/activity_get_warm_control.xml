@@ -19,7 +19,7 @@
                 android:layout_height="20dp" />
         </RelativeLayout>
         <TextView
-            android:text="取暖器"
+            android:text="浴霸"
             android:textSize="16sp"
             android:textColor="#ffffff"
             android:layout_centerInParent="true"
@@ -72,6 +72,7 @@
         android:id="@+id/gv_get_warm"
         android:numColumns="3"
         android:padding="15dp"
+        android:listSelector="@android:color/transparent"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

@@ -24,7 +24,6 @@ public class NetWorkConst {
     public static final String APK_URL ="http://app.bocang.cc/Ewm/index/url/"+APPNAME+".bocang.cc";
 //    public static final String APK_URL ="http://app.bocang.cc/Ewm/index/url/"+APPNAME+".bocang.cc";
 
-    public static final String DOWN_APK_URL ="http://app.08138.com/jhsc.apk";
     public static final String VERSION_URL_CONTENT ="http://app.08138.com/version/versioninfo.php?bc_ver_name2=zhjt&bejson=1";
     public static final String PRODUCT_DETAIL_LINK = API_HOST+"/v2/ecapi.product.link";
     public static final String ADD_ACCOUNT = API_HOST+"/v2/ecapi.account.add";
@@ -47,6 +46,8 @@ public class NetWorkConst {
     public static final String URL_ROOM_LIST = API_SMART +"/api/room/list";
     public static final String URL_ROOM_ADD = API_SMART + "/api/room/add";
     public static final String URL_ROOM_DELETE = API_SMART + "/api/room/del";
+    public static final String URL_ROOM_EDIT = API_SMART + "/api/room/edit";
+    public static final String URL_ROOM_DEV_SAVE = API_SMART+"/api/room/device/save";
 
 
     public static String APK_NAME="jhsc_v";

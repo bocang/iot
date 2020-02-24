@@ -176,6 +176,7 @@ public class DeviceShareActivity extends BaseActivity implements View.OnClickLis
         Map<String, Object> maps = new HashMap<>();
         maps.put("pageSize","20");
         maps.put("pageNo", page);
+        maps.put("thingType","DEVICE");
 //        maps.put("owned",position==0?1:0);
         IoTRequestBuilder builder = new IoTRequestBuilder()
                 .setPath("/uc/listBindingByAccount")

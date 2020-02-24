@@ -12,7 +12,7 @@ public final class R {
     public static final class raw {
         private raw() {}
 
-        public static final int version = 0x7f0f0003;
+        public static final int version = 0x7f0f0004;
     }
     public static final class string {
         private string() {}
@@ -22,6 +22,6 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static final int Style_Transparent = 0x7f110135;
+        public static final int Style_Transparent = 0x7f110136;
     }
 }

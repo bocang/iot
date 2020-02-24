@@ -182,6 +182,7 @@ public class DragSortDevActivity extends BaseActivity {
         Map<String, Object> maps = new HashMap<>();
         maps.put("pageNo",page);
         maps.put("pageSize","40");
+        maps.put("thingType","DEVICE");
         ApiClientForIot.getIotClient("/uc/listBindingByAccount", "1.0.2", maps, new IoTCallback() {
 
             private List<AccountDevDTO> temp;

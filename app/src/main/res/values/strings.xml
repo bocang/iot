@@ -490,5 +490,6 @@
     <string name="str_chuifeng">吹风</string>
     <string name="str_huanqi">换气</string>
     <string name="str_ganzao">干燥</string>
+    <string name="str_save_success">保存成功</string>
 
 </resources>

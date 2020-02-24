@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.aliyun.alink.linksdk:android_alink_id2:1.1.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1cdd7f171c4986a47757a84804a9ec29/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1cdd7f171c4986a47757a84804a9ec29/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

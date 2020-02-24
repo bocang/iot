@@ -2,8 +2,10 @@ package com.juhao.home.deviceBiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.BaseActivity;
 import com.aliyun.alink.business.devicecenter.api.add.AddDeviceBiz;
@@ -15,13 +17,25 @@ import com.aliyun.alink.business.devicecenter.api.discovery.DiscoveryType;
 import com.aliyun.alink.business.devicecenter.api.discovery.IDeviceDiscoveryListener;
 import com.aliyun.alink.business.devicecenter.api.discovery.LocalDeviceMgr;
 import com.aliyun.alink.business.devicecenter.base.DCErrorCode;
+import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClient;
+import com.aliyun.iot.aep.sdk.apiclient.IoTAPIClientFactory;
+import com.aliyun.iot.aep.sdk.apiclient.callback.IoTCallback;
+import com.aliyun.iot.aep.sdk.apiclient.callback.IoTResponse;
+import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequest;
+import com.aliyun.iot.aep.sdk.apiclient.request.IoTRequestBuilder;
+import com.aliyun.iot.aep.sdk.log.ALog;
 import com.aliyun.iot.ilop.demo.DemoApplication;
+import com.bean.AccountDevDTO;
 import com.juhao.home.R;
+import com.juhao.home.ui.MainActivity;
 import com.util.LogUtils;
 import com.view.CircleProgressView;
 
+import java.util.ArrayList;
 import java.util.EnumSet;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class AddDeviceBizActivity extends BaseActivity {
 
@@ -78,7 +92,8 @@ public class AddDeviceBizActivity extends BaseActivity {
                             deviceInfo.productKey = DemoApplication.productKey; // 商家后台注册的 productKey，不可为空
 //                            deviceInfo.deviceName = DemoApplication.productName;
                             String linkType = LinkType.ALI_SOFT_AP.getName();
-                            if(DemoApplication.productName!=null&&DemoApplication.productName.contains("摄像头")){
+                            if(DemoApplication.productName!=null&&DemoApplication.productName.contains("摄像头")
+                                    ||DemoApplication.productName.contains("智能筒灯")){
 //                            DemoApplication.productName.contains("锁")){
                                 linkType = LinkType.ALI_BROADCAST.getName();
                             }else {
@@ -91,6 +106,7 @@ public class AddDeviceBizActivity extends BaseActivity {
 //                            int wifirsd=AddDeviceBiz.getInstance().getWifiRssid(AddDeviceBizActivity.this);
 //                            LogUtils.logE("current,wifirssid",currentid+"<"+wifirsd);
 //                             开始添加设备
+                            DemoApplication.TokenList=new ArrayList<>();
                             AddDeviceBiz.getInstance().startAddDevice(AddDeviceBizActivity.this, new IAddDeviceListener(){
                                 @Override
                                 public void onPreCheck(boolean b, DCErrorCode dcErrorCode) {
@@ -120,7 +136,7 @@ public class AddDeviceBizActivity extends BaseActivity {
                                         @Override
                                         public void run() {
                                             super.run();
-                                            while (i <60){
+                                            while (i <100){
                                                 SystemClock.sleep(100);
                                                 runOnUiThread(new Runnable() {
                                                     @Override
@@ -146,24 +162,85 @@ public class AddDeviceBizActivity extends BaseActivity {
                                 @Override
                                 public void onProvisionedResult(boolean b, DeviceInfo deviceInfo, DCErrorCode errorCode) {
                                     // 配网结果 如果配网成功之后包含token，请使用配网成功带的token做绑定
-//                                    LogUtils.logE("iot","onProvisionedResult:"+errorCode);
+                                    LogUtils.logE("iot","onProvisionedResult:"+deviceInfo.token);
                                     runOnUiThread(new Runnable() {
                                         @Override
                                         public void run() {
                                             if(errorCode==null){
                                                 pv.setProgress(100);
                                                 tv_tips.setText(getString(R.string.add_device_net_success));
-                                                Intent intent = new Intent(getApplicationContext(), BindAndUseActivity.class);
-                                                final Bundle bundle = new Bundle();
-                                                bundle.putString("productKey", deviceInfo.productKey);
-                                                bundle.putString("deviceName", deviceInfo.deviceName);
-                                                bundle.putString("token",deviceInfo.token);
-                                                intent.putExtras(bundle);
-                                                startActivity(intent);
+                                                new Thread(){
+                                                    @Override
+                                                    public void run() {
+                                                        super.run();
+                                                        SystemClock.sleep(10000);
+                                                        Intent intent = new Intent(getApplicationContext(), BindAndUseActivity.class);
+                                                        final Bundle bundle = new Bundle();
+                                                        bundle.putString("productKey", deviceInfo.productKey);
+                                                        bundle.putString("deviceName", deviceInfo.deviceName);
+                                                        bundle.putString("token",deviceInfo.token);
+                                                        intent.putExtras(bundle);
+//                                                        startActivity(intent);
+                                                    }
+
+                                                }.start();
+                                                List<AccountDevDTO> tokenList=DemoApplication.TokenList;
+                                                boolean isNotContain=true;
+                                                for(int i=0;i<tokenList.size();i++){
+                                                    String token=tokenList.get(i).getToken();
+                                                    if(token!=null&&tokenList.get(i).getToken().equals(deviceInfo.token)||
+                                                            tokenList.get(i).getDeviceName().equals(deviceInfo.deviceName)){
+                                                        isNotContain=false;
+                                                        break;
+                                                    }
+                                                }
+                                                if(isNotContain){
+                                                    AccountDevDTO temp=new AccountDevDTO();
+                                                    temp.setProductKey(deviceInfo.productKey);
+                                                    temp.setDeviceName(deviceInfo.deviceName);
+                                                    temp.setToken(deviceInfo.token);
+                                                    tokenList.add(temp);
+                                                }
                                             }else {
                                                 pv.setProgress(0);
                                                 tv_tips.setText(getString(R.string.add_device_net_failed));
                                             }
+                                        }
+                                    });
+
+                                    EnumSet<DiscoveryType> enumSet= EnumSet.of(DiscoveryType.LOCAL_ONLINE_DEVICE);
+                                    LocalDeviceMgr.getInstance().startDiscovery(AddDeviceBizActivity.this, enumSet, null, new IDeviceDiscoveryListener() {
+                                        @Override
+                                        public void onDeviceFound(DiscoveryType discoveryType, List<DeviceInfo> list) {
+                                            List<DeviceInfo>deviceInfos=list;
+                                            if(deviceInfos!=null&&deviceInfos.size()>0){
+                                                DeviceInfo temp=deviceInfos.get(0);
+                                                LogUtils.logE("startDiscovery",deviceInfos.toString());
+                                                List<AccountDevDTO> tokenList=DemoApplication.TokenList;
+                                                boolean isNotContain=true;
+                                                for(int i=0;i<tokenList.size();i++){
+                                                    String token=tokenList.get(i).getToken();
+                                                    if(token!=null&&tokenList.get(i).getToken().equals(temp.token)||
+                                                            tokenList.get(i).getDeviceName().equals(temp.deviceName)){
+                                                        isNotContain=false;
+                                                        break;
+                                                    }
+                                                }
+                                                if(isNotContain){
+                                                    AccountDevDTO temp2=new AccountDevDTO();
+                                                    temp2.setProductKey(temp.productKey);
+                                                    temp2.setDeviceName(temp.deviceName);
+                                                    temp2.setToken(temp.token);
+                                                    tokenList.add(temp2);
+                                                }
+                                            }
+                                            // 发现的设备
+                                            // LOCAL_ONLINE_DEVICE 当前和手机在同一局域网已配网在线的设备
+                                            // CLOUD_ENROLLEE_DEVICE 零配或智能路由器发现的待配设备
+                                            // BLE_ENROLLEE_DEVICE 发现的是蓝牙Wi-Fi双模设备（蓝牙模块广播的subType=2即为双模设备）
+                                            // SOFT_AP_DEVICE 发现的设备热点
+                                            // BEACON_DEVICE 一键配网发现的待配设备
+                                            // 注意：发现蓝牙设备需添加 breeze-biz SDK依赖
                                         }
                                     });
 
@@ -179,5 +256,67 @@ public class AddDeviceBizActivity extends BaseActivity {
     @Override
     protected void initData() {
 
+    }
+    Handler mHandler=new Handler();
+    private void enrolleeUserBind(final String pk, final String dn, final String token){
+        Map<String, Object> maps = new HashMap<>();
+        maps.put("productKey", pk);
+        maps.put("deviceName", dn);
+        maps.put("token", token);
+//        maps.put("groupIds","\"[\"123\"]");
+        IoTRequestBuilder builder = new IoTRequestBuilder()
+                .setPath("/awss/enrollee/user/bind")
+                .setApiVersion("1.0.3")
+                .setAuthType("iotAuth")
+                .setParams(maps);
+
+        IoTRequest request = builder.build();
+
+        IoTAPIClient ioTAPIClient = new IoTAPIClientFactory().getClient();
+        ioTAPIClient.send(request, new IoTCallback() {
+            @Override
+            public void onFailure(IoTRequest ioTRequest, Exception e) {
+//                count++;
+                ALog.d("TAG", "onFailure");
+//                PgyCrashManager.reportCaughtException(BindAndUseActivity.this,new Exception("Token not empty,enrolleeUserBind,"+e.getLocalizedMessage()+","+e.getMessage()));
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(getApplicationContext(), "onFailure", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+
+            @Override
+            public void onResponse(IoTRequest ioTRequest, final IoTResponse response) {
+//                count++;
+                ALog.d("TAG", "onResponse enrolleeUserBind ok, rout to ilopmain page");
+                final int code = response.getCode();
+                final String msg = response.getMessage();
+                if (code != 200){
+//                    PgyCrashManager.reportCaughtException(BindAndUseActivity.this,new Exception("Token not empty,enrolleeUserBind,"+msg+","+response.getLocalizedMsg()));
+                    mHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(response.getLocalizedMsg()!=null){
+                                Toast.makeText(getApplicationContext(), response.getLocalizedMsg()+"", Toast.LENGTH_SHORT).show();
+                            }else {
+                                Toast.makeText(getApplicationContext(), "code = " +code + " msg =" + msg, Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                    return;
+                }
+//                Router.getInstance().toUrl(BindAndUseActivity.this, "page/ilopmain");
+//                if(count==accountDevDTOS.size()){
+//                    DemoApplication.productKey=pk;
+//                    DemoApplication.productName=dn;
+//                    DemoApplication.token=token;
+//                    startActivity(new Intent(BindAndUseActivity.this, MainActivity.class));
+//                    finish();
+//                }
+
+            }
+        });
     }
 }

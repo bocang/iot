@@ -1207,8 +1207,10 @@ color color_F7F7F7
 color color_FFFFFF
 color color_chat
 color color_chazuo
+color color_gray
 color color_kg
 color color_red
+color color_tranblack
 color color_white
 color color_white_gray
 color colorview
@@ -1245,6 +1247,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color contents_text
 color dateTimeRangePickerHeaderTextColor
 color dateTimeRangePickerRangeTextColorActive
 color dateTimeRangePickerRangeTextColorInactive
@@ -1274,6 +1277,7 @@ color divider_gray
 color emui_color_gray_1
 color emui_color_gray_10
 color emui_color_gray_7
+color encode_view
 color error_color_material_dark
 color error_color_material_light
 color exo_edit_mode_background_color
@@ -1339,6 +1343,7 @@ color pickerview_topbar_title
 color pickerview_wheelview_textcolor_center
 color pickerview_wheelview_textcolor_divider
 color pickerview_wheelview_textcolor_out
+color possible_result_points
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1347,8 +1352,14 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color result_minor_text
+color result_points
+color result_text
+color result_view
 color ripple_material_dark
 color ripple_material_light
+color scan_text_white
+color scancolor
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -1356,6 +1367,7 @@ color secondary_text_disabled_material_light
 color solid_black
 color split_line
 color state_deactivated
+color status_text
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1379,6 +1391,7 @@ color theme_yellow
 color title_text
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 color tv_444444
 color tv_666666
 color tv_999999
@@ -2138,6 +2151,7 @@ drawable po_seekbar_light_disabled
 drawable po_seekbar_light_temp
 drawable product_bot_bar_intelligent
 drawable ptz_btn_bg
+drawable rect_round_white_bg
 drawable redbox_top_border_background
 drawable refreshlayout_load_more_circle
 drawable rn_slider_after
@@ -2160,6 +2174,9 @@ drawable rn_tab_last_not_selected
 drawable rn_tab_last_selected
 drawable rn_tab_mid_not_selected
 drawable rn_tab_mid_selected
+drawable scan_back_arrow_svg_white
+drawable scan_backarrow_white
+drawable scan_rect_tranblack_bg
 drawable seekbar_thumb
 drawable seekbar_thumb_normal
 drawable seekbar_thumb_pressed
@@ -2611,6 +2628,7 @@ id image_view_crop
 id image_view_state_aspect_ratio
 id image_view_state_rotate
 id image_view_state_scale
+id imageview_resultview_view
 id img
 id img_guanbi
 id info
@@ -2894,6 +2912,8 @@ id pullToRefresh
 id pv
 id qq
 id radio
+id rcv_has_add
+id rcv_not_add
 id react_test_id
 id record_btn
 id record_rl
@@ -2948,6 +2968,7 @@ id rl_night_time
 id rl_offline
 id rl_pic_test_header
 id rl_qc
+id rl_room
 id rl_room_manage
 id rl_root
 id rl_sd_card
@@ -2993,6 +3014,11 @@ id sb_player
 id sb_small
 id sb_temp
 id scale_scroll_wheel
+id scan_fragment
+id scan_preview_surfaceview
+id scanactivity_album_textview
+id scanactivity_back_linearlayout
+id scanactivity_topbar_linearlayout
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3100,6 +3126,7 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id texture_view
+id textview_resultview_des
 id third_app_dl_progress_text
 id third_app_dl_progressbar
 id third_app_warn_text
@@ -3512,6 +3539,7 @@ layout activity_record
 layout activity_repeat_setting
 layout activity_report_bug_successful
 layout activity_room_add
+layout activity_room_dev_setting
 layout activity_sd_card
 layout activity_setting
 layout activity_sort_dev
@@ -3677,6 +3705,8 @@ layout item_home_mate
 layout item_image
 layout item_lv_devices
 layout item_react_wheelview
+layout item_room_device_has_add
+layout item_room_device_not_add
 layout item_room_list
 layout item_scene
 layout item_scene_auto
@@ -3747,6 +3777,8 @@ layout recyclerview
 layout redbox_item_frame
 layout redbox_item_title
 layout redbox_view
+layout scan_activity
+layout scan_frgment
 layout sdk_framework_ali_sdk_openaccount_mobile_country_item2
 layout sdk_framework_ali_sdk_openaccount_mobile_country_selector2
 layout sdk_framework_ali_sdk_openaccount_title_layout_2
@@ -3779,6 +3811,7 @@ layout view_line
 layout view_login_bottom
 layout view_scene_auto
 layout view_scene_home
+layout view_showalbumpic
 layout week
 menu ali_sdk_openaccount_menu
 menu ucrop_menu_activity
@@ -3960,6 +3993,7 @@ mipmap yhq_qd_nor
 mipmap yhq_qd_sel
 mipmap yjzx_img_ys_3
 raw a11pmnp5zxp
+raw beep
 raw keep
 raw profile_sample
 raw version
@@ -4594,6 +4628,10 @@ string icon_room
 string icon_setting
 string icon_sort
 string icon_wifi_change
+string ilop_page_scan_hint_text
+string ilop_page_scan_nobarcode_in_pic
+string ilop_page_scan_title
+string ilop_page_scan_type_range_tip
 string image
 string image_button_description
 string image_description
@@ -4743,6 +4781,7 @@ string msg_camera_framework_bug
 string mtrl_chip_close_icon_content_description
 string no_internet
 string no_network_connection
+string nofoundbarcode
 string pagern_appversion_not_match
 string pagern_back_to_home
 string pagern_iconfont_download_failed
@@ -4803,6 +4842,7 @@ string rncontainer_env_release
 string rncontainer_env_test
 string rncontainer_illeagel_ip_address
 string rncontainer_switch_env
+string scan_module_name
 string scanner_view_tip_text
 string search_alog
 string search_description
@@ -5049,6 +5089,7 @@ string str_room_temp
 string str_sat
 string str_saturday
 string str_save
+string str_save_success
 string str_scene
 string str_sd_card
 string str_select_auto
@@ -5479,6 +5520,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style ScanAppTheme
 style SendSmsCode
 style SettingsTheme
 style SimpleLoadViewStyle

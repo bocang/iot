@@ -63,7 +63,6 @@ import com.bean.ScenesBean;
 import com.bean.WeatherBean;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.huawei.hms.api.Api;
 import com.juhao.home.DragSortDevActivity;
 import com.juhao.home.IssApplication;
 import com.juhao.home.LoginIndexActivity;
@@ -72,6 +71,7 @@ import com.juhao.home.UIUtils;
 import com.juhao.home.adapter.BaseAdapterHelper;
 import com.juhao.home.adapter.QuickAdapter;
 import com.juhao.home.intelligence.DevicesControlActivity;
+import com.juhao.home.room.RoomManageActivity;
 import com.net.ApiClient;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.util.ApiClientForIot;
@@ -85,7 +85,6 @@ import com.view.PMSwipeRefreshLayout;
 import com.view.TextViewPlus;
 import com.zhy.http.okhttp.callback.Callback;
 
-import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.json.JSONArray;
@@ -115,7 +114,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 //    private ArrayList<JSONObject> mDeviceList;
     int mRegisterCount = 0;
     private QuickAdapter<AccountDevDTO> accountDevDTOQuickAdapter;
-    private List<AccountDevDTO> accountDevDTOS;
+    private List<AccountDevDTO> accountDevDTOS=new ArrayList<>();
     private ListView lv_it;
     private List<QuickAdapter> adapters;
     private ImageView iv_add;
@@ -150,6 +149,8 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
     private Mybc mybc;
     private View mViewContent;
     private boolean hasData;
+    private boolean isBottom;
+    private boolean isloading;
 
     @Override
     protected void initController() {
@@ -194,23 +195,6 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
             }
         }
     };
-    @Override
-    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
-        super.onViewStateRestored(savedInstanceState);
-        LogUtils.logE("home","onViewStateRestored");
-    }
-
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        LogUtils.logE("home","onSaveInstanceState");
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        LogUtils.logE("home","onDetach");
-    }
 
     @Override
     public void onDestroy() {
@@ -222,18 +206,6 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
         }
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-    LogUtils.logE("home","onActivityCreated");
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        LogUtils.logE("home","onDestroyView");
-//        EventBus.getDefault().unregister(this);
-    }
 
     @Subscribe(threadMode = ThreadMode.POSTING,sticky = true)
     public void listAccount(Message event) {
@@ -621,7 +593,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                         intent.putExtra(Constance.iotId,accountDevDTOS.get(position).getIotId());
                         startActivity(intent);
                         return;
-                    }else if(accountDevDTOS.get(position).getProductName().contains("取暖器")){
+                    }else if(accountDevDTOS.get(position).getProductName().contains("浴霸")){
                         intent=new Intent(getActivity(),GetWarmDeviceControlActivity.class);
                         intent.putExtra(Constance.iotId,accountDevDTOS.get(position).getIotId());
                         startActivity(intent);
@@ -678,8 +650,8 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 //            }
 //        });
         vp_it.setAdapter(new MyPagerAdapter());
-        tabs.defaultColor=getActivity().getResources().getColor(R.color.txt_black);
-        tabs.selectColor=getActivity().getResources().getColor(R.color.txt_black);
+        tabs.defaultColor=getActivity().getResources().getColor(R.color.black);
+        tabs.selectColor=getActivity().getResources().getColor(R.color.black);
         tabs.setUnderlineColor(Color.TRANSPARENT);
         tabs.setIndicatorColor(getActivity().getResources().getColor(R.color.theme));
         tabs.setDividerColor(Color.TRANSPARENT);
@@ -730,6 +702,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
         }else {
             initWeather();
         }
+        onRefresh();
     }
 //    private void closeAndroidPDialog() {
 //        try {
@@ -869,7 +842,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                 tv_room.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(getActivity(),RoomManageActivity.class));
+                        startActivity(new Intent(getActivity(), RoomManageActivity.class));
                     }
                 });
 //                popupWindow.getContentView().findViewById(R.id.tv_stream_quailty_0).setOnClickListener(new View.OnClickListener() {
@@ -905,7 +878,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
     }
 
     private void setListviewHeight() {
-        int[] locations=new int[2];
+//        int[] locations=new int[2];
         if(column==1){
             ll_listview.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,UIUtils.dip2PX(80)*(accountDevDTOS.size()<5?5:accountDevDTOS.size())+30));
         }else {
@@ -917,11 +890,32 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
     public void onRefresh() {
             page=1;
             accountDevDTOS=new ArrayList<>();
+            isBottom=false;
+//            accountDevDTOQuickAdapter.replaceAll(accountDevDTOS);
             listByAccount();
+//        onEndOfList(null);
+//        for (int i=0;i<21;i++){
+//        registerVirtualDevice("a1rdxUr8WEY");
+//        }
     }
 
     @Override
     public void onEndOfList(Object lastItem) {
+
+        if(page==1&&accountDevDTOS.size()==0){
+            LogUtils.logE("onEndOfList","if(page==1&&accountDevDTOS.size()==0)"+"page:"+page);
+            return;
+        }
+        if(isBottom){
+            LogUtils.logE("onEndOfList","if(isBottom){"+"page:"+page);
+            return;
+        }
+//        isloading=true;
+        page++;
+        LogUtils.logE("onEndOfList","listByAccount"+"page:"+page);
+        listByAccount();
+
+
 
     }
 
@@ -963,7 +957,8 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 
         getSceneList();
 //        getLambList();
-        accountDevDTOS = new ArrayList<>();
+//        accountDevDTOS = new ArrayList<>();
+//        isloading = true;
         Map<String, Object> maps = new HashMap<>();
         maps.put("pageSize","20");
         maps.put("pageNo", page);
@@ -980,9 +975,50 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 //                .setParams(maps);
         IoTRequest request = builder.build();
         IoTAPIClient ioTAPIClient = new IoTAPIClientFactory().getClient();
+//        if(page==3){
+//            isBottom=true;
+//            return;
+//        }
+//        hasData=true;
+//        if(page==1){
+//         for(int i=0;i<20;i++){
+//             AccountDevDTO accountDevDTO=new AccountDevDTO();
+//             accountDevDTO.setName(getString(R.string.str_all_lamb)+i);
+//             accountDevDTO.setStatus("1");
+//             accountDevDTO.setCategoryImage("http://iotx-paas-admin.oss-cn-shanghai.aliyuncs.com/publish/image/1559630650729.png");
+//             accountDevDTOS.add(accountDevDTO);
+//         }
+//        }else {
+//            for(int i=(page-1)*20;i<20*(page);i++){
+//                AccountDevDTO accountDevDTO=new AccountDevDTO();
+//                accountDevDTO.setName(getString(R.string.str_all_lamb)+i);
+//                accountDevDTO.setStatus("1");
+//                accountDevDTO.setCategoryImage("http://iotx-paas-admin.oss-cn-shanghai.aliyuncs.com/publish/image/1559630650729.png");
+//                accountDevDTOS.add(accountDevDTO);
+//            }
+//        }
+//        isloading=false;
+//        getActivity().runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                lv_devices.setVisibility(View.VISIBLE);
+//                pullToRefresh.setVisibility(View.VISIBLE);
+//                accountDevDTOQuickAdapter.replaceAll(accountDevDTOS);
+//                setListviewHeight();
+//                ll_none_device.setVisibility(View.GONE);
+//            }
+//        });
+//        if(true)return;
+
+
         ioTAPIClient.send(request, new IoTCallback() {
+
+            private int pageNo;
+            private int total;
+
             @Override
             public void onFailure(IoTRequest ioTRequest, Exception e) {
+                isloading=false;
                 ALog.d(TAG, "onFailure");
                 mHandler.post(new Runnable() {
                     @Override
@@ -1002,6 +1038,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 
             @Override
             public void onResponse(IoTRequest ioTRequest, IoTResponse response) {
+                isloading=false;
                 ALog.d(TAG, "onResponse listByAccount");
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
@@ -1049,16 +1086,22 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                         JSONArray listData= null;
                         try {
                             listData = result.getJSONArray(Constance.data);
+                            total = result.getInt(Constance.total);
+                            pageNo = result.getInt(Constance.pageNo);
+                            if(total <= pageNo*20+1){
+                                isBottom = true;
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
 //                        mDeviceList = parseDeviceListFromSever((JSONArray) data);
-                        accountDevDTOS=new Gson().fromJson(((JSONArray)listData).toString(),new TypeToken<List<AccountDevDTO>>(){}.getType());
+                        List<AccountDevDTO> temp=new Gson().fromJson(((JSONArray)listData).toString(),new TypeToken<List<AccountDevDTO>>(){}.getType());
+                        accountDevDTOS.addAll(temp);
                         if(accountDevDTOS==null||accountDevDTOS.size()==0){
                         mHandler.sendEmptyMessage(1);
                         return;
                         }
-                        LogUtils.logE("mDevices",accountDevDTOS.get(0).toString());
+//                        LogUtils.logE("mDevices",accountDevDTOS.get(0).toString());
 //                        for(int i=0;i<mDeviceList.size();i++){
 //                            try {
 //                                if(!mDeviceList.get(i).getString(Constance.type).equals("虚拟")){
@@ -1068,19 +1111,29 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
 //                                e.printStackTrace();
 //                            }
 //                        }
-                        for(int i=0;i<accountDevDTOS.size();i++){
-                            for(int j=0;j<accountDevDTOS.size();j++){
-                            if(i!=j&&accountDevDTOS.get(i).getIotId().equals(accountDevDTOS.get(j).getIotId())||accountDevDTOS.get(j).getName()!=null&&accountDevDTOS.get(j).getName().contains("蓝牙")){
-                                accountDevDTOS.remove(j);
-                                if(j!=0)j--;
-                            }
-                            }
-                        }
+//                        for(int i=0;i<accountDevDTOS.size();i++){
+//                            for(int j=0;j<accountDevDTOS.size();j++){
+//                            if(i!=j&&accountDevDTOS.get(i).getIotId().equals(accountDevDTOS.get(j).getIotId())||accountDevDTOS.get(j).getName()!=null&&accountDevDTOS.get(j).getName().contains("蓝牙")){
+//                                accountDevDTOS.remove(j);
+//                                if(j!=0)j--;
+//                            }
+//                            }
+//                        }
                         AccountDevDTO accountDevDTO=new AccountDevDTO();
                         accountDevDTO.setName(getString(R.string.str_all_lamb));
+                        accountDevDTO.setIotId("testiot");
                         accountDevDTO.setStatus("1");
                         accountDevDTO.setCategoryImage("http://iotx-paas-admin.oss-cn-shanghai.aliyuncs.com/publish/image/1559630650729.png");
                         accountDevDTOS.add(0,accountDevDTO);
+
+                        for(int i=0;i<accountDevDTOS.size();i++){
+                            for(int j=0;j<accountDevDTOS.size();j++){
+                                if(i!=j&&accountDevDTOS.get(i).getIotId().equals(accountDevDTOS.get(j).getIotId())){
+                                    accountDevDTOS.remove(j);
+                                    if(j!=0)j--;
+                                }
+                            }
+                        }
 
 //                        for (int i=0;i<20;i++){
 //                            AccountDevDTO accountDevDTO=new AccountDevDTO();
@@ -1108,12 +1161,6 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                                 lv_devices.setVisibility(View.VISIBLE);
                                 pullToRefresh.setVisibility(View.VISIBLE);
                                 accountDevDTOQuickAdapter.replaceAll(accountDevDTOS);
-
-//                                pullToRefresh.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,UIUtils.dip2PX(90*accountDevDTOS.size())));
-
-//                                pullToRefresh.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,UIUtils.initGridViewHeight(lv_devices,lv_devices.getNumColumns())+100));
-//                                UIUtils.initGridViewHeight(lv_devices,column);
-//                                ll_listview.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,UIUtils.initGridViewHeight(lv_devices,column)+100));
                                 setListviewHeight();
                                 ll_none_device.setVisibility(View.GONE);
                             }
@@ -1265,7 +1312,7 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                                                                 Toast.makeText(getActivity(), getString(R.string.str_excute_failed), Toast.LENGTH_SHORT).show();
                                                             }else {
                                                                 Toast.makeText(getActivity(), getString(R.string.str_excute_success), Toast.LENGTH_SHORT).show();
-                                                                page=1;
+//                                                                page=1;
 //                                                                scenes=new ArrayList<>();
 //                                                                getSceneList();
                                                             }
@@ -1323,9 +1370,9 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
     @Override
     public void onResume() {
         super.onResume();
-        accountDevDTOS=new ArrayList<>();
-        page=1;
-        listByAccount();
+//        accountDevDTOS=new ArrayList<>();
+//        page=1;
+//        listByAccount();
 //        try {
 //            InputStream configureInputStream = getResources().getAssets().open("sdk_config.json");
 //            readFile(configureInputStream);
@@ -1460,6 +1507,83 @@ public class ItHomeMainFragment extends BaseFragment implements View.OnClickList
                 if(ioTResponse.getCode()==200){
 
                 }
+            }
+        });
+    }
+
+    private void registerVirtualDevice(String pk) {
+        Map<String, Object> maps = new HashMap<>();
+        maps.put("productKey", pk);
+        IoTRequestBuilder builder = new IoTRequestBuilder()
+                .setPath("/thing/virtual/register")
+                .setApiVersion("1.0.0")
+                .setAuthType("iotAuth")
+                .setParams(maps);
+
+        IoTRequest request = builder.build();
+
+        IoTAPIClient ioTAPIClient = new IoTAPIClientFactory().getClient();
+        ioTAPIClient.send(request, new IoTCallback() {
+            @Override
+            public void onFailure(IoTRequest ioTRequest, Exception e) {
+                ALog.d("JC", "onFailure");
+            }
+
+            @Override
+            public void onResponse(IoTRequest ioTRequest, IoTResponse response) {
+                ALog.d("JC", "onResponse registerVirtualDevice");
+                final int code = response.getCode();
+                final String msg = response.getMessage();
+                if (code != 200){
+
+                    return;
+                }
+
+                Object data = response.getData();
+                if (null != data) {
+                    if (data instanceof JSONObject) {
+                        try {
+                            String dn = ((JSONObject) data).getString("deviceName");
+                            String pk = ((JSONObject) data).getString("productKey");
+                            bindVirturalToUser(pk, dn);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+
+            }
+        });
+    }
+
+    private void bindVirturalToUser(String pk, String dn){
+        Map<String, Object> maps = new HashMap<>();
+        maps.put("productKey", pk);
+        maps.put("deviceName", dn);
+        IoTRequestBuilder builder = new IoTRequestBuilder()
+                .setPath("/thing/virtual/binduser")
+                .setApiVersion("1.0.0")
+                .setAuthType("iotAuth")
+                .setParams(maps);
+
+        IoTRequest request = builder.build();
+
+        IoTAPIClient ioTAPIClient = new IoTAPIClientFactory().getClient();
+        ioTAPIClient.send(request, new IoTCallback() {
+            @Override
+            public void onFailure(IoTRequest ioTRequest, Exception e) {
+                ALog.d("JC", "onFailure");
+            }
+
+            @Override
+            public void onResponse(IoTRequest ioTRequest, IoTResponse response) {
+                ALog.d("JC", "onResponse bindVirturalToUser ok, rout to ilopmain page");
+                final int code = response.getCode();
+                final String msg = response.getMessage();
+                if (code != 200){
+                    return;
+                }
+//                Router.getInstance().toUrl(StartActivity.this, "page/ilopmain");
             }
         });
     }

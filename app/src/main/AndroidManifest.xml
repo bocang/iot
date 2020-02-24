@@ -331,8 +331,8 @@
         <activity android:name=".ui.WebViewForDataActivity"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".ui.GetWarmDeviceControlActivity">
-
         </activity>
+        <activity android:name=".room.RoomDeviceSettingActivity"/>
         <!-- API client.end -->
 
 
@@ -513,9 +513,9 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.HomeMateListActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.RoomManageActivity"
+        <activity android:name=".room.RoomManageActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.RoomAddActivity"
+        <activity android:name=".room.RoomAddActivity"
             android:screenOrientation="portrait" />
         <!--________________________房间管理  结束________________________-->
 

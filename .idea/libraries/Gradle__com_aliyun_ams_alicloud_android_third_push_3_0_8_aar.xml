@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aliyun.ams:alicloud-android-third-push:3.0.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/jars/libs/opush-1.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/jars/libs/third_vivopush-2.3.4.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/jars/libs/mipush-3.6.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

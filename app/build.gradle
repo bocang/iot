@@ -8,8 +8,8 @@ android {
         applicationId 'com.juhao.home'
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 7
-        versionName "1.0.6"
+        versionCode 8
+        versionName "1.0.7"
         multiDexEnabled true
         resConfigs "en", "zh-rCN","ja","ru","ko"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -159,12 +159,16 @@ dependencies {
     implementation 'com.tencent.bugly:crashreport:latest.release'
     implementation 'com.tencent.bugly:nativecrashreport:latest.release'
 
-    api 'com.aliyun.iot.aep.sdk:apiclient:0.0.9'
+    api ('com.aliyun.iot.aep.sdk:apiclient:0.0.9'){
+        exclude module: 'okhttp-ws'
+    }
     api 'com.aliyun.iot.aep.sdk:sdk-framework:0.1.0'
     api 'com.aliyun.ams:alicloud-android-utdid:1.1.5.3'
     api 'com.aliyun.ams:alicloud-android-ut:5.4.2'
     api 'com.aliyun.alink.linksdk:api-client-biz:1.0.1'
-    api 'com.aliyun.iot.aep.page:rn:0.2.7'
+    api ('com.aliyun.iot.aep.page:rn:0.2.7'){
+        exclude module: 'okhttp-ws'
+    }
     api 'com.aliyun.iot.aep.sdk:connectchannel:0.0.9'
     api 'com.aliyun.iot.aep.sdk:iot-credential:0.0.2.8'
 //    api 'com.aliyun.iot.sdk:account-oa-ui:0.1.2'
@@ -192,6 +196,7 @@ dependencies {
     api 'com.github.tbruyelle:rxpermissions:0.10.2'
     api 'io.reactivex.rxjava2:rxandroid:2.1.0'
     api 'io.reactivex.rxjava2:rxjava:2.2.4'
+    implementation 'com.aliyun.iot.ilop.page:scan:0.0.1'
 //    api 'com.google.firebase:firebase-analytics:+'
 //    implementation 'com.google.android.material：1.0.0-alpha3'
 }

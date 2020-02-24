@@ -48,6 +48,7 @@ import com.aliyun.alink.sdk.bone.plugins.BaseBoneServiceFactory;
 import com.aliyun.alink.sdk.bone.plugins.config.BoneConfig;
 import com.aliyun.alink.sdk.jsbridge.BonePluginRegistry;
 import com.aliyun.iot.aep.component.router.IUrlHandler;
+import com.aliyun.iot.aep.component.scan.ScanManager;
 import com.aliyun.iot.aep.oa.OALanguageHelper;
 import com.aliyun.iot.aep.routerexternal.RouterExternal;
 import com.aliyun.iot.aep.sdk.IoTSmart;
@@ -82,8 +83,10 @@ import com.aliyun.iot.aep.sdk.login.plugin.BoneUserAccountPlugin;
 import com.aliyun.iot.aep.sdk.framework.bundle.PageConfigure;
 //import com.aliyun.iot.ilop.page.scan.ScanPageInitHelper;
 import com.aliyun.iot.aep.sdk.page.OAMobileCountrySelectorActivity;
+import com.aliyun.iot.ilop.page.scan.ScanPageInitHelper;
 import com.aliyun.iot.push.PushManager;
 //import com.facebook.react.FrescoPackage;
+import com.bean.AccountDevDTO;
 import com.facebook.FacebookSdk;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
@@ -145,6 +148,7 @@ public class DemoApplication extends BaseApplication {
     public static JSONArray actions=new JSONArray();
     public static boolean is_created_fragment;
     public static boolean has_got;
+    public static List<AccountDevDTO> TokenList=new ArrayList<>();
     private static Application instance;
     public static boolean isShowLogin;
 
@@ -291,6 +295,11 @@ public class DemoApplication extends BaseApplication {
                 RouterExternal.getInstance().registerNativePages(nativeUrls, new NativeUrlHandler(deepCopyItem));
             }
         });
+        // 支持扫码调试
+        ScanManager.getInstance().registerPlugin("boneMobile", new BoneMobileScanPlugin());
+
+        //初始化pagescan页面的router配置
+        ScanPageInitHelper.initPageScanRouterConfig();
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

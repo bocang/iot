@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aliyun.alink.linksdk:public-cmp:1.6.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7880bbd5f7a3c40d61ea8642ce98d51a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7880bbd5f7a3c40d61ea8642ce98d51a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

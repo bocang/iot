@@ -11,6 +11,7 @@ import com.juhao.home.UIUtils;
 import com.util.Constance;
 import com.util.MyShare;
 import com.util.NetWorkConst;
+import com.util.json.JSONArray;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.Callback;
 import com.zhy.http.okhttp.callback.FileCallBack;
@@ -566,13 +567,40 @@ public class ApiClient {
                 .build().execute(stringCallback);
     }
 
-    public static void deleteRoom(int id, Callback<String> stringCallback) {
+    public static void deleteRoom(String identityId,int id, Callback<String> stringCallback) {
         if(!hashkNewwork())return;
         String url=NetWorkConst.URL_ROOM_DELETE;
         OkHttpUtils.post().url(url)
                 .addParams("id",id+"")
+                .addParams("identityId",identityId)
                 .build().execute(stringCallback);
     }
+
+    public static void editRoom(String identityId, JSONArray array, Callback<String> stringCallback) {
+        if(!hashkNewwork())return;
+        String url=NetWorkConst.URL_ROOM_EDIT;
+        OkHttpUtils.post().url(url)
+                .addParams("data", String.valueOf(array))
+                .build().execute(stringCallback);
+    }
+    public static void editRoom(String room_id, String name, Callback<String> stringCallback) {
+        if(!hashkNewwork())return;
+        String url=NetWorkConst.URL_ROOM_EDIT;
+        OkHttpUtils.post().url(url)
+                .addParams("room_id", room_id)
+                .addParams("name",name)
+                .build().execute(stringCallback);
+    }
+
+    public static void saveDevice(org.json.JSONArray data, int id, Callback<String> stringCallback) {
+        if(!hashkNewwork())return;
+        String url=NetWorkConst.URL_ROOM_DEV_SAVE;
+        OkHttpUtils.post().url(url)
+                .addParams("room_id", String.valueOf(id))
+                .addParams("data", String.valueOf(data))
+                .build().execute(stringCallback);
+    }
+
 //    public static void SendRequest(String url, final Callback callback){
 //        if(!hashkNewwork()){
 //            return;

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aliyun.alink.linksdk:breeze:1.2.12@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

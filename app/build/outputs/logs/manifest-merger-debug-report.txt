@@ -1,16 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
 MERGED from [com.flyco.dialog:FlycoDialog_Lib:1.3.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1444dd0694619e04e393d6270c646875/AndroidManifest.xml:2:1-11:12
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:2:1-17:12
 MERGED from [com.aliyun.iot.aep.sdk:push:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7b039f31aa8a106797f74010d9d8a137/AndroidManifest.xml:2:1-3:37
 MERGED from [com.aliyun.alink.linksdk:lpbs-plugin-breeze:1.1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/d22d56f268653555e3c34ca482dfd3e2/AndroidManifest.xml:2:1-11:12
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-61:12
-MERGED from [:linkvisualapi] /Users/bocang/Downloads/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-61:12
+MERGED from [:linkvisualapi] /Users/bocang/Documents/GitHub/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:2:1-33:12
+MERGED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:2:1-22:12
 MERGED from [com.aliyun.iot.aep.component:router-external:0.1.4] /Users/bocang/.gradle/caches/transforms-2/files-2.1/61c68d7c44a21b3c627598cf74acf5b1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.aliyun.iot.aep.component:bundlemanager:0.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e5e9e3fed9d885f33ddbb1af2f5eead5/AndroidManifest.xml:2:1-11:12
 MERGED from [com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/725b51abcdb0ae0fff830e1d314c0fad/AndroidManifest.xml:2:1-12:12
@@ -47,15 +48,15 @@ MERGED from [com.google.android:flexbox:0.3.1] /Users/bocang/.gradle/caches/tran
 MERGED from [com.aliyun.iot.aep.sdk:rn-external:0.59.8.20190920] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e844656e3377df1cc0d0e4e5dc9bc239/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/93dbfc39610f132d17fb0bc9e4f9fe39/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/9c3ade6d6c8338af64e3e3b8add5cc87/AndroidManifest.xml:2:1-11:12
-MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/53a39d689efdc689c869aa5347a8ea0a/AndroidManifest.xml:2:1-11:12
+MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8617262139eb5032cec3e8fad63ebf23/AndroidManifest.xml:2:1-11:12
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/cf38fc734c150520b0dc977ed6e4a87d/AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0c60051b2705f16da54969ddd89358d/AndroidManifest.xml:17:1-39:12
 MERGED from [com.bigkoo:alertview:1.0.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/798c4e57f57a39eb40c465761ffb6ac6/AndroidManifest.xml:2:1-11:12
 MERGED from [com.contrarywind:Android-PickerView:3.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/9b912af2647f63dc38faa26db8347f42/AndroidManifest.xml:2:1-11:12
 MERGED from [com.pgyersdk:sdk:2.8.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/54f193546055e461bfb7df471427584f/AndroidManifest.xml:2:1-16:12
 MERGED from [com.aliyun.iot.aep.sdk:abus:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fed0f1db8e9dd95a4deba0185ce46eaa/AndroidManifest.xml:2:1-11:12
-MERGED from [:handygridview] /Users/bocang/Downloads/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:swipelistviewlibrary] /Users/bocang/Downloads/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:handygridview] /Users/bocang/Documents/GitHub/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:swipelistviewlibrary] /Users/bocang/Documents/GitHub/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [com.tencent.bugly:crashreport:3.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/85ecb3eeb3e16660a867bf82e117ee52/AndroidManifest.xml:2:1-9:12
 MERGED from [com.tencent.bugly:nativecrashreport:3.7.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/3cfa8426741d855ccfc340b00c5d3462/AndroidManifest.xml:2:1-9:12
 MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4d98039b94bc07fa1a041bdf2d812a68/AndroidManifest.xml:2:1-37:12
@@ -138,6 +139,8 @@ MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.5] /Users/bocang/.
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/6a4890dc4d7c025922ffc35b0c8e0525/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c7ebb71a14955adb708c96bcd02167e8/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4e90fd6adb9eb49b3881e662a8888934/AndroidManifest.xml:17:1-22:12
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:2:1-18:12
+MERGED from [com.aliyun.iot.aep.component:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/0e3bfe62b109ab293b4a0b180f1716d1/AndroidManifest.xml:2:1-5:12
 MERGED from [com.aliyun.iot.aep.sdk:user-tracker:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e44d32284bb1ec842f4315fdc700e28c/AndroidManifest.xml:2:1-3:42
 MERGED from [com.aliyun.alink.external:widget:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8610a9ef3cb5a1f62830f3d3d776785b/AndroidManifest.xml:2:1-11:12
 MERGED from [org.chromium:v8-android:7.8.1-20191210] /Users/bocang/.gradle/caches/transforms-2/files-2.1/04b03bfe6af58548c6180d32d337a470/AndroidManifest.xml:2:1-11:12
@@ -148,35 +151,35 @@ MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/bocang/.gradle/cac
 MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/0fd696f6083b3ea4bfac177abdd75508/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e39085d15f9dfd72830b7f60901db9ec/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8083f81e286a8bc5c5bd0c5bfb0b941b/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
 	package
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:4:5-29
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:4:5-29
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:1-540:12
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:1-540:12
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:5:5-78
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:5:5-78
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-78
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:5:22-75
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:6:5-81
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:6:5-81
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:10:5-81
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:10:5-81
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:11:5-81
@@ -199,12 +202,14 @@ MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.grad
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:16:5-81
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:26:5-81
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:26:5-81
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:10:5-81
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:7:5-79
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-79
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:11:5-79
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:11:5-79
 MERGED from [com.aliyun.iot.aep.component:bundlemanager:0.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e5e9e3fed9d885f33ddbb1af2f5eead5/AndroidManifest.xml:9:5-79
@@ -254,11 +259,11 @@ MERGED from [com.aliyun.ams:alicloud-android-third-push:3.0.8] /Users/bocang/.gr
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.5] /Users/bocang/.gradle/caches/transforms-2/files-2.1/0e2db519089a7e877e6c7902b12943ff/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.5] /Users/bocang/.gradle/caches/transforms-2/files-2.1/0e2db519089a7e877e6c7902b12943ff/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:8:5-76
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:8:5-76
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-76
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:12:5-76
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:12:5-76
 MERGED from [com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/725b51abcdb0ae0fff830e1d314c0fad/AndroidManifest.xml:10:5-76
@@ -288,9 +293,9 @@ MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.grad
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:14:5-76
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:14:5-76
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:8:22-73
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:9:5-75
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:9:5-75
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:12:5-75
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:12:5-75
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:13:5-75
@@ -308,9 +313,9 @@ MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exc
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:18:5-75
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:18:5-75
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:9:22-72
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:9:22-72
 uses-permission#android.permission.READ_SETTINGS
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:10:5-72
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:10:5-72
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:14:5-72
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:14:5-72
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:15:5-72
@@ -324,9 +329,9 @@ MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exc
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:14:5-72
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:14:5-72
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:10:22-69
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:10:22-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:11:5-67
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:11:5-67
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:11:5-67
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:11:5-67
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:16:5-67
@@ -381,14 +386,16 @@ MERGED from [com.aliyun.ams:alicloud-android-third-push:3.0.8] /Users/bocang/.gr
 MERGED from [com.aliyun.ams:alicloud-android-third-push:3.0.8] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/AndroidManifest.xml:26:5-67
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:11:5-67
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:11:5-67
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:7:5-67
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:7:5-67
 MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.4] /Users/bocang/.gradle/caches/transforms-2/files-2.1/efb153642f05626ed6dbfb12f5f9e2e2/AndroidManifest.xml:8:5-67
 MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.4] /Users/bocang/.gradle/caches/transforms-2/files-2.1/efb153642f05626ed6dbfb12f5f9e2e2/AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:12:5-80
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:12:5-80
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-80
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:17:5-80
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:17:5-80
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:18:5-80
@@ -406,9 +413,9 @@ MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gr
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:25:5-80
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:25:5-80
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:12:22-77
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:12:22-77
 uses-permission#android.permission.GET_TASKS
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:13:5-68
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:13:5-68
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:18:5-68
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:18:5-68
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:19:5-68
@@ -422,9 +429,9 @@ MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exc
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:20:5-68
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:20:5-68
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:13:22-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:13:22-65
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:14:5-68
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:14:5-68
 MERGED from [com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/725b51abcdb0ae0fff830e1d314c0fad/AndroidManifest.xml:9:5-68
 MERGED from [com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/725b51abcdb0ae0fff830e1d314c0fad/AndroidManifest.xml:9:5-68
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:21:5-68
@@ -436,17 +443,17 @@ MERGED from [com.aliyun.alink.linksdk:ble-library:1.2.4] /Users/bocang/.gradle/c
 MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4d98039b94bc07fa1a041bdf2d812a68/AndroidManifest.xml:18:5-68
 MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4d98039b94bc07fa1a041bdf2d812a68/AndroidManifest.xml:18:5-68
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:14:22-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:14:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:15:5-74
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:15:5-74
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:22:5-74
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:22:5-74
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.12] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/AndroidManifest.xml:19:5-74
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.12] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/AndroidManifest.xml:19:5-74
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:15:22-71
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:15:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:16:5-81
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:16:5-81
 MERGED from [com.aliyun.iot.aep.sdk:sdk-framework:0.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/0535bb17a776fa92c2d5b36b8a73edb3/AndroidManifest.xml:12:5-81
 MERGED from [com.aliyun.iot.aep.sdk:sdk-framework:0.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/0535bb17a776fa92c2d5b36b8a73edb3/AndroidManifest.xml:12:5-81
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:23:5-81
@@ -456,11 +463,11 @@ MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.7.2] /Users/bocang/.gr
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.12] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/AndroidManifest.xml:17:5-81
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.12] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:16:22-78
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:16:22-78
 uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:17:5-86
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:17:5-86
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-86
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.8.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/f2c226449df9adfb458ac1de084983b9/AndroidManifest.xml:15:5-86
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.8.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/f2c226449df9adfb458ac1de084983b9/AndroidManifest.xml:15:5-86
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:24:5-86
@@ -472,9 +479,9 @@ MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gr
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:13:5-86
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:13:5-86
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:17:22-83
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:17:22-83
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:18:5-76
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:18:5-76
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.8.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/f2c226449df9adfb458ac1de084983b9/AndroidManifest.xml:16:5-76
 MERGED from [com.aliyun.alink.linksdk:public-tmp:1.8.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/f2c226449df9adfb458ac1de084983b9/AndroidManifest.xml:16:5-76
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:25:5-76
@@ -486,9 +493,9 @@ MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/bocang/.gradle/caches/
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:19:5-76
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:19:5-76
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:18:22-73
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:18:22-73
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:19:5-79
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:19:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:26:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:26:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.7.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/203cf31345affdd619b5aaba783805ab/AndroidManifest.xml:19:5-79
@@ -496,9 +503,9 @@ MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.7.2] /Users/bocang/.gr
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:20:5-79
 MERGED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:19:22-76
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:19:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:20:5-79
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:20:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.7.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/203cf31345affdd619b5aaba783805ab/AndroidManifest.xml:20:5-79
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter:1.7.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/203cf31345affdd619b5aaba783805ab/AndroidManifest.xml:20:5-79
 MERGED from [com.aliyun.alink.linksdk:breeze:1.2.12] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fe3d31922c327d43532c57c1dc124848/AndroidManifest.xml:16:5-79
@@ -508,33 +515,35 @@ MERGED from [com.alibaba.sdk.android.openaccount:openaccount-ui-default:3.5.3.13
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:12:5-79
 MERGED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:20:22-76
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:20:22-76
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:23:5-100
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:23:5-100
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c2d2b067cead0b97c37c85336155166b/AndroidManifest.xml:13:5-84
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c2d2b067cead0b97c37c85336155166b/AndroidManifest.xml:13:5-84
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:27:5-84
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:27:5-84
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:23:22-81
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:23:22-81
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:24:5-77
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:24:5-77
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:24:22-74
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:24:22-74
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:27:5-85
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:27:5-85
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:27:22-82
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:27:22-82
 application
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:31:5-538:19
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:31:5-538:19
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:14:5-15:19
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:14:5-15:19
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
-MERGED from [:linkvisualapi] /Users/bocang/Downloads/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
-MERGED from [:linkvisualapi] /Users/bocang/Downloads/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-59:19
+MERGED from [:linkvisualapi] /Users/bocang/Documents/GitHub/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
+MERGED from [:linkvisualapi] /Users/bocang/Documents/GitHub/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-15:19
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:20:5-31:19
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:20:5-31:19
+MERGED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:10:5-20:19
+MERGED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:10:5-20:19
 MERGED from [com.aliyun.iot.aep.component:router-external:0.1.4] /Users/bocang/.gradle/caches/transforms-2/files-2.1/61c68d7c44a21b3c627598cf74acf5b1/AndroidManifest.xml:5:5-20
 MERGED from [com.aliyun.iot.aep.component:router-external:0.1.4] /Users/bocang/.gradle/caches/transforms-2/files-2.1/61c68d7c44a21b3c627598cf74acf5b1/AndroidManifest.xml:5:5-20
 MERGED from [com.aliyun.alink.linksdk:public-channel-mobile:1.5.1.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/d696ae0ccfd2a27b816f47bdba27eab0/AndroidManifest.xml:16:5-20
@@ -579,18 +588,18 @@ MERGED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/bocang/.gradle/
 MERGED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/dd8bb2b87f3502e1240b96c227f407e6/AndroidManifest.xml:11:5-15:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/9c3ade6d6c8338af64e3e3b8add5cc87/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/9c3ade6d6c8338af64e3e3b8add5cc87/AndroidManifest.xml:9:5-20
-MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/53a39d689efdc689c869aa5347a8ea0a/AndroidManifest.xml:9:5-20
-MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/53a39d689efdc689c869aa5347a8ea0a/AndroidManifest.xml:9:5-20
+MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8617262139eb5032cec3e8fad63ebf23/AndroidManifest.xml:9:5-20
+MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8617262139eb5032cec3e8fad63ebf23/AndroidManifest.xml:9:5-20
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/cf38fc734c150520b0dc977ed6e4a87d/AndroidManifest.xml:24:5-31:19
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/cf38fc734c150520b0dc977ed6e4a87d/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0c60051b2705f16da54969ddd89358d/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0c60051b2705f16da54969ddd89358d/AndroidManifest.xml:22:5-37:19
 MERGED from [com.pgyersdk:sdk:2.8.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/54f193546055e461bfb7df471427584f/AndroidManifest.xml:13:5-14:19
 MERGED from [com.pgyersdk:sdk:2.8.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/54f193546055e461bfb7df471427584f/AndroidManifest.xml:13:5-14:19
-MERGED from [:handygridview] /Users/bocang/Downloads/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:handygridview] /Users/bocang/Downloads/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:swipelistviewlibrary] /Users/bocang/Downloads/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:swipelistviewlibrary] /Users/bocang/Downloads/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:handygridview] /Users/bocang/Documents/GitHub/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:handygridview] /Users/bocang/Documents/GitHub/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:swipelistviewlibrary] /Users/bocang/Documents/GitHub/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:swipelistviewlibrary] /Users/bocang/Documents/GitHub/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
 MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4d98039b94bc07fa1a041bdf2d812a68/AndroidManifest.xml:22:5-35:19
 MERGED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4d98039b94bc07fa1a041bdf2d812a68/AndroidManifest.xml:22:5-35:19
 MERGED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/120d99e5a8b728d279090cc8aa7b4f41/AndroidManifest.xml:17:5-20:19
@@ -661,23 +670,26 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/boca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/25d249f6dbcaba383bc46ecc8509625f/AndroidManifest.xml:22:5-23:19
 MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4c67c69f9cd1c46852748f507115a7fd/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4c67c69f9cd1c46852748f507115a7fd/AndroidManifest.xml:9:5-20
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:13:5-16:19
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:13:5-16:19
 MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.4] /Users/bocang/.gradle/caches/transforms-2/files-2.1/efb153642f05626ed6dbfb12f5f9e2e2/AndroidManifest.xml:10:5-20
 MERGED from [com.aliyun.alink.linksdk:opensource-paho:1.2.0.4] /Users/bocang/.gradle/caches/transforms-2/files-2.1/efb153642f05626ed6dbfb12f5f9e2e2/AndroidManifest.xml:10:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e39085d15f9dfd72830b7f60901db9ec/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e39085d15f9dfd72830b7f60901db9ec/AndroidManifest.xml:11:5-20
 	android:extractNativeLibs
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:38:9-41
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:38:9-41
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e993b9abf9e65bb759da9697363cbb50/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:37:9-35
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:37:9-35
 	android:label
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:35:9-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:35:9-49
+		REJECTED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:12:9-49
 		REJECTED from [com.aliyun.alink.linksdk:public-tmp:1.8.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/f2c226449df9adfb458ac1de084983b9/AndroidManifest.xml:19:18-50
 		REJECTED from [com.aliyun.alink.linksdk:breeze-ota:1.2.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/0c4b177b1661328a57618662afdfc2d8/AndroidManifest.xml:12:9-41
 		REJECTED from [com.aliyun.iot.aep.sdk:debugcanary:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/80feafa0b36c57b6bcf13ab7afd9d9b9/AndroidManifest.xml:11:9-41
 		REJECTED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/dd8bb2b87f3502e1240b96c227f407e6/AndroidManifest.xml:13:9-41
-		REJECTED from [:swipelistviewlibrary] /Users/bocang/Downloads/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-41
+		REJECTED from [:swipelistviewlibrary] /Users/bocang/Documents/GitHub/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-41
 		REJECTED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4d98039b94bc07fa1a041bdf2d812a68/AndroidManifest.xml:24:9-41
 		REJECTED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/120d99e5a8b728d279090cc8aa7b4f41/AndroidManifest.xml:19:9-41
 		REJECTED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:26:9-41
@@ -685,654 +697,664 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/bocang/.gradle/caches/
 		REJECTED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:29:18-50
 		REJECTED from [com.aliyun.ams:alicloud-android-third-push:3.0.8] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/AndroidManifest.xml:51:9-41
 		REJECTED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:18:9-41
+		REJECTED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:34:9-40
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:34:9-40
 		REJECTED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:25:9-43
 	android:allowBackup
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:33:9-36
-		REJECTED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-36
-		REJECTED from [:linkvisualapi] /Users/bocang/Downloads/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-36
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:33:9-36
+		REJECTED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-36
+		REJECTED from [:linkvisualapi] /Users/bocang/Documents/GitHub/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-36
+		REJECTED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:11:9-36
 		REJECTED from [com.aliyun.iot.aep.sdk:debugcanary:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/80feafa0b36c57b6bcf13ab7afd9d9b9/AndroidManifest.xml:10:9-35
 		REJECTED from [com.github.donkingliang:ImageSelector:1.6.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/dd8bb2b87f3502e1240b96c227f407e6/AndroidManifest.xml:12:9-35
-		REJECTED from [:swipelistviewlibrary] /Users/bocang/Downloads/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-35
+		REJECTED from [:swipelistviewlibrary] /Users/bocang/Documents/GitHub/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-35
 		REJECTED from [com.aliyun.iot.aep.sdk.external:securityguard:5.4.94.2018-12-13-exclude-x86] /Users/bocang/.gradle/caches/transforms-2/files-2.1/4d98039b94bc07fa1a041bdf2d812a68/AndroidManifest.xml:23:9-36
 		REJECTED from [com.aliyun.dpa:oss-android-sdk:2.7.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/120d99e5a8b728d279090cc8aa7b4f41/AndroidManifest.xml:18:9-35
 		REJECTED from [com.aliyun.alink.linksdk:android_alink_id2:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e59d38b3d4b250a74a1b96e8c99e4f78/AndroidManifest.xml:24:9-35
 		REJECTED from [com.aliyun.alink.linksdk:android_alcs_lpbs:1.4.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e699d6220ee21eedc5498fc736e30871/AndroidManifest.xml:15:9-36
 		REJECTED from [com.aliyun.ams:alicloud-android-third-push:3.0.8] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/AndroidManifest.xml:50:9-35
 		REJECTED from [com.aliyun.alink.linksdk:coap-sdk:1.6.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/be13befedb80be9260c660fcbca1314a/AndroidManifest.xml:17:9-36
+		REJECTED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:14:9-36
 	android:theme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:39:9-47
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:39:9-47
+		REJECTED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:14:9-44
 	android:networkSecurityConfig
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:36:9-69
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:36:9-69
 	tools:replace
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:40:9-85
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:40:9-85
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:32:9-64
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:32:9-64
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:41:9-44:21
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:41:9-44:21
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:43:13-61
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:43:13-61
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:42:13-52
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:42:13-52
 meta-data#PGYER_APPID
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:46:9-49:21
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:46:9-49:21
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:48:13-61
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:48:13-61
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:47:13-39
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:47:13-39
 meta-data#BUGLY_APPID
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:51:27-53:38
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:51:27-53:38
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:53:9-35
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:53:9-35
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:52:9-35
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:52:9-35
 meta-data#BUGLY_APP_VERSION
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:54:9-56:37
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:54:9-56:37
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:56:13-34
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:56:13-34
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:55:13-45
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:55:13-45
 meta-data#BUGLY_APP_CHANNEL
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:57:9-59:32
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:57:9-59:32
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:59:13-29
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:59:13-29
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:58:13-45
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:58:13-45
 meta-data#BUGLY_ENABLE_DEBUG
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:61:9-63:32
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:61:9-63:32
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:63:9-29
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:63:9-29
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:62:9-42
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:62:9-42
 service#com.baidu.location.f
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:66:9-114
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:66:9-114
 	android:process
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:66:77-102
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:66:77-102
 	android:enabled
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:66:54-76
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:66:54-76
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:66:18-53
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:66:18-53
 activity#com.juhao.home.MyLoginActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:67:9-69:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:67:9-69:20
 	android:theme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:68:13-48
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:68:13-48
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:67:19-50
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:67:19-50
 activity#com.juhao.home.SplashActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:70:9-76:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:70:9-76:20
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:71:13-36
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:71:13-36
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:70:19-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:70:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:72:13-75:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:72:13-75:29
 action#android.intent.action.MAIN
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:73:13-65
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:73:13-65
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:73:21-62
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:73:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:74:13-73
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:74:13-73
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:74:23-70
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:74:23-70
 activity#com.juhao.home.TestActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:77:9-82:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:77:9-82:20
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:77:19-47
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:77:19-47
 activity#com.juhao.home.LoginIndexActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:83:9-89:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:83:9-89:20
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:83:19-53
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:83:19-53
 activity#com.juhao.home.ui.MainActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:112:9-128:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:112:9-128:20
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:116:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:116:13-49
 	android:launchMode
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:114:13-44
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:114:13-44
 	android:theme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:115:13-44
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:115:13-44
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:113:13-44
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:113:13-44
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/ilopmain+data:scheme:http+data:scheme:https
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:117:13-127:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:117:13-127:29
 action#com.aliyun.iot.aep.demo.action.navigation
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:120:17-84
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:120:17-84
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:120:25-81
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:120:25-81
 category#android.intent.category.DEFAULT
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:121:17-76
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:121:17-76
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:121:27-73
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:121:27-73
 data
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:122:17-47
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:122:17-47
 	android:path
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:126:21-50
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:126:21-50
 	android:host
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:125:21-55
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:125:21-55
 	android:scheme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:122:23-44
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:122:23-44
 activity#com.aliyun.iot.ilop.demo.page.ilopmain.AddDeviceActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:133:9-147:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:133:9-147:20
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:135:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:135:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:134:13-84
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:134:13-84
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/ilopadddevice+data:scheme:http+data:scheme:https
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:136:13-146:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:136:13-146:29
 activity#com.juhao.home.deviceBiz.BindAndUseActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:151:9-166:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:151:9-166:20
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:154:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:154:13-49
 	android:launchMode
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:153:13-44
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:153:13-44
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:152:13-57
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:152:13-57
 intent-filter#action:name:com.aliyun.iot.aep.demo.action.navigation+category:name:android.intent.category.DEFAULT+data:host:aliyun.iot.aep.demo+data:path:/page/ilopbinddevice+data:scheme:http+data:scheme:https
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:155:13-165:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:155:13-165:29
 	android:priority
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:155:28-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:155:28-49
 activity#com.juhao.home.intelligence.DevicesControlActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:191:9-194:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:191:9-194:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:194:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:194:13-49
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:193:13-37
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:193:13-37
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:192:13-64
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:192:13-64
 activity#com.juhao.home.intelligence.CountDownListActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:195:9-197:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:195:9-197:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:197:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:197:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:196:13-63
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:196:13-63
 activity#com.juhao.home.intelligence.CountDownAddActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:198:9-200:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:198:9-200:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:200:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:200:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:199:13-62
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:199:13-62
 activity#com.juhao.home.ui.AboutActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:201:9-203:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:201:9-203:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:203:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:203:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:202:13-45
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:202:13-45
 activity#com.juhao.home.ui.NoticeActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:204:9-206:15
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:204:9-206:15
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:205:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:205:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:204:19-52
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:204:19-52
 activity#com.juhao.home.ui.TmActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:207:9-208:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:207:9-208:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:208:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:208:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:207:19-48
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:207:19-48
 activity#com.juhao.home.ui.RegisterAreaCodeActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:209:9-212:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:209:9-212:20
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:210:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:210:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:209:19-62
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:209:19-62
 activity#com.juhao.home.ui.AlexaActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:213:9-214:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:213:9-214:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:214:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:214:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:213:19-51
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:213:19-51
 activity#com.juhao.home.ui.AlexaDetailActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:215:9-216:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:215:9-216:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:216:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:216:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:215:19-57
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:215:19-57
 activity#com.juhao.home.suggestion.SuggestionHomeActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:217:9-218:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:217:9-218:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:218:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:218:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:217:19-68
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:217:19-68
 activity#com.juhao.home.suggestion.SuggestDeviceActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:219:9-220:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:219:9-220:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:220:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:220:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:219:19-67
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:219:19-67
 activity#com.donkingliang.imageselector.ImageSelectorActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:221:9-224:72
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:221:9-224:72
 	android:configChanges
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:223:13-74
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:223:13-74
 	android:theme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:224:13-69
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:224:13-69
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:222:13-80
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:222:13-80
 activity#com.donkingliang.imageselector.PreviewActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:225:9-228:72
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:225:9-228:72
 	android:configChanges
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:227:13-74
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:227:13-74
 	android:theme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:228:13-69
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:228:13-69
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:226:13-74
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:226:13-74
 activity#com.donkingliang.imageselector.ClipImageActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:229:9-231:72
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:229:9-231:72
 	android:theme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:231:13-69
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:231:13-69
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:230:13-76
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:230:13-76
 activity#com.juhao.home.ui.SettingActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:277:9-280:15
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:277:9-280:15
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:279:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:279:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:278:13-47
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:278:13-47
 activity#com.juhao.home.scene.IotSceneActionAddActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:281:9-282:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:281:9-282:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:282:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:282:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:281:19-66
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:281:19-66
 activity#com.juhao.home.scene.IotSceneAddActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:283:9-285:45
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:283:9-285:45
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:284:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:284:13-49
 	android:launchMode
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:285:13-43
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:285:13-43
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:283:19-60
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:283:19-60
 activity#com.juhao.home.scene.IotSceneDeviceAddActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:286:9-287:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:286:9-287:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:287:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:287:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:286:19-66
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:286:19-66
 activity#com.juhao.home.ui.DeviceShareActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:288:9-289:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:288:9-289:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:289:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:289:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:288:19-57
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:288:19-57
 activity#com.juhao.home.ui.DeviceShareAddActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:290:9-291:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:290:9-291:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:291:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:291:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:290:19-60
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:290:19-60
 activity#com.juhao.home.ui.DeviceShareAddUserActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:292:9-293:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:292:9-293:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:293:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:293:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:292:19-64
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:292:19-64
 activity#com.juhao.home.scene.IotSceneFunctionDevSetActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:294:9-295:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:294:9-295:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:295:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:295:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:294:19-71
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:294:19-71
 activity#com.juhao.home.scene.CountDownActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:296:9-297:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:296:9-297:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:297:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:297:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:296:19-58
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:296:19-58
 activity#com.juhao.home.scene.IotAutoConditionActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:298:9-299:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:298:9-299:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:299:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:299:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:298:19-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:298:19-65
 activity#com.juhao.home.scene.IotAutoActionTimingActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:300:9-301:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:300:9-301:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:301:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:301:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:300:19-68
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:300:19-68
 activity#com.juhao.home.scene.IotAutoTriggerActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:302:9-303:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:302:9-303:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:303:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:303:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:302:19-63
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:302:19-63
 activity#com.juhao.home.scene.WeekDaySelectActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:304:9-305:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:304:9-305:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:305:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:305:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:304:19-62
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:304:19-62
 activity#com.juhao.home.scene.DragSortSceneActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:306:9-307:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:306:9-307:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:307:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:307:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:306:19-62
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:306:19-62
 activity#com.juhao.home.DragSortDevActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:308:9-309:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:308:9-309:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:309:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:309:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:308:19-54
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:308:19-54
 activity#com.juhao.home.ui.UserInfoActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:310:9-311:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:310:9-311:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:311:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:311:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:310:19-54
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:310:19-54
 activity#com.juhao.home.MyRegisterActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:312:9-314:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:312:9-314:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:314:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:314:13-49
 	android:theme
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:313:13-41
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:313:13-41
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:312:19-53
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:312:19-53
 activity#com.juhao.home.suggestion.SuggestRecordActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:315:9-316:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:315:9-316:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:316:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:316:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:315:19-67
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:315:19-67
 activity#com.juhao.home.ui.LivingSettingImageAcitivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:317:9-318:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:317:9-318:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:318:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:318:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:317:19-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:317:19-65
 activity#com.juhao.home.ui.LivingSettingAlarmSetActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:319:9-320:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:319:9-320:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:320:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:320:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:319:19-67
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:319:19-67
 activity#com.juhao.home.living.LivingAlarmPlanActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:321:9-322:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:321:9-322:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:322:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:322:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:321:19-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:321:19-65
 activity#com.juhao.home.living.LivingAlarmPlanDayTimeSetActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:323:9-324:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:323:9-324:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:324:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:324:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:323:19-75
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:323:19-75
 activity#com.juhao.home.living.LivingAlarmPlanWeekTimeSetActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:325:9-326:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:325:9-326:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:326:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:326:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:325:19-76
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:325:19-76
 activity#com.juhao.home.ui.SdCardActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:327:9-328:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:327:9-328:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:328:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:328:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:327:19-52
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:327:19-52
 activity#com.juhao.home.ui.CurtainsControlActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:329:9-330:61
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:329:9-330:61
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:330:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:330:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:329:19-61
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:329:19-61
 activity#com.juhao.home.ui.WebViewForDataActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:331:9-332:61
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:331:9-332:61
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:332:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:332:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:331:19-60
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:331:19-60
 activity#com.juhao.home.ui.GetWarmDeviceControlActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:333:9-335:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:333:9-334:20
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:333:19-66
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:333:19-66
+activity#com.juhao.home.room.RoomDeviceSettingActivity
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:335:9-67
+	android:name
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:335:19-65
 receiver#com.juhao.home.receiver.MyMessageReceiver
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:400:9-412:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:400:9-412:20
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:402:13-37
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:402:13-37
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:401:13-55
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:401:13-55
 intent-filter#action:name:com.alibaba.push2.action.NOTIFICATION_OPENED
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:403:13-405:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:403:13-405:29
 action#com.alibaba.push2.action.NOTIFICATION_OPENED
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:404:17-87
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:404:17-87
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:404:25-84
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:404:25-84
 intent-filter#action:name:com.alibaba.push2.action.NOTIFICATION_REMOVED
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:406:13-408:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:406:13-408:29
 action#com.alibaba.push2.action.NOTIFICATION_REMOVED
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:407:17-88
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:407:17-88
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:407:25-85
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:407:25-85
 intent-filter#action:name:com.alibaba.sdk.android.push.RECEIVE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:409:13-411:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:409:13-411:29
 action#com.alibaba.sdk.android.push.RECEIVE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:410:17-79
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:410:17-79
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:410:25-76
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:410:25-76
 activity#com.facebook.FacebookActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:414:9-417:48
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:414:9-417:48
 MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/b09997cbbc9d6e2a00349dd2252edafb/AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/b09997cbbc9d6e2a00349dd2252edafb/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:417:13-45
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:417:13-45
 	android:configChanges
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:416:13-96
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:416:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/b09997cbbc9d6e2a00349dd2252edafb/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:415:13-57
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:415:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:418:9-429:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:418:9-429:20
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:420:13-36
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:420:13-36
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:419:13-58
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:419:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:421:13-428:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:421:13-428:29
 action#android.intent.action.VIEW
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:422:17-69
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:422:17-69
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:422:25-66
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:422:25-66
 category#android.intent.category.BROWSABLE
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:425:17-78
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:425:17-78
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:425:27-75
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:425:27-75
 activity#com.juhao.home.ui.LivingPlayerActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:430:9-438:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:430:9-438:20
 	android:launchMode
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:431:13-43
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:431:13-43
 	android:configChanges
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:432:13-48
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:432:13-48
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:430:19-58
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:430:19-58
 activity#com.juhao.home.ui.ImageStoreActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:439:9-440:61
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:439:9-440:61
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:440:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:440:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:439:19-56
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:439:19-56
 activity#com.juhao.home.ui.VodplayerActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:441:9-442:61
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:441:9-442:61
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:442:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:442:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:441:19-55
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:441:19-55
 activity#com.juhao.home.ui.DeviceLockControlActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:443:9-450:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:443:9-450:20
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:444:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:444:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:443:19-63
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:443:19-63
 activity#com.juhao.home.ui.LockSettingActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:451:9-452:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:451:9-452:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:452:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:452:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:451:19-57
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:451:19-57
 activity#com.juhao.home.deviceBiz.WifiSelectActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:453:9-456:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:453:9-456:20
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:454:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:454:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:453:19-63
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:453:19-63
 activity#com.juhao.home.deviceBiz.AddDeviceTipsActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:457:9-460:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:457:9-460:20
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:458:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:458:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:457:19-66
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:457:19-66
 activity#com.juhao.home.deviceBiz.AddDeviceBizActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:461:9-462:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:461:9-462:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:462:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:462:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:461:19-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:461:19-65
 activity#com.juhao.home.ui.WebViewActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:463:9-464:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:463:9-464:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:464:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:464:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:463:19-53
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:463:19-53
 activity#com.juhao.home.scene.IotSceneActionAutoSelectActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:465:9-466:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:465:9-466:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:466:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:466:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:465:19-73
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:465:19-73
 activity#com.juhao.home.ui.LivingSettingActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:467:9-468:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:467:9-468:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:468:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:468:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:467:19-59
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:467:19-59
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:469:9-470:54
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:469:9-470:54
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:470:13-52
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:470:13-52
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:469:20-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:469:20-65
 service#com.service.YourHmsMessageService
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:473:9-479:19
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:473:9-479:19
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:475:13-37
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:475:13-37
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:474:13-61
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:474:13-61
 intent-filter#action:name:com.huawei.push.action.MESSAGING_EVENT
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:476:13-478:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:476:13-478:29
 action#com.huawei.push.action.MESSAGING_EVENT
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:477:17-81
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:477:17-81
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:477:25-78
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:477:25-78
 service#com.huawei.hms.support.api.push.service.HmsMsgService
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:480:9-489:19
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:480:9-489:19
 	android:process
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:484:13-43
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:484:13-43
 	android:enabled
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:482:13-35
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:482:13-35
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:483:13-36
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:483:13-36
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:481:13-81
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:481:13-81
 intent-filter#action:name:com.huawei.push.msg.NOTIFY_MSG+action:name:com.huawei.push.msg.PASSBY_MSG
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:485:13-488:29
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:485:13-488:29
 action#com.huawei.push.msg.NOTIFY_MSG
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:486:17-73
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:486:17-73
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:486:25-70
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:486:25-70
 action#com.huawei.push.msg.PASSBY_MSG
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:487:17-73
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:487:17-73
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:487:25-70
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:487:25-70
 provider#com.huawei.hms.update.provider.UpdateProvider
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:491:9-496:16
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:491:9-496:16
 	android:grantUriPermissions
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:495:9-43
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:495:9-43
 	android:authorities
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:493:9-65
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:493:9-65
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:494:9-33
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:494:9-33
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:492:13-73
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:492:13-73
 provider#androidx.core.content.FileProvider
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:497:9-510:20
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:497:9-510:20
 	android:grantUriPermissions
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:502:13-47
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:502:13-47
 	android:authorities
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:499:13-62
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:499:13-62
 	android:exported
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:500:13-37
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:500:13-37
 	tools:replace
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:501:13-48
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:501:13-48
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:498:13-62
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:498:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:505:13-509:54
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:505:13-509:54
 	android:resource
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:509:17-51
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:509:17-51
 	tools:replace
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:506:17-46
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:506:17-46
 	android:value
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:507:17-33
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:507:17-33
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:508:17-67
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:508:17-67
 activity#com.juhao.home.ui.HomeSettingActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:512:9-513:51
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:512:9-513:51
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:513:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:513:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:512:19-57
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:512:19-57
 activity#com.juhao.home.ui.HomeMateListActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:514:9-515:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:514:9-515:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:515:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:515:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:514:19-58
-activity#com.juhao.home.ui.RoomManageActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:516:9-517:52
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:514:19-58
+activity#com.juhao.home.room.RoomManageActivity
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:516:9-517:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:517:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:517:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:516:19-56
-activity#com.juhao.home.ui.RoomAddActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:518:9-519:52
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:516:19-58
+activity#com.juhao.home.room.RoomAddActivity
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:518:9-519:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:519:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:519:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:518:19-53
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:518:19-55
 activity#com.juhao.home.ui.AccountActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:525:9-527:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:525:9-527:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:527:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:527:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:526:13-47
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:526:13-47
 activity#com.jan.activity.ChangePasswordActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:528:9-530:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:528:9-530:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:530:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:530:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:529:13-67
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:529:13-67
 activity#com.jan.activity.AccountCodeActivity
-ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:532:9-534:52
+ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:532:9-534:52
 	android:screenOrientation
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:534:13-49
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:534:13-49
 	android:name
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml:533:13-64
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml:533:13-64
 uses-sdk
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
 MERGED from [com.flyco.dialog:FlycoDialog_Lib:1.3.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1444dd0694619e04e393d6270c646875/AndroidManifest.xml:7:5-9:41
 MERGED from [com.flyco.dialog:FlycoDialog_Lib:1.3.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1444dd0694619e04e393d6270c646875/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aliyun.alink.linksdk:api-client-biz:1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0d50a6ddeac1270a8c35bb8f152eb37/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aliyun.alink.linksdk:lpbs-plugin-breeze:1.1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/d22d56f268653555e3c34ca482dfd3e2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aliyun.alink.linksdk:lpbs-plugin-breeze:1.1.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/d22d56f268653555e3c34ca482dfd3e2/AndroidManifest.xml:7:5-9:41
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:linkvisualapi] /Users/bocang/Downloads/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:linkvisualapi] /Users/bocang/Downloads/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:linkvisualapi] /Users/bocang/Documents/GitHub/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:linkvisualapi] /Users/bocang/Documents/GitHub/iot/linkvisualapi/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:6:5-8:41
 MERGED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:6:5-8:41
+MERGED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:6:5-8:41
+MERGED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:6:5-8:41
 MERGED from [com.aliyun.iot.aep.component:bundlemanager:0.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e5e9e3fed9d885f33ddbb1af2f5eead5/AndroidManifest.xml:5:5-7:41
 MERGED from [com.aliyun.iot.aep.component:bundlemanager:0.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e5e9e3fed9d885f33ddbb1af2f5eead5/AndroidManifest.xml:5:5-7:41
 MERGED from [com.aliyun.iot.aep.sdk:jsbridge-external:0.1.2.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/725b51abcdb0ae0fff830e1d314c0fad/AndroidManifest.xml:6:5-44
@@ -1401,8 +1423,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/bocang/.gradle/cac
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/93dbfc39610f132d17fb0bc9e4f9fe39/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/9c3ade6d6c8338af64e3e3b8add5cc87/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/bocang/.gradle/caches/transforms-2/files-2.1/9c3ade6d6c8338af64e3e3b8add5cc87/AndroidManifest.xml:5:5-7:41
-MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/53a39d689efdc689c869aa5347a8ea0a/AndroidManifest.xml:7:5-43
-MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/53a39d689efdc689c869aa5347a8ea0a/AndroidManifest.xml:7:5-43
+MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8617262139eb5032cec3e8fad63ebf23/AndroidManifest.xml:7:5-43
+MERGED from [:AkHttp:] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8617262139eb5032cec3e8fad63ebf23/AndroidManifest.xml:7:5-43
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/cf38fc734c150520b0dc977ed6e4a87d/AndroidManifest.xml:20:5-22:41
 MERGED from [com.yanzhenjie:permission:1.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/cf38fc734c150520b0dc977ed6e4a87d/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c0c60051b2705f16da54969ddd89358d/AndroidManifest.xml:20:5-44
@@ -1415,10 +1437,10 @@ MERGED from [com.pgyersdk:sdk:2.8.1] /Users/bocang/.gradle/caches/transforms-2/f
 MERGED from [com.pgyersdk:sdk:2.8.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/54f193546055e461bfb7df471427584f/AndroidManifest.xml:6:5-8:41
 MERGED from [com.aliyun.iot.aep.sdk:abus:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fed0f1db8e9dd95a4deba0185ce46eaa/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aliyun.iot.aep.sdk:abus:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fed0f1db8e9dd95a4deba0185ce46eaa/AndroidManifest.xml:7:5-9:41
-MERGED from [:handygridview] /Users/bocang/Downloads/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:handygridview] /Users/bocang/Downloads/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:swipelistviewlibrary] /Users/bocang/Downloads/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:swipelistviewlibrary] /Users/bocang/Downloads/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:handygridview] /Users/bocang/Documents/GitHub/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:handygridview] /Users/bocang/Documents/GitHub/iot/handygridview/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:swipelistviewlibrary] /Users/bocang/Documents/GitHub/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:swipelistviewlibrary] /Users/bocang/Documents/GitHub/iot/swipelistviewlibrary/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.tencent.bugly:crashreport:3.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/85ecb3eeb3e16660a867bf82e117ee52/AndroidManifest.xml:5:5-7:41
 MERGED from [com.tencent.bugly:crashreport:3.1.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/85ecb3eeb3e16660a867bf82e117ee52/AndroidManifest.xml:5:5-7:41
 MERGED from [com.tencent.bugly:nativecrashreport:3.7.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/3cfa8426741d855ccfc340b00c5d3462/AndroidManifest.xml:5:5-7:41
@@ -1591,74 +1613,74 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/bocang/.gradle/caches/
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/e39085d15f9dfd72830b7f60901db9ec/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8083f81e286a8bc5c5bd0c5bfb0b941b/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/bocang/.gradle/caches/transforms-2/files-2.1/8083f81e286a8bc5c5bd0c5bfb0b941b/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.aliyun.iotx:linkvisual-media:1.2.4.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c2c1fb74ae107b1c6ad147976453361d/AndroidManifest.xml:11:9-120
 	android:targetSdkVersion
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/bocang/Downloads/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bocang/Documents/GitHub/iot/app/src/main/AndroidManifest.xml
 activity#com.aliyun.iot.demo.ipcview.activity.NewCardVideoActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-34:77
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-34:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-74
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-74
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-85
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-85
 activity#com.aliyun.iot.demo.ipcview.activity.NewEventVideoActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:9-37:77
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:9-37:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-74
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-74
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-86
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-86
 activity#com.aliyun.iot.demo.ipcview.activity.IPCameraActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-42:46
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-42:46
 	android:launchMode
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-43
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-43
 	android:exported
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-36
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-36
 	android:configChanges
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-74
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-74
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-81
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-81
 activity#com.aliyun.iot.demo.ipcview.activity.CardVideoActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:77
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-74
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-74
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-82
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-82
 activity#com.aliyun.iot.demo.ipcview.activity.EventVideoActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:9-48:77
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:9-48:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:13-74
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:13-74
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-83
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-83
 activity#com.aliyun.iot.demo.ipcview.activity.SettingsActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:9-51:52
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:9-51:52
 	android:theme
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:13-49
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:13-49
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:50:13-81
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:50:13-81
 activity#com.aliyun.iot.demo.ipcview.activity.EasyPlanSettingsActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:9-98
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:9-98
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:19-95
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:19-95
 activity#com.aliyun.iot.demo.ipcview.activity.PictureTestActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:9-55:46
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:9-55:46
 	android:theme
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:55:13-43
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:55:13-43
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:54:13-84
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:54:13-84
 activity#com.aliyun.iot.demo.ipcview.activity.MultiPlayerActivity
-ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:56:9-58:77
+ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:56:9-58:77
 	android:configChanges
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:58:13-74
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:58:13-74
 	android:name
-		ADDED from [:ipcview] /Users/bocang/Downloads/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:57:13-84
+		ADDED from [:ipcview] /Users/bocang/Documents/GitHub/iot/ipcview/build/intermediates/library_manifest/debug/AndroidManifest.xml:57:13-84
 uses-permission#android.permission.WRITE_SETTINGS
 ADDED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:15:5-73
 MERGED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:16:5-73
@@ -1687,6 +1709,12 @@ activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:30:9-86
 	android:name
 		ADDED from [com.aliyun.iot.aep.page:rn:0.2.7] /Users/bocang/.gradle/caches/transforms-2/files-2.1/63c791cafce959796939986ddc59a8d8/AndroidManifest.xml:30:19-83
+activity#com.aliyun.iot.ilop.page.scan.ScanActivity
+ADDED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:16:9-19:20
+	android:exported
+		ADDED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [com.aliyun.iot.ilop.page:scan:0.0.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/fbf2fd84ddb85668dda21ecbf96b8198/AndroidManifest.xml:17:13-70
 uses-permission#android.permission.RECORD_AUDIO
 ADDED from [com.aliyun.iotx:linkvisual-media:1.2.4.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c2c1fb74ae107b1c6ad147976453361d/AndroidManifest.xml:13:5-71
 MERGED from [com.aliyun.iot.aep.sdk:alog:0.0.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/c2d2b067cead0b97c37c85336155166b/AndroidManifest.xml:15:5-71
@@ -1715,10 +1743,14 @@ uses-permission#android.permission.VIBRATE
 ADDED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:29:5-66
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:23:5-66
 MERGED from [com.aliyun.ams:alicloud-android-push-iot:3.1.6] /Users/bocang/.gradle/caches/transforms-2/files-2.1/7bbfbe28a514df0c92fdee341708bf21/AndroidManifest.xml:23:5-66
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:8:5-66
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:8:5-66
 	android:name
 		ADDED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:29:22-63
 uses-permission#android.permission.CAMERA
 ADDED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:30:5-65
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:6:5-65
+MERGED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:6:5-65
 	android:name
 		ADDED from [com.aliyun.alink.linksdk:ilop-devicecenter-ext-boneplugin:1.5.1] /Users/bocang/.gradle/caches/transforms-2/files-2.1/08d9f46054d90dee86dee68ce63738a1/AndroidManifest.xml:30:22-62
 activity#com.aliyun.iot.breeze.PlaceHolderActivity
@@ -2659,3 +2691,7 @@ action#com.vivo.pushclient.action.RECEIVE
 ADDED from [com.aliyun.ams:alicloud-android-third-push:3.0.8] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/AndroidManifest.xml:248:17-77
 	android:name
 		ADDED from [com.aliyun.ams:alicloud-android-third-push:3.0.8] /Users/bocang/.gradle/caches/transforms-2/files-2.1/1ff75a5605f14491a41f770195524c01/AndroidManifest.xml:248:25-74
+uses-permission#android.permission.FLASHLIGHT
+ADDED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from [com.aliyun.iot.aep.sdk:scan:0.0.1.2] /Users/bocang/.gradle/caches/transforms-2/files-2.1/467b0e2ce9f5fbc5a0d0a3bb02f62e73/AndroidManifest.xml:9:22-66

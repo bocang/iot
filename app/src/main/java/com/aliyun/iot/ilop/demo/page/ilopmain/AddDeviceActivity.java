@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.aliyun.alink.business.devicecenter.api.add.DeviceInfo;
 import com.aliyun.alink.business.devicecenter.api.discovery.IDiscoveryListener;
@@ -68,6 +69,7 @@ import okhttp3.Response;
 
 
 public class AddDeviceActivity extends AActivity {
+    private static final int MY_PERMISSIONS_REQUEST_CAMERA = 324;
     private String TAG = AddDeviceActivity.class.getSimpleName();
     private View mBackBtn;
     private LinearLayout mSupportDeviceLL;
@@ -246,7 +248,14 @@ public class AddDeviceActivity extends AActivity {
 //                            });
 //                            Router.getInstance().toUrlForResult(AddDeviceActivity.this, code, 1, bundle);
                             startActivity(new Intent(AddDeviceActivity.this, WifiSelectActivity.class));
+                            if(ContextCompat.checkSelfPermission(AddDeviceActivity.this,Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
+                                ActivityCompat.requestPermissions(AddDeviceActivity.this,
+                                        new String[]{Manifest.permission.CAMERA},
+                                        MY_PERMISSIONS_REQUEST_CAMERA);
+                                return;
+                            }
 
+//                            Router.getInstance().toUrl(DemoApplication.getContext(), "page/scan");
                             // 开始发现设备
 // enumSet 是需要使用的防发现方式 EnumSet<DiscoveryType>, 请根据需要选择发现方式，并添加对应的依赖；
 // 第三个参数是获取零配或智能路由器发现的待配设备 请求时需要携带的参数

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aliyun.alink.linksdk:public-channel-core:0.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b7b52f595c8e67baf647bb971a3186c7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b7b52f595c8e67baf647bb971a3186c7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

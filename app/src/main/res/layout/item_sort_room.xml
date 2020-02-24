@@ -16,7 +16,6 @@
         android:text="&#xe639;"
         android:textSize="18sp"
         android:textColor="#ed1802"
-        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView

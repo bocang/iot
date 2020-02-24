@@ -21,9 +21,9 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int photo_crop_dim_color = 0x7f06010a;
-        public static final int photo_crop_highlight_color = 0x7f06010b;
-        public static final int solid_black = 0x7f060123;
+        public static final int photo_crop_dim_color = 0x7f06010e;
+        public static final int photo_crop_highlight_color = 0x7f06010f;
+        public static final int solid_black = 0x7f06012e;
     }
     public static final class dimen {
         private dimen() {}
@@ -39,9 +39,9 @@ public final class R {
         public static final int generic_error = 0x7f100244;
         public static final int generic_server_down = 0x7f100245;
         public static final int generic_server_timeout = 0x7f100246;
-        public static final int no_internet = 0x7f10030a;
-        public static final int no_network_connection = 0x7f10030b;
-        public static final int parsing_failed = 0x7f100315;
+        public static final int no_internet = 0x7f10030e;
+        public static final int no_network_connection = 0x7f10030f;
+        public static final int parsing_failed = 0x7f10031a;
     }
     public static final class styleable {
         private styleable() {}
