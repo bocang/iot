@@ -1,4 +1,0 @@
-# Referenced at /Users/bocang/Documents/GitHub/iot/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:73
--keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at /Users/bocang/Documents/GitHub/iot/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:73
--keep class com.aliyun.iot.ilop.demo.DemoApplication { <init>(); }
